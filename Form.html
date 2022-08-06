@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+  <!-- Заголовок страницы в браузере -->
+  <title> (Формы)</title>
+  <!-- Кодировка страницы -->
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+  <link href="css/CSS.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+
+  </style>
+</head>
+<!-- Отображаемое тело страницы -->
+
+<body>
+
+  <div class="heading1">
+    <div class="heading1_Wellcom">
+      <h1> Добро пожаловать на сайт Самарина Андрея!</h1>
+    </div>
+    <div class="heading1_mylabel"> <img src="img/Label.png" width="60" height="60" alt="" /> </div>
+
+
+  </div>
+
+
+  <form method="post" action="form-handler.php">
+
+    <div class="textinformmain">
+      <h4>Обратная связь</h4>
+    </div>
+
+    <div class="textinform">
+
+      <label for="name">Имя: <span class="required">*</span> </label>
+      <input class="textinput" tabindex="1" type="text" id="name" name="name" value="" placeholder="Ваше имя"
+        required="required" autofocus />
+
+
+
+
+      <div>
+
+        <label for="email">Ваш Email : <span class="required">*</span> </label>
+        <input class="textinput" tabindex="2" type="email" id="email" name="email" value="" placeholder="your@email.com"
+          required="required" />
+      </div>
+
+
+
+
+
+      <div>
+        <h4>Текст сообщения:</h4>
+
+        <textarea class="textinput2" id="message" name="message" placeholder="Напишите Ваше сообщение"
+          required></textarea>
+        <div class="textinut2_text"><label for="message">Поля, обязательные для заполнения: <span
+              class="required">*</span> </label>
+        </div>
+
+      </div>
+
+
+
+
+
+      <div> <button class="textbutton" tabindex="4" type="submit">Отправить</button></div>
+
+    </div>
+
+  </form>
+
+  <nav class="navigation">
+    <ul>
+      <li><a href="index.html"><span>Главная</span></a></li>
+      <li><a href="Bal.html"><span>Ноты для балалайки</span></a></li>
+      <li><a href="Gitar.html"><span>Ноты для гитары</span></a></li>
+      <li><a href="Duets.html"><span>Дуэты</span></a></li>
+      <li><a href="Ansambls.html"><span>Ансамбли</span></a></li>
+      <a href="https://www.youtube.com/channel/UCzBTsBT_ydYvJ7CfqqU36-A" target="_blank">Мой youtube канал</a>
+    </ul>
+  </nav>
+
+
+
+
+
+
+
+</body>
+
+</html>
