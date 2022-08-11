@@ -92,40 +92,93 @@ body {
   font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif"
 }
 
-.heading1 {
+
+/*header*/
+.header {
 
   top: 0;
   left: 0;
   width: 100%;
   height: 140px;
-
-
-
   position: fixed;
-  background-color: #171717
+  background-color: #0fae11
 }
 
-.heading1__wellcom {
+.wellcom {
 
-  max-width: 800px;
+  height: 30px;
+  width: 400px;
   color: #F6F6F6;
   font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
   font-size: 30px;
   font-style: italic;
-  margin: 10px 5px 5px 250px;
-  padding-bottom: 0px;
-
-
-
-
+  margin: 0px auto;
+ 
 }
 
-
-.heading1__mylabel {
-  padding-left: 15px;
+.header.menu {
+  margin-right: 15px;
   width: 10%;
 
 }
+
+
+
+/*center*/
+.center {
+  
+  margin-top: 150px;
+  margin-right: 500px;
+  margin-left: 80px;
+  padding: 5px 10px 60px 10px;
+  width: 100%;
+}
+.center.Ikon1{
+  margin-left: 10px;
+  height: 150px ;
+  width: 150px;
+}
+
+.center.text1 {
+padding-top: 60px;
+  font-size: 18px;
+  color: #000000;
+  
+  height: 150px ;
+  width: 250px;
+}
+.center.links1{
+  font-size: 18px;
+}
+/*footer*/
+.buttom{
+  
+  margin-top: 50px;
+  margin-right: 500px;
+  margin-left: 80px;
+  padding: 5px 10px 60px 10px;
+  width: 100%;
+}
+.buttom.Ikon2{
+  margin-left: 10px;
+  height: 150px ;
+  width: 150px;
+}
+
+.buttom.text2 {
+  padding-top: 60px;
+    font-size: 18px;
+    color: #000000;
+    
+    height: 150px ;
+    width: 250px;
+  }
+  .buttom.links2{
+    font-size: 18px;
+  }
+
+
+
 
 .textinput {
   border: 1px solid #000000;
@@ -189,19 +242,8 @@ body {
 }
 
 
-.textinform {
-
-  font-size: 18px;
-  color: #000000;
-  margin-top: 20px;
-  margin-right: 300px;
-  margin-left: 408px;
-  margin-bottom: 10px;
-  width: 700px;
 
 
-
-}
 
 
 
@@ -233,15 +275,6 @@ body {
   color: gray;
 }
 
-.textinformmain {
-  font-size: 30px;
-  color: #cd0b0b;
-  margin-top: 150px;
-  margin-right: 300px;
-  margin-left: 400px;
-  margin-bottom: 10px;
-  padding: 5px 10px 60px 10px;
-}
 
 .textinut2_text {
   font-size: 16px;

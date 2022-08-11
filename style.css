@@ -1,0 +1,299 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+before,
+after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+focus,
+active {
+  outline: none;
+}
+
+a focus,
+a active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input:ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a visited {
+  text-decoration: none;
+}
+
+ahover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+body {
+  background-color: aliceblue;
+  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+}
+
+/*header*/
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  position: fixed;
+  background-color: #0fae11;
+}
+
+.wellcom {
+  width: 400px;
+  color: #F6F6F6;
+  font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+  font-size: 30px;
+  font-style: italic;
+  margin: 0px auto;
+}
+
+.navigation {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.blok1, .blok2, .blok3 {
+  background-color: rgb(13, 232, 13);
+  border: 1px solid #000000;
+  border-radius: 10px;
+  height: 30px;
+  padding: 4px 10px;
+  font-size: 18px;
+}
+
+/*center*/
+.center {
+  margin-top: 250px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 5px 10px 60px 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ikon {
+  display: inliblock;
+  margin-left: 50px;
+  height: 100px;
+  width: 320px;
+}
+
+.text {
+  padding-top: 40px;
+  font-size: 30px;
+  font-style: italic;
+  color: #000000;
+  height: 100px;
+  width: 320px;
+}
+
+.links {
+  display: block;
+  font-size: 20px;
+  height: 100px;
+  width: 320px;
+  line-height: 30px;
+}
+
+.links:focus {
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+}
+
+/*footer*/
+.buttom {
+  margin-top: 200px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 5px 10px 60px 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ikon1 {
+  display: inliblock;
+  margin-left: 50px;
+  height: 100px;
+  width: 320px;
+}
+
+.text1 {
+  padding-top: 40px;
+  font-size: 30px;
+  font-style: italic;
+  color: #000000;
+  height: 100px;
+  width: 320px;
+}
+
+.links1 {
+  display: block;
+  font-size: 20px;
+  height: 100px;
+  width: 320px;
+  line-height: 30px;
+}
+
+/*1html*/
+.textinput {
+  border: 1px solid #000000;
+  height: 50px;
+  padding: 0px 15px;
+  font-size: 18px;
+  width: 300px;
+  margin: 0px 0px 10px 0px;
+}
+
+.textinput2 {
+  border: 1px solid #000000;
+  height: 50px;
+  padding: 0px 15px;
+  font-size: 18px;
+  width: 300px;
+  margin: 10px 0px 10px 0px;
+}
+
+.textinput:focus {
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+}
+
+.textinput2:focus {
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+}
+
+.textbutton {
+  display: block;
+  width: 300px;
+  height: 50px;
+  background-color: #B7AFAF;
+  font-size: 18px;
+  color: #111010;
+  text-transform: uppercase;
+  border-radius: 24px;
+  -webkit-box-shadow: 0px 5px 5px black;
+          box-shadow: 0px 5px 5px black;
+  font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+  letter-spacing: 1px;
+  margin: 20px 0px 10px 0px;
+}
+
+.textbutton:hover {
+  background-color: #DEEC9C;
+  color: aqua;
+}
+
+.textbutton :active {
+  position: relative;
+  top: 3px;
+  -webkit-box-shadow: 0px 2px 1px black;
+          box-shadow: 0px 2px 1px black;
+  background-color: #080808;
+}
+
+.textinform h3 {
+  margin: 25px 0px 25px 0px;
+  color: #b700a5;
+  font-style: oblique;
+}
+
+.textinform h4 {
+  margin: 25px 0px 25px 0px;
+  color: rgba(120, 1, 1, 0.927);
+  width: 900px;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.textinform p {
+  margin: 15px 0px 15px 0px;
+  color: rgb(48, 52, 52);
+}
+
+.textinform p:visited {
+  color: gold;
+}
+
+.textinform p:hover {
+  text-decoration: underline;
+  color: gray;
+}
+
+.textinut2_text {
+  font-size: 16px;
+}
