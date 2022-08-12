@@ -1,32 +1,38 @@
-<!DOCTYPE html>
-<!-- Оболочка документа, указываем язык содержимого -->
-<html lang="ru">
-<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+<!doctype html>
+<html>
 
 <head>
-  <!-- Заголовок страницы в браузере -->
-  <title> (Формы)</title>
-  <!-- Кодировка страницы -->
-  <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-  <link href="css/CSS.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <meta name="description" content="Ноты для гитары">
+  <meta name=" keywords" content="Ноты для балалайки и гитары сайт Самарина Андрея">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Forms</title>
   <style type="text/css">
 
   </style>
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
-<!-- Отображаемое тело страницы -->
-
 <body>
-
-  <div class="heading1">
-    <div class="heading1__wellcom">
-      <h1> Добро пожаловать на сайт Самарина Андрея!</h1>
-    </div>
-    <div class="heading1__mylabel"> <img src="img/Label.png" width="60" height="60" alt="" /> </div>
-
-
+ <!--heager-->
+ 
+ <div class="header">
+  <div class="wellcom">
+    <h1> Добро пожаловать на сайт <br>Андрея Самарина!</h1>
   </div>
+ 
+    <div class="navigation">
+      
+  
+        <div class="blok1"><a href="index.html"><span>  Главная</span></a></div>
+        <div class="blok2"><a href="Form.html"><span>Контакты</span></a></div>
+        <div class="blok3"><a href="https://www.youtube.com/channel/UCzBTsBT_ydYvJ7CfqqU36-A" ><span>Обо мне</span></a></div>
+    </div>
+    </div>
+ 
 
-
+</div>
+<!--center1-->
+<div class="center2">
   <form method="post" action="form-handler.php">
 
     <div class="textinformmain">
@@ -35,7 +41,7 @@
 
     <div class="textinform">
 
-      <label for="name">Имя: <span class="required">*</span> </label>
+      <label for="name">Ваше имя: <span class="required">*</span> </label>
       <input class="textinput" tabindex="1" type="text" id="name" name="name" value="" placeholder="Ваше имя"
         required="required" autofocus />
 
@@ -53,13 +59,15 @@
 
 
 
-      <div>
-        <h4>Текст сообщения:</h4>
-
-        <textarea class="textinput2" id="message" name="message" placeholder="Напишите Ваше сообщение"
+      
+        <p>Текст сообщения:</p><br>
+      
+        <textarea class="textinput" id="message" name="message" placeholder="Напишите Ваше сообщение"
           required></textarea>
-        <div class="textinut2_text"><label for="message">Поля, обязательные для заполнения: <span
-              class="required">*</span> </label>
+        <div class="textinut"><label for="message">Поля, обязательные для заполнения: <span>
+
+        
+              <class="required">*</span> </label>
         </div>
 
       </div>
@@ -74,21 +82,10 @@
 
   </form>
 
-  <nav class="navigation">
-    <ul>
-      <li><a href="index.html"><span>Главная</span></a></li>
-      <li><a href="Bal.html"><span>Ноты для балалайки</span></a></li>
-      <li><a href="Gitar.html"><span>Ноты для гитары</span></a></li>
-      <li><a href="Duets.html"><span>Дуэты</span></a></li>
-      <li><a href="Ansambls.html"><span>Ансамбли</span></a></li>
-      <a href="https://www.youtube.com/channel/UCzBTsBT_ydYvJ7CfqqU36-A" target="_blank">Мой youtube канал</a>
-    </ul>
-  </nav>
 
 
 
-
-
+</div>
 
 
 </body>
