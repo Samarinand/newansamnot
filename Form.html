@@ -12,82 +12,94 @@
   </style>
   <link href="style.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
- <!--heager-->
- <div class="wraper">
- <div class="header">
-  <div class="wellcom">
-    <h1> Добро пожаловать на сайт <br>Андрея Самарина!</h1>
-  </div>
- 
-    <div class="navigation">
-      
-  
-        <div class="blok1"><a href="index.html"><span>  Главная</span></a></div>
-        <div class="blok2"><a href="Form.html"><span>Контакты</span></a></div>
-        <div class="blok3"><a href="https://www.youtube.com/channel/UCzBTsBT_ydYvJ7CfqqU36-A" ><span>Обо мне</span></a></div>
-    </div>
-    </div>
- 
-
-
-<!--center1-->
-<div class="center2">
-  <form method="post" action="form-handler.php">
-
-    <div class="textinformmain">
-      <h4>Обратная связь</h4>
-    </div>
-
-    <div class="textinform">
-
-      <label for="name">Ваше имя: <span class="required">*</span> </label>
-      <input class="textinput" tabindex="1" type="text" id="name" name="name" value="" placeholder="Ваше имя"
-        required="required" autofocus />
-
-
-
-
-      <div>
-
-        <label for="email">Ваш Email : <span class="required">*</span> </label>
-        <input class="textinput" tabindex="2" type="email" id="email" name="email" value="" placeholder="your@email.com"
-          required="required" />
+  <!--heager-->
+  <div class="wraper">
+    <div class="header">
+      <div class="wellcom">
+        <h1> Добро пожаловать на сайт <br>Андрея Самарина!</h1>
       </div>
 
+      <div class="navigation">
+
+
+        <div class="blok1"><a href="index.html"><span> Главная</span></a></div>
+        <div class="blok2"><a href="Form.html"><span>Контакты</span></a></div>
+        <div class="blok3"><a href="https://www.youtube.com/channel/UCzBTsBT_ydYvJ7CfqqU36-A"><span>Обо мне</span></a>
+        </div>
+      </div>
+    </div>
 
 
 
+    <!--center1-->
+    <div class="center2">
+      <form method="post" action="form-handler.php">
 
-      
-        <p>Текст сообщения:</p><br>
-      
-        <textarea class="textinput" id="message" name="message" placeholder="Напишите Ваше сообщение"
-          required></textarea>
-        <div class="textinut"><label for="message"> <span>
-
-        
-              <class="required">*</span> </label>
+        <div class="textinformmain">
+          <h4>Обратная связь</h4>
         </div>
 
-      </div>
+        <div class="textinform1">
+          <p>Ваше имя:</p>
+          <label for="name"><span class="required">*</span> </label>
+          <input class="textinput" tabindex="1" type="text" id="name" name="name" value="" placeholder="Ваше имя"
+            required="required" autofocus />
+
+
+
+
+        </div>
+
+        <div class="textinform2">
+          <p>Ваш email:</p>
+          <label for="email"> <span class="required">*</span> </label>
+          <input class="textinput" tabindex="2" type="email" id="email" name="email" value=""
+            placeholder="your@email.com" required="required" />
+        </div>
 
 
 
 
 
-      <div> <button class="textbutton" tabindex="4" type="submit">Отправить</button></div>
+
+
+        <div class="textinut">
+
+          <label for="message"> <span>
+
+
+              <class="required">*
+            </span> </label>
+
+          <div class="textinput1"><p>Текст сообщения:</p>
+          </div>
+          <textarea class="textinput" id="message" name="message" placeholder="Напишите Ваше сообщение"
+            required></textarea>
+        </div>
+
+
+
+
+
+
+
+        <div> <button class="textbutton" tabindex="4" type="submit">Отправить</button></div>
+
+
+      </form>
+
 
     </div>
 
-  </form>
 
+    <!--futer-->
+    <div class="futer">
+      <p>2022</p>
+    </div>
 
-
-
-
-
-</div>
+  </div>
 
 </body>
 
