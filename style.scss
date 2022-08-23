@@ -87,97 +87,186 @@ h6 {
 
 /*--------------------*/
 
-body {
-    
+html,body {
+    height: 100%;
     font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
     background-color: #ebebf6;
+
 }
 
 
 /*header*/
+.conteiner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1180px;
+     height: 80px;
+     padding: 0px 10px;
+}
 .header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 120px;
+    height: 70px;
     position: fixed;
-    background-color:#080808;
-    
-  }
-  .wellcom {
-    padding-top: 5px;
-    display: block;
-    width: 400px;
-    color: #F6F6F6;
-    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-    font-size: 25px;
-    font-style: italic;
-    margin: 0px auto;
-    text-align: center;
-}
- 
-.navigation{
-   margin-top: 15px;
-    display: flex;
-    justify-content: space-around;
-   
-}
-.blok1, .blok2, .blok3{
-    background-color: rgb(13, 232, 13);
-    border:1px solid #000000;
-    border-radius: 10px;
-    height: 30px;
-    padding: 4px 10px;
-    font-size: 18px;
-    span{
-        color: #F6F6F6;
-    }
+    z-index: 50;
 
 }
-.blok1:hover {
-   background-color: rgb(16, 132, 94);
-    color: rgb(0, 0, 0);
-    
-   
+
+.header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ae2bcf;
+    z-index: 2;
 }
-.blok2:hover {
-    background-color: rgb(16, 132, 94);
-     color: rgb(0, 0, 0);
-     
-    
- }
- .blok3:hover {
-    background-color: rgb(16, 132, 94);
-     color: rgb(0, 0, 0);
+.header__body {
+    position: relative;
   
-     
+    display:flex; 
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    margin: 0 auto;
+   }
+
+
+.header__list li {
+    list-style: none;
+    margin: 0px 0px 0px 20px;
+}
+
+.header__list {
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+.header__logo img{
+    max-width: 100%;}
+.header__logo{
+        flex: 0 0 60px;
+        position: relative;
+        z-index: 3;
+    }
+
+.header__link {
+    color: #F6F6F6;
+   font-size: 17px;
+    padding: 4px 10px;
+}
+
+.header__menu{
+ 
+ height: 50px;
+ align-items: center;  
+ margin-top: 20px ;
+ 
  }
+
+
+
+
+
+@media (max-width:767px) {
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        z-index: 3;
+      
+   }
+   .header__logo{
+    flex: 0 0 50px;
+   }
+    .header__burger:before,
+    .header__burger::after {
+        content: "";
+        background-color: #F6F6F6;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        z-index: 0;
+    }
+     .header__burger:before {
+        top: 20px;
+    }
+    .header__burger:after {
+        bottom: -20px;
+    }
+      .header__burger span {
+        background-color: #F6F6F6;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 29px;
+        z-index: 0;
+    }
+
+    .header__menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(8, 141, 146, 0.696);
+        z-index:1;
+       padding: 65px 0px 0px 0px;
+    }
+    .header{
+        height: 65px;
+       
+    }
+    .header__list {
+        display: block;
+    }
+    .header__list li{
+        margin: 0px 0px 20px 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 /*center*/
 .discription {
     margin-top: 140px;
     text-align: center;
     font-size: 18px;
-    font-style:oblique;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    border-bottom:1px solid #000000;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-bottom: 1px solid #000000;
     padding-bottom: 5px;
 }
+
 .center {
     height: 120px;
-   
+
     margin-right: 0px;
-   
+
     padding: 5px 0px 60px 0px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 .ikon {
-   
+
     display: inliblock;
-  padding-left: 10px;
+    padding-left: 10px;
     height: 100px;
     width: 320px;
 }
@@ -188,58 +277,66 @@ body {
     font-size: 18px;
     height: 310px;
     width: 300px;
-   
-    background-color:#101010;
-    border:1px solid #000000;
+
+    background-color: #101010;
+    border: 1px solid #000000;
     border-radius: 10px;
     padding-left: 10px;
     display: flex;
     flex-direction: column;
-    h3{
+
+    h3 {
         font-size: 20px;
         font-style: italic;
         color: #F6F6F6;
         margin: 0px auto;
         text-align: center;
-    } 
-   
-    .blok4, .blok5, .blok6, .blok7{
+    }
+
+    .blok4,
+    .blok5,
+    .blok6,
+    .blok7 {
         color: #F6F6F6;
         background-color: rgb(13, 232, 13);
-        border:5px solid #000000;
+        border: 5px solid #000000;
         border-radius: 10px;
-        padding: 4px 10px;  
-      
+        padding: 4px 10px;
+
     }
-    span{
+
+    span {
         color: #F6F6F6;
     }
 }
 
 .blok4:hover {
     background-color: rgb(16, 132, 94);
-     color: rgb(0, 0, 0);
-   
-    
- }
- .blok5:hover {
-     background-color: rgb(16, 132, 94);
-      color: rgb(0, 0, 0);
-     
-     
-  }
-  .blok6:hover {
-     background-color: rgb(16, 132, 94);
-      color: rgb(0, 0, 0);
-    
-      
-  }
-  .blok7:hover {
+    color: rgb(0, 0, 0);
+
+
+}
+
+.blok5:hover {
     background-color: rgb(16, 132, 94);
-     color: rgb(0, 0, 0);
-   
-    
- }
+    color: rgb(0, 0, 0);
+
+
+}
+
+.blok6:hover {
+    background-color: rgb(16, 132, 94);
+    color: rgb(0, 0, 0);
+
+
+}
+
+.blok7:hover {
+    background-color: rgb(16, 132, 94);
+    color: rgb(0, 0, 0);
+
+
+}
 
 /*footer*/
 .buttom {
@@ -250,7 +347,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    height: 1250px;
+    height: 1247px;
 }
 
 .ikon1 {
@@ -261,218 +358,256 @@ body {
 }
 
 
-    
+
 
 .links1 {
-    
+
     padding-top: 10px;
     display: block;
     font-size: 18px;
     height: 380px;
     width: 300px;
-   
-    background-color:#370aeb;
-    border:1px solid #000000;
+
+    background-color: #370aeb;
+    border: 1px solid #000000;
     border-radius: 10px;
     padding-left: 10px;
     display: flex;
     flex-direction: column;
-    h4{
+
+    h4 {
         font-size: 20px;
         font-style: italic;
         color: #F6F6F6;
         margin: 0px auto;
         text-align: center;
-    } 
-   
-    .blok8, .blok9, .blok10, .blok11, .blok12{
+    }
+
+    .blok8,
+    .blok9,
+    .blok10,
+    .blok11,
+    .blok12 {
         color: #F6F6F6;
         background-color: rgb(13, 232, 13);
-        border:5px solid #000000;
+        border: 5px solid #000000;
         border-radius: 10px;
-        padding: 4px 10px;  
-      
+        padding: 4px 10px;
+
     }
-    span{
+
+    span {
         color: #F6F6F6;
     }
-    }
-    .blok8:hover {
-        background-color: rgb(16, 132, 94);
-         color: rgb(0, 0, 0);
-        
-        
-     }
-     .blok9:hover {
-        background-color: rgb(16, 132, 94);
-         color: rgb(0, 0, 0);
-       
-         
-     }
-     .blok10:hover {
-        background-color: rgb(16, 132, 94);
-         color: rgb(0, 0, 0);
-        
-        
-     }
-     .blok11:hover {
-        background-color: rgb(16, 132, 94);
-         color: rgb(0, 0, 0);
-       
-         
-     }
-     .blok12:hover {
-        background-color: rgb(16, 132, 94);
-         color: rgb(0, 0, 0);
-       
-         
-     }
-   
+}
+
+.blok8:hover {
+    background-color: rgb(16, 132, 94);
+    color: rgb(0, 0, 0);
+
+
+}
+
+.blok9:hover {
+    background-color: rgb(16, 132, 94);
+    color: rgb(0, 0, 0);
+
+
+}
+
+.blok10:hover {
+    background-color: rgb(16, 132, 94);
+    color: rgb(0, 0, 0);
+
+
+}
+
+.blok11:hover {
+    background-color: rgb(16, 132, 94);
+    color: rgb(0, 0, 0);
+
+
+}
+
+.blok12:hover {
+    background-color: rgb(16, 132, 94);
+    color: rgb(0, 0, 0);
+
+
+}
+
 
 
 
 /*1html*/
 
 .center1 {
-  height: 1600px;
+    height: 1610px;
     margin-top: 130px;
     margin-right: 0px;
     margin-left: 0px;
     padding: 5px 0px 60px 0px;
     width: 100%;
-     display: flex;
+    display: flex;
     justify-content: space-around;
 }
+
 .ikon3 {
-   
+
     height: 100px;
     width: 320px;
-   padding-left: 10px;
+    padding-left: 10px;
 }
-.wraper{
+
+.wraper {
     display: flex;
     flex-direction: column;
 }
-.links2{
-    
-   height: 1600px;
+
+.links2 {
+
+    height: 1600px;
     background-color: #e2d7d7;
     border-radius: 10px;
     padding-left: 5px;
     padding-right: 4px;
-   p:before{
-    content: "";
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: rgb(65, 12, 224);
-    display:inline-block;
-    margin: 0px 2px 0px;
-   }
-   h2{ 
-    text-align: center;
-    font-size: 18px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   }
+
+    p:before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: rgb(65, 12, 224);
+        display: inline-block;
+        margin: 0px 2px 0px;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
     line-height: 30px;
-    p:hover{
+
+    p:hover {
         text-decoration: underline;
-        }
-    p:focus{
-            color: brown; 
-         }
-    p:visited{
-            color: rgb(64, 50, 50); 
-         }
-          
+    }
+
+    p:focus {
+        color: brown;
+    }
+
+    p:visited {
+        color: rgb(64, 50, 50);
+    }
+
 }
- .links3 {
-   
+
+.links3 {
+
     padding-top: 10px;
     display: block;
     font-size: 18px;
     height: 680px;
     width: 300px;
-    background-color:#151515;
-    border:1px solid #000000;
+    background-color: #151515;
+    border: 1px solid #000000;
     border-radius: 10px;
     padding-left: 0px;
     display: flex;
     flex-direction: column;
-    h3,h4{
+
+    h3,
+    h4 {
         font-size: 20px;
         font-style: italic;
         color: #F6F6F6;
         margin: 0px auto;
         text-align: center;
-    } 
+    }
 
 }
-   
+
 .links4 {
     padding-top: 10px;
-    background-color:#370aeb;
-    border:1px solid #000000;
+    background-color: #370aeb;
+    border: 1px solid #000000;
     border-radius: 10px;
     height: 486px;
 }
-    .blok4, .blok5,.blok6, .blok7,.blok8, .blok9, .blok10, .blok11, .blok12{
-        color: #F6F6F6;
-        background-color: rgb(13, 232, 13);
-        border:5px solid #000000;
-        border-radius: 10px;
-        padding: 4px 10px;  
-      
-    }
-    span{
-        color: #F6F6F6;
-    }   
 
-.futer{
-  background-color: #000000;
+.blok4,
+.blok5,
+.blok6,
+.blok7,
+.blok8,
+.blok9,
+.blok10,
+.blok11,
+.blok12 {
+    color: #F6F6F6;
+    background-color: rgb(13, 232, 13);
+    border: 5px solid #000000;
+    border-radius: 10px;
+    padding: 4px 10px;
+
+}
+
+span {
+    color: #F6F6F6;
+}
+
+.futer {
+    background-color: #000000;
     height: 65px;
     display: flex;
- 
+
     justify-content: center;
     align-items: center;
-    p{
+
+    p {
         font-size: 18px;
-        color:#F6F6F6;
+        color: #F6F6F6;
     }
 }
 
 
 /*Form*/
 .center2 {
-    
- 
-    padding-top:200px;
+
+
+    padding-top: 200px;
     width: 100%;
-    
-    height: 1900px;
+
+    height: 1738px;
     margin: 0px auto;
-    text-align: center; 
-    
+    text-align: center;
+
 }
 
 
-.textinformmain  {
+.textinformmain {
     padding-bottom: 40px;
     color: rgb(48, 52, 52);
     font-size: 25px;
     margin: 0px auto;
     text-align: center;
 }
+
 .textinform1 {
- 
-    text-align: center;  
+
+    text-align: center;
+
     p {
         padding-bottom: 25px;
     }
 }
+
 .textinform2 {
- padding-top: 25px;
-    text-align: center; 
+    padding-top: 25px;
+    text-align: center;
+
     p {
         padding-bottom: 25px;
     }
@@ -486,18 +621,29 @@ body {
     padding: 0px 25px;
     font-size: 18px;
     width: 300px;
-    
+
 }
+
 .textinput1 {
-    
+
     padding-bottom: 25px;
 }
 
+.textinput2 {
+    border: 1px solid #000000;
+    height: 80px;
+    padding: 0px 25px;
+    font-size: 18px;
+    width: 300px;
+}
 
 .textinput:focus {
     box-shadow: 0 0 10px black;
 }
 
+.textinput2:focus {
+    box-shadow: 0 0 10px black;
+}
 
 .textbutton {
     display: block;
@@ -512,7 +658,7 @@ body {
     font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
     letter-spacing: 1px;
     margin: 25px auto;
-    
+
 }
 
 .textbutton:hover {

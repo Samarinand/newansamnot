@@ -84,65 +84,139 @@ h6 {
 }
 
 /*--------------------*/
-body {
+html, body {
+  height: 100%;
   font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
   background-color: #ebebf6;
 }
 
 /*header*/
+.conteiner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1180px;
+  height: 80px;
+  padding: 0px 10px;
+}
+
 .header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 120px;
+  height: 70px;
   position: fixed;
-  background-color: #080808;
+  z-index: 50;
 }
 
-.wellcom {
-  padding-top: 5px;
-  display: block;
-  width: 400px;
-  color: #F6F6F6;
-  font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-  font-size: 25px;
-  font-style: italic;
-  margin: 0px auto;
-  text-align: center;
+.header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ae2bcf;
+  z-index: 2;
 }
 
-.navigation {
-  margin-top: 15px;
+.header__body {
+  position: relative;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  margin: 0 auto;
 }
 
-.blok1, .blok2, .blok3 {
-  background-color: #0de80d;
-  border: 1px solid #000000;
-  border-radius: 10px;
-  height: 30px;
-  padding: 4px 10px;
-  font-size: 18px;
+.header__list li {
+  list-style: none;
+  margin: 0px 0px 0px 20px;
 }
 
-.blok1 span, .blok2 span, .blok3 span {
+.header__list {
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+
+.header__logo img {
+  max-width: 100%;
+}
+
+.header__logo {
+  flex: 0 0 60px;
+  position: relative;
+  z-index: 3;
+}
+
+.header__link {
   color: #F6F6F6;
+  font-size: 17px;
+  padding: 4px 10px;
 }
 
-.blok1:hover {
-  background-color: #10845e;
-  color: black;
+.header__menu {
+  height: 50px;
+  align-items: center;
+  margin-top: 20px;
 }
 
-.blok2:hover {
-  background-color: #10845e;
-  color: black;
-}
-
-.blok3:hover {
-  background-color: #10845e;
-  color: black;
+@media (max-width: 767px) {
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 3;
+  }
+  .header__logo {
+    flex: 0 0 50px;
+  }
+  .header__burger:before,
+.header__burger::after {
+    content: "";
+    background-color: #F6F6F6;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    z-index: 0;
+  }
+  .header__burger:before {
+    top: 20px;
+  }
+  .header__burger:after {
+    bottom: -20px;
+  }
+  .header__burger span {
+    background-color: #F6F6F6;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 29px;
+    z-index: 0;
+  }
+  .header__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8, 141, 146, 0.696);
+    z-index: 1;
+    padding: 65px 0px 0px 0px;
+  }
+  .header {
+    height: 65px;
+  }
+  .header__list {
+    display: block;
+  }
+  .header__list li {
+    margin: 0px 0px 20px 0px;
+  }
 }
 
 /*center*/
@@ -194,7 +268,10 @@ body {
   text-align: center;
 }
 
-.links .blok4, .links .blok5, .links .blok6, .links .blok7 {
+.links .blok4,
+.links .blok5,
+.links .blok6,
+.links .blok7 {
   color: #F6F6F6;
   background-color: #0de80d;
   border: 5px solid #000000;
@@ -235,7 +312,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  height: 1250px;
+  height: 1247px;
 }
 
 .ikon1 {
@@ -267,7 +344,11 @@ body {
   text-align: center;
 }
 
-.links1 .blok8, .links1 .blok9, .links1 .blok10, .links1 .blok11, .links1 .blok12 {
+.links1 .blok8,
+.links1 .blok9,
+.links1 .blok10,
+.links1 .blok11,
+.links1 .blok12 {
   color: #F6F6F6;
   background-color: #0de80d;
   border: 5px solid #000000;
@@ -306,7 +387,7 @@ body {
 
 /*1html*/
 .center1 {
-  height: 1600px;
+  height: 1610px;
   margin-top: 130px;
   margin-right: 0px;
   margin-left: 0px;
@@ -378,7 +459,8 @@ body {
   flex-direction: column;
 }
 
-.links3 h3, .links3 h4 {
+.links3 h3,
+.links3 h4 {
   font-size: 20px;
   font-style: italic;
   color: #F6F6F6;
@@ -394,7 +476,15 @@ body {
   height: 486px;
 }
 
-.blok4, .blok5, .blok6, .blok7, .blok8, .blok9, .blok10, .blok11, .blok12 {
+.blok4,
+.blok5,
+.blok6,
+.blok7,
+.blok8,
+.blok9,
+.blok10,
+.blok11,
+.blok12 {
   color: #F6F6F6;
   background-color: #0de80d;
   border: 5px solid #000000;
@@ -423,7 +513,7 @@ span {
 .center2 {
   padding-top: 200px;
   width: 100%;
-  height: 1900px;
+  height: 1738px;
   margin: 0px auto;
   text-align: center;
 }
@@ -465,7 +555,19 @@ span {
   padding-bottom: 25px;
 }
 
+.textinput2 {
+  border: 1px solid #000000;
+  height: 80px;
+  padding: 0px 25px;
+  font-size: 18px;
+  width: 300px;
+}
+
 .textinput:focus {
+  box-shadow: 0 0 10px black;
+}
+
+.textinput2:focus {
   box-shadow: 0 0 10px black;
 }
 
