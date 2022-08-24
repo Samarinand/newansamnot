@@ -15,21 +15,36 @@
 
 <body>
   <!--heager-->
-  <div class="wraper">
-    <div class="header">
-      <div class="wellcom">
-        <h1> Добро пожаловать на сайт <br>Андрея Самарина!</h1>
-      </div>
-
-      <div class="navigation">
-
-
-        <div class="blok1"><a href="index.html"><span> Главная</span></a></div>
-        <div class="blok2"><a href="Form.html"><span>Контакты</span></a></div>
-        <div class="blok3"><a href="https://www.youtube.com/channel/UCzBTsBT_ydYvJ7CfqqU36-A"><span>Обо мне</span></a>
+  <nav class="navbar">
+    <div class="container">
+    
+      <div class="navbar__wrap">
+        <div class="logo" id="logo"><img src=img/Label.png></div>
+        <div class="hamb">
+          <div class="hamb__field" id="hamb">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </div>
+       
+        <ul class="menu" id="menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="Form.html">Гостевая</a></li>
+          <li><a href="https://www.youtube.com/channel/UCzBTsBT_ydYvJ7CfqqU36-A">Обо мне</a></li>
+           </ul>
       </div>
     </div>
+  </nav>
+  <div class="popup" id="popup"></div>
+  <header class="header">
+    <div class="container">
+      <div class="content">
+        <h1>Добро пожаловать на сайт Самарина Андрея!</h1>
+      </div>
+    </div>
+  </header>
+  
 
 
 
@@ -98,7 +113,7 @@
       <p>2022</p>
     </div>
 
-  </div>
+    <script src="js/script.js"> </script>
 
 </body>
 

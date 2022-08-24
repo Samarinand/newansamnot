@@ -3,49 +3,50 @@
 
 <head>
   <meta charset="utf-8">
-  
+
   <meta name="description" content="Ноты для балалайки и гитары">
   <meta name=" keywords" content="Ноты для балалайки и гитары сайт Самарина Андрея">
   <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <title>index</title>
+  <title>index</title> <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <style type="text/css">
 
   </style>
   <link href="style.css" rel="stylesheet" type="text/css">
-  <script src="js/script.js"> </script>
+ 
 </head>
 
 <body>
 
   <!--heager-->
-  <div class="wraper">
-    <heder class="header">
-      <div class="conteiner">
-      <div class="header__body">
-        <a href="" class="header__logo">
-        <img src="img/Label.png" alt=""></a>
-      </div> 
-
-      <div class="header__burger">
-        <span></span>
+  <nav class="navbar">
+    <div class="container">
+    
+      <div class="navbar__wrap">
+        <div class="logo" id="logo"><img src=img/Label.png></div>
+        <div class="hamb">
+          <div class="hamb__field" id="hamb">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+       
+        <ul class="menu" id="menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="Form.html">Гостевая</a></li>
+          <li><a href="https://www.youtube.com/channel/UCzBTsBT_ydYvJ7CfqqU36-A">Обо мне</a></li>
+           </ul>
       </div>
-        <nav class="header__menu">
-          <ul class="header__list">
-
-
-        <li><a href="index.html" class="header__link">Главная</a></li>
-        <li><a href="Form.html" class="header__link">Контакты</a></li>
-        <li><a href="https://www.youtube.com/channel/UCzBTsBT_ydYvJ7CfqqU36-A" class="header__link">Обо мне</a>
-        </ul>
-        
-        </nav>
-      
     </div>
-    </heder>
-
-
-
-
+  </nav>
+  <div class="popup" id="popup"></div>
+  <header class="header">
+    <div class="container">
+      <div class="content">
+        <h1>Добро пожаловать на сайт Самарина Андрея!</h1>
+      </div>
+    </div>
+  </header>
     <!--center-->
     <div class="discription">
       <h2>На этом сайте Вы можете найти ноты <br> моих произведениий, обработок и переложений
@@ -110,6 +111,7 @@
       </div>
      
     </div>
+    <script src="js/script.js"> </script>
 </body>
 
 </html>
