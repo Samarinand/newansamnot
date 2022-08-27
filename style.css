@@ -170,6 +170,7 @@ body {
 
 .menu > li > a {
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .navbar__wrap .menu {
@@ -295,16 +296,17 @@ body {
 .links {
   padding-top: 10px;
   font-size: 18px;
-  height: 400px;
+  height: 410px;
   width: 300px;
   background-color: #101010;
   border: 1px solid #000000;
   border-radius: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 10px;
+  gap: clamp(0.313rem, -0.028rem + 1.7vw, 1.25rem);
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 .links h3 {
   font-size: 20px;
@@ -321,36 +323,38 @@ body {
   height: 100%;
   width: 100%;
   font-size: 18px;
-  color: #F6F6F6;
-  background-color: rgb(13, 232, 13);
-  border: 3px solid #0b0b0b;
+  color: #1b1b1b;
+  background-color: rgb(120, 196, 120);
+  border: 3px solid #0e0e0e;
   border-radius: 10px;
   padding: 10px 10px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .blok4:hover {
-  background-color: rgb(16, 132, 94);
+  background-color: rgb(33, 186, 135);
   color: rgb(0, 0, 0);
 }
 
 .blok5:hover {
-  background-color: rgb(16, 132, 94);
+  background-color: rgb(33, 186, 135);
   color: rgb(0, 0, 0);
 }
 
 .blok6:hover {
-  background-color: rgb(16, 132, 94);
+  background-color: rgb(33, 186, 135);
   color: rgb(0, 0, 0);
 }
 
 .blok7:hover {
-  background-color: rgb(16, 132, 94);
+  background-color: rgb(33, 186, 135);
   color: rgb(0, 0, 0);
 }
 
 /*footer*/
 .buttom {
-  margin-top: 220px;
+  margin-top: 230px;
   margin-right: 0px;
   margin-left: 0px;
   padding: 5px 0px 60px 0px;
@@ -371,15 +375,17 @@ body {
   padding-top: 10px;
   display: block;
   font-size: 18px;
-  height: 475px;
+  height: 505px;
   width: 300px;
-  background-color: #370aeb;
+  background: #7a52b3;
   border: 1px solid #000000;
   border-radius: 10px;
   padding-left: 10px;
   padding-right: 10px;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+  gap: clamp(0.313rem, -0.028rem + 1.7vw, 1.25rem);
 }
 .links1 h4 {
   font-size: 20px;
@@ -397,38 +403,40 @@ body {
   height: 100%;
   width: 100%;
   font-size: 18px;
-  color: #F6F6F6;
-  background-color: rgb(13, 232, 13);
+  color: #1b1b1b;
+  background-color: rgb(120, 196, 120);
   border: 3px solid #060606;
   border-radius: 10px;
   padding: 10px 10px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 .links1 span {
   color: #F6F6F6;
 }
 
 .blok8:hover {
-  background-color: rgb(16, 132, 94);
+  background-color: rgb(33, 186, 135);
   color: rgb(0, 0, 0);
 }
 
 .blok9:hover {
-  background-color: rgb(16, 132, 94);
+  background-color: rgb(33, 186, 135);
   color: rgb(0, 0, 0);
 }
 
 .blok10:hover {
-  background-color: rgb(16, 132, 94);
+  background-color: rgb(33, 186, 135);
   color: rgb(0, 0, 0);
 }
 
 .blok11:hover {
-  background-color: rgb(16, 132, 94);
+  background-color: rgb(33, 186, 135);
   color: rgb(0, 0, 0);
 }
 
 .blok12:hover {
-  background-color: rgb(16, 132, 94);
+  background-color: rgb(33, 186, 135);
   color: rgb(0, 0, 0);
 }
 
@@ -480,6 +488,8 @@ body {
 }
 .links2 p:hover {
   text-decoration: underline;
+  cursor: pointer;
+  transition: 0.3s;
 }
 .links2 p:focus {
   color: brown;
@@ -489,9 +499,9 @@ body {
 }
 
 .links3 {
-  padding-top: 10px;
+  gap: clamp(0.313rem, -0.028rem + 1.7vw, 1.25rem);
   font-size: 18px;
-  height: 915px;
+  height: 1060px;
   width: 300px;
   background-color: #151515;
   border: 1px solid #000000;
@@ -500,6 +510,7 @@ body {
   padding-right: 10px;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 .links3 h3,
 .links3 h4 {
@@ -511,13 +522,14 @@ body {
 }
 
 .links4 {
-  padding-top: 10px;
-  background-color: #370aeb;
+  gap: clamp(0.313rem, -0.028rem + 1.7vw, 1.25rem);
+  background: #7a52b3;
   border: 1px solid #000000;
   border-radius: 10px;
-  height: 620px;
+  height: 670px;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .blok4,
@@ -533,11 +545,13 @@ body {
   height: 100%;
   width: 100%;
   font-size: 18px;
-  color: #F6F6F6;
-  background-color: rgb(13, 232, 13);
+  color: #1b1b1b;
+  background-color: rgb(120, 196, 120);
   border: 5px solid #000000;
   border-radius: 10px;
   padding: 10px 10px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .futer {
@@ -591,6 +605,7 @@ body {
   padding: 0px 25px;
   font-size: 18px;
   width: 300px;
+  cursor: pointer;
 }
 
 .textinput1 {
@@ -604,6 +619,7 @@ body {
   padding: 0px 25px;
   font-size: 18px;
   width: 300px;
+  cursor: pointer;
 }
 
 .textinput:focus {
@@ -618,7 +634,7 @@ body {
   display: block;
   width: 300px;
   height: 50px;
-  background-color: #B7AFAF;
+  background: #7a52b3;
   font-size: 18px;
   color: #111010;
   text-transform: uppercase;
@@ -627,11 +643,12 @@ body {
   font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
   letter-spacing: 1px;
   margin: 25px auto;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .textbutton:hover {
-  background-color: #DEEC9C;
-  color: aqua;
+  background: #b086eb;
 }
 
 .textbutton :active {
