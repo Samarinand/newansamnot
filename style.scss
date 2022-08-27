@@ -318,7 +318,7 @@ html {
     font-size: 18px;
     height: 410px;
     width: 300px;
-    background-color: #101010;
+    background-color: #212429;
     border: 1px solid #000000;
     border-radius: 10px;
     padding-left: 10px;
@@ -326,7 +326,7 @@ html {
     gap:  clamp(0.313rem, -0.028rem + 1.7vw, 1.25rem);
     display: flex;
     flex-direction: column;
-    cursor: pointer;
+   
     
 
     h3 {
@@ -422,7 +422,7 @@ html {
     padding-right: 10px;
     display: flex;
     flex-direction: column;
-    cursor: pointer;
+   
     gap:  clamp(0.313rem, -0.028rem + 1.7vw, 1.25rem);
    
 
@@ -568,18 +568,19 @@ html {
 }
 
 .links3 {
+    padding-top: 10px;
     gap:  clamp(0.313rem, -0.028rem + 1.7vw, 1.25rem);
     font-size: 18px;
     height: 1060px;
     width: 300px;
-    background-color: #151515;
+    background-color: #212429;
     border: 1px solid #000000;
     border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
     display: flex;
     flex-direction: column;
-    cursor: pointer;
+    
    
 
     h3,
@@ -594,6 +595,7 @@ html {
 }
 
 .links4 {
+    padding-top: 10px;
     gap:  clamp(0.313rem, -0.028rem + 1.7vw, 1.25rem);
     background: #7a52b3;
     border: 1px solid #000000;
@@ -601,7 +603,7 @@ html {
     height: 670px;
     display: flex;
     flex-direction: column;
-    cursor: pointer;
+    
 }
 
 .blok4,
@@ -629,7 +631,7 @@ html {
 
 
 .futer {
-    background-color: #000000;
+  background-color: #212429;
     height: 65px;
     display: flex;
 
