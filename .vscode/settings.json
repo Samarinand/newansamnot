@@ -1,5 +1,8 @@
 {
     "files.autoSave": "afterDelay",
     "compile-hero.disable-compile-files-on-did-save-code": true,
-    "vscode-edge-devtools.browserFlavor": "Default"
+    "vscode-edge-devtools.browserFlavor": "Default",
+    "vscode-edge-devtools.browserArgs": [
+        "Visual Studio Code"
+    ]
 }
