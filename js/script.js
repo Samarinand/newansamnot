@@ -30,3 +30,37 @@ function closeOnClick() {
   hamb.classList.remove("active");
   body.classList.remove("noscroll");
 }
+new Swiper('.image-slider',{
+  navigator:{
+    nextEl: '.swiper-button-next',
+    prevEl:'.swiper-button-prev'
+    },
+    pagination:{
+      el:'.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
+      renderBullet: function (index,className){
+        return '<span span class="' + className + '">' + (index + 1) + '</span>';
+      },
+      
+    },
+    scrollbar:{
+      el:'.swiper-scrollbar',
+      draggable: true
+      
+    },
+    grabCursor: true,
+    slideToClickedSlide: true,
+    hashNavigation:{
+      watchStare: true,
+    },
+    keyboard:{
+      enabled:true,
+      onlyInViewport:true,
+      pageUpDown:true,
+    },
+    mousewheel:{
+      senitivity:1,
+      eventsTarget:".image-slider",
+    },
+});

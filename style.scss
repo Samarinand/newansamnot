@@ -293,24 +293,80 @@ html {
 }
 
 .center {
-    flex-grow: 1;
+   
     height: 180px;
-
+   gap: 20%;
     margin-right: 0px;
 
     padding: 5px 0px 60px 0px;
     width: 100%;
+    min-width: 0px;
     display: flex;
     justify-content: space-around;
 
 }
+/*slider*/
+
+.image-slider {
+  height: 410px;
+  width: 300px;
+  overflow: hidden;
+
+}
+
+.swiper-conteiner{
+  position: absolute;
+}
+
+.image-slider-image {
+  text-align: center;
+  height: 410px;
+  width: 300px;
+  overflow: hidden;
+}
+.image-slider-image img{
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+} 
+.swiper-button-prev::before {
+  color: #0c0c0c;
+  font-weight: bold;
+  font-size: 40px;
+ 
+}
+
+.swiper-button-next::before {
+  color: #111111;
+  font-weight: bold;
+  font-size: 40px;
+  position:absolute;
+}
+.swiper-pagination {
+
+margin-top: 0px;
+}
+.swiper-pagination-bullet{
+ 
+width: 20px;
+height: 20px;
+line-height: 20px;
+font-size: 20px;
+background-color: #7a52b3 ;
+}
+.swiper-scrollbar-drag{
+  cursor: pointer;
+  background-color: #b086eb;
+}
+
+
 
 .ikon {
 
     display: inliblock;
     padding-left: 10px;
     height: 100px;
-    width: 320px;
+    width: 300px;
 }
 
 .links {
@@ -396,6 +452,7 @@ html {
     display: flex;
     justify-content: space-around;
     height: 1247px;
+    flex-grow: 1;
 }
 
 .ikon1 {
