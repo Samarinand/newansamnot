@@ -30,8 +30,9 @@ function closeOnClick() {
   hamb.classList.remove("active");
   body.classList.remove("noscroll");
 }
-new Swiper('.image-slider',{
-  navigator:{
+
+new Swiper('.image-slider1',{
+  navigation:{
     nextEl: '.swiper-button-next',
     prevEl:'.swiper-button-prev'
     },
@@ -52,15 +53,41 @@ new Swiper('.image-slider',{
     grabCursor: true,
     slideToClickedSlide: true,
     hashNavigation:{
-      watchStare: true,
+      watchStare: true
     },
     keyboard:{
       enabled:true,
       onlyInViewport:true,
-      pageUpDown:true,
+      pageUpDown:true
     },
-    mousewheel:{
-      senitivity:1,
-      eventsTarget:".image-slider",
-    },
+ spaceBetween:30,
+ loop:true,
+ autoplay:{
+  delay:1000,
+  disableOnInteraction:false
+ },
+ speed:1000,
+ effect:'cube',
+ cubeEffect:{
+  slideShadows:true,
+  shadow:true,
+  shadowOffset:2,
+  shadowScale:0.94
+ },
+ preloadImages:false,
+ lazy:{
+loadOnTransitionStart:true,
+loadPrevNext:true
+},
+
+
+});
+new Swiper('.parallax-slider',{
+  parallax:true,
+  speed:2000,
+  navigation:{
+    nextEl: '.swiper-button-next',
+    prevEl:'.swiper-button-prev'
+  },
+
 });
