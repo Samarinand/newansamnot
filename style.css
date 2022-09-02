@@ -154,6 +154,7 @@ body {
   width: 100%;
   height: 75px;
   background: #7a52b3;
+  z-index: 50;
 }
 
 .navbar__wrap {
@@ -369,7 +370,7 @@ body {
   width: 300px;
   overflow: hidden;
   border-radius: 10px;
-  background: url("img/FonSlaider.jpg") center;
+  background: url("img/FonSlaider.jpg") center right;
   background-attachment: local;
 }
 
@@ -378,13 +379,15 @@ body {
   padding: 0px 25px 0px 25px;
   text-align: center;
   font-size: 20px;
-  color: #ebebf6;
+  font-weight: 700;
+  color: #F6F6F6;
 }
 
 .image-slider1 {
   height: 505px;
   width: 280px;
   overflow: hidden;
+  gap: 1.25%;
 }
 
 .swiper-conteiner {
@@ -407,12 +410,25 @@ body {
   border-radius: 10px;
 }
 
-.image-slider .swiper-button-prev::after,
-.image-slider .swiper-button-next::after {
+.parallax-slider .swiper-button-prev::after,
+.parallax-slider .swiper-button-next::after {
   color: #7a52b3;
   font-weight: bold;
   font-size: 40px;
   position: absolute;
+}
+
+@media (max-width: 1006px) {
+  .parallax-slider, .image-slider1 {
+    display: none;
+  }
+
+  .centerA {
+    display: block;
+  }
+}
+.centerA {
+  display: none;
 }
 
 .image-slider1 .swiper-button-prev::after,
@@ -462,7 +478,7 @@ body {
   border-radius: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  gap: clamp(0.313rem, -0.028rem + 1.7vw, 1.25rem);
+  gap: 1.25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -526,7 +542,6 @@ body {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ebf1f6", endColorstr="#66ebf1f6",GradientType=0 );
   /* IE6-9 */
-  padding-top: 5px;
   min-width: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -571,7 +586,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: clamp(0.313rem, -0.028rem + 1.7vw, 1.25rem);
+  gap: 1.25%;
 }
 .links1 h4 {
   font-size: 20px;
@@ -694,7 +709,7 @@ body {
 
 .links3 {
   padding-top: 10px;
-  gap: clamp(0.313rem, -0.028rem + 1.7vw, 1.25rem);
+  gap: 1.25%;
   font-size: 18px;
   height: 1060px;
   width: 300px;
@@ -722,7 +737,7 @@ body {
 
 .links4 {
   padding-top: 10px;
-  gap: clamp(0.313rem, -0.028rem + 1.7vw, 1.25rem);
+  gap: 1.25%;
   background: #7a52b3;
   border: 1px solid #000000;
   border-radius: 10px;
