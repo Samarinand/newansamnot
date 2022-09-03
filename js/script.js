@@ -90,4 +90,6 @@ new Swiper('.parallax-slider',{
     prevEl:'.swiper-button-prev'
   },
 
+
+
 });

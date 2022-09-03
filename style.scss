@@ -96,7 +96,7 @@ html {
   
     flex-direction: column;
     font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-    
+    width: 100%;
     line-height: 1.2;
     height: 100%;
   }
@@ -294,15 +294,37 @@ html {
     border-bottom: 1px solid #000000;
     padding-bottom: 5px;
 }
-
+.centerA{
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+.parallax{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 5px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ebf1f6+16,abd3ee+55,d5ebfb+74,ebf1f6+82,ebf1f6+100&1+0,0.4+100 */
+background: -moz-linear-gradient(top,  rgba(235,241,246,1) 0%, rgba(235,241,246,0.9) 16%, rgba(171,211,238,0.67) 55%, rgba(213,235,251,0.56) 74%, rgba(235,241,246,0.51) 82%, rgba(235,241,246,0.4) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(235,241,246,1) 0%,rgba(235,241,246,0.9) 16%,rgba(171,211,238,0.67) 55%,rgba(213,235,251,0.56) 74%,rgba(235,241,246,0.51) 82%,rgba(235,241,246,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(235,241,246,1) 0%,rgba(235,241,246,0.9) 16%,rgba(171,211,238,0.67) 55%,rgba(213,235,251,0.56) 74%,rgba(235,241,246,0.51) 82%,rgba(235,241,246,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#66ebf1f6',GradientType=0 ); /* IE6-9 */
+}
+.buttomA{
+  display: flex;
+  justify-content: center;
+ 
+}
 .center {
+  margin-top: 414px;
    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ebf1f6+16,abd3ee+55,d5ebfb+74,ebf1f6+82,ebf1f6+100&1+0,0.4+100 */
 background: -moz-linear-gradient(top,  rgba(235,241,246,1) 0%, rgba(235,241,246,0.9) 16%, rgba(171,211,238,0.67) 55%, rgba(213,235,251,0.56) 74%, rgba(235,241,246,0.51) 82%, rgba(235,241,246,0.4) 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top,  rgba(235,241,246,1) 0%,rgba(235,241,246,0.9) 16%,rgba(171,211,238,0.67) 55%,rgba(213,235,251,0.56) 74%,rgba(235,241,246,0.51) 82%,rgba(235,241,246,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom,  rgba(235,241,246,1) 0%,rgba(235,241,246,0.9) 16%,rgba(171,211,238,0.67) 55%,rgba(213,235,251,0.56) 74%,rgba(235,241,246,0.51) 82%,rgba(235,241,246,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#66ebf1f6',GradientType=0 ); /* IE6-9 */
 
-    height: 414px;
+    height: 100%;
     gap: 20%;
    padding: 5px 0px 0px 0px;
     width: 100%;
@@ -314,27 +336,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', end
 /*slider*/
 .parallax-slider{
   height: 410px;
-  width: 300px;
+  width: 600px;
   overflow: hidden;
   border-radius: 10px;
   background: url('img/FonSlaider.jpg') center right;
   background-attachment:local;
-  
+  display: flex;
  
 }
 .parallax-slider-text{
-  margin: 50% auto;
-  padding: 0px 25px 0px 25px;
+  margin: 20% auto;
+  padding: 0px 125px 0px 125px;
   text-align: center;
   font-size: 20px;
   font-weight:700;
   color:#F6F6F6;
 }
 .image-slider1 {
-  height: 505px;
-  width: 280px;
+  height: 410px;
+  width: 600px;
   overflow: hidden;
-  gap:  clamp(0.313%, -0.028% + 1.7%, 1.25%);
+ 
 }
 
 .swiper-conteiner{
@@ -344,8 +366,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', end
 
 .image-slider1-image {
   text-align: center;
-  height: 430px;
-  width: 280px;
+  height: 410px;
+ 
   overflow: hidden;
   border-radius: 10px;
 }
@@ -361,25 +383,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', end
   color:  #7a52b3;
   font-weight: bold;
   font-size: 40px;
-  position:absolute;
+  
 }
-@media(max-width: 1006px){
-  .parallax-slider, .image-slider1{
-    display:none;
-  }
-  .centerA{
-    display:block;
-  }
-}
-.centerA{
-  display: none;
-}
+
 .image-slider1 .swiper-button-prev::after,
 .image-slider1  .swiper-button-next::after {
   color:  #7a52b3;
   font-weight: bold;
   font-size: 40px;
-  position:absolute;
+  
 }
 
 
@@ -406,7 +418,7 @@ background-color: #7a52b3 ;
 
 .ikon {
 
-    
+   
    
     height: 410px;
     width: 300px;
@@ -492,6 +504,7 @@ background-color: #7a52b3 ;
 
 /*buttom*/
 .buttom {
+  margin-top: 414px;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ebf1f6+16,abd3ee+55,d5ebfb+74,ebf1f6+82,ebf1f6+100&1+0,0.4+100 */
 background: -moz-linear-gradient(top,  rgba(235,241,246,1) 0%, rgba(235,241,246,0.9) 16%, rgba(171,211,238,0.67) 55%, rgba(213,235,251,0.56) 74%, rgba(235,241,246,0.51) 82%, rgba(235,241,246,0.4) 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top,  rgba(235,241,246,1) 0%,rgba(235,241,246,0.9) 16%,rgba(171,211,238,0.67) 55%,rgba(213,235,251,0.56) 74%,rgba(235,241,246,0.51) 82%,rgba(235,241,246,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
