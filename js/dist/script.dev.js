@@ -1,5 +1,7 @@
 "use strict";
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 var hamb = document.querySelector("#hamb");
 var popup = document.querySelector("#popup");
 var menu = document.querySelector("#menu").cloneNode(1);
@@ -77,12 +79,16 @@ new Swiper('.image-slider1', {
     loadPrevNext: true
   }
 });
-new Swiper('.parallax-slider', {
+new Swiper('.parallax-slider', _defineProperty({
   parallax: true,
-  speed: 2000,
+  speed: 1000,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
+  },
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false
   }
-});
+}, "speed", 6000));
 //# sourceMappingURL=script.dev.js.map

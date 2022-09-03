@@ -84,12 +84,16 @@ loadPrevNext:true
 });
 new Swiper('.parallax-slider',{
   parallax:true,
-  speed:2000,
+  speed:1000,
   navigation:{
     nextEl: '.swiper-button-next',
     prevEl:'.swiper-button-prev'
   },
-
+  autoplay:{
+    delay:1000,
+    disableOnInteraction:false
+   },
+   speed:6000,
 
 
 });
