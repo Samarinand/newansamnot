@@ -1,5 +1,7 @@
 "use strict";
 
+var _ref;
+
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 var hamb = document.querySelector("#hamb");
@@ -79,7 +81,7 @@ new Swiper('.image-slider1', {
     loadPrevNext: true
   }
 });
-new Swiper('.parallax-slider', _defineProperty({
+new Swiper('.parallax-slider', (_ref = {
   parallax: true,
   speed: 1000,
   navigation: {
@@ -90,5 +92,8 @@ new Swiper('.parallax-slider', _defineProperty({
     delay: 1000,
     disableOnInteraction: false
   }
-}, "speed", 6000));
+}, _defineProperty(_ref, "speed", 6000), _defineProperty(_ref, "lazy", {
+  loadOnTransitionStart: true,
+  loadPrevNext: true
+}), _ref));
 //# sourceMappingURL=script.dev.js.map

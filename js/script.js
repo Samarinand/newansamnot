@@ -94,6 +94,9 @@ new Swiper('.parallax-slider',{
     disableOnInteraction:false
    },
    speed:6000,
-
+   lazy:{
+    loadOnTransitionStart:true,
+    loadPrevNext:true
+    },
 
 });
