@@ -79,9 +79,7 @@ h6 {
 
 /*--------------------*/
 html {
-    box-sizing: border-box;
     height: 100%;
-    width: 100%;
   }
   body {
     display: flex;
@@ -94,7 +92,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ecf6', end
 
     flex-direction: column;
     font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-    width: 100%;
+    
     line-height: 1.2;
    
   }
@@ -318,7 +316,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ecf6', end
 }
 /*slider*/
 .parallax-slider{
-  height: 410px;
+  height: 25.625rem;
   width: 85%;
   min-width: 376px;
   overflow: hidden;
@@ -330,16 +328,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ecf6', end
 }
 .parallax-slider-text{
  padding-top:4.625rem;
- padding-left: 25.25rem;
- padding-right: 25.25rem;
+ padding-left: 95%;
+ padding-right: 95%;
  padding-bottom: 0%;
- margin: 0 auto;
-  text-align: center;
+
+  
   font-size: 1.3rem;
   font-weight:bold;
   color:#7a52b3;
   text-transform: uppercase;
 }
+
 @media (max-width: 767px){
   .parallax-slider-text{
     padding-top:10%;
@@ -365,7 +364,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ecf6', end
   }
 }
 .image-slider1 {
-  height: 55%;
+  height: 25.625rem;
   width: 55%;
   min-width: 500px;
  
@@ -522,7 +521,7 @@ background-color: #7a52b3 ;
     display: flex;
     justify-content: space-around;
     height: 100%;
-    flex-grow: 1;
+    min-height: calc(100vh-60px);
     min-width: 0px;
 }
 
@@ -759,11 +758,11 @@ background-color: #7a52b3 ;
 
 .footer {
   background-color: #212429;
-    height: 60px;
+    height:60px;
     display: flex;
     justify-content: center;
     align-items: center;
-
+     flex: 0 0 auto;
     p {
         font-size: 18px;
         color: #F6F6F6;
