@@ -79,6 +79,8 @@ h6 {
 /*--------------------*/
 html {
   height: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 body {
@@ -313,8 +315,8 @@ body {
 
 .parallax-slider-text {
   padding-top: 4.625rem;
-  padding-left: 95%;
-  padding-right: 95%;
+  padding-left: 40%;
+  padding-right: 45%;
   padding-bottom: 0%;
   font-size: 1.3rem;
   font-weight: bold;
@@ -326,7 +328,7 @@ body {
   .parallax-slider-text {
     padding-top: 10%;
     padding-left: 40%;
-    padding-right: 40%;
+    padding-right: 45%;
     padding-bottom: 0%;
   }
 }
@@ -334,7 +336,7 @@ body {
 @media (max-width: 509px) {
   .parallax-slider-text {
     padding-top: 10%;
-    padding-left: 85%;
+    padding-left: 75%;
     padding-right: 85%;
     padding-bottom: 0%;
   }
@@ -344,7 +346,7 @@ body {
   .parallax-slider-text {
     padding-top: 13%;
     padding-left: 35%;
-    padding-right: 35%;
+    padding-right: 45%;
     padding-bottom: 0%;
   }
 }
@@ -481,7 +483,6 @@ body {
   display: flex;
   justify-content: space-around;
   height: 100%;
-  min-height: calc(100vh-60px);
   min-width: 0px;
 }
 

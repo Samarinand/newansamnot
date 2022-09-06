@@ -79,10 +79,10 @@ h6 {
 
 /*--------------------*/
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   height: 100%;
   width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -104,7 +104,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-  width: 100%;
   line-height: 1.2;
 }
 
@@ -393,11 +392,9 @@ body {
 
 .parallax-slider-text {
   padding-top: 4.625rem;
-  padding-left: 25.25rem;
-  padding-right: 25.25rem;
+  padding-left: 40%;
+  padding-right: 45%;
   padding-bottom: 0%;
-  margin: 0 auto;
-  text-align: center;
   font-size: 1.3rem;
   font-weight: bold;
   color: #7a52b3;
@@ -408,14 +405,14 @@ body {
   .parallax-slider-text {
     padding-top: 10%;
     padding-left: 40%;
-    padding-right: 40%;
+    padding-right: 45%;
     padding-bottom: 0%;
   }
 }
 @media (max-width: 509px) {
   .parallax-slider-text {
     padding-top: 10%;
-    padding-left: 85%;
+    padding-left: 75%;
     padding-right: 85%;
     padding-bottom: 0%;
   }
@@ -424,7 +421,7 @@ body {
   .parallax-slider-text {
     padding-top: 13%;
     padding-left: 35%;
-    padding-right: 35%;
+    padding-right: 45%;
     padding-bottom: 0%;
   }
 }
@@ -570,7 +567,6 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 100%;
-  min-height: 100vh-;
   min-width: 0px;
 }
 
