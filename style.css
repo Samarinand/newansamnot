@@ -103,7 +103,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-  max-height: 100%;
+  min-height: 100vh;
   line-height: 1.2;
 }
 
@@ -804,12 +804,12 @@ body {
 .center2 {
   padding-top: 50px;
   width: 100%;
-  height: 100% px;
+  min-height: 100%;
   margin: 0px auto;
   text-align: center;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .textinformmain {
@@ -840,7 +840,7 @@ body {
   height: 40px;
   padding: 0px 25px;
   font-size: 18px;
-  width: 300px;
+  width: 50%;
   cursor: pointer;
 }
 
@@ -851,10 +851,10 @@ body {
 
 .textinput2 {
   border: 1px solid #000000;
-  height: 80px;
+  height: 160px;
   padding: 0px 25px;
   font-size: 18px;
-  width: 300px;
+  width: 50%;
   cursor: pointer;
 }
 
