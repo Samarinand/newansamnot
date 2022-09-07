@@ -79,7 +79,7 @@ h6 {
 
 /*--------------------*/
 html {
-    height:100%;
+    
     width: 100%;
     box-sizing: border-box;
   }
@@ -94,7 +94,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ecf6', end
 
     flex-direction: column;
     font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-    
+   max-height: 100%;
     line-height: 1.2;
    
   }
@@ -523,7 +523,7 @@ background-color: #7a52b3 ;
     display: flex;
     justify-content: space-around;
     height: 100%;
-   
+   flex: 1 1 auto;
     min-width: 0px;
 }
 
@@ -640,7 +640,8 @@ background-color: #7a52b3 ;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    flex-grow: 1;
+    flex: 1 1 auto;
+    
 }
 
 .ikon3 {
@@ -780,7 +781,7 @@ background-color: #7a52b3 ;
     height: 100%px;
     margin: 0px auto;
     text-align: center;
-    flex-grow: 1;
+    flex:1 1 auto;
 }
 
 

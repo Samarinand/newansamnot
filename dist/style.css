@@ -78,7 +78,6 @@ h6 {
 
 /*--------------------*/
 html {
-  height: 100%;
   width: 100%;
   box-sizing: border-box;
 }
@@ -98,6 +97,7 @@ body {
   /* IE6-9 */
   flex-direction: column;
   font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+  max-height: 100%;
   line-height: 1.2;
 }
 
@@ -482,6 +482,7 @@ body {
   display: flex;
   justify-content: space-around;
   height: 100%;
+  flex: 1 1 auto;
   min-width: 0px;
 }
 
@@ -574,7 +575,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  flex-grow: 1;
+  flex: 1 1 auto;
 }
 
 .ikon3 {
@@ -699,7 +700,7 @@ body {
   height: 100%px;
   margin: 0px auto;
   text-align: center;
-  flex-grow: 1;
+  flex: 1 1 auto;
 }
 
 .textinformmain {
