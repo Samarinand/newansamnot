@@ -762,6 +762,10 @@ body {
 .links2 p:visited {
   color: rgb(64, 50, 50);
 }
+.links2 audio {
+  color: #7a52b3;
+  font-size: 15px;
+}
 
 .links3 {
   padding-top: 10px;

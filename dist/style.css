@@ -655,6 +655,11 @@ body {
   color: #403232;
 }
 
+.links2 audio {
+  color: #7a52b3;
+  font-size: 15px;
+}
+
 .links3 {
   padding-top: 10px;
   gap: clamp(0.313%, 1.672%, 1.25%);
