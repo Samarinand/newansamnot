@@ -307,7 +307,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ecf6', end
   margin-top: 410px;
   
 
-    height: 410px;
+    height: 275px;
    
    
     width: 100%;
@@ -340,7 +340,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ecf6', end
   color:#7a52b3;
   text-transform: uppercase;
 }
-
+@media (max-width: 571px){
+.center{
+  height:320px ;
+}
+  
+}
 @media (max-width: 767px){
   .parallax-slider-text{
     padding-top:10%;
@@ -355,6 +360,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ecf6', end
  padding-left: 0%;
 
  padding-bottom: 0%;
+  }
+  .center{
+    flex-direction: column;
+    align-items: center;
+    height: 580px;
+  }
+  .buttom{
+    flex-direction: column;
+    align-items: center;
+    
   }
 }
 @media (max-width: 1186px){
@@ -435,19 +450,19 @@ background-color: #7a52b3 ;
 
    
    
-    height: 410px;
+    height: 300px;
     width: 300px;
 }
 .ikon img {
   display: flex;
-  margin: 50% auto;
+  margin: 30% auto;
 
   
 }
 .links {
     padding-top: 10px;
     font-size: 18px;
-    height: 410px;
+    height: 100%;
     width: 300px;
     background-color: #212429;
     border: 1px solid #000000;
@@ -529,12 +544,12 @@ background-color: #7a52b3 ;
 
 .ikon1 {
    
-  height: 505px;
+  height: 100%;
   width: 300px;
 }
 .ikon1 img {
   display: flex;
-  margin: 50% auto;
+  margin: 30% auto;
 
   
 }
@@ -546,13 +561,14 @@ background-color: #7a52b3 ;
     padding-top: 10px;
     display: block;
     font-size: 18px;
-    height: 515px;
+    height: 100%;
     width: 300px;
     background: #7a52b3;
     border: 1px solid #000000;
     border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: column;
    
@@ -629,7 +645,16 @@ background-color: #7a52b3 ;
 
 
 /*1html*/
-
+@media (max-width: 967px)
+{
+  .center1{
+    flex-direction: column;
+    align-items: center;
+  }
+  .ikon3 img{
+    margin: 20% 50%;
+  }
+}
 .center1 {
  
 
@@ -646,11 +671,13 @@ background-color: #7a52b3 ;
 
 .ikon3 {
 
-    height: 100px;
+    height: 300px;
     width: 320px;
     padding-left: 10px;
 }
-
+.ikon3 img{
+  margin: 30% 30%;
+}
 
 .links2 {
 
@@ -659,7 +686,8 @@ background-color: #7a52b3 ;
     border-radius: 10px;
     padding-left: 5px;
     padding-right: 4px;
-    
+    padding-bottom: 10px;
+    width: 320px;
 
     p:before {
         content: "";
@@ -700,8 +728,8 @@ background-color: #7a52b3 ;
     padding-top: 10px;
     gap:  clamp(0.313%, -0.028% + 1.7%, 1.25%);
     font-size: 18px;
-    height: 1060px;
-    width: 300px;
+    height: 700px;
+    width: 320px;
     background-color: #212429;
     border: 1px solid #000000;
     border-radius: 10px;
@@ -729,7 +757,7 @@ background-color: #7a52b3 ;
     background: #7a52b3;
     border: 1px solid #000000;
     border-radius: 10px;
-    height: 670px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     

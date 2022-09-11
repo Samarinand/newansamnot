@@ -366,7 +366,7 @@ body {
 
 .center {
   margin-top: 410px;
-  height: 410px;
+  height: 275px;
   width: 100%;
   min-width: 0px;
   display: -webkit-box;
@@ -401,6 +401,11 @@ body {
   text-transform: uppercase;
 }
 
+@media (max-width: 571px) {
+  .center {
+    height: 320px;
+  }
+}
 @media (max-width: 767px) {
   .parallax-slider-text {
     padding-top: 10%;
@@ -414,6 +419,27 @@ body {
     padding-top: 10%;
     padding-left: 0%;
     padding-bottom: 0%;
+  }
+
+  .center {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 580px;
+  }
+
+  .buttom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media (max-width: 1186px) {
@@ -482,7 +508,7 @@ body {
 }
 
 .ikon {
-  height: 410px;
+  height: 300px;
   width: 300px;
 }
 
@@ -490,13 +516,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 50% auto;
+  margin: 30% auto;
 }
 
 .links {
   padding-top: 10px;
   font-size: 18px;
-  height: 410px;
+  height: 100%;
   width: 300px;
   background-color: #212429;
   border: 1px solid #000000;
@@ -573,7 +599,7 @@ body {
 }
 
 .ikon1 {
-  height: 505px;
+  height: 100%;
   width: 300px;
 }
 
@@ -581,20 +607,21 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 50% auto;
+  margin: 30% auto;
 }
 
 .links1 {
   padding-top: 10px;
   display: block;
   font-size: 18px;
-  height: 515px;
+  height: 100%;
   width: 300px;
   background: #7a52b3;
   border: 1px solid #000000;
   border-radius: 10px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -659,6 +686,21 @@ body {
 }
 
 /*1html*/
+@media (max-width: 967px) {
+  .center1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .ikon3 img {
+    margin: 20% 50%;
+  }
+}
 .center1 {
   margin-right: 0px;
   margin-left: 0px;
@@ -675,9 +717,13 @@ body {
 }
 
 .ikon3 {
-  height: 100px;
+  height: 300px;
   width: 320px;
   padding-left: 10px;
+}
+
+.ikon3 img {
+  margin: 30% 30%;
 }
 
 .links2 {
@@ -686,6 +732,8 @@ body {
   border-radius: 10px;
   padding-left: 5px;
   padding-right: 4px;
+  padding-bottom: 10px;
+  width: 320px;
   line-height: 30px;
 }
 .links2 p:before {
@@ -719,8 +767,8 @@ body {
   padding-top: 10px;
   gap: 1.25%;
   font-size: 18px;
-  height: 1060px;
-  width: 300px;
+  height: 700px;
+  width: 320px;
   background-color: #212429;
   border: 1px solid #000000;
   border-radius: 10px;
@@ -749,7 +797,7 @@ body {
   background: #7a52b3;
   border: 1px solid #000000;
   border-radius: 10px;
-  height: 670px;
+  height: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
