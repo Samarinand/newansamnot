@@ -326,7 +326,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ecf6', end
   background: url('img/FonSky.jpg') right;
   background-attachment:local;
   display: flex;
- 
+  box-shadow: 0px 5px 5px black;
 }
 .parallax-slider-text{
  padding-top:74px;
@@ -384,7 +384,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ecf6', end
   height: 410px;
   width: 55%;
   min-width: 500px;
- 
+  
 }
 
 .swiper-conteiner{
@@ -472,7 +472,7 @@ background-color: #7a52b3 ;
     gap:  clamp(0.313%, -0.028% + 1.7%, 1.25%);
     display: flex;
     flex-direction: column;
-   
+    box-shadow: 0px 5px 5px black;
     
 
     h3 {
@@ -571,7 +571,7 @@ background-color: #7a52b3 ;
     padding-bottom: 10px;
     display: flex;
     flex-direction: column;
-   
+    box-shadow: 0px 5px 5px black;
     gap:  clamp(0.313%, -0.028% + 1.7%, 1.25%);
    
 
@@ -680,7 +680,7 @@ background-color: #7a52b3 ;
 }
 
 .links2 {
-
+  box-shadow: 0px 5px 5px black;
     height: 100%;
     background-color: #e2d7d7;
     border-radius: 10px;
@@ -721,10 +721,7 @@ background-color: #7a52b3 ;
     p:visited {
         color: rgb(64, 50, 50);
     }
-    audio{
-      color: #7a52b3;
-    font-size: 15px;
-    }
+    
 }
 
 .links3 {
@@ -740,7 +737,7 @@ background-color: #7a52b3 ;
     padding-right: 10px;
     display: flex;
     flex-direction: column;
-    
+    box-shadow: 0px 5px 5px black;
    
 
     h3,
@@ -788,7 +785,12 @@ background-color: #7a52b3 ;
    transition: 0.3s;
 }
 
-
+.audio1{
+ 
+  height: 25px;
+  font-size: 10px;
+  margin-bottom: -15px;
+}
 
 .footer {
   background-color: #212429;

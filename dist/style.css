@@ -311,6 +311,7 @@ body {
   background: url("img/FonSky.jpg") right;
   background-attachment: local;
   display: flex;
+  box-shadow: 0px 5px 5px black;
 }
 
 .parallax-slider-text {
@@ -444,6 +445,7 @@ body {
   gap: clamp(0.313%, 1.672%, 1.25%);
   display: flex;
   flex-direction: column;
+  box-shadow: 0px 5px 5px black;
 }
 
 .links h3 {
@@ -525,6 +527,7 @@ body {
   padding-bottom: 10px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0px 5px 5px black;
   gap: clamp(0.313%, 1.672%, 1.25%);
 }
 
@@ -615,6 +618,7 @@ body {
 }
 
 .links2 {
+  box-shadow: 0px 5px 5px black;
   height: 100%;
   background-color: #e2d7d7;
   border-radius: 10px;
@@ -655,11 +659,6 @@ body {
   color: #403232;
 }
 
-.links2 audio {
-  color: #7a52b3;
-  font-size: 15px;
-}
-
 .links3 {
   padding-top: 10px;
   gap: clamp(0.313%, 1.672%, 1.25%);
@@ -673,6 +672,7 @@ body {
   padding-right: 10px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0px 5px 5px black;
 }
 
 .links3 h3,
@@ -715,6 +715,12 @@ body {
   padding: 10px 10px;
   cursor: pointer;
   transition: 0.3s;
+}
+
+.audio1 {
+  height: 25px;
+  font-size: 10px;
+  margin-bottom: -15px;
 }
 
 .footer {
