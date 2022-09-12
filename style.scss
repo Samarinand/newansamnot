@@ -789,7 +789,25 @@ background-color: #7a52b3 ;
  
   height: 25px;
   font-size: 10px;
-  margin-bottom: -15px;
+  
+}
+i{
+  background-color: #e2d7d7;
+  width: 70px;
+  height: 30px;
+ color:rgb(42, 42, 218);
+  }
+  i:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.3s;
+}
+i:focus {
+  color: brown;
+}
+
+i:visited {
+  color: rgb(64, 50, 50);
 }
 
 .footer {
