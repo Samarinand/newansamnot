@@ -784,7 +784,20 @@ background-color: #7a52b3 ;
     cursor: pointer;
    transition: 0.3s;
 }
-
+.audio2{
+  display: flex;
+  justify-content:space-evenly;
+  padding-top: 5px;
+  padding-left: 12px;
+  width: 190px;
+  height: 35px;
+  background-color: #b086eb;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color:  #e2d7d7;
+  
+}
 .audio1{
  
   height: 25px;
@@ -792,15 +805,15 @@ background-color: #7a52b3 ;
   
 }
 i{
-  background-color: #e2d7d7;
+  background-color: #b086eb;
   width: 70px;
   height: 30px;
- color:rgb(42, 42, 218);
+ color: #e2d7d7;
   }
   i:hover {
-    text-decoration: underline;
+   
     cursor: pointer;
-    transition: 0.3s;
+   
 }
 i:focus {
   color: brown;
