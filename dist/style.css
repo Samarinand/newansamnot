@@ -719,16 +719,20 @@ body {
 
 .audio2 {
   display: flex;
-  justify-content: space-evenly;
-  padding-top: 5px;
-  padding-left: 12px;
-  width: 190px;
-  height: 35px;
-  background-color: #b086eb;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  background-color: #6b0af3;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   color: #e2d7d7;
+}
+
+.audio2:hover {
+  background-color: #5d18bd;
+  cursor: pointer;
 }
 
 .audio1 {
@@ -737,13 +741,14 @@ body {
 }
 
 i {
-  background-color: #b086eb;
+  background-color: #6b0af3;
   width: 70px;
   height: 30px;
   color: #e2d7d7;
 }
 
 i:hover {
+  background-color: #5d18bd;
   cursor: pointer;
 }
 
