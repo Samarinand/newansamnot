@@ -132,7 +132,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ecf6', end
 .header h1 {
   text-align: center;
   color: #fff;
-  font-size: 25px;
+  font-size: calc(18px + 12 * (100vw/1280));
   font-weight: bold;
 }
 
@@ -261,7 +261,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ecf6', end
     padding: 20px 0;
     font-size: 20px;
     font-weight: bold;
-    color: #3f3f3f;
+    color: #3f3f3f; 
   }
   .popup .menu > li > a:hover {
     background-color: rgba(122, 82, 179, 0.1);
@@ -278,9 +278,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ecf6', end
   body.noscroll {
     overflow: hidden;
   }
+ 
+
 }
-
-
 
 /*center*/
 .discription {

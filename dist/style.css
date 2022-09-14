@@ -125,7 +125,7 @@ body {
 .header h1 {
   text-align: center;
   color: #fff;
-  font-size: 25px;
+  font-size: calc(18px + 12 * (100vw/1280));
   font-weight: bold;
 }
 
