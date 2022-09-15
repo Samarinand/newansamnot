@@ -281,13 +281,13 @@ body {
   padding-bottom: 5px;
 }
 
-.centerA {
+.centera {
   padding-top: 5px;
   display: flex;
   justify-content: center;
 }
 
-.buttomA {
+.buttoma {
   display: flex;
   justify-content: center;
 }
