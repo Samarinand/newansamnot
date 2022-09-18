@@ -721,15 +721,14 @@ padding-bottom: 1px;
       color: rgb(64, 50, 50);
   }
   
-    p:hover {
-        text-decoration: underline;
+    a:hover {
+      border-radius: 15px;
+      background-color: #efdbf6;
         cursor: pointer;
         transition: 0.3s;
     }
 
-    p:focus {
-        color: brown;
-    }
+   
     p:active {
       color: rgb(4, 4, 28);
   }
@@ -810,10 +809,12 @@ margin-top: -7px;
   font-weight: bold;
   color:  #e2d7d7;
   margin-bottom: 10px;
+ 
 }
 .audio2:hover{
-  background-color: #5d18bd;
+  background-color:  #5d18bd;
   cursor: pointer;
+  transition: 0.3s;
 }
 .audio1{
   

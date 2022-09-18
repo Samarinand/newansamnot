@@ -657,14 +657,11 @@ body {
   color: #403232;
 }
 
-.links2 p:hover {
-  text-decoration: underline;
+.links2 a:hover {
+  border-radius: 15px;
+  background-color: #efdbf6;
   cursor: pointer;
   transition: 0.3s;
-}
-
-.links2 p:focus {
-  color: brown;
 }
 
 .links2 p:active {
@@ -747,6 +744,7 @@ body {
 .audio2:hover {
   background-color: #5d18bd;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .audio1 {
