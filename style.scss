@@ -678,7 +678,16 @@ background-color: #7a52b3 ;
 .ikon3 img{
   margin: 30% 30%;
 }
+.audio3{
+   
+ 
+  background-color: #e8eef6;
+  border-radius: 10px;
+  margin-top: 2px;
+padding-left: 5px;
+padding-bottom: 1px;
 
+}
 .links2 {
   box-shadow: 0px 5px 5px black;
     height: 100%;
@@ -688,7 +697,8 @@ background-color: #7a52b3 ;
     padding-right: 4px;
     padding-bottom: 10px;
     width: 320px;
-
+   
+   
     p:before {
         content: "";
         width: 10px;
@@ -707,7 +717,10 @@ background-color: #7a52b3 ;
     }
 
     line-height: 30px;
-
+    p:visited {
+      color: rgb(64, 50, 50);
+  }
+  
     p:hover {
         text-decoration: underline;
         cursor: pointer;
@@ -717,10 +730,9 @@ background-color: #7a52b3 ;
     p:focus {
         color: brown;
     }
-
-    p:visited {
-        color: rgb(64, 50, 50);
-    }
+    p:active {
+      color: rgb(4, 4, 28);
+  }
     
 }
 
@@ -784,34 +796,36 @@ background-color: #7a52b3 ;
     cursor: pointer;
    transition: 0.3s;
 }
+
 .audio2{
   display: flex;
-  
-  justify-content: center;
+margin-top: -7px;
+  justify-content:center;
   align-items: center;
-  width: 200px;
-  height: 40px;
+  width: 220px;
+  height: 23px;
   background-color: #6b0af3;
-  border-radius: 5px;
+  border-radius: 15px;
   font-size: 15px;
   font-weight: bold;
   color:  #e2d7d7;
-  
+  margin-bottom: 10px;
 }
 .audio2:hover{
   background-color: #5d18bd;
   cursor: pointer;
 }
 .audio1{
- 
-  height: 25px;
+  
+  height: 20px;
   font-size: 10px;
   
 }
 i{
+padding-top: 3px;
   background-color:  #6b0af3;
-  width: 70px;
-  height: 30px;
+  width: 30px;
+  height: 20px;
  color: #e2d7d7;
   }
   i:hover {
@@ -819,13 +833,7 @@ i{
     cursor: pointer;
    
 }
-i:focus {
-  color: brown;
-}
 
-i:visited {
-  color: rgb(64, 50, 50);
-}
 
 .footer {
   background-color: #212429;
