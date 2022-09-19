@@ -681,7 +681,7 @@ background-color: #7a52b3 ;
 .audio3{
    
  
-  background-color: #e8eef6;
+  background-color: #bcd3f0;
   border-radius: 10px;
   margin-top: 2px;
 padding-left: 5px;
@@ -699,6 +699,9 @@ padding-bottom: 1px;
     width: 320px;
    
    
+   p:nth-child(even){
+    background-color: #bac6d7;
+       }
     p:before {
         content: "";
         width: 10px;
@@ -723,7 +726,7 @@ padding-bottom: 1px;
   
     a:hover {
       border-radius: 15px;
-      background-color: #efdbf6;
+      background-color: #e2d7d7;
         cursor: pointer;
         transition: 0.3s;
     }
