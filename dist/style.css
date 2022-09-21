@@ -643,10 +643,9 @@ body {
 
 .links2 p:before {
   content: "";
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #410ce0;
+  width: 30px;
+  height: 30px;
+  background-image: url(/img/pdf.png);
   display: inline-block;
   margin: 0px 2px 0px;
 }
