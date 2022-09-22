@@ -347,6 +347,9 @@ body {
     padding-left: 0%;
     padding-bottom: 0%;
   }
+}
+
+@media (max-width: 541px) {
   .center {
     flex-direction: column;
     align-items: center;
@@ -437,7 +440,7 @@ body {
   padding-top: 10px;
   font-size: 18px;
   height: 100%;
-  width: 300px;
+  width: 320px;
   background-color: #212429;
   border: 1px solid #000000;
   border-radius: 10px;
@@ -518,7 +521,7 @@ body {
   padding-top: 10px;
   font-size: 18px;
   height: 350px;
-  width: 300px;
+  width: 320px;
   background: #7a52b3;
   border: 1px solid #000000;
   border-radius: 10px;
