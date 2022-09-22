@@ -185,6 +185,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ecf6', end
 .menu > li > a {
   text-decoration: none;
   transition: 0.3s;
+  font-size: 20px;
 }
 
 .navbar__wrap .menu {
@@ -492,8 +493,8 @@ background-color: #7a52b3 ;
         width: 100%;
         font-size: 18px;
         color: #1b1b1b;
-        background-color: rgb(120, 196, 120);
-        border: 3px solid  #0e0e0e;
+        background-color: #bac6d7;
+        border: 1px solid  #0e0e0e;
         border-radius: 10px;
         padding: 10px 10px;
         cursor: pointer;
@@ -505,28 +506,28 @@ background-color: #7a52b3 ;
 }
 
 .blok4:hover {
-    background-color: rgb(33, 186, 135);
+  background-color: #bcd3f0;
     color: rgb(0, 0, 0);
 
 
 }
 
-.blok5:hover {
-    background-color: rgb(33, 186, 135);
+.blok5:hover { 
+  background-color: #bcd3f0;
     color: rgb(0, 0, 0);
 
 
 }
 
 .blok6:hover {
-    background-color: rgb(33, 186, 135);
+  background-color: #bcd3f0;
     color: rgb(0, 0, 0);
 
 
 }
 
 .blok7:hover {
-    background-color: rgb(33, 186, 135); 
+  background-color: #bcd3f0;
     color: rgb(0, 0, 0);
 
 
@@ -559,9 +560,9 @@ background-color: #7a52b3 ;
 .links1 {
 
     padding-top: 10px;
-    display: block;
+   
     font-size: 18px;
-    height: 100%;
+    height: 350px;
     width: 300px;
     background: #7a52b3;
     border: 1px solid #000000;
@@ -593,12 +594,13 @@ background-color: #7a52b3 ;
         width: 100%;
         font-size: 18px;
         color: #1b1b1b;
-        background-color: rgb(120, 196, 120);
-        border: 3px solid  #060606;
+        background-color: #bac6d7;
+        border: 1px solid  #060606;
         border-radius: 10px;
         padding: 10px 10px;
         cursor: pointer;
         transition: 0.3s;
+        
 
     }
 
@@ -608,35 +610,35 @@ background-color: #7a52b3 ;
 }
 
 .blok8:hover {
-  background-color: rgb(33, 186, 135);
+  background-color: #bcd3f0;
     color: rgb(0, 0, 0);
 
 
 }
 
 .blok9:hover {
-  background-color: rgb(33, 186, 135);
+  background-color: #bcd3f0;
     color: rgb(0, 0, 0);
 
 
 }
 
 .blok10:hover {
-  background-color: rgb(33, 186, 135);
+  background-color: #bcd3f0;
     color: rgb(0, 0, 0);
 
 
 }
 
 .blok11:hover {
-  background-color: rgb(33, 186, 135);
+  background-color: #bcd3f0;
     color: rgb(0, 0, 0);
 
 
 }
 
 .blok12:hover {
-  background-color: rgb(33, 186, 135);
+  background-color: #bcd3f0;
     color: rgb(0, 0, 0);
 
 
@@ -716,7 +718,7 @@ padding-bottom: 1px;
     h2 {
         text-align: center;
         font-size: 18px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
     }
 
     line-height: 30px;
@@ -791,8 +793,8 @@ padding-bottom: 1px;
    width: 100%;
    font-size: 18px;
    color: #1b1b1b;
-   background-color: rgb(120, 196, 120);
-    border: 5px solid #000000;
+   background-color: #bac6d7;
+    border: 1px solid #000000;
     border-radius: 10px;
     padding: 10px 10px;
     cursor: pointer;
