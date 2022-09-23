@@ -367,7 +367,7 @@ body {
 
 .center {
   margin-top: 410px;
-  height: 315px;
+  height: 260px;
   width: 100%;
   min-width: 0px;
   display: -webkit-box;
@@ -380,7 +380,7 @@ body {
 /*slider*/
 .parallax-slider {
   height: 410px;
-  width: 85%;
+  width: 100%;
   min-width: 376px;
   overflow: hidden;
   border-radius: 10px;
@@ -404,11 +404,6 @@ body {
   text-transform: uppercase;
 }
 
-@media (max-width: 571px) {
-  .center {
-    height: 320px;
-  }
-}
 @media (max-width: 767px) {
   .parallax-slider-text {
     padding-top: 10%;
@@ -424,7 +419,7 @@ body {
     padding-bottom: 0%;
   }
 }
-@media (max-width: 541px) {
+@media (max-width: 801px) {
   .center {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -433,7 +428,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 610px;
+    height: 570px;
   }
 
   .buttom {
@@ -444,6 +439,31 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: -80px;
+  }
+
+  .text {
+    padding-top: 40px;
+  }
+
+  .ikon {
+    margin-top: -80px;
+  }
+
+  .links {
+    margin-top: -80px;
+  }
+
+  .text1 {
+    padding-top: -80px;
+  }
+
+  .ikon1 {
+    margin-top: -180px;
+  }
+
+  .links1 {
+    margin-top: -80px;
   }
 }
 @media (max-width: 1186px) {
@@ -509,6 +529,42 @@ body {
 .swiper-scrollbar-drag {
   cursor: pointer;
   background-color: #b086eb;
+}
+
+.text {
+  height: 300px;
+  width: 300px;
+  text-align: center;
+  font-size: 18px;
+  font-style: oblique;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text1 {
+  height: 300px;
+  width: 300px;
+  text-align: center;
+  font-size: 18px;
+  font-style: oblique;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .ikon {
@@ -619,7 +675,7 @@ body {
 .links1 {
   padding-top: 10px;
   font-size: 18px;
-  height: 350px;
+  height: 310px;
   width: 320px;
   background: #7a52b3;
   border: 1px solid #000000;

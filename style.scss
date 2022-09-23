@@ -308,19 +308,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ecf6', end
   margin-top: 410px;
   
 
-    height: 315px;
+    height: 260px;
    
    
     width: 100%;
     min-width: 0px;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
 
 }
 /*slider*/
 .parallax-slider{
   height: 410px;
-  width: 85%;
+  width: 100%;
   min-width: 376px;
   overflow: hidden;
   border-radius: 10px;
@@ -341,12 +341,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ecf6', end
   color:#7a52b3;
   text-transform: uppercase;
 }
-@media (max-width: 571px){
-.center{
-  height:320px ;
-}
+
   
-}
+
 @media (max-width: 767px){
   .parallax-slider-text{
     padding-top:10%;
@@ -364,17 +361,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ecf6', end
   }
  
 }
-@media (max-width: 541px){
+@media (max-width: 801px){
   .center{
     flex-direction: column;
     align-items: center;
-    height: 610px;
+    height: 570px;
   }
   .buttom{
     flex-direction: column;
     align-items: center;
-    
+    margin-top: -80px;
   }
+  .text{
+    padding-top: 40px;
+  }
+.ikon{
+margin-top: -80px;
+}
+.links{
+  margin-top: -80px;
+}
+.text1{
+  padding-top: -80px;
+}
+.ikon1{
+margin-top: -180px;
+}
+.links1{
+margin-top: -80px;
+}
 }
 @media (max-width: 1186px){
   .parallax-slider-text{
@@ -448,8 +463,32 @@ background-color: #7a52b3 ;
 
 
 
+.text{
+  height: 300px;
+  width: 300px;
+ 
+  text-align: center;
+  font-size: 18px;
+  font-style: oblique;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
+.text1{
+  height: 300px;
+  width: 300px;
+ 
+  text-align: center;
+  font-size: 18px;
+  font-style: oblique;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
 .ikon {
 
    
@@ -565,7 +604,7 @@ background-color: #7a52b3 ;
     padding-top: 10px;
    
     font-size: 18px;
-    height: 350px;
+    height: 310px;
     width: 320px;
     background: #7a52b3;
     border: 1px solid #000000;
