@@ -76,7 +76,10 @@ h6 {
     font-size: inherit;
     font-weight: 400;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+}
 /*--------------------*/
 html {
     
@@ -181,11 +184,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ecf6', end
         width: 60px;
     }
   }
-
-.menu > li > a {
+#menu > ul{
+  list-style: none;
+}
+#menu > ul > li{
+  float: left;
+  width: 180px;
+  position: relative;
+}
+#menu > li > a {
   text-decoration: none;
   transition: 0.3s;
   font-size: 20px;
+  display: block;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .navbar__wrap .menu {
