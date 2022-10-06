@@ -397,13 +397,17 @@ background-color: #fff;
  
 }
 @media (max-width: 964px){
+  .textbalbeg::before{
+    left:-130px;
+ 
+ }
   .balbeg{
     flex-direction: column;
     
     align-items: center;
   }
   .balbegt{
-    padding-left:120px;
+    padding-left:110px;
   }
   .baldif{
     flex-direction: column;
@@ -556,7 +560,7 @@ background-color: #fff;
   display: flex;
   justify-content:space-around;
 }
-.textbaldeg{
+.textbalbeg{
   font-size: 20px;
   display: flex;
   margin: 0 auto; 
@@ -564,14 +568,14 @@ background-color: #fff;
 position: relative;
 padding-bottom: 20px;
 }
-.textbaldeg::before{
+.textbalbeg::before{
 
   position: absolute;
   content: "";
   background-image: url(img/balalaikasmall.gif);
 width: 120px;
 height: 80px;
-right: 200px;
+right: 240px;
 bottom: 5px;
 }
 .textbaldif {
@@ -589,7 +593,7 @@ padding-bottom: 20px;
   background-image: url(img/balalaikasmall.gif);
 width: 120px;
 height: 80px;
-right: 280px;
+right: 310px;
 bottom: 5px;
 }
 .baldif {
@@ -701,15 +705,7 @@ padding-bottom: 20px;
     color: rgb(4, 4, 28);
 } 
 }
-.textbaletudes::before{
-  position: absolute;
-  content: "";
-  background-image: url(img/balalaikasmall.gif);
-width: 120px;
-height: 80px;
-right: 200px;
-bottom: 5px;
-}
+
 
 .balanst {
   padding-top: 10px;
@@ -780,7 +776,7 @@ padding-bottom: 20px;
   background-image: url(img/balalaikasmall.gif);
 width: 120px;
 height: 80px;
-right: 200px;
+right: 230px;
 bottom: 5px;
 }
 .textbalans::before{
@@ -789,7 +785,7 @@ bottom: 5px;
   background-image: url(img/balalaikasmall.gif);
 width: 120px;
 height: 80px;
-right: 200px;
+right: 220px;
 bottom: 5px;
 }
 .gitbegt {
@@ -861,7 +857,7 @@ padding-bottom: 20px;
   background-image: url(img/guitarsmall.gif);
 width: 120px;
 height: 80px;
-right: 170px;
+right: 200px;
 bottom: 5px;
 }
 .gitdift {
@@ -933,7 +929,7 @@ padding-bottom: 20px
   background-image: url(img/guitarsmall.gif);
 width: 120px;
 height: 80px;
-right: 270px;
+right: 300px;
 bottom: 5px;
 }
 .gitwordst {

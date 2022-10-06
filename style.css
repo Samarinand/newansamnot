@@ -459,6 +459,10 @@ body {
 }
 
 @media (max-width: 964px) {
+  .textbalbeg::before {
+    left: -130px;
+  }
+
   .balbeg {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -470,7 +474,7 @@ body {
   }
 
   .balbegt {
-    padding-left: 120px;
+    padding-left: 110px;
   }
 
   .baldif {
@@ -669,7 +673,7 @@ body {
       justify-content: space-around;
 }
 
-.textbaldeg {
+.textbalbeg {
   font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -680,13 +684,13 @@ body {
   padding-bottom: 20px;
 }
 
-.textbaldeg::before {
+.textbalbeg::before {
   position: absolute;
   content: "";
   background-image: url(img/balalaikasmall.gif);
   width: 120px;
   height: 80px;
-  right: 200px;
+  right: 240px;
   bottom: 5px;
 }
 
@@ -707,7 +711,7 @@ body {
   background-image: url(img/balalaikasmall.gif);
   width: 120px;
   height: 80px;
-  right: 280px;
+  right: 310px;
   bottom: 5px;
 }
 
@@ -829,16 +833,6 @@ body {
   color: rgb(4, 4, 28);
 }
 
-.textbaletudes::before {
-  position: absolute;
-  content: "";
-  background-image: url(img/balalaikasmall.gif);
-  width: 120px;
-  height: 80px;
-  right: 200px;
-  bottom: 5px;
-}
-
 .balanst {
   padding-top: 10px;
   width: 100%;
@@ -916,7 +910,7 @@ body {
   background-image: url(img/balalaikasmall.gif);
   width: 120px;
   height: 80px;
-  right: 200px;
+  right: 230px;
   bottom: 5px;
 }
 
@@ -926,7 +920,7 @@ body {
   background-image: url(img/balalaikasmall.gif);
   width: 120px;
   height: 80px;
-  right: 200px;
+  right: 220px;
   bottom: 5px;
 }
 
@@ -1007,7 +1001,7 @@ body {
   background-image: url(img/guitarsmall.gif);
   width: 120px;
   height: 80px;
-  right: 170px;
+  right: 200px;
   bottom: 5px;
 }
 
@@ -1088,7 +1082,7 @@ body {
   background-image: url(img/guitarsmall.gif);
   width: 120px;
   height: 80px;
-  right: 270px;
+  right: 300px;
   bottom: 5px;
 }
 
