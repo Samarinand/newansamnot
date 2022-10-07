@@ -356,11 +356,11 @@ body {
 .discription {
   margin-top: 10px;
   text-align: center;
-  font-size: 18px;
   font-style: oblique;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   border-bottom: 1px solid #000000;
   padding-bottom: 5px;
+  font-size: calc(10px + 12 * (100vw/1280));
 }
 
 .discriptiont {
@@ -377,6 +377,34 @@ body {
 .buttoma {
   display: flex;
   justify-content: center;
+}
+
+.panel {
+  display: none;
+  overflow: hidden;
+}
+
+.accordion {
+  cursor: pointer;
+  transition: max-height 0.2s ease-out;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
 }
 
 @media (max-width: 964px) {

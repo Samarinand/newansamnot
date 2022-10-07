@@ -427,11 +427,11 @@ body {
 .discription {
   margin-top: 10px;
   text-align: center;
-  font-size: 18px;
   font-style: oblique;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   border-bottom: 1px solid #000000;
   padding-bottom: 5px;
+  font-size: calc(10px + 0.9375vw);
 }
 
 .discriptiont {
@@ -456,6 +456,35 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.panel {
+  display: none;
+  overflow: hidden;
+}
+
+.accordion {
+  cursor: pointer;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: "➕";
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "➖";
+  /* Unicode character for "minus" sign (-) */
 }
 
 @media (max-width: 964px) {
