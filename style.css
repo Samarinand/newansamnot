@@ -431,7 +431,7 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   border-bottom: 1px solid #000000;
   padding-bottom: 5px;
-  font-size: calc(10px + 0.9375vw);
+  font-size: calc(10px + 0.78125vw);
 }
 
 .discriptiont {
