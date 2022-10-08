@@ -422,6 +422,14 @@ body {
   body.noscroll {
     overflow: hidden;
   }
+
+  .hamb__field.active::after {
+    display: none;
+  }
+
+  .hamb__field.active {
+    background: #7a52b3;
+  }
 }
 /*center*/
 .discription {
@@ -431,12 +439,12 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   border-bottom: 1px solid #000000;
   padding-bottom: 5px;
-  font-size: calc(10px + 0.78125vw);
 }
 
 .discriptiont {
   padding-left: 5%;
   padding-right: 5%;
+  font-size: calc(12px + 0.625vw);
 }
 
 .centera {
