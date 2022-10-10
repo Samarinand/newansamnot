@@ -390,9 +390,7 @@ background-color: #fff;
 .discriptiont{
   position: relative;
   border-radius: 10px;
-  border: 1px solid  #bcd3f0;
   background-color: #bcd3f0;
- 
  font-size: calc(12px + 8 * (100vw/1280));
 }
 .discriptiont::before{
@@ -574,7 +572,7 @@ background-color: #fff;
  p:nth-child(even){
   background-color: #bac6d7;
      }
-  p:before {
+ p:before {
       content: "";
       width: 30px;
       height: 30px;
@@ -1181,7 +1179,10 @@ padding-top: 3px;
    
 }
 
-
+.fa-file-pdf-o{
+  color:firebrick;
+  right: 20px;
+}
 
 
 

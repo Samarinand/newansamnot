@@ -446,7 +446,6 @@ body {
 .discriptiont {
   position: relative;
   border-radius: 10px;
-  border: 1px solid #bcd3f0;
   background-color: #bcd3f0;
   font-size: calc(12px + 0.625vw);
 }
@@ -1362,6 +1361,11 @@ p {
 .fa-download:hover {
   background-color: #5d18bd;
   cursor: pointer;
+}
+
+.fa-file-pdf-o {
+  color: firebrick;
+  right: 20px;
 }
 
 /*slider*/
