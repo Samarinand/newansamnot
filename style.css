@@ -143,6 +143,13 @@ body {
   font-weight: bold;
 }
 
+.header a {
+  text-align: center;
+  color: #7a52b3;
+  font-size: calc(18px + 0.9375vw);
+  font-weight: bold;
+}
+
 .main {
   background-color: #fafafa;
   -webkit-box-flex: 1;
@@ -151,6 +158,13 @@ body {
 }
 
 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 50px 0;
 }
 
@@ -1321,7 +1335,6 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: -7px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

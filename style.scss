@@ -138,13 +138,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ecf6', end
   font-size: calc(18px + 12 * (100vw/1280));
   font-weight: bold;
 }
-
+.header a {
+  text-align: center;
+  color: #7a52b3;
+  font-size: calc(18px + 12 * (100vw/1280));
+  font-weight: bold;
+}
 .main {
   background-color: #fafafa;
   flex: 1 0 auto;
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
   padding: 50px 0;
 }
 
@@ -1142,7 +1149,7 @@ p{
 
 .audio2{
   display: flex;
-margin-top: -7px;
+
   justify-content:center;
   align-items: center;
   width: 220px;
