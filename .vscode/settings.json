@@ -1,3 +1,6 @@
 {
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "compile-hero.disable-compile-files-on-did-save-code": true,
+    "liveSassCompile.settings.watchOnLaunch": false,
+    "liveSassCompile.settings.compileOnWatch": true
 }
