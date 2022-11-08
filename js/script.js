@@ -52,9 +52,7 @@ new Swiper('.image-slider1',{
     },
     grabCursor: true,
     slideToClickedSlide: true,
-    hashNavigation:{
-      watchStare: true
-    },
+    
     keyboard:{
       enabled:true,
       onlyInViewport:true,
