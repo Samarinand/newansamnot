@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -19,12 +19,12 @@
 </head>
 
 <body>
-
+ 
   <!--heager-->
   <nav class="navbar">
     <div class="container">
 
-      <div class="navbar__wrap">
+      <div class="navbar__wrap"id="header">
         <div class="logo" id="logo"><img src=img/Label.png></div>
         <div class="hamb">
           <div class="hamb__field" id="hamb">
@@ -33,7 +33,7 @@
             <span class="bar"></span>
           </div>
         </div>
-
+      
         <nav class="menu" id="menu">
           <ul class="topmenu">
             <li><a href="#"> Ноты для балалайки<i class="fa fa-angle-down"></i></a>
@@ -50,10 +50,13 @@
                 <li><a href="#textgitdif">Более сложные произведения</a></li>
                 <li><a href="#textgitwords">С аккордами и словами</a></li>
                 <li><a href="#textgitduets"> Дуэты</a></li>
+                
               </ul>
             </li>
+            <li><a href="#popup1"class="popup1-link">Контакты</a></li>
           </ul>
         </nav>
+      
       </div>
     </div>
   </nav>
@@ -110,7 +113,7 @@
 
         </div>
 
-
+       
 
       </div>
       <div class="swiper-button-prev swiper-conteiner"></div>
@@ -161,7 +164,7 @@
       <div class="swiper-pagination swiper-conteiner"></div>
       <div class="swiper-scrollbar swiper-conteiner"></div>
 
-
+    
     </div>
   </div>
   <div class="balbegt">
@@ -1179,10 +1182,47 @@
   <!--footer-->
   <div class="footer">
    <div class="footer-youtude"><a href="https://www.youtube.com/channel/UCzBTsBT_ydYvJ7CfqqU36-A"><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a></div> 
-    <div class="footer1">2022</div>
+    <div class="footer1">
+      <a>&#169 2022</a>
+     
+    </div>
    <div class="footer-ebvelope"><a href="mailto:samarinand22@gmail.com"><i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i></a></div>
   </div>
 
+  <div id="popup1"  class="popup1">
+    <a href="#header" class="popup1__area"></a>
+    <div class="popup1__body">
+      <div class="popup1__content">
+        <a href="#header" class="popup1__close"></a>
+        <div class="textinform">
+        <form method="post" action="/PHPMailer-master/src/PHPMailer.php">
+           <div class="textinform1">
+            
+            <label for="name"><span class="required"></span>Имя*: </label>
+            <input class="textinput" tabindex="1" type="text" id="name" name="name" value="" placeholder="Ваше имя"
+              required="required" autofocus />
+         
+           
+            <label for="email"> <span class="required"></span>E-mail*: </label>
+            <input class="textinput" tabindex="2" type="email" id="email" name="email" value=""
+              placeholder="your@email.com" required="required"autofocus />
+        
+          
+              <label for="name"><span class="required"></span>Сообщение*: </label>
+            <textarea class="textinput" tabindex="3"type="text" id="message" name="message" value="" required="required" autofocus placeholder="Ваше сообщение"  >
+            </textarea>
+          
+        
+          <button class="textbutton" tabindex="4" type="submit">Отправить</button>
+        </div>
+      </div>
+       </form>
+        
+        </div>
+      </div>
+    </div>
+  
+  
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/script.js"> </script>
 
