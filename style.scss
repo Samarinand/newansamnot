@@ -108,6 +108,47 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ecf6', end
 /*header*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+.seach-form{
+  width: auto;
+  float: right;
+ display: flex;
+ align-items: center;
+ margin-left: 30px;
+}
+.seach-site {
+  width: 120px;
+  height: 30px;
+  padding-left: 15px;
+  border-radius: 42px;
+  border: 2px solid #324b4e;
+  background: #fff;
+  outline: none;
+  position: relative;
+  transition: .3s linear;
+  opacity: 0.8;
+  font-size: 12px;
+}
+.seach-site:focus {
+  width: 170px;
+  position: relative;
+  opacity: 1;
+  font-size: 16px;
+}
+
+.seach-button{
+  width: 32px;
+  height:32px;
+  background: none;
+  border: none;
+z-index: 1;
+ margin-left:-30px;
+}
+.seach-button:before{
+  content: "\f002";
+  font-family: FontAwesome;
+  color: #324b4e;
+}
+
 
 
 
@@ -307,7 +348,21 @@ opacity: 0.8;
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 904px) {
+  .textinput {
+    border-bottom: 2px solid  #7a52b3;
+    height: 40px;
+    display: flex;
+    font-size: 18px;
+    width: 250px;
+    cursor: pointer;
+    text-align: center;
+    background-color:rgba(236,213,251,1) ;
+}
+  .seach-form{
+   
+   margin-left: 0px;
+  }
   .popup1-link:hover{
 
    opacity: 1;
@@ -435,7 +490,7 @@ opacity: 0.8;
   position: relative;
   border-radius: 10px;
   background-color: #bcd3f0;
- font-size: calc(12px + 8 * (100vw/1280));
+  font-size: calc(12px + 4 * (100vw/1280));
 }
 .discriptiont::before{
   content: "";
@@ -1469,7 +1524,7 @@ background-color: rgba(236,213,251,1) ;
   left: 0;
 }
 input:focus {
-  background:#fafafa;
+  background-color:rgba(236,213,251,1) ;
   }
 .textinform{
   width: 105%;
@@ -1488,14 +1543,15 @@ input:focus {
   }
 
   .textinput {
-      border: 1px solid #000000;
+      border-bottom: 2px solid  #7a52b3;
       height: 40px;
       display: flex;
       font-size: 18px;
       width: 250px;
       cursor: pointer;
       text-align: center;
-      
+      background-color:rgba(236,213,251,1) ;
+     resize: vertical;
   }
 
 
