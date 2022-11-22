@@ -144,4 +144,101 @@ document.querySelector('#elastic').oninput = function(){
 }
 function insertMark(string,pos,len){
   return string.slice(0,pos) + '<mark>' + string.slice(pos,pos+len) + '</mark>'+ string.slice(pos+len);
+};
+
+// считываем кнопку
+const goTopBtn = document.querySelector(".go-top");
+
+// обработчик на скролл окна
+window.addEventListener("scroll", trackScroll);
+// обработчик на нажатии
+goTopBtn.addEventListener("click", goTop);
+
+function trackScroll() {
+  // вычисляем положение от верхушки страницы
+  const scrolled = window.pageYOffset;
+  // считаем высоту окна браузера
+  const coords = document.documentElement.clientHeight;
+  // если вышли за пределы первого окна
+  if (scrolled > coords) {
+    // кнопка появляется
+    goTopBtn.classList.add("go-top--show");
+  } else {
+    // иначе исчезает
+    goTopBtn.classList.remove("go-top--show");
+  }
 }
+
+function goTop() {
+  // пока не вернулись в начало страницы
+  if (window.pageYOffset > 0) {
+    // скроллим наверх
+    window.scrollBy(0, -25); // второй аргумент - скорость
+    setTimeout(goTop, 0); // входим в рекурсию
+  }
+}
+
+
+"use strict"
+document.addEventListener('DOMContentLoaded', function(){
+  const form = document.getElementById('form');
+  form.addEventListener('submit', formSend);
+
+  async function formSend(e){
+    e.preventDefault();
+
+    let error = formValidate(form);
+  }
+
+function formValidate(form){
+  let error = 0;
+  let formReq = document.querySelectorAll('_req');
+
+  for (let index = 0; index< formReq.length; index++){
+    const input = formReq [index];
+    formRemoveError(input);
+
+    if (input.classList.contains('_email')){
+      if (emailTest(input)){
+        formAddError(input);
+        error++
+      }
+    }
+  }
+ function formAddError(input){
+  input.parentElement.classList.add('_error');
+  input.classList.add('_error');
+ }
+ function formAddError(input){
+  input.parentElement.classList.remove('_error');
+  input.classList.remove('_error');
+ }
+ function emailTest(input){
+  return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+ }
+}
+
+
+/*
+
+     if (error === 0){
+      postMessage.classList.add('_sending');
+      let response = awaite fetch('sendmaile.php',{
+        method: 'POST',
+        body: formData
+      });
+      if (response.ok){
+        let result = await response.json();
+        alert (result.message);
+        formPreview.innerHTML = '';
+        form.reset();
+        form.classList.remove('_sending');
+      }else{
+        alert('Ошибка')
+        form.classList.remove('_sending');
+      }
+     }else{
+      alert ('Заполните обязательные поля');
+     }
+  */
+});

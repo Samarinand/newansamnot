@@ -1451,6 +1451,37 @@ display: flex;
     }
 }
 
+.go-top {
+  position: fixed; /* фиксированное позиционирование */
+  left: 20px; /* отступ слева 20px */
+  top: 50%; /* выравниваем по центру */
+  transform: translateY(-50%); /* выравниваем по центру */
+
+  cursor: pointer; /* при наведении меняем курсор */
+  display: none; /* по умолчанию скрываем кнопку */
+  font-size: 20px;
+  color: rgba(0, 51, 153, 0.5);
+  border: 1px solid rgba(0, 51, 153, 0.5);
+  background-color: rgba(0, 51, 153, 0.1);
+ padding-left: 18px;
+ padding-top: 9px;
+  border-radius: 50%;
+  width: 50px; 
+  height: 50px;
+ 
+}
+
+/* меняем прозрачность при наведении мышкой */
+.go-top:hover {
+  color: rgba(0, 51, 153, 0.8);
+  border: 1px solid rgba(0, 51, 153, 0.8);
+  background-color: rgba(0, 51, 153, 0.15);
+}
+
+/* модификатор для отображения кнопки */
+.go-top--show {
+  display: block;
+}
 
 
 .popup1 {
@@ -1554,7 +1585,9 @@ input:focus {
      resize: vertical;
   }
 
-
+  .textinput._error{
+    box-shadow: 0 0 15px red;
+  }
   
   .textinput:focus {
       box-shadow: 0 0 10px black;

@@ -96,21 +96,21 @@ class PHPMailer
      *
      * @var string
      */
-    public $ErrorInfo = '';
+    public $ErrorInfo = 'Error';
 
     /**
      * The From email address for the message.
      *
      * @var string
      */
-    public $From = '';
+    public $From = 'samarinand@gmail.com';
 
     /**
      * The From name of the message.
      *
      * @var string
      */
-    public $FromName = '';
+    public $FromName = 'Andrey';
 
     /**
      * The envelope sender of the message.
@@ -120,7 +120,7 @@ class PHPMailer
      *
      * @var string
      */
-    public $Sender = '';
+    public $Sender = 'samarinand22@gmail.com';
 
     /**
      * The Subject of the message.
