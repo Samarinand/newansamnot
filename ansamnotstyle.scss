@@ -108,57 +108,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ecf6', end
 /*header*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-.seach-form{
-  width: auto;
-  float: right;
- display: flex;
- align-items: center;
- margin-left: 30px;
-}
-.seach-site {
-  width: 120px;
-  height: 30px;
-  padding-left: 15px;
-  border-radius: 42px;
-  border: 2px solid #324b4e;
-  background: #fff;
-  outline: none;
-  position: relative;
-  transition: .3s linear;
-  opacity: 0.8;
-  font-size: 12px;
-}
-.seach-site:focus {
-  width: 170px;
-  position: relative;
-  opacity: 1;
-  font-size: 16px;
-}
-
-.seach-button{
-  width: 32px;
-  height:32px;
-  background: none;
-  border: none;
-z-index: 1;
- margin-left:-30px;
-}
-.seach-button:before{
-  content: "\f002";
-  font-family: FontAwesome;
-  color: #324b4e;
-}
 
 
-
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
 
 
 .container {
   width: 100%;
-  max-width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
   height: 100%;
-  padding: 0px 30px;
+  padding: 0 15px;
 }
 
 .header {
@@ -174,18 +138,21 @@ z-index: 1;
   font-size: calc(18px + 12 * (100vw/1280));
   font-weight: bold;
 }
-
+.header a {
+  text-align: center;
+  color: #7a52b3;
+  font-size: calc(18px + 12 * (100vw/1280));
+  font-weight: bold;
+}
 .main {
   background-color: #fafafa;
   flex: 1 0 auto;
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
   padding: 50px 0;
-  text-align: center;
-  a{
-    font-size: 22px;
-    color: #7a52b3;}
 }
 
 
@@ -228,41 +195,29 @@ z-index: 1;
  .menu{
   width: 660px;
   margin: 0 auto 30px;
-  
 }
 #ul{
   list-style: none;
   margin: 0;
   padding: 0;
-  
- 
   }
 .topmenu > li{
   display: inline-block;
   margin-right: 20px;
   position: relative;
- 
-  }
   
-  .topmenu > li>a:hover{
-      opacity: 1;
-      transition: 0.8s;
-      color:#000000;
-      }
+  }
   .topmenu > li:last-child{
     margin-right: 0;
-
   }
   .topmenu>li>a {
     display: block;
-    padding: 30px 15px;
+    padding: 10px 15px;
     text-decoration: none;
     outline: none;
-    font-size: 15px;
+    font-size: 25px;
     transform: .3s linear;
     color: #fff;
-    opacity:0.8;
-    text-transform: uppercase;
  }
  .fa fa-angle-down:hover{
   background: #7a52b3;
@@ -273,60 +228,34 @@ z-index: 1;
   background: #7a52b3;
   right:20px;
   color: #fff;
-  
  }
  .fa {
 
   padding-left: 10px;
-  
+ 
   
  }
-
  .submenu{
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
-  background-color: #fff;
+background-color: #fff;
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
-  height: 200%;
+  height: 270%;
   z-index: 70;
   transition: 0.8s ease-in-out;
   display: none;
   font-size: 20px;
-
- }
-.submenu>li>a{
-  opacity: 0.8;
-  text-transform: uppercase;
-  font-size: 15px;
-}
-.submenu>li>a:hover{
-  opacity: 1;
-  color:#000000;
-  transition: 0.8s;
-}
- .menu ul li:hover  .submenu{
-  display: block;
-  opacity: 1;
-  color:#000000;
-  transition: 0.8s;
+  
  }
  
-.popup1-link{
-font-size: calc(8px + 8 * (100vw/1280));
-text-transform: uppercase;
-color: #fff;
-display: flex;
-align-items: center;
-opacity: 0.8;
-}
-.popup1-link:hover{
-  opacity: 1;
-  color:#000000;
-   
-}
+ .menu ul li:hover  .submenu{
+  display: block;
+  transition: 0.8s;
+ }
+
 
 
 
@@ -344,37 +273,15 @@ opacity: 0.8;
   align-items: center;
   padding: 0 20px;
   color: rgba(255, 255, 255, 0.7);
-
 }
 
 .navbar__wrap .menu > li > a:hover {
   color: rgba(255, 255, 255, 1);
-
 }
 
-@media (max-width: 904px) {
-  .textinput {
-    border-bottom: 2px solid  #7a52b3;
-    height: 40px;
-    display: flex;
-    font-size: 18px;
-    width: 250px;
-    cursor: pointer;
-    text-align: center;
-    background-color:rgba(236,213,251,1) ;
-}
-  .seach-form{
-   
-   margin-left: 0px;
-  }
-  .popup1-link:hover{
-
-   opacity: 1;
-   color:#000000;
-   transition: 0.8s;
-  }
+@media (max-width: 767px) {
   .topmenu>li{
-  margin-bottom: 140px;
+  margin-bottom: 120px;
 
  }
  .menu ul li .submenu{
@@ -382,13 +289,15 @@ opacity: 0.8;
   
  }
 
-
+ .fa:hover {
+  background:  #fff;
+ 
+ }
   .fa {
     background:  #fff;
     padding-left: 10px;
-    opacity: 0.8;
-    color: #7a52b3;
    
+    color: #7a52b3;
    }
    .topmenu>li>a {
     
@@ -401,12 +310,10 @@ opacity: 0.8;
   .hamb {
     display: flex;
     align-items: center;
-   
   }
   .hamb__field {
     padding: 10px 20px;
     cursor: pointer;
-    opacity: 0.8;
   }
   .bar {
     display: block;
@@ -460,13 +367,10 @@ opacity: 0.8;
   }
   .hamb__field.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
-    opacity: 0.8;
   }
   .hamb__field.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
-    opacity: 0.8;
   }
-  
   body.noscroll {
     overflow: hidden;
   }
@@ -494,7 +398,7 @@ opacity: 0.8;
   position: relative;
   border-radius: 10px;
   background-color: #bcd3f0;
-  font-size: calc(12px + 4 * (100vw/1280));
+ font-size: calc(12px + 8 * (100vw/1280));
 }
 .discriptiont::before{
   content: "";
@@ -1245,7 +1149,7 @@ p{
 
 .audio2{
   display: flex;
-margin-top: -7px;
+
   justify-content:center;
   align-items: center;
   width: 220px;
@@ -1428,17 +1332,16 @@ background-color: #7a52b3 ;
     justify-content:space-around;
     align-items: center;
   
-   
+    .footer1{
+        font-size: 18px;
+        color: #F6F6F6;
+    }
     .fa-youtube-square{
       padding-top: 3px;
       background-color: #212429;
   width: 30px;
   height: 30px;
  color: #e2d7d7;
-    }
-    .footer1 {
-      color: #e2d7d7;
-      font-size: 20px;
     }
     .fa-envelope-square{
       padding-top: 3px;
@@ -1455,166 +1358,8 @@ display: flex;
     }
 }
 
-.go-top {
-  position: fixed; /* фиксированное позиционирование */
-  left: 20px; /* отступ слева 20px */
-  top: 50%; /* выравниваем по центру */
-  transform: translateY(-50%); /* выравниваем по центру */
-
-  cursor: pointer; /* при наведении меняем курсор */
-  display: none; /* по умолчанию скрываем кнопку */
-  font-size: 20px;
-  color: rgba(0, 51, 153, 0.5);
-  border: 1px solid rgba(0, 51, 153, 0.5);
-  background-color: rgba(0, 51, 153, 0.1);
- padding-left: 18px;
- padding-top: 9px;
-  border-radius: 50%;
-  width: 50px; 
-  height: 50px;
- 
-}
-
-/* меняем прозрачность при наведении мышкой */
-.go-top:hover {
-  color: rgba(0, 51, 153, 0.8);
-  border: 1px solid rgba(0, 51, 153, 0.8);
-  background-color: rgba(0, 51, 153, 0.15);
-}
-
-/* модификатор для отображения кнопки */
-.go-top--show {
-  display: block;
-}
 
 
-.popup1 {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: #0000008c;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  opacity: 0;
-  visibility:hidden;
-transition: all 0.8s  ease 0s;
-}
-.popup1:target{
-  opacity: 1;
-  visibility: visible;
 
-}
-.popup1:target .popup1__content{
-  opacity: 1;
- 
-  transform:perspective(600px) translate(0px,0%)rotateX(0deg);
-}
-.popup1__body {
-  min-height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px,10px;
-}
-.popup1__content {
-  background-color: #fafafa;
-  color: #000000;
-  max-width: 800px;
-  padding: 40px;
-  position: relative;
-  transform:perspective(600px) translate(0px,-100%)rotateX(45deg);
-  opacity: 0;
-  transition: all 0.8s  ease 0s;
-}
-.popup1__close {
-  position: absolute;
-right: 10px;
-top: 10px;
-font-size: 20px;
-color: #000000;
-text-decoration: none;
-}
-.popup1__close:hover {
-background-color: rgba(236,213,251,1) ;
-}
-.popup1__title {
-  font-size: 40px;
-  margin-bottom: 1em;
-}
-.popup1__text {
-  font-size: 20px;
-}
 
-.popup1__close:before {
-  content: "\f00d";
-  font-family: FontAwesome;
-  font-size: 24px;
-}
-.popup1__area {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-input:focus {
-  background-color:rgba(236,213,251,1) ;
-  }
-.textinform{
-  width: 105%;
-  height: 100%;
-  background-color:rgba(236,213,251,1) ;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.textinform1 {
- 
-  text-align: center;
-  display: flex;
-  flex-direction: column;
- gap: 10px;
-  }
 
-  .textinput {
-      border-bottom: 2px solid  #7a52b3;
-      height: 40px;
-      display: flex;
-      font-size: 18px;
-      width: 250px;
-      cursor: pointer;
-      text-align: center;
-      background-color:rgba(236,213,251,1) ;
-     resize: vertical;
-  }
-
-  .textinput._error{
-    box-shadow: 0 0 15px red;
-  }
-  
-  .textinput:focus {
-      box-shadow: 0 0 10px black;
-  }
- 
-  .textbutton {
-      display: block;
-      width: 90%;
-      height: 50px;
-      background: #7a52b3;
-      font-size: 18px;
-      color: #111010;
-      text-transform: uppercase;
-      border-radius: 24px;
-      box-shadow: 0px 5px 5px black;
-      font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-      letter-spacing: 1px;
-      margin: 25px auto;
-      cursor: pointer;
-      transition: 0.3s;
-  
-  }
-  .textbutton:hover {
-    background: #b086eb;
-   }
-  

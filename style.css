@@ -189,6 +189,11 @@ body {
 
 .content {
   padding: 50px 0;
+  text-align: center;
+}
+.content a {
+  font-size: 22px;
+  color: #7a52b3;
 }
 
 .navbar {
