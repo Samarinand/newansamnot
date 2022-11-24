@@ -179,6 +179,11 @@ function goTop() {
 }
 
 
+
+
+
+/*
+
 "use strict"
 document.addEventListener('DOMContentLoaded', function(){
   const form = document.getElementById('form');
@@ -219,7 +224,7 @@ function formValidate(form){
 }
 
 
-/*
+
 
      if (error === 0){
       postMessage.classList.add('_sending');
@@ -240,5 +245,6 @@ function formValidate(form){
      }else{
       alert ('Заполните обязательные поля');
      }
-  */
+
 });
+  */
