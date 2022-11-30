@@ -1557,7 +1557,7 @@ p {
 }
 .footer .footer1 {
   color: #e2d7d7;
-  font-size: 20px;
+  font-size: calc(12px + 0.46875vw);
 }
 .footer .fa-envelope-square {
   padding-top: 3px;
@@ -1772,4 +1772,15 @@ input:focus {
 
 .textbutton:hover {
   background: #b086eb;
+}
+
+.consent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  width: 250px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 10px;
 }
