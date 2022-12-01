@@ -1520,8 +1520,9 @@ transition: all 0.8s  ease 0s;
 .popup1__content {
   background-color: #fafafa;
   color: #000000;
-  max-width: 400px;
-  padding: 40px;
+  width: 320px;
+  height: 500px;
+ 
   position: relative;
   transform:perspective(600px) translate(0px,-100%)rotateX(45deg);
   opacity: 0;
@@ -1529,14 +1530,14 @@ transition: all 0.8s  ease 0s;
 }
 .popup1__close {
   position: absolute;
-right: 10px;
-top: 10px;
+right:15px;
+top:15px;
 font-size: 20px;
 color: #000000;
 text-decoration: none;
 }
 .popup1__close:hover {
-background-color: rgba(236,213,251,1) ;
+background-color: #d3baf5;
 }
 .popup1__title {
   font-size: 20px;
@@ -1564,27 +1565,26 @@ input:focus {
   background-color:rgba(236,213,251,1) ;
   }
 .textinform{
-  width: 105%;
-  height: 100%;
-  background-color:rgba(236,213,251,1) ;
+  width: 300px;
+  height: 480px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.textinform1 {
  
-  text-align: center;
-  display: flex;
-  flex-direction: column;
- gap: 10px;
-  }
+
+}
+.textinform1{
+  background-color:rgba(236,213,251,1) ;
+
+}
 
   .textinput {
       border-bottom: 2px solid  #7a52b3;
       height: 2em;
       display: flex;
       font-size: 18px;
-      width: 250px;
+      width: 100%;
       cursor: pointer;
       text-align: center;
       background-color:rgba(236,213,251,1) ;

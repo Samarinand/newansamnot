@@ -1650,8 +1650,8 @@ p {
 .popup1__content {
   background-color: #fafafa;
   color: #000000;
-  max-width: 400px;
-  padding: 40px;
+  width: 320px;
+  height: 500px;
   position: relative;
   -webkit-transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
           transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
@@ -1662,15 +1662,15 @@ p {
 
 .popup1__close {
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 15px;
+  top: 15px;
   font-size: 20px;
   color: #000000;
   text-decoration: none;
 }
 
 .popup1__close:hover {
-  background-color: rgb(236, 213, 251);
+  background-color: #d3baf5;
 }
 
 .popup1__title {
@@ -1707,9 +1707,8 @@ input:focus {
 }
 
 .textinform {
-  width: 105%;
-  height: 100%;
-  background-color: rgb(236, 213, 251);
+  width: 300px;
+  height: 480px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1722,15 +1721,7 @@ input:focus {
 }
 
 .textinform1 {
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 10px;
+  background-color: rgb(236, 213, 251);
 }
 
 .textinput {
@@ -1740,7 +1731,7 @@ input:focus {
   display: -ms-flexbox;
   display: flex;
   font-size: 18px;
-  width: 250px;
+  width: 100%;
   cursor: pointer;
   text-align: center;
   background-color: rgb(236, 213, 251);
