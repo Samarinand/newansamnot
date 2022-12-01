@@ -1520,7 +1520,7 @@ transition: all 0.8s  ease 0s;
 .popup1__content {
   background-color: #fafafa;
   color: #000000;
-  max-width: 800px;
+  max-width: 400px;
   padding: 40px;
   position: relative;
   transform:perspective(600px) translate(0px,-100%)rotateX(45deg);
@@ -1539,12 +1539,14 @@ text-decoration: none;
 background-color: rgba(236,213,251,1) ;
 }
 .popup1__title {
-  font-size: 40px;
-  margin-bottom: 1em;
-}
-.popup1__text {
   font-size: 20px;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 .popup1__close:before {
   content: "\f00d";
@@ -1579,14 +1581,15 @@ input:focus {
 
   .textinput {
       border-bottom: 2px solid  #7a52b3;
-      height: 40px;
+      height: 2em;
       display: flex;
       font-size: 18px;
       width: 250px;
       cursor: pointer;
       text-align: center;
       background-color:rgba(236,213,251,1) ;
-     resize: vertical;
+
+    
   }
 
   .textinput._error{
