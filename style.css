@@ -1762,12 +1762,14 @@ input:focus {
   letter-spacing: 1px;
   margin: 25px auto;
   cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
 }
 
 .textbutton:hover {
   background: #b086eb;
+  -webkit-transform: scale(1.1) translate(5px, 5px);
+          transform: scale(1.1) translate(5px, 5px);
 }
 
 .consent {
