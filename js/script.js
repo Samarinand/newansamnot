@@ -148,7 +148,7 @@ function insertMark(string,pos,len){
 
 // считываем кнопку
 const goTopBtn = document.querySelector(".go-top");
-
+const goTopBtn1 = document.querySelector(".triangle-up");
 // обработчик на скролл окна
 window.addEventListener("scroll", trackScroll);
 // обработчик на нажатии
@@ -163,9 +163,11 @@ function trackScroll() {
   if (scrolled > coords) {
     // кнопка появляется
     goTopBtn.classList.add("go-top--show");
+    goTopBtn1.classList.add("triangle-up--show");
   } else {
     // иначе исчезает
     goTopBtn.classList.remove("go-top--show");
+    goTopBtn1.classList.remove("triangle-up--show");
   }
 }
 
