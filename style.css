@@ -1425,6 +1425,7 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-bottom: 100px;
 }
 
 .gitduets1, .gitduets2 {
@@ -1439,7 +1440,6 @@ body {
   padding-bottom: 10px;
   width: 320px;
   line-height: 30px;
-  margin-bottom: 100px;
 }
 .gitduets1 p:nth-child(even), .gitduets2 p:nth-child(even) {
   background-color: #bac6d7;
