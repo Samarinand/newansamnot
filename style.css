@@ -179,6 +179,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 3px;
+  text-shadow: #b280f7 1px 1px 0, #b280f7 2px 2px 0;
 }
 .header h1 span {
   font-size: calc(12px + 0.9375vw);
