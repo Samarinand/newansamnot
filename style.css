@@ -689,24 +689,25 @@ body {
 
 .accordion {
   cursor: pointer;
-  -webkit-transition: max-height 0.2s ease-out;
-  transition: max-height 0.2s ease-out;
+  -webkit-transition: max-height 0.8s ease-out;
+  transition: max-height 0.8s ease-out;
 }
 
 .active, .accordion:hover {
   background-color: #ccc;
+  border-radius: 10px;
 }
 
 .accordion:after {
-  content: "➕"; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
+  content: "	▼"; /* Unicode character for "plus" sign (+) */
+  font-size: 20px;
   color: #777;
   float: right;
   margin-left: 5px;
 }
 
 .active:after {
-  content: "➖"; /* Unicode character for "minus" sign (-) */
+  content: "▲"; /* Unicode character for "minus" sign (-) */
 }
 
 @media (max-width: 964px) {

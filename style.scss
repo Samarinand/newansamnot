@@ -638,28 +638,31 @@ opacity: 0.8;
 }
 .accordion{
   cursor: pointer;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.8s ease-out;
 }
 .active, .accordion:hover {
   background-color: #ccc;
+  border-radius: 10px;
 }
 .accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
+  content: '	\25BC'; /* Unicode character for "plus" sign (+) */
+  font-size: 20px;
   color: #777;
   float: right;
   margin-left: 5px;
 }
 
 .active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "\25B2"; /* Unicode character for "minus" sign (-) */
 }
 @media (max-width: 964px){
   .textbalbeg::before{
     left:-130px;
  
  }
+
   .balbeg{
+  
     flex-direction: column;
     
     align-items: center;
