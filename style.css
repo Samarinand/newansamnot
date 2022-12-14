@@ -1548,7 +1548,7 @@ p {
   min-width: 376px;
   overflow: hidden;
   border-radius: 10px;
-  background: url("img/FonSky.jpg") right;
+  background: url("img/FonSky.jpg") top/125%;
   background-attachment: local;
   display: -webkit-box;
   display: -ms-flexbox;
