@@ -203,6 +203,7 @@ body {
 }
 
 .vibrate-3 {
+  padding-top: 30px;
   -webkit-animation: vibrate-3 0.5s linear infinite both;
   animation: vibrate-3 0.5s linear infinite both;
 }
@@ -644,17 +645,31 @@ body {
   font-size: calc(12px + 0.3125vw);
   -webkit-box-shadow: 0px 5px 5px black;
           box-shadow: 0px 5px 5px black;
+  padding: 10px;
 }
 
 .discriptiont > ul > li::before {
   content: "✓";
   font-weight: 600;
   display: inline-block;
-  left: -3px;
+  left: 0px;
+  top: -2px;
+  position: relative;
+}
+
+.discriptiont > ul > li > span::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 1px solid #000000;
+  top: 0px;
+  display: inline-block;
+  left: -10px;
   position: relative;
 }
 
 .discriptiont > h3 {
+  margin-bottom: 10px;
   font-weight: 600;
 }
 
