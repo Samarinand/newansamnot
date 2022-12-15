@@ -605,6 +605,19 @@ opacity: 0.8;
   background-color: #bcd3f0;
   font-size: calc(12px + 4 * (100vw/1280));
   box-shadow: 0px 5px 5px black;
+
+}
+.discriptiont>ul>li::before{
+  content: "\2713";
+font-weight: 600;
+  display: inline-block;
+  left: -3px;
+  position:relative;
+
+
+}
+.discriptiont>h3{
+  font-weight: 600;
 }
 .discriptiont::before{
   content: "";
