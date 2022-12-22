@@ -416,14 +416,19 @@ text-shadow: #b280f7 1px 1px 0, #b280f7 2px 2px 0;
   opacity: 1;
   color:#000000;
   transition: 0.8s;
+  position: relative;
 }
  .menu ul li:hover  .submenu{
   display: block;
   opacity: 1;
   color:#000000;
   transition: 0.8s;
+
  }
- 
+ .hover:hover{
+  background-color: rgb(217, 183, 242);
+  transition: 0.8s;
+ }
 .popup1-link{
 font-size: calc(8px + 8 * (100vw/1280));
 text-transform: uppercase;
@@ -435,7 +440,7 @@ opacity: 0.8;
 .popup1-link:hover{
   opacity: 1;
   color:#000000;
-   
+
 }
 
 

@@ -429,12 +429,19 @@ body {
   color: #000000;
   -webkit-transition: 0.8s;
   transition: 0.8s;
+  position: relative;
 }
 
 .menu ul li:hover .submenu {
   display: block;
   opacity: 1;
   color: #000000;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.hover:hover {
+  background-color: rgb(217, 183, 242);
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
