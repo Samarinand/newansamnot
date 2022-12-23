@@ -733,7 +733,9 @@ body {
 }
 
 .accordion:after {
-  content: "	▼"; /* Unicode character for "plus" sign (+) */
+  content: "▲"; /* Unicode character for "plus" sign (+) */
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
   font-size: 20px;
   color: #777;
   float: right;
@@ -741,7 +743,9 @@ body {
 }
 
 .active:after {
-  content: "▲"; /* Unicode character for "minus" sign (-) */
+  content: "▼"; /* Unicode character for "minus" sign (-) */
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 @media (max-width: 964px) {
@@ -1731,13 +1735,13 @@ p {
   background-color: #7a52b3;
 }
 .footer .footer-top .tabs__blok:nth-child(2) {
-  background-color: #5d18bd;
+  background-color: #7a52b3;
 }
 .footer .footer-top .tabs__blok:nth-child(1)::before {
   background-color: #7a52b3;
 }
 .footer .footer-top .tabs__blok:nth-child(2)::before {
-  background-color: #5d18bd;
+  background-color: #7a52b3;
   left: 50%;
 }
 .footer .footer-top .tabs__blok::before {

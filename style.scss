@@ -676,7 +676,8 @@ font-weight: 600;
   border-radius: 10px;
 }
 .accordion:after {
-  content: '	\25BC'; /* Unicode character for "plus" sign (+) */
+  content: '\25B2'; /* Unicode character for "plus" sign (+) */
+  transform: rotate(270deg);
   font-size: 20px;
   color: #777;
   float: right;
@@ -684,7 +685,8 @@ font-weight: 600;
 }
 
 .active:after {
-  content: "\25B2"; /* Unicode character for "minus" sign (-) */
+  content: '\25BC'; /* Unicode character for "minus" sign (-) */
+  transform: rotate(0deg);
 }
 @media (max-width: 964px){
   .textbalbeg::before{
@@ -1602,13 +1604,13 @@ background-color: #7a52b3 ;
         background-color:#7a52b3;
      }
        .tabs__blok:nth-child(2){
-        background-color:#5d18bd;
+        background-color:#7a52b3;
        }
        .tabs__blok:nth-child(1)::before{
         background-color:#7a52b3;
      }
      .tabs__blok:nth-child(2)::before{
-      background-color:#5d18bd;
+      background-color:#7a52b3;
       left:50% ;
      }
        .tabs__blok::before{
