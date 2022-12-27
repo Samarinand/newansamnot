@@ -1628,15 +1628,16 @@ background-color: #7a52b3 ;
         padding-left: 5px;
       }
       .gn{
-        padding-right: 5px;
+        padding-right: 25px;
+       
       }
     
        .tabs__items{
         color: #e2d7d7;
         text-transform: uppercase;
        display: flex;
-       justify-content: space-between;
-       gap: 45px;
+       justify-content:space-between;
+       gap: 25px;
        }
        .tabs__items span{
         position: relative;
