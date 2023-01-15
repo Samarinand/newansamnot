@@ -1804,7 +1804,7 @@ p {
           flex-direction: column;
 }
 .footer .footer-top {
-  font-size: calc(10px + 0.625vw);
+  font-size: calc(10px + 0.390625vw);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
