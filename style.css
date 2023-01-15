@@ -1865,6 +1865,7 @@ p {
 }
 .footer .footer-top .gn {
   padding-right: 25px;
+  padding-left: 30px;
 }
 .footer .footer-top .tabs__items {
   color: #e2d7d7;
@@ -1875,7 +1876,6 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 25px;
 }
 .footer .footer-top .tabs__items span {
   position: relative;
