@@ -174,15 +174,25 @@ body {
 
 .header h1 {
   text-align: center;
-  color: #7a52b3;
   font-size: calc(18px + 0.9375vw);
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 3px;
-  text-shadow: #b280f7 1px 1px 0, #b280f7 2px 2px 0;
 }
-.header h1 span {
+.header h1 .span1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(75, 11, 97, 0.949)), to(rgb(114, 59, 244)));
+  background-image: linear-gradient(rgba(75, 11, 97, 0.949), rgb(114, 59, 244));
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+.header h1 .span2 {
   font-size: calc(12px + 0.9375vw);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(75, 11, 97, 0.949)), to(rgb(114, 59, 244)));
+  background-image: linear-gradient(rgba(75, 11, 97, 0.949), rgb(114, 59, 244));
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
 
 .main {
