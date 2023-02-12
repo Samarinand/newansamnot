@@ -165,9 +165,14 @@ body {
   margin-left: -30px;
 }
 .seach-button:before {
-  content: "\f002";
-  font-family: FontAwesome;
-  color: #324b4e;
+  content: "";
+ background-image: url(img/Zoom.svg);
+ background-size: cover;
+ height: 13px;
+ width: 13px;
+ margin-bottom: 2px;
+ display: inline-block;
+ vertical-align: middle;
 }
 
 .container {
@@ -391,6 +396,29 @@ body {
   color: #fff;
   opacity: 0.8;
   text-transform: uppercase;
+
+}
+.angle-down::after{
+  content: "";
+  position: absolute;
+  left: 170px;
+  top: 30px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid#fff;
+  border-right: 2px solid #fff;
+  transform: rotate(135deg);
+}
+.angle-down1::after{
+  content: "";
+  position: absolute;
+  left: 203px;
+  top: 30px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid#fff;
+  border-right: 2px solid #fff;
+  transform: rotate(135deg);
 }
 .fa fa-angle-down:hover {
   background: #7a52b3;
@@ -491,7 +519,28 @@ body {
   }
 }
 @media (max-width: 992px) {
-
+  .angle-down::after{
+    content: "";
+    position: absolute;
+    left: 170px;
+    top: 30px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #7a52b3;
+    border-right: 2px solid  #7a52b3;
+    transform: rotate(135deg);
+  }
+  .angle-down1::after{
+    content: "";
+    position: absolute;
+    left: 203px;
+    top: 30px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #7a52b3;
+    border-right: 2px solid  #7a52b3;
+    transform: rotate(135deg);
+  }
   .textinput {
     border-bottom: 2px solid #7a52b3;
     height: 40px;
@@ -586,15 +635,16 @@ body {
     background-color: rgba(122, 82, 179, 0.1);
   }
   .hamb__field.active .bar:nth-child(2) {
+   
     opacity: 0;
   }
   .hamb__field.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-    opacity: 0.8;
+    transform: translateY(9px) rotate(40deg);
+    opacity: 1;
   }
   .hamb__field.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
-    opacity: 0.8;
+    opacity: 1;
   }
 
   body.noscroll {
@@ -698,6 +748,18 @@ body {
 .active:after {
   content: "\25BC"; /* Unicode character for "minus" sign (-) */
   transform: rotate(0deg);
+}
+
+.download::before{
+  content: '';
+
+  background-image: url(img/downloads.svg);
+  background-size: cover;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 5px;
 }
 @media (max-width: 964px) {
   .textbalbeg::before {
@@ -1389,6 +1451,7 @@ body {
   margin-top: 2px;
   padding-left: 5px;
   padding-bottom: 1px;
+ 
 }
 p {
   width: 310px;
@@ -1396,16 +1459,16 @@ p {
 
 .audio2 {
   display: flex;
-  margin-top: -7px;
+  margin-top: 0px;
   justify-content: center;
   align-items: center;
   width: 220px;
   height: 23px;
-  background-color: #6b0af3;
+  background-color: #7b00ff;
   border-radius: 15px;
   font-size: 15px;
   font-weight: bold;
-  color: #e2d7d7;
+  color:#fff;
   margin-bottom: 10px;
 }
 .audio2:hover {
