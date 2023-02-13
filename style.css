@@ -429,20 +429,6 @@ body {
           transform: rotate(135deg);
 }
 
-.fa fa-angle-down:hover {
-  background: #7a52b3;
-}
-
-.fa fa-angle-down {
-  background: #7a52b3;
-  right: 20px;
-  color: #fff;
-}
-
-.fa {
-  padding-left: 10px;
-}
-
 .submenu {
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
@@ -1064,11 +1050,13 @@ body {
 .textbalbeg::before {
   position: absolute;
   content: "";
-  background-image: url(img/balalaikasmall.gif);
-  width: 120px;
-  height: 80px;
-  right: 240px;
-  bottom: 5px;
+  background-image: url(img/balalaika.gif);
+  background-size: cover;
+  display: inline-block;
+  width: 60px;
+  height: 40px;
+  left: -80px;
+  bottom: 25px;
 }
 
 .textbaldif {
@@ -1085,11 +1073,13 @@ body {
 .textbaldif::before {
   position: absolute;
   content: "";
-  background-image: url(img/balalaikasmall.gif);
-  width: 120px;
-  height: 80px;
-  right: 310px;
-  bottom: 5px;
+  background-image: url(img/balalaika.gif);
+  background-size: cover;
+  display: inline-block;
+  width: 60px;
+  height: 40px;
+  left: -80px;
+  bottom: 25px;
 }
 
 .baldif {
@@ -1326,21 +1316,25 @@ body {
 .textbaletudes::before {
   position: absolute;
   content: "";
-  background-image: url(img/balalaikasmall.gif);
-  width: 120px;
-  height: 80px;
-  right: 230px;
-  bottom: 5px;
+  background-image: url(img/balalaika.gif);
+  background-size: cover;
+  display: inline-block;
+  width: 60px;
+  height: 40px;
+  left: -80px;
+  bottom: 25px;
 }
 
 .textbalans::before {
   position: absolute;
   content: "";
-  background-image: url(img/balalaikasmall.gif);
-  width: 120px;
-  height: 80px;
-  right: 220px;
-  bottom: 5px;
+  background-image: url(img/balalaika.gif);
+  background-size: cover;
+  display: inline-block;
+  width: 60px;
+  height: 40px;
+  left: -80px;
+  bottom: 25px;
 }
 
 .gitbegt {
@@ -1431,11 +1425,13 @@ body {
 .textgitbeg::before {
   position: absolute;
   content: "";
-  background-image: url(img/guitarsmall.gif);
-  width: 120px;
-  height: 80px;
-  right: 200px;
-  bottom: 5px;
+  background-image: url(img/guitar.gif);
+  background-size: cover;
+  display: inline-block;
+  width: 60px;
+  height: 40px;
+  left: -80px;
+  bottom: 25px;
 }
 
 .gitdift {
@@ -1526,11 +1522,13 @@ body {
 .textgitdif::before {
   position: absolute;
   content: "";
-  background-image: url(img/guitarsmall.gif);
-  width: 120px;
-  height: 80px;
-  right: 300px;
-  bottom: 5px;
+  background-image: url(img/guitar.gif);
+  background-size: cover;
+  display: inline-block;
+  width: 60px;
+  height: 40px;
+  left: -80px;
+  bottom: 25px;
 }
 
 .gitwordst {
@@ -1615,11 +1613,13 @@ body {
 .textgitwords::before {
   position: absolute;
   content: "";
-  background-image: url(img/guitarsmall.gif);
-  width: 120px;
-  height: 80px;
-  right: 290px;
-  bottom: 5px;
+  background-image: url(img/guitar.gif);
+  background-size: cover;
+  display: inline-block;
+  width: 60px;
+  height: 40px;
+  left: -80px;
+  bottom: 25px;
 }
 
 .gitduetst {
@@ -1705,11 +1705,13 @@ body {
 .textgitduets::before {
   position: absolute;
   content: "";
-  background-image: url(img/guitarsmall.gif);
-  width: 120px;
-  height: 80px;
-  right: 250px;
-  bottom: 5px;
+  background-image: url(img/guitar.gif);
+  background-size: cover;
+  display: inline-block;
+  width: 60px;
+  height: 40px;
+  left: -80px;
+  bottom: 25px;
 }
 
 .audio3 {
