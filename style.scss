@@ -1796,14 +1796,16 @@ p {
 }
 .popup1__close {
   position: absolute;
+  height: 35px;
+  width: 35px;
   right: 15px;
-  top: 15px;
-  font-size: 20px;
-  color: #000000;
-  text-decoration: none;
+  top: 20px;
+  cursor: pointer;
+ 
 }
 .popup1__close:hover {
   background-color: #d3baf5;
+  border-radius: 50%;
 }
 .popup1__title {
   font-size: 20px;
@@ -1814,10 +1816,20 @@ p {
   justify-content: center;
 }
 
-.popup1__close:before {
-  content: "\f00d";
-  font-family: FontAwesome;
-  font-size: 24px;
+.popup1__close:before, .popup1__close::after {
+  content: "";
+  position: absolute;
+ width: 24px;
+ height: 5px;
+ background: #585353;
+ right: 5px;
+  top: 14px;
+}
+.popup1__close:before{
+  transform: rotate(45deg);
+}
+.popup1__close::after{
+  transform: rotate(-45deg);
 }
 .popup1__area {
   position: absolute;
