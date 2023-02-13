@@ -1491,11 +1491,13 @@ p {
 /*slider*/
 .parallax-slider {
   height: 410px;
-  width: 100%;
-  min-width: 376px;
+  width: 98%;
+  min-width: 315px;
   overflow: hidden;
+
   border-radius: 10px;
-  background: url("img/FonSky.webp") top/ 125%;
+  background: url("img/FonSky.webp");
+  background-size: cover;
   background-attachment: local;
   display: flex;
   box-shadow: 0px 5px 5px black;
