@@ -627,11 +627,13 @@ body {
     opacity: 0;
   }
   .hamb__field.active .bar:nth-child(1) {
-    transform: translateY(9px) rotate(40deg);
+    transform: translateY(8.5px)rotate(45deg);
+    
     opacity: 1;
   }
   .hamb__field.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8.5px) rotate(-45deg);
+  
     opacity: 1;
   }
 

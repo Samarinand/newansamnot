@@ -685,13 +685,13 @@ body {
     opacity: 0;
   }
   .hamb__field.active .bar:nth-child(1) {
-    -webkit-transform: translateY(9px) rotate(40deg);
-            transform: translateY(9px) rotate(40deg);
+    -webkit-transform: translateY(8.5px) rotate(45deg);
+            transform: translateY(8.5px) rotate(45deg);
     opacity: 1;
   }
   .hamb__field.active .bar:nth-child(3) {
-    -webkit-transform: translateY(-8px) rotate(-45deg);
-            transform: translateY(-8px) rotate(-45deg);
+    -webkit-transform: translateY(-8.5px) rotate(-45deg);
+            transform: translateY(-8.5px) rotate(-45deg);
     opacity: 1;
   }
   body.noscroll {
