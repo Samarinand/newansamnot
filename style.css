@@ -1813,7 +1813,7 @@ p {
 .image-slider1 {
   height: 410px;
   width: 55%;
-  min-width: 500px;
+  min-width: 315px;
 }
 
 .swiper-conteiner {
@@ -1823,7 +1823,7 @@ p {
 .image-slider1-image {
   text-align: center;
   height: 426px;
-  min-width: 500px;
+  min-width: 315px;
   overflow: hidden;
   border-radius: 10px;
 }
