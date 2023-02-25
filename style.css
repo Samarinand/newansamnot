@@ -94,10 +94,15 @@ body {
   display: -ms-flexbox;
   display: flex;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f2ecf6+0,ecd5fb+19,d3acee+43,d3acee+44,d3acee+46,d3acee+48,ecd5fb+100 */
-  background: rgb(242, 236, 246); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: rgb(242, 236, 246);
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
   background: -webkit-gradient(linear, left top, right top, from(rgb(242, 236, 246)), color-stop(19%, rgb(236, 213, 251)), color-stop(43%, rgb(211, 172, 238)), color-stop(44%, rgb(211, 172, 238)), color-stop(46%, rgb(211, 172, 238)), color-stop(48%, rgb(211, 172, 238)), to(rgb(236, 213, 251)));
-  background: linear-gradient(to right, rgb(242, 236, 246) 0%, rgb(236, 213, 251) 19%, rgb(211, 172, 238) 43%, rgb(211, 172, 238) 44%, rgb(211, 172, 238) 46%, rgb(211, 172, 238) 48%, rgb(236, 213, 251) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f2ecf6", endColorstr="#ecd5fb",GradientType=1 ); /* IE6-9 */
+  background: linear-gradient(to right, rgb(242, 236, 246) 0%, rgb(236, 213, 251) 19%, rgb(211, 172, 238) 43%, rgb(211, 172, 238) 44%, rgb(211, 172, 238) 46%, rgb(211, 172, 238) 48%, rgb(236, 213, 251) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f2ecf6", endColorstr="#ecd5fb", GradientType=1);
+  /* IE6-9 */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -521,7 +526,8 @@ body {
   color: rgb(255, 255, 255);
 }
 
-.header-youtude, .header-ebvelope {
+.header-youtude,
+.header-ebvelope {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -532,7 +538,8 @@ body {
 }
 
 @media (max-width: 500px) {
-  .header-youtude, .header-ebvelope {
+  .header-youtude,
+.header-ebvelope {
     padding-right: 0px;
     display: none;
   }
@@ -804,7 +811,8 @@ body {
 }
 
 .accordion:after {
-  content: "▲"; /* Unicode character for "plus" sign (+) */
+  content: "▲";
+  /* Unicode character for "plus" sign (+) */
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
   font-size: 20px;
@@ -814,7 +822,8 @@ body {
 }
 
 .active:after {
-  content: "▼"; /* Unicode character for "minus" sign (-) */
+  content: "▼";
+  /* Unicode character for "minus" sign (-) */
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
 }
@@ -1958,6 +1967,12 @@ p {
   position: relative;
   z-index: 2;
 }
+.footer .footer-top .tabs__items span:hover {
+  opacity: 1;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  color: #000000;
+}
 .footer .footer-top .tabs__item {
   height: 20px;
   color: #e2d7d7;
@@ -1982,7 +1997,21 @@ p {
 .footer .footer-top .b4 > a {
   padding-left: 5px;
   color: #e2d7d7;
+  opacity: 0, 8;
   text-transform: uppercase;
+}
+.footer .footer-top .g1 > a:hover,
+.footer .footer-top .g2 > a:hover,
+.footer .footer-top .g3 > a:hover,
+.footer .footer-top .g4 > a:hover,
+.footer .footer-top .b1 > a:hover,
+.footer .footer-top .b2 > a:hover,
+.footer .footer-top .b3 > a:hover,
+.footer .footer-top .b4 > a:hover {
+  opacity: 1;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  color: #000000;
 }
 .footer .footer1 {
   color: #e2d7d7;
@@ -2009,13 +2038,19 @@ p {
 }
 
 .go-top {
-  position: fixed; /* фиксированное позиционирование */
-  left: 20px; /* отступ слева 20px */
-  top: 50%; /* выравниваем по центру */
+  position: fixed;
+  /* фиксированное позиционирование */
+  left: 20px;
+  /* отступ слева 20px */
+  top: 50%;
+  /* выравниваем по центру */
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%); /* выравниваем по центру */
-  cursor: pointer; /* при наведении меняем курсор */
-  display: none; /* по умолчанию скрываем кнопку */
+          transform: translateY(-50%);
+  /* выравниваем по центру */
+  cursor: pointer;
+  /* при наведении меняем курсор */
+  display: none;
+  /* по умолчанию скрываем кнопку */
   font-size: 18px;
   color: rgba(0, 51, 153, 0.5);
   border: 1px solid rgba(0, 51, 153, 0.5);
@@ -2043,13 +2078,19 @@ p {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-bottom: 20px solid rgba(0, 51, 153, 0.5);
-  position: fixed; /* фиксированное позиционирование */
-  left: 35px; /* отступ слева 20px */
-  top: 50%; /* выравниваем по центру */
+  position: fixed;
+  /* фиксированное позиционирование */
+  left: 35px;
+  /* отступ слева 20px */
+  top: 50%;
+  /* выравниваем по центру */
   -webkit-transform: translateY(-60%);
-          transform: translateY(-60%); /* выравниваем по центру */
-  display: none; /* по умолчанию скрываем кнопку */
-  cursor: pointer; /* при наведении меняем курсор */
+          transform: translateY(-60%);
+  /* выравниваем по центру */
+  display: none;
+  /* по умолчанию скрываем кнопку */
+  cursor: pointer;
+  /* при наведении меняем курсор */
 }
 
 .triangle-up--show {
@@ -2137,7 +2178,8 @@ p {
           justify-content: center;
 }
 
-.popup1__close:before, .popup1__close::after {
+.popup1__close:before,
+.popup1__close::after {
   content: "";
   position: absolute;
   width: 24px;
