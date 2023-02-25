@@ -1287,6 +1287,7 @@ p {
 .footer .footer1 {
   font-size: 18px;
   color: #F6F6F6;
+  text-decoration: none;
 }
 .footer .fa-youtube-square {
   padding-top: 3px;
