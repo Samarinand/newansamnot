@@ -223,9 +223,12 @@ body {
 }
 
 .vibrate-3 {
-  padding-top: 30px;
   -webkit-animation: vibrate-3 0.5s linear infinite both;
   animation: vibrate-3 0.5s linear infinite both;
+}
+.vibrate-3 a {
+  display: block;
+  padding: 30px 10px;
 }
 
 @-webkit-keyframes vibrate-3 {
@@ -1981,16 +1984,6 @@ p {
   height: 20px;
   color: #e2d7d7;
 }
-.footer .footer-top .g1,
-.footer .footer-top .g2,
-.footer .footer-top .g3,
-.footer .footer-top .g4,
-.footer .footer-top .b1,
-.footer .footer-top .b2,
-.footer .footer-top .b3,
-.footer .footer-top .b4 {
-  padding: 5px;
-}
 .footer .footer-top .g1 > a,
 .footer .footer-top .g2 > a,
 .footer .footer-top .g3 > a,
@@ -1999,7 +1992,7 @@ p {
 .footer .footer-top .b2 > a,
 .footer .footer-top .b3 > a,
 .footer .footer-top .b4 > a {
-  padding-left: 5px;
+  display: block;
   color: #e2d7d7;
   opacity: 0, 8;
   text-transform: uppercase;

@@ -237,7 +237,13 @@ body {
 }
 
 .vibrate-3 {
-  padding-top: 30px;
+
+
+  a {
+    display: block;
+    padding: 30px 10px;
+  }
+
   -webkit-animation: vibrate-3 0.5s linear infinite both;
   animation: vibrate-3 0.5s linear infinite both;
 }
@@ -1772,6 +1778,7 @@ p {
   .footer-top {
     .tabs {
       padding-top: 20px;
+
     }
 
     .tabs__body {
@@ -1798,6 +1805,7 @@ p {
 
     .tabs__blok:nth-child(1) {
       background-color: #7a52b3;
+
     }
 
     .tabs__blok:nth-child(2) {
@@ -1820,6 +1828,7 @@ p {
       position: absolute;
       top: -40px;
       left: 0;
+
     }
 
     .bn>input,
@@ -1844,9 +1853,11 @@ p {
       justify-content: space-between;
 
     }
-    .tabs__hover{
+
+    .tabs__hover {
       padding: 5px;
     }
+
     .tabs__items span {
       position: relative;
       z-index: 2;
@@ -1864,16 +1875,7 @@ p {
       color: #e2d7d7;
     }
 
-    .g1,
-    .g2,
-    .g3,
-    .g4,
-    .b1,
-    .b2,
-    .b3,
-    .b4 {
-      padding: 5px;
-    }
+
 
     .g1>a,
     .g2>a,
@@ -1883,8 +1885,8 @@ p {
     .b2>a,
     .b3>a,
     .b4>a {
-      padding-left: 5px;
 
+      display: block;
       color: #e2d7d7;
       opacity: 0, 8;
       text-transform: uppercase;
@@ -1893,7 +1895,7 @@ p {
         opacity: 1;
         transition: 0.8s;
         color: #000000;
-        
+
       }
     }
   }
