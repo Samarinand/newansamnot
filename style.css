@@ -1963,9 +1963,13 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.footer .footer-top .tabs__hover {
+  padding: 5px;
+}
 .footer .footer-top .tabs__items span {
   position: relative;
   z-index: 2;
+  padding: 5px;
 }
 .footer .footer-top .tabs__items span:hover {
   opacity: 1;
@@ -1985,7 +1989,7 @@ p {
 .footer .footer-top .b2,
 .footer .footer-top .b3,
 .footer .footer-top .b4 {
-  padding-bottom: 5px;
+  padding: 5px;
 }
 .footer .footer-top .g1 > a,
 .footer .footer-top .g2 > a,
