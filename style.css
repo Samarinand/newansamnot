@@ -1972,7 +1972,7 @@ p {
 .footer .footer-top .tabs__items span {
   position: relative;
   z-index: 2;
-  padding: 5px;
+  padding: 10px 5px 14px;
 }
 .footer .footer-top .tabs__items span:hover {
   opacity: 1;
