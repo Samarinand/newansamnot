@@ -381,9 +381,11 @@ body {
   display: flex;
   justify-content: space-between;
   height: 100%;
+  gap: 10px;
 }
 .navbar__wrap-left{
 display: flex;
+gap: 10px;
 }
 .navbar__wrap-right{
 display: flex;
@@ -554,7 +556,9 @@ display: flex;
 
 
 @media (max-width: 500px) {
- 
+  .navbar__wrap {
+   padding-left: 10px;
+  }
   .header-youtude,
   .header-ebvelope {
     padding-right: 0px;
