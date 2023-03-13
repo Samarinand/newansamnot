@@ -382,10 +382,10 @@ body {
   justify-content: space-between;
   height: 100%;
 }
-.navbar__wrap_left{
+.navbar__wrap-left{
 display: flex;
 }
-.navbar__wrap_right{
+.navbar__wrap-right{
 display: flex;
 
 }
@@ -568,7 +568,7 @@ display: flex;
 }
 
 @media (max-width: 992px) {
-   .navbar__wrap_right {
+   .navbar__wrap-right {
   
     justify-content:flex-end;
  

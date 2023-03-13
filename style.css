@@ -349,13 +349,13 @@ body {
   height: 100%;
 }
 
-.navbar__wrap_left {
+.navbar__wrap-left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.navbar__wrap_right {
+.navbar__wrap-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -563,7 +563,7 @@ body {
   }
 }
 @media (max-width: 992px) {
-  .navbar__wrap_right {
+  .navbar__wrap-right {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
