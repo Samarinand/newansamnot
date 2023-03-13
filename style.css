@@ -349,6 +349,18 @@ body {
   height: 100%;
 }
 
+.navbar__wrap_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar__wrap_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .hamb {
   display: none;
 }
@@ -551,6 +563,11 @@ body {
   }
 }
 @media (max-width: 992px) {
+  .navbar__wrap_right {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
   .angle-down::after {
     content: "";
     position: absolute;

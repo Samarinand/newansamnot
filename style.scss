@@ -382,7 +382,13 @@ body {
   justify-content: space-between;
   height: 100%;
 }
+.navbar__wrap_left{
+display: flex;
+}
+.navbar__wrap_right{
+display: flex;
 
+}
 .hamb {
   display: none;
 }
@@ -548,7 +554,7 @@ body {
 
 
 @media (max-width: 500px) {
-
+ 
   .header-youtude,
   .header-ebvelope {
     padding-right: 0px;
@@ -562,6 +568,11 @@ body {
 }
 
 @media (max-width: 992px) {
+   .navbar__wrap_right {
+  
+    justify-content:flex-end;
+ 
+  }
   .angle-down::after {
     content: "";
     position: absolute;
