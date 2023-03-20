@@ -1013,9 +1013,8 @@ body {
     color: rgb(64, 50, 50);
   }
 
-  a:hover {
-    border-radius: 15px;
-    background-color: #e2d7d7;
+ .elastic:hover {
+  color: #7a52b3;
     cursor: pointer;
     transition: 0.3s;
   }
@@ -1116,12 +1115,11 @@ body {
     color: rgb(64, 50, 50);
   }
 
-  a:hover {
-    border-radius: 15px;
-    background-color: #e2d7d7;
-    cursor: pointer;
-    transition: 0.3s;
-  }
+  .elastic:hover {
+    color: #7a52b3;
+      cursor: pointer;
+      transition: 0.3s;
+    }
 
   p:active {
     color: rgb(4, 4, 28);
@@ -1186,12 +1184,11 @@ body {
     color: rgb(64, 50, 50);
   }
 
-  a:hover {
-    border-radius: 15px;
-    background-color: #e2d7d7;
-    cursor: pointer;
-    transition: 0.3s;
-  }
+  .elastic:hover {
+    color: #7a52b3;
+      cursor: pointer;
+      transition: 0.3s;
+    }
 
   p:active {
     color: rgb(4, 4, 28);
@@ -1257,12 +1254,11 @@ body {
     color: rgb(64, 50, 50);
   }
 
-  a:hover {
-    border-radius: 15px;
-    background-color: #e2d7d7;
-    cursor: pointer;
-    transition: 0.3s;
-  }
+  .elastic:hover {
+    color: #7a52b3;
+      cursor: pointer;
+      transition: 0.3s;
+    }
 
   p:active {
     color: rgb(4, 4, 28);
@@ -1352,12 +1348,11 @@ body {
     color: rgb(64, 50, 50);
   }
 
-  a:hover {
-    border-radius: 15px;
-    background-color: #e2d7d7;
-    cursor: pointer;
-    transition: 0.3s;
-  }
+  .elastic:hover {
+    color: #7a52b3;
+      cursor: pointer;
+      transition: 0.3s;
+    }
 
   p:active {
     color: rgb(4, 4, 28);
@@ -1435,12 +1430,11 @@ body {
     color: rgb(64, 50, 50);
   }
 
-  a:hover {
-    border-radius: 15px;
-    background-color: #e2d7d7;
-    cursor: pointer;
-    transition: 0.3s;
-  }
+  .elastic:hover {
+    color: #7a52b3;
+      cursor: pointer;
+      transition: 0.3s;
+    }
 
   p:active {
     color: rgb(4, 4, 28);
@@ -1516,13 +1510,11 @@ body {
   p:visited {
     color: rgb(64, 50, 50);
   }
-
-  a:hover {
-    border-radius: 15px;
-    background-color: #e2d7d7;
-    cursor: pointer;
-    transition: 0.3s;
-  }
+  .elastic:hover {
+    color: #7a52b3;
+      cursor: pointer;
+      transition: 0.3s;
+    }
 
   p:active {
     color: rgb(4, 4, 28);
@@ -1600,12 +1592,11 @@ body {
     color: rgb(64, 50, 50);
   }
 
-  a:hover {
-    border-radius: 15px;
-    background-color: #e2d7d7;
-    cursor: pointer;
-    transition: 0.3s;
-  }
+  .elastic:hover {
+    color: #7a52b3;
+      cursor: pointer;
+      transition: 0.3s;
+    }
 
   p:active {
     color: rgb(4, 4, 28);
@@ -1630,10 +1621,7 @@ body {
   margin-top: 2px;
   padding-left: 5px;
   padding-bottom: 1px;
-a{
-  display: inline-block;
-  padding: 0px 5px 0px 5px ;
-}
+
 }
 
 p {

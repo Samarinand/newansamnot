@@ -1033,11 +1033,10 @@ body {
 .balbeg3 p:visited {
   color: rgb(64, 50, 50);
 }
-.balbeg1 a:hover,
-.balbeg2 a:hover,
-.balbeg3 a:hover {
-  border-radius: 15px;
-  background-color: #e2d7d7;
+.balbeg1 .elastic:hover,
+.balbeg2 .elastic:hover,
+.balbeg3 .elastic:hover {
+  color: #7a52b3;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1152,11 +1151,10 @@ body {
 .baldif3 p:visited {
   color: rgb(64, 50, 50);
 }
-.baldif1 a:hover,
-.baldif2 a:hover,
-.baldif3 a:hover {
-  border-radius: 15px;
-  background-color: #e2d7d7;
+.baldif1 .elastic:hover,
+.baldif2 .elastic:hover,
+.baldif3 .elastic:hover {
+  color: #7a52b3;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1236,11 +1234,10 @@ body {
 .baletudes3 p:visited {
   color: rgb(64, 50, 50);
 }
-.baletudes1 a:hover,
-.baletudes2 a:hover,
-.baletudes3 a:hover {
-  border-radius: 15px;
-  background-color: #e2d7d7;
+.baletudes1 .elastic:hover,
+.baletudes2 .elastic:hover,
+.baletudes3 .elastic:hover {
+  color: #7a52b3;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1321,11 +1318,10 @@ body {
 .balans3 p:visited {
   color: rgb(64, 50, 50);
 }
-.balans1 a:hover,
-.balans2 a:hover,
-.balans3 a:hover {
-  border-radius: 15px;
-  background-color: #e2d7d7;
+.balans1 .elastic:hover,
+.balans2 .elastic:hover,
+.balans3 .elastic:hover {
+  color: #7a52b3;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1430,11 +1426,10 @@ body {
 .gitbeg3 p:visited {
   color: rgb(64, 50, 50);
 }
-.gitbeg1 a:hover,
-.gitbeg2 a:hover,
-.gitbeg3 a:hover {
-  border-radius: 15px;
-  background-color: #e2d7d7;
+.gitbeg1 .elastic:hover,
+.gitbeg2 .elastic:hover,
+.gitbeg3 .elastic:hover {
+  color: #7a52b3;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1527,11 +1522,10 @@ body {
 .gitdif3 p:visited {
   color: rgb(64, 50, 50);
 }
-.gitdif1 a:hover,
-.gitdif2 a:hover,
-.gitdif3 a:hover {
-  border-radius: 15px;
-  background-color: #e2d7d7;
+.gitdif1 .elastic:hover,
+.gitdif2 .elastic:hover,
+.gitdif3 .elastic:hover {
+  color: #7a52b3;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1620,10 +1614,9 @@ body {
 .gitwords2 p:visited {
   color: rgb(64, 50, 50);
 }
-.gitwords1 a:hover,
-.gitwords2 a:hover {
-  border-radius: 15px;
-  background-color: #e2d7d7;
+.gitwords1 .elastic:hover,
+.gitwords2 .elastic:hover {
+  color: #7a52b3;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1712,10 +1705,9 @@ body {
 .gitduets2 p:visited {
   color: rgb(64, 50, 50);
 }
-.gitduets1 a:hover,
-.gitduets2 a:hover {
-  border-radius: 15px;
-  background-color: #e2d7d7;
+.gitduets1 .elastic:hover,
+.gitduets2 .elastic:hover {
+  color: #7a52b3;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1743,10 +1735,6 @@ body {
   margin-top: 2px;
   padding-left: 5px;
   padding-bottom: 1px;
-}
-.audio3 a {
-  display: inline-block;
-  padding: 0px 5px 0px 5px;
 }
 
 p {
