@@ -761,13 +761,15 @@ body {
   position: relative;
   border-radius: 10px;
   background-color: #bcd3f0;
-  font-size: calc(12px + 4 * (100vw / 1280)) ;
+  font-size: calc(12px + 4 * (100vw / 1280));
   box-shadow: 0px 5px 5px black;
   padding: 10px;
 }
-.text-ul{
+
+.text-ul {
   margin-top: 15px;
 }
+
 .text-ul>ul>li::before {
   content: "\2713";
   font-weight: 600;
@@ -855,8 +857,8 @@ h3 {
 
 
 
-  
-  
+
+
 
 
 @media (max-width: 964px) {
@@ -864,9 +866,16 @@ h3 {
     left: -130px;
   }
 
-  .balbeg,.balans, .baldif, .baletudes, .gitbeg, .gitdif,.gitwords, .gitduets {
+  .balbeg,
+  .balans,
+  .baldif,
+  .baletudes,
+  .gitbeg,
+  .gitdif,
+  .gitwords,
+  .gitduets {
     flex-direction: column;
-gap: 15px;
+    gap: 15px;
     align-items: center;
   }
 
@@ -874,7 +883,7 @@ gap: 15px;
     padding-left: 110px;
   }
 
-  
+
 
   .baldift {
     padding-left: 145px;
@@ -892,7 +901,7 @@ gap: 15px;
     left: -120px;
   }
 
-  
+
 
   .balanst {
     padding-left: 160px;
@@ -902,7 +911,7 @@ gap: 15px;
     left: -120px;
   }
 
-  
+
   .textgitbeg::before {
     left: -120px;
   }
@@ -927,7 +936,7 @@ gap: 15px;
     padding-left: 140px;
   }
 
- 
+
   .textgitduets::before {
     left: -120px;
   }
@@ -1777,9 +1786,10 @@ p {
   background-color: #b086eb;
 }
 
+// footer
 .footer {
   background-color: #40464f;
-  height: 220px;
+  height: 260px;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -1915,8 +1925,10 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 30px;
-
+    height: 80px;
+.rute{
+  cursor:default;
+}
 
     .footer-youtude {
       display: flex;
@@ -1928,6 +1940,8 @@ p {
     }
   }
 }
+
+
 
 .go-top {
   position: fixed;

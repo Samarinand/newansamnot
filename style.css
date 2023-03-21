@@ -862,7 +862,14 @@ h3 {
   .textbalbeg::before {
     left: -130px;
   }
-  .balbeg, .balans, .baldif, .baletudes, .gitbeg, .gitdif, .gitwords, .gitduets {
+  .balbeg,
+.balans,
+.baldif,
+.baletudes,
+.gitbeg,
+.gitdif,
+.gitwords,
+.gitduets {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1865,7 +1872,7 @@ p {
 
 .footer {
   background-color: #40464f;
-  height: 220px;
+  height: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2005,7 +2012,10 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 30px;
+  height: 80px;
+}
+.footer .footer1 .rute {
+  cursor: default;
 }
 .footer .footer1 .footer-youtude {
   display: -webkit-box;
