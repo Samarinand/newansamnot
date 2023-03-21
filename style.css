@@ -751,10 +751,14 @@ body {
   position: relative;
   border-radius: 10px;
   background-color: #bcd3f0;
-  font-size: 16px;
+  font-size: calc(12px + 0.3125vw);
   -webkit-box-shadow: 0px 5px 5px black;
           box-shadow: 0px 5px 5px black;
   padding: 10px;
+}
+
+.text-ul {
+  margin-top: 15px;
 }
 
 .text-ul > ul > li::before {
@@ -777,9 +781,9 @@ body {
   position: relative;
 }
 
-.text {
+h3 {
   font-weight: 600;
-  display: inline-block;
+  display: inline;
   padding-bottom: 15px;
 }
 
@@ -854,16 +858,6 @@ body {
           transform: rotate(0deg);
 }
 
-@media (max-width: 423px) {
-  .discriptiont {
-    font-size: 14px;
-  }
-}
-@media (max-width: 372px) {
-  .discriptiont {
-    font-size: 12px;
-  }
-}
 @media (max-width: 964px) {
   .textbalbeg::before {
     left: -130px;
