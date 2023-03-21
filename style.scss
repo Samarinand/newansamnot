@@ -761,7 +761,7 @@ body {
   position: relative;
   border-radius: 10px;
   background-color: #bcd3f0;
-  font-size: calc(12px + 4 * (100vw / 1280));
+  font-size: 16px;
   box-shadow: 0px 5px 5px black;
   padding: 10px;
 }
@@ -849,7 +849,18 @@ body {
   transform: rotate(0deg);
 }
 
+@media(max-width:423px) {
+  .discriptiont {
+    font-size: 14px;
+  }
 
+}
+@media(max-width:372px) {
+  .discriptiont {
+    font-size: 12px;
+  }
+
+}
 @media (max-width: 964px) {
   .textbalbeg::before {
     left: -130px;
@@ -1013,8 +1024,8 @@ body {
     color: rgb(64, 50, 50);
   }
 
- .elastic:hover {
-  color: #7a52b3;
+  .elastic:hover {
+    color: #7a52b3;
     cursor: pointer;
     transition: 0.3s;
   }
@@ -1117,9 +1128,9 @@ body {
 
   .elastic:hover {
     color: #7a52b3;
-      cursor: pointer;
-      transition: 0.3s;
-    }
+    cursor: pointer;
+    transition: 0.3s;
+  }
 
   p:active {
     color: rgb(4, 4, 28);
@@ -1186,9 +1197,9 @@ body {
 
   .elastic:hover {
     color: #7a52b3;
-      cursor: pointer;
-      transition: 0.3s;
-    }
+    cursor: pointer;
+    transition: 0.3s;
+  }
 
   p:active {
     color: rgb(4, 4, 28);
@@ -1256,9 +1267,9 @@ body {
 
   .elastic:hover {
     color: #7a52b3;
-      cursor: pointer;
-      transition: 0.3s;
-    }
+    cursor: pointer;
+    transition: 0.3s;
+  }
 
   p:active {
     color: rgb(4, 4, 28);
@@ -1350,9 +1361,9 @@ body {
 
   .elastic:hover {
     color: #7a52b3;
-      cursor: pointer;
-      transition: 0.3s;
-    }
+    cursor: pointer;
+    transition: 0.3s;
+  }
 
   p:active {
     color: rgb(4, 4, 28);
@@ -1432,9 +1443,9 @@ body {
 
   .elastic:hover {
     color: #7a52b3;
-      cursor: pointer;
-      transition: 0.3s;
-    }
+    cursor: pointer;
+    transition: 0.3s;
+  }
 
   p:active {
     color: rgb(4, 4, 28);
@@ -1510,11 +1521,12 @@ body {
   p:visited {
     color: rgb(64, 50, 50);
   }
+
   .elastic:hover {
     color: #7a52b3;
-      cursor: pointer;
-      transition: 0.3s;
-    }
+    cursor: pointer;
+    transition: 0.3s;
+  }
 
   p:active {
     color: rgb(4, 4, 28);
@@ -1594,9 +1606,9 @@ body {
 
   .elastic:hover {
     color: #7a52b3;
-      cursor: pointer;
-      transition: 0.3s;
-    }
+    cursor: pointer;
+    transition: 0.3s;
+  }
 
   p:active {
     color: rgb(4, 4, 28);
@@ -1655,17 +1667,7 @@ p {
   font-size: 10px;
 }
 
-.download::before {
-  content: '';
 
-  background-image: url(img/downloads.svg);
-  background-size: cover;
-  height: 20px;
-  width: 20px;
-  display: inline-block;
-  margin-left: 0px;
-  margin-top: 5px;
-}
 
 .download-text {
   display: flex;
@@ -1673,19 +1675,30 @@ p {
   align-items: center;
   width: 220px;
   transition: all 0.8s ease 0s;
+  svg{
+    transition: all 0.8s ease 0s;
+   height: 11px;
+    fill: white;
+    }
 }
 
 .download-text1 {
   width: 180px;
- 
+
 }
 
 .download-text:hover {
   color: #7b00ff;
+
+  svg{
+    transition: all 0.8s ease 0s;
+     fill: #7b00ff;
+     }
 }
 
 .download {
   width: 20px;
+ 
 }
 
 /*slider*/
@@ -1944,6 +1957,7 @@ p {
 
     .footer-youtude {
       display: flex;
+      
     }
 
     .footer-ebvelope {
@@ -2173,22 +2187,29 @@ input:focus {
   text-align: center;
   margin-bottom: 10px;
 }
-.maill-svg{
-  height: 30px;width: 30px;
-  fill:#526cfc;
+
+.maill-svg {
+  height: 30px;
+  width: 30px;
+  fill: #526cfc;
   transition: all 0.8s ease 0s;
 }
+
 .maill-svg:hover {
-  fill:#e2d7d7 ;
+  fill: #e2d7d7;
 }
-.youtube-svg{
-  height: 47px;width: 47px;
-  fill:#f03955;
+
+.youtube-svg {
+  height: 47px;
+  width: 47px;
+  fill: #f03955;
   transition: all 0.8s ease 0s;
 }
+
 .youtube-svg:hover {
-  fill:#e2d7d7 ;
+  fill: #e2d7d7;
 }
-.rute{
-color:#e2d7d7;
+
+.rute {
+  color: #e2d7d7;
 }
