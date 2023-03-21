@@ -777,9 +777,10 @@ body {
   position: relative;
 }
 
-.discriptiont > h3 {
+.discriptiont > p {
   margin-bottom: 10px;
   font-weight: 600;
+  display: inline;
 }
 
 .discriptiont::before {
