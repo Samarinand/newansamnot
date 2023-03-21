@@ -854,16 +854,24 @@ h3 {
 }
 
 
+@media (max-width: 676px){
+  .balbeg,.balans, .baldif, .baletudes, .gitbeg, .gitdif,.gitwords, .gitduets {
+    flex-direction: column;
 
+    align-items: center;
+  }
+  
+  
+}
 
 @media (max-width: 964px) {
   .textbalbeg::before {
     left: -130px;
   }
 
-  .balbeg {
-    flex-direction: column;
-
+  .balbeg,.balans, .baldif, .baletudes, .gitbeg, .gitdif,.gitwords, .gitduets {
+    flex-wrap: wrap;
+   gap: 20px;
     align-items: center;
   }
 
@@ -871,11 +879,7 @@ h3 {
     padding-left: 110px;
   }
 
-  .baldif {
-    flex-direction: column;
-
-    align-items: center;
-  }
+  
 
   .baldift {
     padding-left: 145px;
@@ -893,11 +897,7 @@ h3 {
     left: -120px;
   }
 
-  .baletudes {
-    flex-direction: column;
-
-    align-items: center;
-  }
+  
 
   .balanst {
     padding-left: 160px;
@@ -907,24 +907,7 @@ h3 {
     left: -120px;
   }
 
-  .balans {
-    flex-direction: column;
-
-    align-items: center;
-  }
-
-  .gitbeg {
-    flex-direction: column;
-
-    align-items: center;
-  }
-
-  .gitdif {
-    flex-direction: column;
-
-    align-items: center;
-  }
-
+  
   .textgitbeg::before {
     left: -120px;
   }
@@ -949,24 +932,13 @@ h3 {
     padding-left: 140px;
   }
 
-  .gitwords {
-    flex-direction: column;
-
-    align-items: center;
-  }
-
+ 
   .textgitduets::before {
     left: -120px;
   }
 
   .gitduetst {
     padding-left: 140px;
-  }
-
-  .gitduets {
-    flex-direction: column;
-
-    align-items: center;
   }
 }
 

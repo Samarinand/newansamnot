@@ -858,30 +858,31 @@ h3 {
           transform: rotate(0deg);
 }
 
-@media (max-width: 964px) {
-  .textbalbeg::before {
-    left: -130px;
-  }
-  .balbeg {
+@media (max-width: 676px) {
+  .balbeg, .balans, .baldif, .baletudes, .gitbeg, .gitdif, .gitwords, .gitduets {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 964px) {
+  .textbalbeg::before {
+    left: -130px;
+  }
+  .balbeg, .balans, .baldif, .baletudes, .gitbeg, .gitdif, .gitwords, .gitduets {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   .balbegt {
     padding-left: 110px;
-  }
-  .baldif {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .baldift {
     padding-left: 145px;
@@ -895,47 +896,11 @@ h3 {
   .textbaletudes::before {
     left: -120px;
   }
-  .baletudes {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   .balanst {
     padding-left: 160px;
   }
   .textbalans::before {
     left: -120px;
-  }
-  .balans {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .gitbeg {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .gitdif {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .textgitbeg::before {
     left: -120px;
@@ -955,29 +920,11 @@ h3 {
   .gitwordst {
     padding-left: 140px;
   }
-  .gitwords {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   .textgitduets::before {
     left: -120px;
   }
   .gitduetst {
     padding-left: 140px;
-  }
-  .gitduets {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 .balbegt {
