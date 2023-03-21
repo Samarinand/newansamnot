@@ -777,10 +777,10 @@ body {
   position: relative;
 }
 
-.discriptiont > p {
-  margin-bottom: 10px;
+.text {
   font-weight: 600;
-  display: inline;
+  display: inline-block;
+  padding-bottom: 15px;
 }
 
 .discriptiont::before {
