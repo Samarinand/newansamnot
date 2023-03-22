@@ -856,12 +856,15 @@ h3 {
 }
 
 
+@media (max-width: 642px) {
 
+}
 
 
 
 
 @media (max-width: 964px) {
+ 
   .textbalbeg::before {
     left: -130px;
   }
@@ -873,9 +876,10 @@ h3 {
   .gitbeg,
   .gitdif,
   .gitwords,
-  .gitduets {
-    flex-direction: column;
-    gap: 15px;
+  .gitduets
+  {
+    flex-wrap: wrap;
+   gap: 15px;
     align-items: center;
   }
 
