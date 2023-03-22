@@ -138,6 +138,7 @@ body {
   transition: 0.3s linear;
   opacity: 0.8;
   font-size: 12px;
+  cursor: pointer;
 }
 
 .seach-site:focus {
@@ -154,6 +155,7 @@ body {
   border: none;
   z-index: 1;
   margin-left: -30px;
+  cursor: default;
 }
 
 .seach-button:before {
