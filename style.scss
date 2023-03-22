@@ -1789,7 +1789,7 @@ p {
 
 // footer
 .footer {
-  background-color: #40464f;
+  background-color:black;
   height: 260px;
   display: flex;
   justify-content: space-around;
@@ -1934,23 +1934,24 @@ p {
 
     .footer-youtude {
       display: flex;
-      justify-content:center;
+      justify-content: center;
       align-items: center;
       height: 60px;
       width: 60px;
-cursor: pointer;
+      cursor: pointer;
     }
 
     .footer-ebvelope {
       display: flex;
-      justify-content:center;
+      justify-content: center;
       align-items: center;
       height: 60px;
       width: 60px;
-     cursor: pointer;
+      cursor: pointer;
     }
   }
 }
+
 .maill-svg {
   height: 30px;
   width: 30px;
@@ -2199,4 +2200,3 @@ input:focus {
   text-align: center;
   margin-bottom: 10px;
 }
-

@@ -1869,7 +1869,7 @@ p {
 }
 
 .footer {
-  background-color: #40464f;
+  background-color: black;
   height: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
