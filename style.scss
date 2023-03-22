@@ -856,15 +856,13 @@ h3 {
 }
 
 
-@media (max-width: 642px) {
-
-}
+@media (max-width: 642px) {}
 
 
 
 
 @media (max-width: 964px) {
- 
+
   .textbalbeg::before {
     left: -130px;
   }
@@ -876,10 +874,9 @@ h3 {
   .gitbeg,
   .gitdif,
   .gitwords,
-  .gitduets
-  {
+  .gitduets {
     flex-wrap: wrap;
-   gap: 15px;
+    row-gap: 15px;
     align-items: center;
   }
 
@@ -1930,21 +1927,55 @@ p {
     justify-content: space-around;
     align-items: center;
     height: 80px;
-.rute{
-  cursor:default;
-}
+
+    .rute {
+      cursor: default;
+    }
 
     .footer-youtude {
       display: flex;
-
+      justify-content:center;
+      align-items: center;
+      height: 60px;
+      width: 60px;
+cursor: pointer;
     }
 
     .footer-ebvelope {
       display: flex;
+      justify-content:center;
+      align-items: center;
+      height: 60px;
+      width: 60px;
+     cursor: pointer;
     }
   }
 }
+.maill-svg {
+  height: 30px;
+  width: 30px;
+  fill: #526cfc;
+  transition: all 0.8s ease 0s;
+}
 
+.maill-svg:hover {
+  fill: #e2d7d7;
+}
+
+.youtube-svg {
+  height: 47px;
+  width: 47px;
+  fill: #f03955;
+  transition: all 0.8s ease 0s;
+}
+
+.youtube-svg:hover {
+  fill: #e2d7d7;
+}
+
+.rute {
+  color: #e2d7d7;
+}
 
 
 .go-top {
@@ -2169,28 +2200,3 @@ input:focus {
   margin-bottom: 10px;
 }
 
-.maill-svg {
-  height: 30px;
-  width: 30px;
-  fill: #526cfc;
-  transition: all 0.8s ease 0s;
-}
-
-.maill-svg:hover {
-  fill: #e2d7d7;
-}
-
-.youtube-svg {
-  height: 47px;
-  width: 47px;
-  fill: #f03955;
-  transition: all 0.8s ease 0s;
-}
-
-.youtube-svg:hover {
-  fill: #e2d7d7;
-}
-
-.rute {
-  color: #e2d7d7;
-}
