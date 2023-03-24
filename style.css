@@ -860,9 +860,38 @@ h3 {
           transform: rotate(0deg);
 }
 
-@media (max-width: 964px) {
+.notes {
+  padding: o, 5px, 0;
+}
+
+@media (max-width: 993px) {
   .textbalbeg::before {
     left: -130px;
+  }
+  .balbeg1,
+.balbeg2,
+.balbeg3,
+.balans1,
+.balans2,
+.balans3,
+.baldif1,
+.baldif2,
+.baldif3,
+.baletudes1,
+.baletudes2,
+.baletudes3,
+.gitbeg1,
+.gitbeg2,
+.gitbeg3,
+.gitdif1,
+.gitdif2,
+.gitdif3,
+.gitwords1,
+.gitwords2,
+.gitduets1,
+.gitduets2 {
+    margin-right: 10px;
+    margin-left: 10px;
   }
   .balbeg,
 .balans,
@@ -1758,6 +1787,10 @@ p {
   fill: #7b00ff;
 }
 
+.audio2:active {
+  background-color: #e2d7d7;
+}
+
 .download {
   width: 20px;
 }
@@ -1969,7 +2002,10 @@ p {
   opacity: 1;
   -webkit-transition: 0.8s;
   transition: 0.8s;
-  color: #f03955;
+  color: rgb(211, 172, 238);
+}
+.footer .footer-top .tabs__items span:active {
+  background-color: #324b4e;
 }
 .footer .footer-top .tabs__item {
   height: 20px;
@@ -1999,7 +2035,17 @@ p {
   opacity: 1;
   -webkit-transition: 0.8s;
   transition: 0.8s;
-  color: #f03955;
+  color: rgb(211, 172, 238);
+}
+.footer .footer-top .g1 > a:hover:active,
+.footer .footer-top .g2 > a:hover:active,
+.footer .footer-top .g3 > a:hover:active,
+.footer .footer-top .g4 > a:hover:active,
+.footer .footer-top .b1 > a:hover:active,
+.footer .footer-top .b2 > a:hover:active,
+.footer .footer-top .b3 > a:hover:active,
+.footer .footer-top .b4 > a:hover:active {
+  background-color: #324b4e;
 }
 .footer .footer1 {
   color: #e2d7d7;
@@ -2277,6 +2323,8 @@ input:focus {
   cursor: pointer;
   text-align: center;
   background-color: rgb(236, 213, 251);
+  resize: none;
+  padding: 10px;
 }
 
 .textinput._error {

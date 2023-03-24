@@ -168,7 +168,7 @@ body {
   border: none;
   z-index: 1;
   margin-left: -30px;
-  cursor:default;
+  cursor: default;
 }
 
 .seach-button:before {
@@ -858,15 +858,44 @@ h3 {
 }
 
 
-@media (max-width: 642px) {}
+
+.notes{
+  padding: o,5px,0;
+
+}
 
 
 
-
-@media (max-width: 964px) {
+@media (max-width: 993px) {
 
   .textbalbeg::before {
     left: -130px;
+  }
+
+  .balbeg1,
+  .balbeg2,
+  .balbeg3,
+  .balans1,
+  .balans2,
+  .balans3,
+  .baldif1,
+  .baldif2,
+  .baldif3,
+  .baletudes1,
+  .baletudes2,
+  .baletudes3,
+  .gitbeg1,
+  .gitbeg2,
+  .gitbeg3,
+  .gitdif1,
+  .gitdif2,
+  .gitdif3,
+  .gitwords1,
+  .gitwords2,
+  .gitduets1,
+  .gitduets2 {
+    margin-right: 10px;
+    margin-left: 10px;
   }
 
   .balbeg,
@@ -879,6 +908,7 @@ h3 {
   .gitduets {
     flex-wrap: wrap;
     row-gap: 15px;
+
     align-items: center;
   }
 
@@ -1671,6 +1701,11 @@ p {
   }
 }
 
+.audio2:active {
+
+  background-color: #e2d7d7;
+}
+
 .download {
   width: 20px;
 
@@ -1721,7 +1756,7 @@ p {
   }
 }
 
-@media (max-width: 801px) {}
+
 
 @media (max-width: 1186px) {
   .parallax-slider-text {
@@ -1791,7 +1826,7 @@ p {
 
 // footer
 .footer {
-  background-color:black;
+  background-color: black;
   height: 260px;
   display: flex;
   justify-content: space-around;
@@ -1888,7 +1923,11 @@ p {
       &:hover {
         opacity: 1;
         transition: 0.8s;
-        color:#f03955;
+        color: rgba(211, 172, 238, 1);
+      }
+      &:active {
+
+        background-color:#324b4e;
       }
     }
 
@@ -1916,8 +1955,11 @@ p {
       &:hover {
         opacity: 1;
         transition: 0.8s;
-        color: #f03955;
+        color: rgba(211, 172, 238, 1);
+        &:active {
 
+          background-color:#324b4e;
+        }
       }
     }
   }
@@ -1981,6 +2023,8 @@ p {
 }
 
 
+
+
 .go-top {
   position: fixed;
   /* фиксированное позиционирование */
@@ -2041,6 +2085,8 @@ p {
   display: block;
 }
 
+
+// popup1
 .popup1 {
   position: fixed;
   width: 100%;
@@ -2162,6 +2208,8 @@ input:focus {
   cursor: pointer;
   text-align: center;
   background-color: rgba(236, 213, 251, 1);
+  resize: none;
+  padding: 10px;
 }
 
 .textinput._error {
