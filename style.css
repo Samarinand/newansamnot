@@ -12,6 +12,8 @@
 :after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 :focus,
@@ -53,6 +55,7 @@ button::moz-focus-inner {
 a,
 a:visited {
   text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
@@ -427,6 +430,16 @@ body {
   text-transform: uppercase;
 }
 
+.angle-down:hover::after {
+  border-top: 2px solid #151414;
+  border-right: 2px solid #121010;
+}
+
+.angle-down1:hover::after {
+  border-top: 2px solid #151414;
+  border-right: 2px solid #121010;
+}
+
 .angle-down::after {
   content: "";
   position: absolute;
@@ -473,6 +486,7 @@ body {
   opacity: 0.8;
   text-transform: uppercase;
   font-size: 15px;
+  color: #7b00ff;
 }
 
 .submenu > li > a:hover {
@@ -491,8 +505,12 @@ body {
   transition: 0.8s;
 }
 
+.hover {
+  color: #7b00ff;
+}
+
 .hover:hover {
-  background-color: rgb(217, 183, 242);
+  opacity: 1;
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
@@ -575,29 +593,8 @@ body {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  .angle-down::after {
-    content: "";
-    position: absolute;
-    left: 170px;
-    top: 30px;
-    width: 10px;
-    height: 10px;
-    border-top: 2px solid #7a52b3;
-    border-right: 2px solid #7a52b3;
-    -webkit-transform: rotate(135deg);
-            transform: rotate(135deg);
-  }
-  .angle-down1::after {
-    content: "";
-    position: absolute;
-    left: 203px;
-    top: 30px;
-    width: 10px;
-    height: 10px;
-    border-top: 2px solid #7a52b3;
-    border-right: 2px solid #7a52b3;
-    -webkit-transform: rotate(135deg);
-            transform: rotate(135deg);
+  .angle-down1:hover:after, .angle-down:hover:after {
+    display: none;
   }
   .textinput {
     border-bottom: 2px solid #7a52b3;
@@ -646,10 +643,21 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
+  .oval {
+    margin-right: 20px;
+    margin-top: 12px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
   .hamb__field {
-    padding: 10px 20px;
+    padding: 10px 10px;
     cursor: pointer;
     opacity: 0.8;
+  }
+  .oval:hover {
+    background-color: #5d3f87;
   }
   .bar {
     display: block;

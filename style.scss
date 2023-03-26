@@ -9,6 +9,7 @@
 :before,
 :after {
   box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 :focus,
@@ -50,6 +51,7 @@ button::moz-focus-inner {
 a,
 a:visited {
   text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
@@ -454,6 +456,14 @@ body {
 
 }
 
+.angle-down:hover::after {
+  border-top: 2px solid#151414;
+  border-right: 2px solid #121010;
+}
+.angle-down1:hover::after {
+  border-top: 2px solid#151414;
+  border-right: 2px solid #121010;
+}
 .angle-down::after {
   content: "";
   position: absolute;
@@ -497,6 +507,7 @@ body {
   opacity: 0.8;
   text-transform: uppercase;
   font-size: 15px;
+  color:#7b00ff;
 }
 
 .submenu>li>a:hover {
@@ -512,9 +523,11 @@ body {
   color: #000000;
   transition: 0.8s;
 }
-
+.hover{
+  color:#7b00ff;
+}
 .hover:hover {
-  background-color: rgb(217, 183, 242);
+  opacity: 1;
   transition: 0.8s;
 }
 
@@ -584,28 +597,8 @@ body {
 
   }
 
-  .angle-down::after {
-    content: "";
-    position: absolute;
-    left: 170px;
-    top: 30px;
-    width: 10px;
-    height: 10px;
-    border-top: 2px solid #7a52b3;
-    border-right: 2px solid #7a52b3;
-    transform: rotate(135deg);
-  }
-
-  .angle-down1::after {
-    content: "";
-    position: absolute;
-    left: 203px;
-    top: 30px;
-    width: 10px;
-    height: 10px;
-    border-top: 2px solid #7a52b3;
-    border-right: 2px solid #7a52b3;
-    transform: rotate(135deg);
+  .angle-down1:hover:after,.angle-down:hover:after{
+    display: none;
   }
 
   .textinput {
@@ -628,7 +621,7 @@ body {
     color: #000000;
     transition: 0.8s;
   }
-
+ 
   .topmenu>li {
     margin-bottom: 140px;
   }
@@ -653,16 +646,30 @@ body {
   }
 
   .hamb {
+    
     display: flex;
     align-items: center;
+    
   }
+  .oval{
+    margin-right: 20px;
+    margin-top: 12px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
 
+  }
   .hamb__field {
-    padding: 10px 20px;
+    padding: 10px 10px;
     cursor: pointer;
     opacity: 0.8;
-  }
+   
 
+  }
+.oval:hover{
+  background-color:#5d3f87
+}
   .bar {
     display: block;
     width: 30px;
@@ -711,12 +718,13 @@ body {
     font-size: 20px;
     font-weight: bold;
     color: #3f3f3f;
+   
   }
-
+  
   .popup .menu>li>a:hover {
     background-color: rgba(122, 82, 179, 0.1);
   }
-
+  
   .hamb__field.active .bar:nth-child(2) {
 
     opacity: 0;
@@ -859,8 +867,8 @@ h3 {
 
 
 
-.notes{
-  padding: o,5px,0;
+.notes {
+  padding: o, 5px, 0;
 
 }
 
@@ -1925,9 +1933,10 @@ p {
         transition: 0.8s;
         color: rgba(211, 172, 238, 1);
       }
+
       &:active {
 
-        background-color:#324b4e;
+        background-color: #324b4e;
       }
     }
 
@@ -1956,9 +1965,10 @@ p {
         opacity: 1;
         transition: 0.8s;
         color: rgba(211, 172, 238, 1);
+
         &:active {
 
-          background-color:#324b4e;
+          background-color: #324b4e;
         }
       }
     }

@@ -437,7 +437,9 @@ body {
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
 }
-
+.angle-down:hover ::after{
+  color: #000000;
+}
 .angle-down1::after {
   content: "";
   position: absolute;
@@ -471,11 +473,12 @@ body {
   opacity: 0.8;
   text-transform: uppercase;
   font-size: 15px;
+  color: #526cfc;
 }
 
 .submenu > li > a:hover {
   opacity: 1;
-  color: #000000;
+ 
   -webkit-transition: 0.8s;
   transition: 0.8s;
   position: relative;
@@ -484,7 +487,7 @@ body {
 .menu ul li:hover .submenu {
   display: block;
   opacity: 1;
-  color: #000000;
+  
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
