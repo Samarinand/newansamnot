@@ -40,9 +40,9 @@ new Swiper('.image-slider1',{
       el:'.swiper-pagination',
       clickable: true,
       dynamicBullets: true,
-      renderBullet: function (index,className){
-        return '<span span class="' + className + '">' + (index + 1) + '</span>';
-      },
+      // renderBullet: function (index,className){
+      //   return '<span span class="' + className + '">' + (index + 1) + '</span>';
+      // },
       
     },
     scrollbar:{
