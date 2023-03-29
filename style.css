@@ -618,7 +618,7 @@ body {
   padding-bottom: 10px;
 }
 .header h1 .span2 {
-  font-size: calc(8px + 0.9375vw);
+  font-size: calc(10px + 0.9375vw);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(75, 11, 97, 0.949)), to(rgb(114, 59, 244)));
   background-image: linear-gradient(rgba(75, 11, 97, 0.949), rgb(114, 59, 244));
   -webkit-background-clip: text;
