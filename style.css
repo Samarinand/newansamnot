@@ -616,7 +616,7 @@ body {
   display: inline-block;
   padding-bottom: 10px;
 }
-.header .Welcome {
+.header .welcome {
   margin-top: -10px;
   text-align: center;
   font-size: calc(8px + 0.9375vw);
