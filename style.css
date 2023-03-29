@@ -433,7 +433,8 @@ body {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  .angle-down1:hover:after, .angle-down:hover:after {
+  .angle-down1:hover:after,
+.angle-down:hover:after {
     display: none;
   }
   .textinput {
@@ -607,8 +608,6 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 3px;
-}
-.header h1 .span1 {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(75, 11, 97, 0.949)), to(rgb(155, 59, 244)));
   background-image: linear-gradient(rgba(75, 11, 97, 0.949), rgb(155, 59, 244));
   -webkit-background-clip: text;
@@ -617,13 +616,18 @@ body {
   display: inline-block;
   padding-bottom: 10px;
 }
-.header h1 .span2 {
-  font-size: calc(10px + 0.9375vw);
+.header .Welcome {
+  margin-top: -10px;
+  text-align: center;
+  font-size: calc(8px + 0.9375vw);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(75, 11, 97, 0.949)), to(rgb(114, 59, 244)));
   background-image: linear-gradient(rgba(75, 11, 97, 0.949), rgb(114, 59, 244));
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .main {
