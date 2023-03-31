@@ -1861,9 +1861,10 @@ h2 {
   }
 }
 .image-slider1 {
-  height: 410px;
-  width: 55%;
-  min-width: 315px;
+  padding-top: 10px;
+  height: 405px;
+  width: 260px;
+  border-radius: 10px;
 }
 
 .swiper-conteiner {
@@ -1872,17 +1873,18 @@ h2 {
 
 .image-slider1-image {
   text-align: center;
-  height: 426px;
-  min-width: 315px;
+  height: 400px;
+  min-width: 260px;
   overflow: hidden;
   border-radius: 10px;
 }
 
 .image-slider1-image img {
-  height: 410px;
+  height: 370px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+  width: 260px;
 }
 
 .parallax-slider .swiper-button-prev::after,
