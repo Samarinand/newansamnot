@@ -2077,7 +2077,10 @@ h2 {
   color: #e2d7d7;
 }
 .footer .footer__top .tabs__submenu-hover {
-  padding-left: 5px;
+  padding-left: 10px;
+}
+.footer .footer__top .tabs-link:last-child {
+  padding-bottom: 10px;
 }
 .footer .footer__top .tabs-link > a {
   display: block;
