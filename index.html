@@ -1,43 +1,35 @@
 <!doctype html>
 <html lang="ru">
+<!-- head -->
 
 <head>
   <meta charset="utf-8">
-
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon_io/Label32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon_io/Label16.png">
   <link rel="manifest" href="/site.webmanifest">
-
   <meta name="description" content="Ноты для балалайки и гитары">
   <meta name=" keywords" content="Ноты для балалайки и гитары сайт Самарина Андрея">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ноты для балалайки. Ноты для гитары</title>
-
-
-
-
   <link href="normalize.css" rel="stylesheet" type="text/css">
   <link href="style.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-
 </head>
+<!-- body -->
 
 <body>
+  <!-- svg -->
   <svg style="display: none;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <symbol id="arrow-down" width="11px" height="11px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
       xml:space="preserve">
       <path d="M256,512l256-256H352V0.001L160,0v256H0L256,512z" />
     </symbol>
-
   </svg>
-
-
-  <!--header-->
+  <!-- navbar -->
   <nav class="navbar">
-    <div class="container">
-
+    <div class="navbar__container">
       <div class="navbar__wrap" id="header">
         <div class="navbar__wrap-left">
           <div class="logo" id="logo"><img src=img/Label.png alt="Label"></div>
@@ -45,8 +37,6 @@
             <input class="seach-site" type="text" placeholder="Искать здесь..." id="elastic">
             <button class="seach-button" type="submit"></button>
           </form>
-
-
           <div class="header-youtude"><a href="https://www.youtube.com/channel/UCzBTsBT_ydYvJ7CfqqU36-A"><img
                 src="img/flurry.png" width="30" height="30" alt=""></a></div>
           <div class="header-ebvelope"><a href="mailto:samarinand22@gmail.com"> <img src="img/metroui.png" width="30"
@@ -60,53 +50,46 @@
               <span class="bar"></span>
             </div>
           </div>
-
-
           <nav class="menu" id="menu">
             <ul class="topmenu">
-              <li><a href="#"> Ноты для балалайки<div class="angle-down1"></div></a>
+              <li><a href="#"> Ноты для балалайки<div class="balalaika-guitar-angle-down"></div></a>
                 <ul class="submenu">
-                  <li><a class="hover" href="#textbalbeg">Для начинающих</a></li>
-                  <li><a class="hover" href="#textbaldif">Более сложные произведения</a></li>
-                  <li><a class="hover" href="#textbaletudes">Этюды</a></li>
-                  <li><a class="hover" href="#textbalans">Ансамбли</a></li>
+                  <li><a class="submenu-hover" href="#balalaika-begin-text">Для начинающих</a></li>
+                  <li><a class="submenu-hover" href="#balalaika-difficult-text">Более сложные произведения</a></li>
+                  <li><a class="submenu-hover" href="#balalaika-etudes-text">Этюды</a></li>
+                  <li><a class="submenu-hover" href="#balalaika-ensambles-text">Ансамбли</a></li>
                 </ul>
               </li>
-              <li><a href="#">Ноты для гитары<div class="angle-down"></div></a>
+              <li><a href="#">Ноты для гитары<div class="guitar-angle-down"></div></a>
                 <ul class="submenu">
-                  <li><a class="hover" href="#textgitbeg">Для начинающих </a></li>
-                  <li><a class="hover" href="#textgitdif">Более сложные произведения</a></li>
-                  <li><a class="hover" href="#textgitwords">С аккордами и словами</a></li>
-                  <li><a class="hover" href="#textgitduets"> Дуэты</a></li>
-
+                  <li><a class="submenu-hover" href="#guitar-begin-text">Для начинающих </a></li>
+                  <li><a class="submenu-hover" href="#guitar-difficult-text">Более сложные произведения</a></li>
+                  <li><a class="submenu-hover" href="#guitar-words-text">С аккордами и словами</a></li>
+                  <li><a class="submenu-hover" href="#guitar-duets-text"> Дуэты</a></li>
                 </ul>
               </li>
-              <li><a href="#popup1" class="popup1-link">Контакты</a></li>
+              <li><a href="#popup-form" class="popup-form-link">Контакты</a></li>
             </ul>
           </nav>
         </div>
-
       </div>
     </div>
   </nav>
+  <!-- popup -->
   <div class="popup" id="popup"></div>
+  <!--header-->
   <header class="header">
-
-    <div class="content">
+    <div class="header__content">
       <h1>Сайт Самарина Андрея</h1>
-      <div class="welcome">Добро пожаловать! </div>
-      
+      <div class="header__welcome">Добро пожаловать! </div>
 
     </div>
-
   </header>
-  <!--center-->
-  <div class="discription">
-    <div class="discriptiont">
-
-
+  <!--discription-->
+  <section class="discription">
+    <div class="discription__text">
       <h2>На&nbsp;этом сайте&nbsp;Вы найдёте ноты моих произведениий, обработок и&nbsp;переложений</h2>
-      <div class="text-ul">
+      <div class="discription__list">
         <ul>
           <li><span></span>Все ноты на&nbsp;сайте представлены в
             формате pdf</li>
@@ -117,62 +100,39 @@
             ноты</li>
         </ul>
       </div>
-
     </div>
-  </div>
-
-
-
-
-
-  <div class="centera">
-
+  </section>
+  <!-- slider-background -->
+  <div class="slider-background">
     <div class="parallax-slider swiper-conteiner">
       <div class="parallax-slider-bg" data-swiper-parallax="2" data-swiper-parallax-scale="0.9"
         data-swiper-parallax-duration="500"> </div>
       <div class="parallax-slider-wrapper swiper-wrapper">
-        <div class="parallsx-slider-slide swiper-slide">
-
-
+        <div class="parallax-slider-slide swiper-slide">
           <div class="parallax-slider-text" data-swiper-parallax-opacity="0" data-swiper-parallax="500"
             data-swiper-parallax-scale="1" data-swiper-parallax-duration="700">
             Ноты и&nbsp;аудио более ста различных произведений, обработок и&nbsp;переложений
           </div>
-
         </div>
-
-
-        <div class="parallsx-slider-slide swiper-slide">
-
-
+        <div class="parallax-slider-slide swiper-slide">
           <div class="parallax-slider-text" data-swiper-parallax-opacity="0" data-swiper-parallax="500"
             data-swiper-parallax-scale="1" data-swiper-parallax-duration="700">
             для балалайки, гитары и различных составов ансамблей с фортепиано
           </div>
-
-
-
-
         </div>
-
-
-
       </div>
       <div class="swiper-div-prev swiper-conteiner"></div>
       <div class="swiper-div-next swiper-conteiner"> </div>
     </div>
-
-
   </div>
-  <div class="buttoma">
+  <!-- slider-notes -->
+  <div class="slider-notes">
     <div class="image-slider1 swiper-conteiner">
       <div class="image-slider1-wrapper swiper-wrapper">
         <div data-hash="slide-1" class="image-slider1-slide swiper-slide">
-
           <div class="image-slider1-image">
             <img src="img/1.webp" class="swiper-lazy" alt="Ноты Яблочко">
           </div>
-
         </div>
         <div data-hash="slide-2" class="image-slider1-slide swiper-slide">
           <div class="image-slider1-image">
@@ -199,2225 +159,2306 @@
             <img src="img/6.webp" class="swiper-lazy" alt="Ноты Как здорово">
           </div>
         </div>
-
       </div>
       <div class="swiper-div-prev swiper-conteiner"></div>
       <div class="swiper-div-next swiper-conteiner"> </div>
       <div class="swiper-pagination swiper-conteiner"></div>
       <div class="swiper-scrollbar swiper-conteiner"></div>
-
-
     </div>
   </div>
-
-  <div class="notes">
-
-    <div class="balbegt">
-
-
-
-
-      <h3 class="textbalbeg" id="textbalbeg">Ноты для балалайки.<br>Для начинающих</h3>
-    </div>
-    <div class="balbeg">
-      <div class="balbeg1 ">
-        <div class="accordion">Ноты и аудио</div>
-        <div class="panel">
-          <div class="audio3">
-            <a href="balalaika/elementary/AndreevBabochka.pdf" class="elastic" target="_blank">
-              Андреев В. - Вальс "Бабочка"</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/AndreevBabochka.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/AndreevBabochka.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3 "><a href="balalaika/elementary/BahMenuiet.pdf" class="elastic" target="_blank">Бах И.-
-              Менуэт</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/BahMenuiet.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/BahMenuiet.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3 "><a href="balalaika/elementary/BethovenKontrdans.pdf" class="elastic"
-              target="_blank">Бетховен Л.-
-              Контрданс</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/BethovenKontrdans.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/BethovenKontrdans.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-
-            </a>
-          </div>
-          <div class="audio3"><a href="balalaika/elementary/BlanterKatusha.pdf" class="elastic" target="_blank">Блантер
-              М.
-              -
-              Катюша</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/BlanterKatusha.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/BlanterKatusha.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3 "><a href="balalaika/elementary/VarlamovNaZare.pdf" class="elastic"
-              target="_blank">Варламов
-              А. - На
-              заре ты её не буди </a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/VarlamovNaZare.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/VarlamovNaZare.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3 "><a href="balalaika/elementary/GaidnAndante.pdf" class="elastic" target="_blank">Гайдн Й.
-              -
-              Анданте</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/GaidnAndante.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a href="balalaika/elementary/GaidnAndante.mp3" download="">
-
-                <div class="download-text1">Скачать аудио файл</div>
-                <div class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></div>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/elementary/GendelGavot.pdf" class="elastic" target="_blank"> Гендель
-              Г.
-              -
-              Гавот</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/GendelGavot.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/GendelGavot.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-
-              </a>
-            </div>
-            <div class="audio3"><a href="balalaika/elementary/GlinkaPesniaVany.pdf" class="elastic"
-                target="_blank">Глинка
-                М. -
-                "Песня Вани"</a>
-              <audio controls class="audio1">
-                <source src="balalaika/elementary/GlinkaPesniaVany.mp3" type="audio/mpeg">
+  <!-- notes -->
+  <main class="notes">
+    <!-- balalaika -->
+    <section class="balalaika">
+      <!-- balalaika__subtitle-begin -->
+      <div class="balalaika__subtitle-begin">
+        <h3 class="balalaika-begin-text" id="balalaika-begin-text">Ноты для балалайки.<br>Для начинающих</h3>
+      </div>
+      <div class="balalaika__begin">
+        <div class="balalaika__begin-left">
+          <div class="accordion">Ноты и аудио</div>
+          <div class="panel">
+            <div class="audio">
+              <a href="balalaika/elementary/AndreevBabochka.pdf" class="elastic" target="_blank">
+                Андреев В. - Вальс "Бабочка"</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/AndreevBabochka.mp3" type="audio/mpeg">
 
                 Тег audio не поддерживается Вашим браузером.
 
               </audio>
-              <div class="audio2"><a class="download-text" href="balalaika/elementary/GlinkaPesniaVany.mp3" download="">
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/elementary/AndreevBabochka.mp3" download="">
 
-                  <p class="download-text1">Скачать аудио файл</p>
-                  <p class="download"> <svg>
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
                       <use href="#arrow-down"> </use>
                     </svg></p>
                 </a>
               </div>
-
             </div>
-            <div class="audio3 "><a href="balalaika/difficult/GlinkaPolka.pdf" class="elastic" target="_blank">Глинка М.
+            <div class="audio"><a href="balalaika/elementary/BahMenuiet.pdf" class="elastic" target="_blank">Бах И.-
+                Менуэт</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/BahMenuiet.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="balalaika/elementary/BahMenuiet.mp3"
+                  download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/elementary/BethovenKontrdans.pdf" class="elastic"
+                target="_blank">Бетховен Л.-
+                Контрданс</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/BethovenKontrdans.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/elementary/BethovenKontrdans.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+              <div class="audio"><a href="balalaika/elementary/BlanterKatusha.pdf" class="elastic"
+                  target="_blank">Блантер
+                  М.
+                  -
+                  Катюша</a>
+                <audio controls class="audio__player">
+                  <source src="balalaika/elementary/BlanterKatusha.mp3" type="audio/mpeg">
+
+                  Тег audio не поддерживается Вашим браузером.
+                </audio>
+                <div class="audio__download"><a class="audio__download-link"
+                    href="balalaika/elementary/BlanterKatusha.mp3" download="">
+
+                    <p class="audio__download-text">Скачать аудио файл</p>
+                    <p class="audio__download-svg"> <svg>
+                        <use href="#arrow-down"> </use>
+                      </svg></p>
+                  </a>
+                </div>
+              </div>
+              <div class="audio"><a href="balalaika/elementary/VarlamovNaZare.pdf" class="elastic"
+                  target="_blank">Варламов
+                  А. - На
+                  заре ты её не буди </a>
+                <audio controls class="audio__player">
+                  <source src="balalaika/elementary/VarlamovNaZare.mp3" type="audio/mpeg">
+                  Тег audio не поддерживается Вашим браузером.
+                </audio>
+                <div class="audio__download"><a class="audio__download-link"
+                    href="balalaika/elementary/VarlamovNaZare.mp3" download="">
+                    <p class="audio__download-text">Скачать аудио файл</p>
+                    <p class="audio__download-svg"> <svg>
+                        <use href="#arrow-down"> </use>
+                      </svg></p>
+                  </a>
+                </div>
+              </div>
+              <div class="audio"><a href="balalaika/elementary/GaidnAndante.pdf" class="elastic" target="_blank">Гайдн
+                  Й.
+                  -
+                  Анданте</a>
+                <audio controls class="audio__player">
+                  <source src="balalaika/elementary/GaidnAndante.mp3" type="audio/mpeg">
+                  Тег audio не поддерживается Вашим браузером.
+                </audio>
+                <div class="audio__download"><a class="audio__download-link"
+                    href="balalaika/elementary/GaidnAndante.mp3" download="">
+                    <div class="audio__download-text">Скачать аудио файл</div>
+                    <div class="audio__download-svg"> <svg>
+                        <use href="#arrow-down"> </use>
+                      </svg></div>
+                  </a>
+                </div>
+              </div>
+              <div class="audio"><a href="balalaika/elementary/GendelGavot.pdf" class="elastic" target="_blank">
+                  Гендель
+                  Г.
+                  -
+                  Гавот</a>
+                <audio controls class="audio__player">
+                  <source src="balalaika/elementary/GendelGavot.mp3" type="audio/mpeg">
+                  Тег audio не поддерживается Вашим браузером.
+                </audio>
+                <div class="audio__download"><a class="audio__download-link" href="balalaika/elementary/GendelGavot.mp3"
+                    download="">
+                    <p class="audio__download-text">Скачать аудио файл</p>
+                    <p class="audio__download-svg"> <svg>
+                        <use href="#arrow-down"> </use>
+                      </svg></p>
+                  </a></div>
+                <div class="audio"><a href="balalaika/elementary/GlinkaPesniaVany.pdf" class="elastic"
+                    target="_blank">Глинка
+                    М. -
+                    "Песня Вани"</a>
+                  <audio controls class="audio__player">
+                    <source src="balalaika/elementary/GlinkaPesniaVany.mp3" type="audio/mpeg">Тег audio не
+                    поддерживается Вашим браузером.
+                  </audio>
+                  <div class="audio__download"><a class="audio__download-link"
+                      href="balalaika/elementary/GlinkaPesniaVany.mp3" download="">
+                      <p class="audio__download-text">Скачать аудио файл</p>
+                      <p class="audio__download-svg"> <svg>
+                          <use href="#arrow-down"> </use>
+                        </svg></p>
+                    </a>
+                  </div>
+
+                </div>
+                <div class="audio"><a href="balalaika/difficult/GlinkaPolka.pdf" class="elastic" target="_blank">Глинка
+                    М.
+                    -
+                    Полька</a>
+                  <audio controls class="audio__player">
+                    <source src="balalaika/difficult/GlinkaPolka.mp3" type="audio/mpeg">
+
+                    Тег audio не поддерживается Вашим браузером.
+
+                  </audio>
+                  <div class="audio__download"><a class="audio__download-link"
+                      href="balalaika/difficult/GlinkaPolka.mp3" download="">
+
+                      <p class="audio__download-text">Скачать аудио файл</p>
+                      <p class="audio__download-svg"> <svg>
+                          <use href="#arrow-down"> </use>
+                        </svg></p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="audio"><a href="balalaika/elementary/Kanareika.pdf" class="elastic" target="_blank">Гофе Н.
+                    -
+                    Канарейка</a>
+                  <audio controls class="audio__player">
+                    <source src="balalaika/elementary/Kanareika.mp3" type="audio/mpeg">
+
+                    Тег audio не поддерживается Вашим браузером.
+
+                  </audio>
+                  <div class="audio__download"><a class="audio__download-link" href="balalaika/elementary/Kanareika.mp3"
+                      download="">
+
+                      <p class="audio__download-text">Скачать аудио файл</p>
+                      <p class="audio__download-svg"> <svg>
+                          <use href="#arrow-down"> </use>
+                        </svg></p>
+                    </a>
+                  </div>
+                </div>
+                <div class="audio"><a href="balalaika/difficult/DavidovichVdol.pdf" class="elastic"
+                    target="_blank">Давидович
+                    Ю.- рнп
+                    Вдоль да по речке </a>
+                  <audio controls class="audio__player">
+                    <source src="balalaika/difficult/DavidovichVdol.mp3" type="audio/mpeg">
+
+                    Тег audio не поддерживается Вашим браузером.
+
+                  </audio>
+                  <div class="audio__download"><a class="audio__download-link"
+                      href="balalaika/difficult/DavidovichVdol.mp3" download="">
+
+                      <p class="audio__download-text">Скачать аудио файл</p>
+                      <p class="audio__download-svg"> <svg>
+                          <use href="#arrow-down"> </use>
+                        </svg></p>
+                    </a>
+                  </div>
+                </div>
+                <div class="audio"><a href="balalaika/elementary/DeviziKrasavizi.pdf" class="elastic"
+                    target="_blank">Девицы-красавицы
+                    рнп </a>
+                  <audio controls class="audio__player">
+                    <source src="balalaika/elementary/DeviziKrasavizi.mp3" type="audio/mpeg">
+
+                    Тег audio не поддерживается Вашим браузером.
+
+                  </audio>
+                  <div class="audio__download"><a class="audio__download-link"
+                      href="balalaika/elementary/DeviziKrasavizi.mp3" download="">
+
+                      <p class="audio__download-text">Скачать аудио файл</p>
+                      <p class="audio__download-svg"> <svg>
+                          <use href="#arrow-down"> </use>
+                        </svg></p>
+                    </a>
+                  </div>
+                </div>
+                <div class="audio"><a href="balalaika/elementary/DunaevskiiDorogoi.pdf" class="elastic"
+                    target="_blank">Дунаевский И. -
+                    Дорогой широкой</a>
+                  <audio controls class="audio__player">
+                    <source src="balalaika/elementary/DunaevskiiDorogoi.mp3" type="audio/mpeg">
+
+                    Тег audio не поддерживается Вашим браузером.
+                  </audio>
+                  <div class="audio__download"><a class="audio__download-link"
+                      href="balalaika/elementary/DunaevskiiDorogoi.mp3" download="">
+
+                      <p class="audio__download-text">Скачать аудио файл</p>
+                      <p class="audio__download-svg"> <svg>
+                          <use href="#arrow-down"> </use>
+                        </svg></p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="audio"><a href="balalaika/elementary/Molodioznaia.pdf" class="elastic"
+                    target="_blank">Дунаевский
+                    И. -
+                    Молодежная песня</a>
+                  <audio controls class="audio__player">
+                    <source src="balalaika/elementary/Molodioznaia.mp3" type="audio/mpeg">
+
+                    Тег audio не поддерживается Вашим браузером.
+
+                  </audio>
+                  <div class="audio__download"><a class="audio__download-link"
+                      href="balalaika/elementary/Molodioznaia.mp3" download="">
+
+                      <p class="audio__download-text">Скачать аудио файл</p>
+                      <p class="audio__download-svg"> <svg>
+                          <use href="#arrow-down"> </use>
+                        </svg></p>
+                    </a>
+                  </div>
+                </div>
+                <div class="audio"><a href="balalaika/elementary/Korovi.pdf" class="elastic" target="_blank">Дунаевский
+                    М.
+                    -
+                    Тридцать
+                    три коровы</a>
+                  <audio controls class="audio__player">
+                    <source src="balalaika/elementary/Korovi.mp3" type="audio/mpeg">
+
+                    Тег audio не поддерживается Вашим браузером.
+
+                  </audio>
+                  <div class="audio__download"><a class="audio__download-link" href="balalaika/elementary/Korovi.mp3"
+                      download="">
+
+                      <p class="audio__download-text">Скачать аудио файл</p>
+                      <p class="audio__download-svg"> <svg>
+                          <use href="#arrow-down"> </use>
+                        </svg></p>
+                    </a>
+                  </div>
+                </div>
+                <div class="audio"><a href="balalaika/elementary/ElezkieStradaniya.pdf" class="elastic"
+                    target="_blank">Елецкие
+                    страдания - Обработка Лобова В.</a>
+                  <audio controls class="audio__player">
+                    <source src="balalaika/elementary/ElezkieStradaniya.mp3" type="audio/mpeg">
+
+                    Тег audio не поддерживается Вашим браузером.
+
+                  </audio>
+                  <div class="audio__download"><a class="audio__download-link"
+                      href="balalaika/elementary/ElezkieStradaniya.mp3" download="">
+
+                      <p class="audio__download-text">Скачать аудио файл</p>
+                      <p class="audio__download-svg"> <svg>
+                          <use href="#arrow-down"> </use>
+                        </svg></p>
+                    </a>
+                  </div>
+                </div>
+                <div class="audio"><a href="balalaika/elementary/Kalinka.pdf" class="elastic" target="_blank">Калинка -
+                    Обработка рнп
+                    Семячкина А.</a>
+                  <audio controls class="audio__player">
+                    <source src="balalaika/elementary/Kalinka.mp3" type="audio/mpeg">
+
+                    Тег audio не поддерживается Вашим браузером.
+
+                  </audio>
+                  <div class="audio__download"><a class="audio__download-link" href="balalaika/elementary/Kalinka.mp3"
+                      download="">
+
+                      <p class="audio__download-text">Скачать аудио файл</p>
+                      <p class="audio__download-svg"> <svg>
+                          <use href="#arrow-down"> </use>
+                        </svg></p>
+                    </a>
+                  </div>
+                </div>
+                <div class="audio"><a href="balalaika/elementary/Kukushka.pdf" class="elastic" target="_blank">Кукушка -
+                    швейцарская нп
+                  </a>
+                  <audio controls class="audio__player">
+                    <source src="balalaika/elementary/Kukushka.mp3" type="audio/mpeg">
+
+                    Тег audio не поддерживается Вашим браузером.
+
+                  </audio>
+                  <div class="audio__download"><a class="audio__download-link" href="balalaika/elementary/Kukushka.mp3"
+                      download="">
+
+                      <p class="audio__download-text">Скачать аудио файл</p>
+                      <p class="audio__download-svg"> <svg>
+                          <use href="#arrow-down"> </use>
+                        </svg></p>
+                    </a>
+                  </div>
+                </div>
+                <div class="audio"><a href="balalaika/elementary/LetkaEnka.pdf" class="elastic" target="_blank">Лехтинен
+                    Р.-
+                    Летка-енка</a>
+                  <audio controls class="audio__player">
+                    <source src="balalaika/elementary/LetkaEnka.mp3" type="audio/mpeg">
+
+                    Тег audio не поддерживается Вашим браузером.
+
+                  </audio>
+                  <div class="audio__download"><a class="audio__download-link" href="balalaika/elementary/LetkaEnka.mp3"
+                      download="">
+
+                      <p class="audio__download-text">Скачать аудио файл</p>
+                      <p class="audio__download-svg"> <svg>
+                          <use href="#arrow-down"> </use>
+                        </svg></p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="balalaika__begin-center">
+          <div class="accordion">Ноты и аудио</div>
+          <div class="panel">
+            <div class="audio"><a href="balalaika/elementary/LuliZanIPiero.pdf" class="elastic" target="_blank">Люлли
+                Ж.
+                -Жан и
+                Пьеро</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/LuliZanIPiero.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="balalaika/elementary/LuliZanIPiero.mp3"
+                  download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+
+            <div class="audio"><a href="balalaika/elementary/LulyPesenka.pdf" class="elastic" target="_blank">Люлли Ж.
+                -
+                Песенка</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/LulyPesenka.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="balalaika/elementary/LulyPesenka.mp3"
+                  download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/elementary/Liavoniha.pdf" class="elastic" target="_blank">Лявониха -
+                бнп</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/Liavoniha.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="balalaika/elementary/Liavoniha.mp3"
+                  download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/elementary/MozartMaiskaia.pdf" class="elastic" target="_blank">Моцарт
+                В.-
+                Майская
+                песня</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/MozartMaiskaia.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/elementary/MozartMaiskaia.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/elementary/MozartOtrbal.pdf" class="elastic" target="_blank">Моцарт
+                В.-
+                Отрывок из
+                оперы "Волшебная флейта"</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/MozartOtrbal.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="balalaika/elementary/MozartOtrbal.mp3"
+                  download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+
+            <div class="audio"><a href="balalaika/elementary/NovikovSmuglianka.pdf" class="elastic"
+                target="_blank">Новиков
+                А. -
+                Смуглянка</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/NovikovSmuglianka.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/elementary/NovikovSmuglianka.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+
+            <div class="audio"><a href="balalaika/elementary/oiLopnulobruch.pdf" class="elastic" target="_blank">Ой,
+                лопнул
+                обруч -
+                унп</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/oiLopnulobruch.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/elementary/oiLopnulobruch.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/elementary/PahmytovaRklen.pdf" class="elastic"
+                target="_blank">Пахмутова
+                А. -
+                Старый клён</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/PahmytovaRklen.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/elementary/PahmytovaRklen.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/elementary/Polcacheshsciitan.pdf" class="elastic"
+                target="_blank">Полька
+                - чешский
+                танец</a>
+
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/Polcacheshsciitan.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/elementary/Polcacheshsciitan.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/elementary/RebikovLiagushka.pdf" class="elastic"
+                target="_blank">Ребиков
+                В. -
+                Лягушка</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/RebikovLiagushka.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/elementary/RebikovLiagushka.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+
+            <div class="audio"><a href="balalaika/elementary/SamarinArtist.pdf" class="elastic" target="_blank">Самарин
+                А.-
+                Артист
+                эстрады</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/SamarinArtist.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="balalaika/elementary/SamarinArtist.mp3"
+                  download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/elementary/SamarinVoPole.pdf" class="elastic" target="_blank">Самарин
+                А.
+                &mdash;&nbsp;рнп&nbsp;Во
+                поле береза
+                стояла</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/SamarinVoPole.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="balalaika/elementary/SamarinVoPole.mp3"
+                  download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/elementary/SamarinVosadulivogorodebal.pdf" class="elastic"
+                target="_blank">Самарин
+                А. &mdash;&nbsp;рнп&nbsp;Во садули,
+                в&nbsp;огороде</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/SamarinVosadulivogorodebal.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/elementary/SamarinVosadulivogorodebal.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/elementary/SamarinGrustnaia.pdf" class="elastic"
+                target="_blank">Самарин
+                А.-
+                Грустная песенка</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/SamarinGrustnaia.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/elementary/SamarinGrustnaia.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/elementary/SamarinDozdik.pdf" class="elastic" target="_blank">Самарин
+                А.-
+                Дождик</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/SamarinDozdik.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="balalaika/elementary/SamarinDozdik.mp3"
+                  download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/elementary/SamarinKakPodGorkoi.pdf" class="elastic"
+                target="_blank">Самарин А.-
+                рнп Как под горкой,
+                под горой</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/SamarinKakPodGorkoi.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/elementary/SamarinKakPodGorkoi.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio "><a href="balalaika/elementary/SamarinKolibelnaia.pdf" class="elastic"
+                target="_blank">Самарин А.-
+                Колыбельная</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/SamarinKolibelnaia.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/elementary/SamarinKolibelnaia.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/elementary/SamarinMalPolonez.pdf" class="elastic"
+                target="_blank">Самарин
+                А. -
+                Маленький полонез</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/SamarinMalPolonez.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/elementary/SamarinMalPolonez.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/elementary/SamarinNaZavalinke.pdf" class="elastic"
+                target="_blank">Самарин А. - На
+                завалинке</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/SamarinNaZavalinke.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/elementary/SamarinNaZavalinke.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="balalaika__begin-right">
+          <div class="accordion">Ноты и аудио</div>
+          <div class="panel">
+
+
+            <div class="audio"><a href="balalaika/elementary/SamarinNaLoshadke.pdf" class="elastic"
+                target="_blank">Самарин
+                А. - На
+                лошадке</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/SamarinNaLoshadke.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/elementary/SamarinNaLoshadke.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+
+            <div class="audio"><a href="balalaika/elementary/SamarinPerviiParen.pdf" class="elastic"
+                target="_blank">Самарин А. -
+                Первый парень на
+                деревне</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/SamarinPerviiParen.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/elementary/SamarinPerviiParen.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+
+            <div class="audio"><a href="balalaika/elementary/SamarinPesenka.pdf" class="elastic" target="_blank">Самарин
+                А.-
+                Песенка</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/SamarinPesenka.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/elementary/SamarinPesenka.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+
+            <div class="audio"><a href="balalaika/elementary/SamarinPolka.pdf" class="elastic" target="_blank">Самарин
+                А.
                 -
                 Полька</a>
-              <audio controls class="audio1">
-                <source src="balalaika/difficult/GlinkaPolka.mp3" type="audio/mpeg">
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/SamarinPolka.mp3" type="audio/mpeg">
 
                 Тег audio не поддерживается Вашим браузером.
 
               </audio>
-              <div class="audio2"><a class="download-text" href="balalaika/difficult/GlinkaPolka.mp3" download="">
-
-                  <p class="download-text1">Скачать аудио файл</p>
-                  <p class="download"> <svg>
-                      <use href="#arrow-down"> </use>
-                    </svg></p>
-                </a>
-              </div>
-            </div>
-
-            <div class="audio3"><a href="balalaika/elementary/Kanareika.pdf" class="elastic" target="_blank">Гофе Н. -
-                Канарейка</a>
-              <audio controls class="audio1">
-                <source src="balalaika/elementary/Kanareika.mp3" type="audio/mpeg">
-
-                Тег audio не поддерживается Вашим браузером.
-
-              </audio>
-              <div class="audio2"><a class="download-text" href="balalaika/elementary/Kanareika.mp3" download="">
-
-                  <p class="download-text1">Скачать аудио файл</p>
-                  <p class="download"> <svg>
-                      <use href="#arrow-down"> </use>
-                    </svg></p>
-                </a>
-              </div>
-            </div>
-            <div class="audio3"><a href="balalaika/difficult/DavidovichVdol.pdf" class="elastic"
-                target="_blank">Давидович
-                Ю.- рнп
-                Вдоль да по речке </a>
-              <audio controls class="audio1">
-                <source src="balalaika/difficult/DavidovichVdol.mp3" type="audio/mpeg">
-
-                Тег audio не поддерживается Вашим браузером.
-
-              </audio>
-              <div class="audio2"><a class="download-text" href="balalaika/difficult/DavidovichVdol.mp3" download="">
-
-                  <p class="download-text1">Скачать аудио файл</p>
-                  <p class="download"> <svg>
-                      <use href="#arrow-down"> </use>
-                    </svg></p>
-                </a>
-              </div>
-            </div>
-            <div class="audio3 "><a href="balalaika/elementary/DeviziKrasavizi.pdf" class="elastic"
-                target="_blank">Девицы-красавицы
-                рнп </a>
-              <audio controls class="audio1">
-                <source src="balalaika/elementary/DeviziKrasavizi.mp3" type="audio/mpeg">
-
-                Тег audio не поддерживается Вашим браузером.
-
-              </audio>
-              <div class="audio2"><a class="download-text" href="balalaika/elementary/DeviziKrasavizi.mp3" download="">
-
-                  <p class="download-text1">Скачать аудио файл</p>
-                  <p class="download"> <svg>
-                      <use href="#arrow-down"> </use>
-                    </svg></p>
-                </a>
-              </div>
-            </div>
-            <div class="audio3"><a href="balalaika/elementary/DunaevskiiDorogoi.pdf" class="elastic"
-                target="_blank">Дунаевский И. -
-                Дорогой широкой</a>
-              <audio controls class="audio1">
-                <source src="balalaika/elementary/DunaevskiiDorogoi.mp3" type="audio/mpeg">
-
-                Тег audio не поддерживается Вашим браузером.
-              </audio>
-              <div class="audio2"><a class="download-text" href="balalaika/elementary/DunaevskiiDorogoi.mp3"
+              <div class="audio__download"><a class="audio__download-link" href="balalaika/elementary/SamarinPolka.mp3"
                   download="">
 
-                  <p class="download-text1">Скачать аудио файл</p>
-                  <p class="download"> <svg>
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
                       <use href="#arrow-down"> </use>
                     </svg></p>
                 </a>
               </div>
             </div>
-
-            <div class="audio3"><a href="balalaika/elementary/Molodioznaia.pdf" class="elastic"
-                target="_blank">Дунаевский
-                И. -
-                Молодежная песня</a>
-              <audio controls class="audio1">
-                <source src="balalaika/elementary/Molodioznaia.mp3" type="audio/mpeg">
-
-                Тег audio не поддерживается Вашим браузером.
-
-              </audio>
-              <div class="audio2"><a class="download-text" href="balalaika/elementary/Molodioznaia.mp3" download="">
-
-                  <p class="download-text1">Скачать аудио файл</p>
-                  <p class="download"> <svg>
-                      <use href="#arrow-down"> </use>
-                    </svg></p>
-                </a>
-              </div>
-            </div>
-            <div class="audio3"><a href="balalaika/elementary/Korovi.pdf" class="elastic" target="_blank">Дунаевский М.
+            <div class="audio"><a href="balalaika/elementary/SvetitMesiaz.pdf" class="elastic" target="_blank">Самарин
+                А.
                 -
-                Тридцать
-                три коровы</a>
-              <audio controls class="audio1">
-                <source src="balalaika/elementary/Korovi.mp3" type="audio/mpeg">
+                рнп
+                Светит месяц</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/SvetitMesiaz.mp3" type="audio/mpeg">
 
                 Тег audio не поддерживается Вашим браузером.
 
               </audio>
-              <div class="audio2"><a class="download-text" href="balalaika/elementary/Korovi.mp3" download="">
-
-                  <p class="download-text1">Скачать аудио файл</p>
-                  <p class="download"> <svg>
-                      <use href="#arrow-down"> </use>
-                    </svg></p>
-                </a>
-              </div>
-            </div>
-            <div class="audio3 "><a href="balalaika/elementary/ElezkieStradaniya.pdf" class="elastic"
-                target="_blank">Елецкие
-                страдания - Обработка Лобова В.</a>
-              <audio controls class="audio1">
-                <source src="balalaika/elementary/ElezkieStradaniya.mp3" type="audio/mpeg">
-
-                Тег audio не поддерживается Вашим браузером.
-
-              </audio>
-              <div class="audio2"><a class="download-text" href="balalaika/elementary/ElezkieStradaniya.mp3"
+              <div class="audio__download"><a class="audio__download-link" href="balalaika/elementary/SvetitMesiaz.mp3"
                   download="">
 
-                  <p class="download-text1">Скачать аудио файл</p>
-                  <p class="download"> <svg>
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
                       <use href="#arrow-down"> </use>
                     </svg></p>
                 </a>
               </div>
             </div>
-            <div class="audio3"><a href="balalaika/elementary/Kalinka.pdf" class="elastic" target="_blank">Калинка -
-                Обработка рнп
-                Семячкина А.</a>
-              <audio controls class="audio1">
-                <source src="balalaika/elementary/Kalinka.mp3" type="audio/mpeg">
+            <div class="audio"><a href="balalaika/elementary/YaroslavskieRiabiata.pdf" class="elastic"
+                target="_blank">Самарин А. -
+                Ярославские
+                ребята</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/YaroslavskieRiabiata.mp3" type="audio/mpeg">
 
                 Тег audio не поддерживается Вашим браузером.
 
               </audio>
-              <div class="audio2"><a class="download-text" href="balalaika/elementary/Kalinka.mp3" download="">
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/elementary/YaroslavskieRiabiata.mp3" download="">
 
-                  <p class="download-text1">Скачать аудио файл</p>
-                  <p class="download"> <svg>
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
                       <use href="#arrow-down"> </use>
                     </svg></p>
                 </a>
               </div>
             </div>
-            <div class="audio3 "><a href="balalaika/elementary/Kukushka.pdf" class="elastic" target="_blank">Кукушка -
-                швейцарская нп
-              </a>
-              <audio controls class="audio1">
-                <source src="balalaika/elementary/Kukushka.mp3" type="audio/mpeg">
+            <div class="audio"><a href="balalaika/elementary/SaratovakieNaigrishi.pdf" class="elastic"
+                target="_blank">Саратовские
+                наигрыши - Обработка В.Лобова</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/SaratovakieNaigrishi.mp3" type="audio/mpeg">
 
                 Тег audio не поддерживается Вашим браузером.
 
               </audio>
-              <div class="audio2"><a class="download-text" href="balalaika/elementary/Kukushka.mp3" download="">
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/elementary/SaratovakieNaigrishi.mp3" download="">
 
-                  <p class="download-text1">Скачать аудио файл</p>
-                  <p class="download"> <svg>
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
                       <use href="#arrow-down"> </use>
                     </svg></p>
                 </a>
               </div>
             </div>
-            <div class="audio3 "><a href="balalaika/elementary/LetkaEnka.pdf" class="elastic" target="_blank">Лехтинен
-                Р.-
-                Летка-енка</a>
-              <audio controls class="audio1">
-                <source src="balalaika/elementary/LetkaEnka.mp3" type="audio/mpeg">
+            <div class="audio"><a href="balalaika/elementary/SolovSedPodmoskovnye.pdf" class="elastic"
+                target="_blank">Соловьёв-Седой В. - Подмосковные вечера</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/SolovSedPodmoskovnye.mp3" type="audio/mpeg">
 
                 Тег audio не поддерживается Вашим браузером.
 
               </audio>
-              <div class="audio2"><a class="download-text" href="balalaika/elementary/LetkaEnka.mp3" download="">
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/elementary/SolovSedPodmoskovnye.mp3" download="">
 
-                  <p class="download-text1">Скачать аудио файл</p>
-                  <p class="download"> <svg>
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/elementary/SpadavekkiaDobryiZuk.pdf" class="elastic"
+                target="_blank">Спадавеккиа
+                А. - Добрый жук</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/SpadavekkiaDobryiZuk.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/elementary/SpadavekkiaDobryiZuk.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/elementary/StempnevskiiPodGoroyu.pdf" class="elastic"
+                target="_blank">Стемпневский
+                С.- Под горою калина</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/StempnevskiiPodGoroyu.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/elementary/StempnevskiiPodGoroyu.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/elementary/Sirtaky.pdf" class="elastic" target="_blank">Теодоракис М.
+                -
+                Сиртаки</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/Sirtaky.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="balalaika/elementary/Sirtaky.mp3"
+                  download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/elementary/VeselaiaKadril.pdf" class="elastic" target="_blank">Темнов
+                В.-
+                Веселая
+                кадриль</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/VeselaiaKadril.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/elementary/VeselaiaKadril.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/difficult/Kakprekrasen.pdf" class="elastic" target="_blank">Тухманов
+                Д.
+                -
+                Как
+                прекрасен этот мир</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/difficult/Kakprekrasen.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="balalaika/difficult/Kakprekrasen.mp3"
+                  download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/elementary/TethgotVolga.pdf" class="elastic" target="_blank">Фрадкин
+                М.-
+                Течет
+                Волга</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/TethgotVolga.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="balalaika/elementary/TethgotVolga.mp3"
+                  download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/elementary/CheshskayaPolka.pdf" class="elastic"
+                target="_blank">Чешская
+                полька</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/CheshskayaPolka.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/elementary/CheshskayaPolka.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/elementary/ShainskiyKuznechik.pdf" class="elastic"
+                target="_blank">Шаинский В. - В
+                траве сидел кузнечик</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/ShainskiyKuznechik.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+
+
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/elementary/ShainskiyKuznechik.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/elementary/ShtrausAnnapolika.pdf" class="elastic"
+                target="_blank">Штраус
+                И. -
+                Анна-полька</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/ShtrausAnnapolika.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/elementary/ShtrausAnnapolika.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"><svg>
+                      <use href="#arrow-down"> </use>
+                    </svg> </p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/elementary/ShumanVeselKrest.pdf" class="elastic" target="_blank">Шуман
+                Р.
+                -
+                Весёлый кретьянин</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/elementary/ShumanVeselKrest.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/elementary/ShumanVeselKrest.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
                       <use href="#arrow-down"> </use>
                     </svg></p>
                 </a>
               </div>
             </div>
           </div>
-          </div>
         </div>
       </div>
-      <div class="balbeg2">
-        <div class="accordion">Ноты и аудио</div>
-        <div class="panel">
-          <div class="audio3 "><a href="balalaika/elementary/LuliZanIPiero.pdf" class="elastic" target="_blank">Люлли
-              Ж.
-              -Жан и
-              Пьеро</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/LuliZanIPiero.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/LuliZanIPiero.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-
-          <div class="audio3 "><a href="balalaika/elementary/LulyPesenka.pdf" class="elastic" target="_blank">Люлли Ж.
-              -
-              Песенка</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/LulyPesenka.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/LulyPesenka.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/elementary/Liavoniha.pdf" class="elastic" target="_blank">Лявониха -
-              бнп</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/Liavoniha.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/Liavoniha.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/elementary/MozartMaiskaia.pdf" class="elastic" target="_blank">Моцарт
-              В.-
-              Майская
-              песня</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/MozartMaiskaia.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/MozartMaiskaia.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3 "><a href="balalaika/elementary/MozartOtrbal.pdf" class="elastic" target="_blank">Моцарт
-              В.-
-              Отрывок из
-              оперы "Волшебная флейта"</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/MozartOtrbal.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/MozartOtrbal.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-
-          <div class="audio3"><a href="balalaika/elementary/NovikovSmuglianka.pdf" class="elastic"
-              target="_blank">Новиков
-              А. -
-              Смуглянка</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/NovikovSmuglianka.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/NovikovSmuglianka.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-
-          <div class="audio3"><a href="balalaika/elementary/oiLopnulobruch.pdf" class="elastic" target="_blank">Ой,
-              лопнул
-              обруч -
-              унп</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/oiLopnulobruch.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/oiLopnulobruch.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/elementary/PahmytovaRklen.pdf" class="elastic"
-              target="_blank">Пахмутова
-              А. -
-              Старый клён</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/PahmytovaRklen.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/PahmytovaRklen.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/elementary/Polcacheshsciitan.pdf" class="elastic"
-              target="_blank">Полька
-              - чешский
-              танец</a>
-
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/Polcacheshsciitan.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/Polcacheshsciitan.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/elementary/RebikovLiagushka.pdf" class="elastic"
-              target="_blank">Ребиков
-              В. -
-              Лягушка</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/RebikovLiagushka.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/RebikovLiagushka.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-
-          <div class="audio3"><a href="balalaika/elementary/SamarinArtist.pdf" class="elastic" target="_blank">Самарин
-              А.-
-              Артист
-              эстрады</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/SamarinArtist.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/SamarinArtist.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/elementary/SamarinVoPole.pdf" class="elastic" target="_blank">Самарин
-              А.
-              &mdash;&nbsp;рнп&nbsp;Во
-              поле береза
-              стояла</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/SamarinVoPole.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/SamarinVoPole.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/elementary/SamarinVosadulivogorodebal.pdf" class="elastic"
-              target="_blank">Самарин
-              А. &mdash;&nbsp;рнп&nbsp;Во садули,
-              в&nbsp;огороде</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/SamarinVosadulivogorodebal.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/SamarinVosadulivogorodebal.mp3"
-                download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/elementary/SamarinGrustnaia.pdf" class="elastic"
-              target="_blank">Самарин
-              А.-
-              Грустная песенка</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/SamarinGrustnaia.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/SamarinGrustnaia.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/elementary/SamarinDozdik.pdf" class="elastic" target="_blank">Самарин
-              А.-
-              Дождик</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/SamarinDozdik.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/SamarinDozdik.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/elementary/SamarinKakPodGorkoi.pdf" class="elastic"
-              target="_blank">Самарин А.-
-              рнп Как под горкой,
-              под горой</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/SamarinKakPodGorkoi.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/SamarinKakPodGorkoi.mp3"
-                download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3 "><a href="balalaika/elementary/SamarinKolibelnaia.pdf" class="elastic"
-              target="_blank">Самарин А.-
-              Колыбельная</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/SamarinKolibelnaia.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/SamarinKolibelnaia.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/elementary/SamarinMalPolonez.pdf" class="elastic"
-              target="_blank">Самарин
-              А. -
-              Маленький полонез</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/SamarinMalPolonez.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/SamarinMalPolonez.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/elementary/SamarinNaZavalinke.pdf" class="elastic"
-              target="_blank">Самарин А. - На
-              завалинке</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/SamarinNaZavalinke.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/SamarinNaZavalinke.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-        </div>
+      <!-- balalaika__subtitle-difficult -->
+      <div class="balalaika__subtitle-difficult">
+        <h3 class="balalaika-difficult-text" id="balalaika-difficult-text">Ноты для балалайки.<br>Более сложные
+          произведения</h3>
       </div>
+      <div class="balalaika__difficult">
+        <div class="balalaika__difficult-left">
+          <div class="accordion">Ноты и аудио</div>
+          <div class="panel">
+            <div class="audio"><a href="balalaika/difficult/BahVesna.pdf" class="elastic" target="_blank">Бах
+                В.Ф. -
+                Весна</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/difficult/BahVesna.mp3" type="audio/mpeg">
 
-      <div class="balbeg3">
-        <div class="accordion">Ноты и аудио</div>
-        <div class="panel">
+                Тег audio не поддерживается Вашим браузером.
 
+              </audio>
 
-          <div class="audio3"><a href="balalaika/elementary/SamarinNaLoshadke.pdf" class="elastic"
-              target="_blank">Самарин
-              А. - На
-              лошадке</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/SamarinNaLoshadke.mp3" type="audio/mpeg">
+              <div class="audio__download"> <a class="audio__download-link" href="balalaika/difficult/BahVesna.mp3"
+                  download="">
 
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/SamarinNaLoshadke.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"><svg>
+                      <use href="#arrow-down"> </use>
+                    </svg> </p>
+                </a>
+              </div>
             </div>
-          </div>
+            <div class="audio"><a href="balalaika/difficult/MartinyAndantino.pdf" class="elastic"
+                target="_blank">Мартинни
+                Д.-
+                Андантино (отрывок)</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/difficult/MartinyAndantino.mp3" type="audio/mpeg">
 
-          <div class="audio3"><a href="balalaika/elementary/SamarinPerviiParen.pdf" class="elastic"
-              target="_blank">Самарин А. -
-              Первый парень на
-              деревне</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/SamarinPerviiParen.mp3" type="audio/mpeg">
+                Тег audio не поддерживается Вашим браузером.
 
-              Тег audio не поддерживается Вашим браузером.
+              </audio>
 
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/SamarinPerviiParen.mp3" download="">
+              <div class="audio__download"> <a class="audio__download-link"
+                  href="balalaika/difficult/MartinyAndantino.mp3" download="">
 
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-
-          <div class="audio3"><a href="balalaika/elementary/SamarinPesenka.pdf" class="elastic" target="_blank">Самарин
-              А.-
-              Песенка</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/SamarinPesenka.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/SamarinPesenka.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-
-          <div class="audio3"><a href="balalaika/elementary/SamarinPolka.pdf" class="elastic" target="_blank">Самарин
-              А.
-              -
-              Полька</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/SamarinPolka.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/SamarinPolka.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/elementary/SvetitMesiaz.pdf" class="elastic" target="_blank">Самарин
-              А.
-              -
-              рнп
-              Светит месяц</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/SvetitMesiaz.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/SvetitMesiaz.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/elementary/YaroslavskieRiabiata.pdf" class="elastic"
-              target="_blank">Самарин А. -
-              Ярославские
-              ребята</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/YaroslavskieRiabiata.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/YaroslavskieRiabiata.mp3"
-                download="">
-                
-                  <p class="download-text1">Скачать аудио файл</p>
-                  <p class="download"> <svg>
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
                       <use href="#arrow-down"> </use>
                     </svg></p>
-              </a>
+                </a>
+              </div>
             </div>
+
+
           </div>
-          <div class="audio3"><a href="balalaika/elementary/SaratovakieNaigrishi.pdf" class="elastic"
-              target="_blank">Саратовские
-              наигрыши - Обработка В.Лобова</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/SaratovakieNaigrishi.mp3" type="audio/mpeg">
+        </div>
+        <div class="balalaika__difficult-center">
+          <div class="accordion">Ноты и аудио</div>
+          <div class="panel">
+            <div class="audio "><a href="balalaika/difficult/OberTamburin.pdf" class="elastic" target="_blank">Обер Л.
+                -
+                Тамбурин</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/difficult/OberTamburin.mp3" type="audio/mpeg">
 
-              Тег audio не поддерживается Вашим браузером.
+                Тег audio не поддерживается Вашим браузером.
 
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/SaratovakieNaigrishi.mp3"
-                download="">
+              </audio>
 
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
+              <div class="audio__download"><a class="audio__download-link" href="balalaika/difficult/OberTamburin.mp3"
+                  download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="audio3"><a href="balalaika/elementary/SolovSedPodmoskovnye.pdf" class="elastic"
-              target="_blank">Соловьёв-Седой В. - Подмосковные вечера</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/SolovSedPodmoskovnye.mp3" type="audio/mpeg">
+            <div class="audio"><a href="balalaika/difficult/Ribalalaika-tabsikovBuratino.pdf" class="elastic"
+                target="_blank">Рыбников
+                А. -
+                Бу-ра-ти-но!</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/difficult/Ribalalaika-tabsikovBuratino.mp3" type="audio/mpeg">
 
-              Тег audio не поддерживается Вашим браузером.
+                Тег audio не поддерживается Вашим браузером.
 
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/SolovSedPodmoskovnye.mp3"
-                download="">
+              </audio>
 
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/difficult/Ribalalaika-tabsikovBuratino.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
             </div>
+
           </div>
-          <div class="audio3"><a href="balalaika/elementary/SpadavekkiaDobryiZuk.pdf" class="elastic"
-              target="_blank">Спадавеккиа
-              А. - Добрый жук</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/SpadavekkiaDobryiZuk.mp3" type="audio/mpeg">
+        </div>
+        <div class="balalaika__difficult-right">
+          <div class="accordion">Ноты и аудио</div>
+          <div class="panel">
+            <div class="audio"><a href="balalaika/difficult/SamarinYablochko.pdf" class="elastic"
+                target="_blank">Самарин
+                А.- рнп
+                Яблочко</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/difficult/SamarinYablochko.mp3" type="audio/mpeg">
 
-              Тег audio не поддерживается Вашим браузером.
+                Тег audio не поддерживается Вашим браузером.
 
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/SpadavekkiaDobryiZuk.mp3"
-                download="">
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/difficult/SamarinYablochko.mp3" download="">
 
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
             </div>
+
           </div>
-          <div class="audio3"><a href="balalaika/elementary/StempnevskiiPodGoroyu.pdf" class="elastic"
-              target="_blank">Стемпневский
-              С.- Под горою калина</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/StempnevskiiPodGoroyu.mp3" type="audio/mpeg">
+        </div>
+      </div>
+      <!-- balalaika__subtitle-etudes -->
+      <div class="balalaika__subtitle-etudes">
+        <h3 class="balalaika-etudes-text" id="balalaika-etudes-text">Ноты для балалайки.<br>Этюды</h3>
+      </div>
+      <div class="balalaika__etudes">
+        <div class="balalalika__etudes-left">
+          <div class="accordion">Ноты и аудио</div>
+          <div class="panel">
+            <div class="audio"><a href="balalaika/etudes/GedikiAmol.pdf" class="elastic" target="_blank">Гедике
+                А. -
+                Этюд
+                a
+                moll</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/etudes/GedikiAmol.mp3" type="audio/mpeg">
 
-              Тег audio не поддерживается Вашим браузером.
+                Тег audio не поддерживается Вашим браузером.
 
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/StempnevskiiPodGoroyu.mp3"
-                download="">
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="balalaika/etudes/GedikiAmol.mp3"
+                  download="">
 
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="audio3"><a href="balalaika/elementary/Sirtaky.pdf" class="elastic" target="_blank">Теодоракис М.
-              -
-              Сиртаки</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/Sirtaky.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/Sirtaky.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
+            <div class="audio"><a href="balalaika/etudes/GleihmanGdur.pdf" class="elastic" target="_blank">Глейхман Г.
+                -
+                Этюд G dur
               </a>
+              <audio controls class="audio__player">
+                <source src="balalaika/etudes/GleihmanGdur.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="balalaika/etudes/GleihmanGdur.mp3"
+                  download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="audio3"><a href="balalaika/elementary/VeselaiaKadril.pdf" class="elastic" target="_blank">Темнов
-              В.-
-              Веселая
-              кадриль</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/VeselaiaKadril.mp3" type="audio/mpeg">
+            <div class="audio"><a href="balalaika/etudes/SamarinIspanskEtud.pdf" class="elastic" target="_blank">Самарин
+                А.
+                - Этюд Испанский</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/etudes/SamarinIspanskEtud.mp3" type="audio/mpeg">
 
-              Тег audio не поддерживается Вашим браузером.
+                Тег audio не поддерживается Вашим браузером.
 
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/VeselaiaKadril.mp3" download="">
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/etudes/SamarinIspanskEtud.mp3" download="">
 
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="audio3"><a href="balalaika/difficult/Kakprekrasen.pdf" class="elastic" target="_blank">Тухманов
-              Д.
-              -
-              Как
-              прекрасен этот мир</a>
-            <audio controls class="audio1">
-              <source src="balalaika/difficult/Kakprekrasen.mp3" type="audio/mpeg">
+            <div class="audio"><a href="balalaika/etudes/SamarinMazorMinor.pdf" class="elastic" target="_blank">Самарин
+                А.
+                - Этюд
+                Мажор-минор</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/etudes/SamarinMazorMinor.mp3" type="audio/mpeg">
 
-              Тег audio не поддерживается Вашим браузером.
+                Тег audio не поддерживается Вашим браузером.
 
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/difficult/Kakprekrasen.mp3" download="">
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="balalaika/etudes/SamarinMazorMinor.mp3"
+                  download="">
 
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
             </div>
+
           </div>
-          <div class="audio3"><a href="balalaika/elementary/TethgotVolga.pdf" class="elastic" target="_blank">Фрадкин
-              М.-
-              Течет
-              Волга</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/TethgotVolga.mp3" type="audio/mpeg">
+        </div>
+        <div class="balalaika__etudes-center">
+          <div class="accordion">Ноты и аудио</div>
+          <div class="panel">
+            <div class="audio"><a href="balalaika/etudes/SamarinEtudNokturn.pdf" class="elastic" target="_blank">Самарин
+                А.
+                -
+                Этюд-Ноктюрн</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/etudes/SamarinEtudNokturn.mp3" type="audio/mpeg">
 
-              Тег audio не поддерживается Вашим браузером.
+                Тег audio не поддерживается Вашим браузером.
 
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/TethgotVolga.mp3" download="">
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/etudes/SamarinEtudNokturn.mp3" download="">
 
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="audio3"><a href="balalaika/elementary/CheshskayaPolka.pdf" class="elastic" target="_blank">Чешская
-              полька</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/CheshskayaPolka.mp3" type="audio/mpeg">
+            <div class="audio"><a href="balalaika/etudes/SamarinNaBriazanie.pdf" class="elastic" target="_blank">Самарин
+                А.
+                - Этюд A
+                dur на бряцание</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/etudes/SamarinNaBriazanie.mp3" type="audio/mpeg">
 
-              Тег audio не поддерживается Вашим браузером.
+                Тег audio не поддерживается Вашим браузером.
 
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/CheshskayaPolka.mp3" download="">
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/etudes/SamarinNaBriazanie.mp3" download="">
 
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="audio3"><a href="balalaika/elementary/ShainskiyKuznechik.pdf" class="elastic"
-              target="_blank">Шаинский В. - В
-              траве сидел кузнечик</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/ShainskiyKuznechik.mp3" type="audio/mpeg">
+            <div class="audio"><a href="balalaika/etudes/SamarinAmoll.pdf" class="elastic" target="_blank">Самарин А. -
+                Этюд a moll на II pizz</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/etudes/SamarinAmoll.mp3" type="audio/mpeg">
 
-              Тег audio не поддерживается Вашим браузером.
+                Тег audio не поддерживается Вашим браузером.
 
-            </audio>
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="balalaika/etudes/SamarinAmoll.mp3"
+                  download="">
 
-
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/ShainskiyKuznechik.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="audio3"><a href="balalaika/elementary/ShtrausAnnapolika.pdf" class="elastic"
-              target="_blank">Штраус
-              И. -
-              Анна-полька</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/ShtrausAnnapolika.mp3" type="audio/mpeg">
+            <div class="audio"><a href="balalaika/etudes/SamarinNaIIPizz.pdf" class="elastic" target="_blank">Самарин
+                А.
+                -
+                Этюд D
+                dur на II pizz</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/etudes/SamarinNaIIPizz.mp3" type="audio/mpeg">
 
-              Тег audio не поддерживается Вашим браузером.
+                Тег audio не поддерживается Вашим браузером.
 
-            </audio>
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="balalaika/etudes/SamarinNaIIPizz.mp3"
+                  download="">
 
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/ShtrausAnnapolika.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"><svg>
-                    <use href="#arrow-down"> </use>
-                  </svg> </p>
-              </a>
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
             </div>
+
           </div>
-          <div class="audio3"><a href="balalaika/elementary/ShumanVeselKrest.pdf" class="elastic" target="_blank">Шуман
-              Р.
-              -
-              Весёлый кретьянин</a>
-            <audio controls class="audio1">
-              <source src="balalaika/elementary/ShumanVeselKrest.mp3" type="audio/mpeg">
+        </div>
+        <div class="balalaika__etudes-right">
+          <div class="accordion">Ноты и аудио</div>
+          <div class="panel">
+            <div class="audio"><a href="balalaika/etudes/SamarinNaPizzBPIBriazanie.pdf" class="elastic"
+                target="_blank">Самарин А. -
+                Этюд D dur на pizz б.п. и бряцание</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/etudes/SamarinNaPizzBPIBriazanie.mp3" type="audio/mpeg">
 
-              Тег audio не поддерживается Вашим браузером.
+                Тег audio не поддерживается Вашим браузером.
 
-            </audio>
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/etudes/SamarinNaPizzBPIBriazanie.mp3" download="">
 
-            <div class="audio2"><a class="download-text" href="balalaika/elementary/ShumanVeselKrest.mp3" download="">
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/etudes/SamarinReMinor.pdf" class="elastic" target="_blank">Самарин А.
+                -
+                Этюд d moll на II pizz</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/etudes/SamarinReMinor.mp3" type="audio/mpeg">
 
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="balalaika/etudes/SamarinReMinor.mp3"
+                  download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/etudes/SamarinNaVibrato.pdf" class="elastic" target="_blank">
+                Самарин
+                А.
+                - Этюд на
+                вибрато</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/etudes/SamarinNaVibrato.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="balalaika/etudes/SamarinNaVibrato.mp3"
+                  download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/etudes/SamarinSiMinor.pdf" class="elastic" target="_blank">Самарин А.
+                -
+                Этюд h
+                moll</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/etudes/SamarinSiMinor.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a href="balalaika/etudes/SamarinSiMinor.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/etudes/Fedorov.pdf" class="elastic" target="_blank">Фёдоров
+                А.
+                -
+                Этюд-пьеса</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/etudes/Fedorov.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="balalaika/etudes/Fedorov.mp3"
+                  download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    
-    <div class="baldift">
-      <h3 class="textbaldif" id="textbaldif">Ноты для балалайки.<br>Более сложные произведения</h3>
-    </div>
-    <div class="baldif">
-      <div class="baldif1">
-        <div class="accordion">Ноты и аудио</div>
-        <div class="panel">
-          <div class="audio3"><a href="balalaika/difficult/BahVesna.pdf" class="elastic" target="_blank">Бах В.Ф. -
-              Весна</a>
-            <audio controls class="audio1">
-              <source src="balalaika/difficult/BahVesna.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-
-            <div class="audio2"> <a class="download-text" href="balalaika/difficult/BahVesna.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"><svg>
-                    <use href="#arrow-down"> </use>
-                  </svg> </p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/difficult/MartinyAndantino.pdf" class="elastic"
-              target="_blank">Мартинни
-              Д.-
-              Андантино (отрывок)</a>
-            <audio controls class="audio1">
-              <source src="balalaika/difficult/MartinyAndantino.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-
-            <div class="audio2"> <a class="download-text" href="balalaika/difficult/MartinyAndantino.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-
-
-        </div>
+      <!-- balalaika__subtitle-ensembles -->
+      <div class="balalaika__subtitle-ensembles">
+        <h3 class="balalaika-ensambles-text" id="balalaika-ensambles-text">Ноты для балалайки.<br> Ансамбли</h3>
       </div>
-      <div class="baldif2">
-        <div class="accordion">Ноты и аудио</div>
-        <div class="panel">
-          <div class="audio3 "><a href="balalaika/difficult/OberTamburin.pdf" class="elastic" target="_blank">Обер Л.
-              -
-              Тамбурин</a>
-            <audio controls class="audio1">
-              <source src="balalaika/difficult/OberTamburin.mp3" type="audio/mpeg">
+      <div class="balalaika__ensembles">
+        <div class="balalaika__ensembles-left">
+          <div class="accordion">Ноты и аудио</div>
+          <div class="panel">
+            <div class="audio"><a href="balalaika/ensembles/AndreevRuminskayaAnsambl.pdf" class="elastic"
+                target="_blank">Андреев В.
+                - Румынская песня и Чардаш</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/ensembles/AndreevRuminskayaAnsambl.mp3" type="audio/mpeg">
 
-              Тег audio не поддерживается Вашим браузером.
+                Тег audio не поддерживается Вашим браузером.
 
-            </audio>
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/ensembles/AndreevRuminskayaAnsambl.mp3" download="">
 
-            <div class="audio2"><a class="download-text" href="balalaika/difficult/OberTamburin.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="audio3"><a href="balalaika/difficult/RibnikovBuratino.pdf" class="elastic"
-              target="_blank">Рыбников
-              А. -
-              Бу-ра-ти-но!</a>
-            <audio controls class="audio1">
-              <source src="balalaika/difficult/RibnikovBuratino.mp3" type="audio/mpeg">
+            <div class="audio"><a href="balalaika/ensembles/AxTyUliza.pdf" class="elastic" target="_blank">Ах,
+                улица,
+                улица
+                широкая
+                - рнп Обработка Е.Туманян</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/ensembles/AxTyUliza.mp3" type="audio/mpeg">
 
-              Тег audio не поддерживается Вашим браузером.
+                Тег audio не поддерживается Вашим браузером.
 
-            </audio>
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="balalaika/ensembles/AxTyUliza.mp3"
+                  download="">
 
-            <div class="audio2"><a class="download-text" href="balalaika/difficult/RibnikovBuratino.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
             </div>
-          </div>
+            <div class="audio"><a href="balalaika/ensembles/BahSkerzoAnsamvl.pdf" class="elastic" target="_blank">Бах
+                И.
+                -
+                Скерцо</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/ensembles/BahSkerzoAnsamvl.mp3" type="audio/mpeg">
 
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/ensembles/BahSkerzoAnsamvl.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/ensembles/MozartOtrivokAns.pdf" class="elastic" target="_blank">Моцарт
+                В.
+                -
+                отрывок из оперы "Волшебная флейта"</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/ensembles/MozartOtrivokAns.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/ensembles/MozartOtrivokAns.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+
+          </div>
         </div>
-      </div>
-      <div class="baldif3">
-        <div class="accordion">Ноты и аудио</div>
-        <div class="panel">
-          <div class="audio3"><a href="balalaika/difficult/SamarinYablochko.pdf" class="elastic" target="_blank">Самарин
-              А.- рнп
-              Яблочко</a>
-            <audio controls class="audio1">
-              <source src="balalaika/difficult/SamarinYablochko.mp3" type="audio/mpeg">
+        <div class="balalaika__ensembles-center">
+          <div class="accordion">Ноты и аудио</div>
+          <div class="panel">
+            <div class="audio"><a href="balalaika/ensembles/ZazepinRinok.pdf" class="elastic" target="_blank">Зацепин
+                А.
+                -
+                Рынок</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/ensembles/ZazepinRinok.mp3" type="audio/mpeg">
 
-              Тег audio не поддерживается Вашим браузером.
+                Тег audio не поддерживается Вашим браузером.
 
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/difficult/SamarinYablochko.mp3" download="">
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="balalaika/ensembles/ZazepinRinok.mp3"
+                  download="">
 
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
             </div>
-          </div>
+            <div class="audio"><a href="balalaika/ensembles/SamarinNaGoreToKalina.pdf" class="elastic"
+                target="_blank">Самарин А. -
+                рнп На горе-то, калина</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/ensembles/SamarinNaGoreToKalina.mp3" type="audio/mpeg">
 
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/ensembles/SamarinNaGoreToKalina.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/ensembles/SamarinNaigtish.pdf" class="elastic" target="_blank">
+                Самарин
+                А. -
+                Наигрыш</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/ensembles/SamarinNaigtish.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/ensembles/SamarinNaigtish.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="balalaika/ensembles/SamarinNokturnAnsambl.pdf" class="elastic"
+                target="_blank">Самарин А. -
+                Ноктюрн (для двух балалаек)</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/ensembles/SamarinNokturnAnsambl.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/ensembles/SamarinNokturnAnsambl.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+
+
+          </div>
         </div>
-      </div>
-    </div>
-  
-    <div class="baletudest">
-      <h3 class="textbaletudes" id="textbaletudes">Ноты для балалайки.<br>Этюды</h3>
-    </div>
-    <div class="baletudes">
-      <div class="baletudes1">
-        <div class="accordion">Ноты и аудио</div>
-        <div class="panel">
-          <div class="audio3"><a href="balalaika/etudes/GedikiAmol.pdf" class="elastic" target="_blank">Гедике А. -
-              Этюд
-              a
-              moll</a>
-            <audio controls class="audio1">
-              <source src="balalaika/etudes/GedikiAmol.mp3" type="audio/mpeg">
+        <div class="balalaika__ensembles-right">
+          <div class="accordion">Ноты и аудио</div>
+          <div class="panel">
+            <div class="audio"><a href="balalaika/ensembles/SamarinNokturnDuet.pdf" class="elastic"
+                target="_blank">Самарин
+                А. - Ноктюрн (для
+                домры с балалайкой)</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/ensembles/SamarinNokturnDuet.mp3" type="audio/mpeg">
 
-              Тег audio не поддерживается Вашим браузером.
+                Тег audio не поддерживается Вашим браузером.
 
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/etudes/GedikiAmol.mp3" download="">
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/ensembles/SamarinNokturnDuet.mp3" download="">
 
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="audio3"><a href="balalaika/etudes/GleihmanGdur.pdf" class="elastic" target="_blank">Глейхман Г.
-              -
-              Этюд G dur
-            </a>
-            <audio controls class="audio1">
-              <source src="balalaika/etudes/GleihmanGdur.mp3" type="audio/mpeg">
+            <div class="audio "><a href="balalaika/ensembles/SamarinVeseliiKovboy.pdf" class="elastic" target="_blank">
+                Самарин А. -
+                Веселый ковбой</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/ensembles/SamarinVeseliiKovboy.mp3" type="audio/mpeg">
 
-              Тег audio не поддерживается Вашим браузером.
+                Тег audio не поддерживается Вашим браузером.
 
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/etudes/GleihmanGdur.mp3" download="">
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/ensembles/SamarinVeseliiKovboy.mp3" download="">
 
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="audio3"><a href="balalaika/etudes/SamarinIspanskEtud.pdf" class="elastic" target="_blank">Самарин
-              А.
-              - Этюд Испанский</a>
-            <audio controls class="audio1">
-              <source src="balalaika/etudes/SamarinIspanskEtud.mp3" type="audio/mpeg">
 
-              Тег audio не поддерживается Вашим браузером.
 
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/etudes/SamarinIspanskEtud.mp3" download="">
+            <div class="audio "><a href="balalaika/ensembles/SamarinYablochkoAnsambl.pdf" class="elastic"
+                target="_blank">Самарин А.
+                - рнп Яблочко</a>
+              <audio controls class="audio__player">
+                <source src="balalaika/ensembles/SamarinYablochkoAnsambl.mp3" type="audio/mpeg">
 
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/etudes/SamarinMazorMinor.pdf" class="elastic" target="_blank">Самарин
-              А.
-              - Этюд
-              Мажор-минор</a>
-            <audio controls class="audio1">
-              <source src="balalaika/etudes/SamarinMazorMinor.mp3" type="audio/mpeg">
+                Тег audio не поддерживается Вашим браузером.
 
-              Тег audio не поддерживается Вашим браузером.
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="balalaika/ensembles/SamarinYablochkoAnsambl.mp3" download="">
 
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/etudes/SamarinMazorMinor.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="baletudes2">
-        <div class="accordion">Ноты и аудио</div>
-        <div class="panel">
-          <div class="audio3"><a href="balalaika/etudes/SamarinEtudNokturn.pdf" class="elastic" target="_blank">Самарин
-              А.
-              -
-              Этюд-Ноктюрн</a>
-            <audio controls class="audio1">
-              <source src="balalaika/etudes/SamarinEtudNokturn.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/etudes/SamarinEtudNokturn.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/etudes/SamarinNaBriazanie.pdf" class="elastic" target="_blank">Самарин
-              А.
-              - Этюд A
-              dur на бряцание</a>
-            <audio controls class="audio1">
-              <source src="balalaika/etudes/SamarinNaBriazanie.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/etudes/SamarinNaBriazanie.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/etudes/SamarinAmoll.pdf" class="elastic" target="_blank">Самарин А. -
-              Этюд a moll на II pizz</a>
-            <audio controls class="audio1">
-              <source src="balalaika/etudes/SamarinAmoll.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/etudes/SamarinAmoll.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/etudes/SamarinNaIIPizz.pdf" class="elastic" target="_blank">Самарин
-              А.
-              -
-              Этюд D
-              dur на II pizz</a>
-            <audio controls class="audio1">
-              <source src="balalaika/etudes/SamarinNaIIPizz.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/etudes/SamarinNaIIPizz.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="baletudes3">
-        <div class="accordion">Ноты и аудио</div>
-        <div class="panel">
-          <div class="audio3"><a href="balalaika/etudes/SamarinNaPizzBPIBriazanie.pdf" class="elastic"
-              target="_blank">Самарин А. -
-              Этюд D dur на pizz б.п. и бряцание</a>
-            <audio controls class="audio1">
-              <source src="balalaika/etudes/SamarinNaPizzBPIBriazanie.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/etudes/SamarinNaPizzBPIBriazanie.mp3"
-                download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/etudes/SamarinReMinor.pdf" class="elastic" target="_blank">Самарин А.
-              -
-              Этюд d moll на II pizz</a>
-            <audio controls class="audio1">
-              <source src="balalaika/etudes/SamarinReMinor.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/etudes/SamarinReMinor.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/etudes/SamarinNaVibrato.pdf" class="elastic" target="_blank"> Самарин
-              А.
-              - Этюд на
-              вибрато</a>
-            <audio controls class="audio1">
-              <source src="balalaika/etudes/SamarinNaVibrato.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/etudes/SamarinNaVibrato.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/etudes/SamarinSiMinor.pdf" class="elastic" target="_blank">Самарин А.
-              -
-              Этюд h
-              moll</a>
-            <audio controls class="audio1">
-              <source src="balalaika/etudes/SamarinSiMinor.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a href="balalaika/etudes/SamarinSiMinor.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/etudes/Fedorov.pdf" class="elastic" target="_blank">Фёдоров А. -
-              Этюд-пьеса</a>
-            <audio controls class="audio1">
-              <source src="balalaika/etudes/Fedorov.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/etudes/Fedorov.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="balanst">
-      <h3 class="textbalans" id="textbalans">Ноты для балалайки.<br> Ансамбли</h3>
-    </div>
-    <div class="balans">
-      <div class="balans1">
-        <div class="accordion">Ноты и аудио</div>
-        <div class="panel">
-          <div class="audio3"><a href="balalaika/ensembles/AndreevRuminskayaAnsambl.pdf" class="elastic"
-              target="_blank">Андреев В.
-              - Румынская песня и Чардаш</a>
-            <audio controls class="audio1">
-              <source src="balalaika/ensembles/AndreevRuminskayaAnsambl.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/ensembles/AndreevRuminskayaAnsambl.mp3"
-                download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/ensembles/AxTyUliza.pdf" class="elastic" target="_blank">Ах, улица,
-              улица
-              широкая
-              - рнп Обработка Е.Туманян</a>
-            <audio controls class="audio1">
-              <source src="balalaika/ensembles/AxTyUliza.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/ensembles/AxTyUliza.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/ensembles/BahSkerzoAnsamvl.pdf" class="elastic" target="_blank">Бах
-              И.
-              -
-              Скерцо</a>
-            <audio controls class="audio1">
-              <source src="balalaika/ensembles/BahSkerzoAnsamvl.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/ensembles/BahSkerzoAnsamvl.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/ensembles/MozartOtrivokAns.pdf" class="elastic" target="_blank">Моцарт
-              В.
-              -
-              отрывок из оперы "Волшебная флейта"</a>
-            <audio controls class="audio1">
-              <source src="balalaika/ensembles/MozartOtrivokAns.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/ensembles/MozartOtrivokAns.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-
-        </div>
+    </section>
+    <!-- guitar -->
+    <section class="guitar">
+      <!-- guiter__subtitle-begin -->
+      <div class="guiter__subtitle-begin">
+        <h3 class="guitar-begin-text" id="guitar-begin-text">Ноты для гитары.<br>Для начинающих</h3>
       </div>
-      <div class="balans2">
-        <div class="accordion">Ноты и аудио</div>
-        <div class="panel">
-          <div class="audio3"><a href="balalaika/ensembles/ZazepinRinok.pdf" class="elastic" target="_blank">Зацепин
-              А.
-              -
-              Рынок</a>
-            <audio controls class="audio1">
-              <source src="balalaika/ensembles/ZazepinRinok.mp3" type="audio/mpeg">
+      <div class="guitar__begin">
+        <div class="guitar__begin-left">
+          <div class="accordion">Ноты и аудио</div>
+          <div class="panel">
+            <div class="audio"><a href="gutar/elementary/LegranBuduzdattebia.pdf" class="elastic" target="_blank">Легран
+                М.-Буду
+                ждать тебя</a>
+              <audio controls class="audio__player">
+                <source src="gutar/elementary/LegranBuduzdattebia.mp3" type="audio/mpeg">
 
-              Тег audio не поддерживается Вашим браузером.
+                Тег audio не поддерживается Вашим браузером.
 
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/ensembles/ZazepinRinok.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="gutar/elementary/LegranBuduzdattebia.mp3" download="">
+                  >
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="audio3"><a href="balalaika/ensembles/SamarinNaGoreToKalina.pdf" class="elastic"
-              target="_blank">Самарин А. -
-              рнп На горе-то, калина</a>
-            <audio controls class="audio1">
-              <source src="balalaika/ensembles/SamarinNaGoreToKalina.mp3" type="audio/mpeg">
 
-              Тег audio не поддерживается Вашим браузером.
+            <div class="audio"><a href="gutar/elementary/LenonYestndey.pdf" class="elastic" target="_blank">Леннон
+                Д.-Yesterdey</a>
+              <audio controls class="audio__player">
+                <source src="gutar/elementary/LenonYestndey.mp3" type="audio/mpeg">
 
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/ensembles/SamarinNaGoreToKalina.mp3"
-                download="">
+                Тег audio не поддерживается Вашим браузером.
 
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/ensembles/SamarinNaigtish.pdf" class="elastic" target="_blank">
-              Самарин
-              А. -
-              Наигрыш</a>
-            <audio controls class="audio1">
-              <source src="balalaika/ensembles/SamarinNaigtish.mp3" type="audio/mpeg">
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="gutar/elementary/LenonYestndey.mp3"
+                  download="">
 
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/ensembles/SamarinNaigtish.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="balalaika/ensembles/SamarinNokturnAnsambl.pdf" class="elastic"
-              target="_blank">Самарин А. -
-              Ноктюрн (для двух балалаек)</a>
-            <audio controls class="audio1">
-              <source src="balalaika/ensembles/SamarinNokturnAnsambl.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/ensembles/SamarinNokturnAnsambl.mp3"
-                download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-      <div class="balans3">
-        <div class="accordion">Ноты и аудио</div>
-        <div class="panel">
-          <div class="audio3"><a href="balalaika/ensembles/SamarinNokturnDuet.pdf" class="elastic"
-              target="_blank">Самарин
-              А. - Ноктюрн (для
-              домры с балалайкой)</a>
-            <audio controls class="audio1">
-              <source src="balalaika/ensembles/SamarinNokturnDuet.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/ensembles/SamarinNokturnDuet.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3 "><a href="balalaika/ensembles/SamarinVeseliiKovboy.pdf" class="elastic" target="_blank">
-              Самарин А. -
-              Веселый ковбой</a>
-            <audio controls class="audio1">
-              <source src="balalaika/ensembles/SamarinVeseliiKovboy.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/ensembles/SamarinVeseliiKovboy.mp3"
-                download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-
-
-          <div class="audio3 "><a href="balalaika/ensembles/SamarinYablochkoAnsambl.pdf" class="elastic"
-              target="_blank">Самарин А.
-              - рнп Яблочко</a>
-            <audio controls class="audio1">
-              <source src="balalaika/ensembles/SamarinYablochkoAnsambl.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="balalaika/ensembles/SamarinYablochkoAnsambl.mp3"
-                download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="gitbegt">
-      <h3 class="textgitbeg" id="textgitbeg">Ноты для гитары.<br>Для начинающих</h3>
-    </div>
-    <div class="gitbeg">
-      <div class="gitbeg1">
-        <div class="accordion">Ноты и аудио</div>
-        <div class="panel">
-          <div class="audio3"><a href="gutar/elementary/LegranBuduzdattebia.pdf" class="elastic" target="_blank">Легран
-              М.-Буду
-              ждать тебя</a>
-            <audio controls class="audio1">
-              <source src="gutar/elementary/LegranBuduzdattebia.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="gutar/elementary/LegranBuduzdattebia.mp3" download="">
-                >
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
+        <div class="guitar__begin-center">
+          <div class="accordion">Ноты и аудио</div>
+          <div class="panel">
+            <div class="audio"><a href="gutar/elementary/OiMoroz.pdf" class="elastic" target="_blank">Ой, мороз,
+                мороз
+                -рнп
               </a>
+              <audio controls class="audio__player">
+                <source src="gutar/elementary/OiMoroz.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="gutar/elementary/OiMoroz.mp3"
+                  download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+
+            <div class="audio"><a href="gutar/elementary/Priaha.pdf" class="elastic" target="_blank">Пряха -рнп
+              </a>
+              <audio controls class="audio__player">
+                <source src="gutar/elementary/Priaha.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="gutar/elementary/Priaha.mp3"
+                  download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="guitar__begin-right">
+          <div class="accordion">Ноты и аудио</div>
+          <div class="panel">
+            <div class="audio"><a href="gutar/elementary/SolovievSedoiPodmoskovnie.pdf" class="elastic"
+                target="_blank">Соловьев-Седой В.-Подмосковные
+                вечера</a>
+              <audio controls class="audio__player">
+                <source src="gutar/elementary/SolovievSedoiPodmoskovnie.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="gutar/elementary/SolovievSedoiPodmoskovnie.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+
+            <div class="audio"><a href="gutar/elementary/Stepgit.pdf" class="elastic" target="_blank">Степь да
+                степь
+                кругом
+                -рнп
+              </a>
+              <audio controls class="audio__player">
+                <source src="gutar/elementary/Stepgit.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="gutar/elementary/Stepgit.mp3"
+                  download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- guitar__subtitle-difficult -->
+      <div class="guitar__subtitle-difficult">
+        <h3 class="guitar-difficult-text" id="guitar-difficult-text">Ноты для гитары.<br>Более сложные произведения</h3>
+      </div>
+      <div class="guitar__difficult">
+        <div class="guitar__difficult-left">
+          <div class="accordion">Ноты и аудио</div>
+          <div class="panel">
+            <div class="audio"><a href="gutar/difficult/BethovenKElize.pdf" class="elastic" target="_blank">Бетховен
+                Л.-К
+                Элизе</a>
+              <audio controls class="audio__player">
+                <source src="gutar/difficult/BethovenKElize.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="gutar/difficult/BethovenKElize.mp3"
+                  download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio "><a href="gutar/difficult/GladkovPesenkalivionka.pdf" class="elastic"
+                target="_blank">Гладков
+                Г.-Песенка Львенка и
+                черепахи</a>
+              <audio controls class="audio__player">
+                <source src="gutar/difficult/GladkovPesenkalivionka.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="gutar/difficult/GladkovPesenkalivionka.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
             </div>
           </div>
+        </div>
+        <div class="guitar__difficult-center">
+          <div class="accordion">Ноты и аудио</div>
+          <div class="panel">
+            <div class="audio"><a href="gutar/difficult/GladkovPesniadruzei.pdf" class="elastic" target="_blank">
+                Гладков
+                Г.-Песня
+                друзей </a>
+              <audio controls class="audio__player">
+                <source src="gutar/difficult/GladkovPesniadruzei.mp3" type="audio/mpeg">
 
-          <div class="audio3"><a href="gutar/elementary/LenonYestndey.pdf" class="elastic" target="_blank">Леннон
-              Д.-Yesterdey</a>
-            <audio controls class="audio1">
-              <source src="gutar/elementary/LenonYestndey.mp3" type="audio/mpeg">
+                Тег audio не поддерживается Вашим браузером.
 
-              Тег audio не поддерживается Вашим браузером.
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="gutar/difficult/GladkovPesniadruzei.mp3" download="">
 
-            </audio>
-            <div class="audio2"><a class="download-text" href="gutar/elementary/LenonYestndey.mp3" download="">
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
 
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
+            <div class="audio"><a href="gutar/difficult/KrilatovKol.pdf" class="elastic" target="_blank">Крылатов
+                Е.-Колыбельная
+                медведицы</a>
+              <audio controls class="audio__player">
+                <source src="gutar/difficult/KrilatovKol.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="gutar/difficult/KrilatovKol.mp3"
+                  download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="guitar__difficult-right">
+          <div class="accordion">Ноты и аудио</div>
+          <div class="panel">
+            <div class="audio"><a href="gutar/difficult/MalashkinIavstretilvas.pdf" class="elastic"
+                target="_blank">Малашкин Л.-Я
+                встретил Вас</a>
+              <audio controls class="audio__player">
+                <source src="gutar/difficult/MalashkinIavstretilvas.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="gutar/difficult/MalashkinIavstretilvas.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="gitbeg2">
-        <div class="accordion">Ноты и аудио</div>
-        <div class="panel">
-          <div class="audio3"><a href="gutar/elementary/OiMoroz.pdf" class="elastic" target="_blank">Ой, мороз, мороз
-              -рнп
-            </a>
-            <audio controls class="audio1">
-              <source src="gutar/elementary/OiMoroz.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="gutar/elementary/OiMoroz.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-
-          <div class="audio3"><a href="gutar/elementary/Priaha.pdf" class="elastic" target="_blank">Пряха -рнп </a>
-            <audio controls class="audio1">
-              <source src="gutar/elementary/Priaha.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="gutar/elementary/Priaha.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-
-        </div>
+      <!-- guitar__subtitle-words -->
+      <div class="guitar__subtitle-words">
+        <h3 class="guitar-words-text" id="guitar-words-text">Ноты для гитары.<br>С аккордами и словами</h3>
       </div>
-      <div class="gitbeg3">
-        <div class="accordion">Ноты и аудио</div>
-        <div class="panel">
-          <div class="audio3"><a href="gutar/elementary/SolovievSedoiPodmoskovnie.pdf" class="elastic"
-              target="_blank">Соловьев-Седой В.-Подмосковные
-              вечера</a>
-            <audio controls class="audio1">
-              <source src="gutar/elementary/SolovievSedoiPodmoskovnie.mp3" type="audio/mpeg">
+      <div class="guitar__words">
+        <div class="guitar__words-left">
+          <div class="accordion">Ноты и аудио</div>
+          <div class="panel">
+            <div class="audio"><a href="gutar/with_the_words/Pesndruzvokal.pdf" class="elastic" target="_blank">Гладков
+                Г.-
+                Песня
+                друзей</a>
+              <audio controls class="audio__player">
+                <source src="gutar/with_the_words/Pesndruzvokal.mp3" type="audio/mpeg">
 
-              Тег audio не поддерживается Вашим браузером.
+                Тег audio не поддерживается Вашим браузером.
 
-            </audio>
-            <div class="audio2"><a class="download-text" href="gutar/elementary/SolovievSedoiPodmoskovnie.mp3"
-                download="">
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="gutar/with_the_words/Pesndruzvokal.mp3"
+                  download="">
 
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+
+            <div class="audio"><a href="gutar/with_the_words/Nepogoda.pdf" class="elastic" target="_blank">Дунаевский
+                М.-
+                Непогода
               </a>
+              <audio controls class="audio__player">
+                <source src="gutar/with_the_words/Nepogoda.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="gutar/with_the_words/Nepogoda.mp3"
+                  download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
             </div>
           </div>
-
-          <div class="audio3"><a href="gutar/elementary/Stepgit.pdf" class="elastic" target="_blank">Степь да степь
-              кругом
-              -рнп
-            </a>
-            <audio controls class="audio1">
-              <source src="gutar/elementary/Stepgit.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="gutar/elementary/Stepgit.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-
         </div>
-      </div>
-    </div>
-    <div class="gitdift">
-      <h3 class="textgitdif" id="textgitdif">Ноты для гитары.<br>Более сложные произведения</h3>
-    </div>
-    <div class="gitdif">
-      <div class="gitdif1">
-        <div class="accordion">Ноты и аудио</div>
-        <div class="panel">
-          <div class="audio3"><a href="gutar/difficult/BethovenKElize.pdf" class="elastic" target="_blank">Бетховен
-              Л.-К
-              Элизе</a>
-            <audio controls class="audio1">
-              <source src="gutar/difficult/BethovenKElize.mp3" type="audio/mpeg">
+        <div class="guitar__words-right">
+          <div class="accordion">Ноты и аудио</div>
+          <div class="panel">
+            <div class="audio"><a href="gutar/with_the_words/Marionetki.pdf" class="elastic" target="_blank">Макаревич
+                А.-
+                Марионетки</a>
+              <audio controls class="audio__player">
+                <source src="gutar/with_the_words/Marionetki.mp3" type="audio/mpeg">
 
-              Тег audio не поддерживается Вашим браузером.
+                Тег audio не поддерживается Вашим браузером.
 
-            </audio>
-            <div class="audio2"><a class="download-text" href="gutar/difficult/BethovenKElize.mp3" download="">
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="gutar/with_the_words/Marionetki.mp3"
+                  download="">
 
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="audio3 "><a href="gutar/difficult/GladkovPesenkalivionka.pdf" class="elastic"
-              target="_blank">Гладков
-              Г.-Песенка Львенка и
-              черепахи</a>
-            <audio controls class="audio1">
-              <source src="gutar/difficult/GladkovPesenkalivionka.mp3" type="audio/mpeg">
+            <div class="audio "><a href="gutar/with_the_words/Kakzdorovo.pdf" class="elastic" target="_blank">Митяев
+                О.-
+                Как
+                здорово</a>
+              <audio controls class="audio__player">
+                <source src="gutar/with_the_words/Kakzdorovo.mp3" type="audio/mpeg">
 
-              Тег audio не поддерживается Вашим браузером.
+                Тег audio не поддерживается Вашим браузером.
 
-            </audio>
-            <div class="audio2"><a class="download-text" href="gutar/difficult/GladkovPesenkalivionka.mp3" download="">
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="gutar/with_the_words/Kakzdorovo.mp3"
+                  download="">
 
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="gitdif2">
-        <div class="accordion">Ноты и аудио</div>
-        <div class="panel">
-          <div class="audio3"><a href="gutar/difficult/GladkovPesniadruzei.pdf" class="elastic" target="_blank">
-              Гладков
-              Г.-Песня
-              друзей </a>
-            <audio controls class="audio1">
-              <source src="gutar/difficult/GladkovPesniadruzei.mp3" type="audio/mpeg">
+      <!-- guitar__subtitle-duets -->
+      <div class="guitar__subtitle-duets">
+        <h3 class="guitar-duets-text" id="guitar-duets-text">Ноты для гитары.<br>Дуэты</h3>
+      </div>
+      <div class="guitar__duets">
+        <div class="guitar__duets-left">
+          <div class="accordion">Ноты и аудио</div>
+          <div class="panel">
+            <div class="audio"><a href="gutar/ensembles/SamarinGrustnayaPesenka.pdf" class="elastic"
+                target="_blank">Самарин А.-
+                Грустная песенка</a>
+              <audio controls class="audio__player">
+                <source src="gutar/ensembles/SamarinGrustnayaPesenka.mp3" type="audio/mpeg">
 
-              Тег audio не поддерживается Вашим браузером.
+                Тег audio не поддерживается Вашим браузером.
 
-            </audio>
-            <div class="audio2"><a class="download-text" href="gutar/difficult/GladkovPesniadruzei.mp3" download="">
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="gutar/ensembles/SamarinGrustnayaPesenka.mp3" download="">
 
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
+            </div>
+            <div class="audio"><a href="gutar/ensembles/SamarinIspanskTanezDuet.pdf" class="elastic"
+                target="_blank">Самарин А.- Испанский танец</a>
+              <audio controls class="audio__player">
+                <source src="gutar/ensembles/SamarinIspanskTanezDuet.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link"
+                  href="utar/ensembles/SamarinIspanskTanezDuet.mp3" download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+
+              </div>
             </div>
           </div>
-
-          <div class="audio3"><a href="gutar/difficult/KrilatovKol.pdf" class="elastic" target="_blank">Крылатов
-              Е.-Колыбельная
-              медведицы</a>
-            <audio controls class="audio1">
-              <source src="gutar/difficult/KrilatovKol.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="gutar/difficult/KrilatovKol.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
+        </div>
+        <div class="guitar__duets-right">
+          <div class="accordion">Ноты и аудио</div>
+          <div class="panel">
+            <div class="audio"><a href="gutar/ensembles/SamarinTokkataDuet.pdf" class="elastic" target="_blank">Самарин
+                А.-
+                Токката
               </a>
+              <audio controls class="audio__player">
+                <source src="gutar/ensembles/SamarinTokkataDuet.mp3" type="audio/mpeg">
+
+                Тег audio не поддерживается Вашим браузером.
+
+              </audio>
+              <div class="audio__download"><a class="audio__download-link" href="gutar/ensembles/SamarinTokkataDuet.mp3"
+                  download="">
+
+                  <p class="audio__download-text">Скачать аудио файл</p>
+                  <p class="audio__download-svg"> <svg>
+                      <use href="#arrow-down"> </use>
+                    </svg></p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="gitdif3">
-        <div class="accordion">Ноты и аудио</div>
-        <div class="panel">
-          <div class="audio3"><a href="gutar/difficult/MalashkinIavstretilvas.pdf" class="elastic"
-              target="_blank">Малашкин Л.-Я
-              встретил Вас</a>
-            <audio controls class="audio1">
-              <source src="gutar/difficult/MalashkinIavstretilvas.mp3" type="audio/mpeg">
+    </section>
+  </main>
 
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="gutar/difficult/MalashkinIavstretilvas.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="gitwordst">
-      <h3 class="textgitwords" id="textgitwords">Ноты для гитары.<br>С аккордами и словами</h3>
-    </div>
-    <div class="gitwords">
-      <div class="gitwords1">
-        <div class="accordion">Ноты и аудио</div>
-        <div class="panel">
-          <div class="audio3"><a href="gutar/with_the_words/Pesndruzvokal.pdf" class="elastic" target="_blank">Гладков
-              Г.-
-              Песня
-              друзей</a>
-            <audio controls class="audio1">
-              <source src="gutar/with_the_words/Pesndruzvokal.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="gutar/with_the_words/Pesndruzvokal.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-
-          <div class="audio3"><a href="gutar/with_the_words/Nepogoda.pdf" class="elastic" target="_blank">Дунаевский
-              М.-
-              Непогода
-            </a>
-            <audio controls class="audio1">
-              <source src="gutar/with_the_words/Nepogoda.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="gutar/with_the_words/Nepogoda.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="gitwords2">
-        <div class="accordion">Ноты и аудио</div>
-        <div class="panel">
-          <div class="audio3"><a href="gutar/with_the_words/Marionetki.pdf" class="elastic" target="_blank">Макаревич
-              А.-
-              Марионетки</a>
-            <audio controls class="audio1">
-              <source src="gutar/with_the_words/Marionetki.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="gutar/with_the_words/Marionetki.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3 "><a href="gutar/with_the_words/Kakzdorovo.pdf" class="elastic" target="_blank">Митяев
-              О.-
-              Как
-              здорово</a>
-            <audio controls class="audio1">
-              <source src="gutar/with_the_words/Kakzdorovo.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="gutar/with_the_words/Kakzdorovo.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="gitduetst">
-      <h3 class="textgitduets" id="textgitduets">Ноты для гитары.<br>Дуэты</h3>
-    </div>
-    <div class="gitduets">
-      <div class="gitduets1">
-        <div class="accordion">Ноты и аудио</div>
-        <div class="panel">
-          <div class="audio3"><a href="gutar/ensembles/SamarinGrustnayaPesenka.pdf" class="elastic"
-              target="_blank">Самарин А.-
-              Грустная песенка</a>
-            <audio controls class="audio1">
-              <source src="gutar/ensembles/SamarinGrustnayaPesenka.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="gutar/ensembles/SamarinGrustnayaPesenka.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-          <div class="audio3"><a href="gutar/ensembles/SamarinIspanskTanezDuet.pdf" class="elastic"
-              target="_blank">Самарин А.- Испанский танец</a>
-            <audio controls class="audio1">
-              <source src="gutar/ensembles/SamarinIspanskTanezDuet.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="utar/ensembles/SamarinIspanskTanezDuet.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="gitduets2">
-        <div class="accordion">Ноты и аудио</div>
-        <div class="panel">
-          <div class="audio3"><a href="gutar/ensembles/SamarinTokkataDuet.pdf" class="elastic" target="_blank">Самарин
-              А.-
-              Токката
-            </a>
-            <audio controls class="audio1">
-              <source src="gutar/ensembles/SamarinTokkataDuet.mp3" type="audio/mpeg">
-
-              Тег audio не поддерживается Вашим браузером.
-
-            </audio>
-            <div class="audio2"><a class="download-text" href="gutar/ensembles/SamarinTokkataDuet.mp3" download="">
-
-                <p class="download-text1">Скачать аудио файл</p>
-                <p class="download"> <svg>
-                    <use href="#arrow-down"> </use>
-                  </svg></p>
-              </a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  
-
+  <!-- go-top -->
   <div class="go-top"></div>
   <div class="triangle-up"></div>
   <!--footer-->
-  <div class="footer">
-    <div class="footer-top">
-
-      <div class="tabs">
+  <footer class="footer">
+    <!-- footer__top -->
+    <div class="footer__top">
+      <nav class="tabs">
         <div class="tabs__items">
-          <div class="bn"> <input type="radio" class="active"> <a href="#tab-01" class="tabs__item"> <span>Ноты для
+          <div class="balalaika-tabs"> <input type="radio" class="active"> <a href="#tab-01" class="tabs__item">
+              <span>Ноты для
                 балалайки</span></a></div>
-          <div class="gn"><input type="radio"> <a href="#tab-02" class="tabs__item"> <span>Ноты для гитары</span></a>
+          <div class="guitar-tabs"><input type="radio"> <a href="#tab-02" class="tabs__item"> <span>Ноты для
+                гитары</span></a>
           </div>
         </div>
         <div class="tabs__body">
-          <div id="tab-01" class="tabs__blok">
-            <div class="b1"><a href="#textbalbeg" class="tabs__hover"> Для начинающих</a></div>
-            <div class="b2"> <a href="#textbaldif" class="tabs__hover">Более сложные произведения</a></div>
-            <div class="b3"><a href="#textbaletudes" class="tabs__hover">Этюды</a></div>
-            <div class="b4"><a href="#textbalans" class="tabs__hover"> Ансамбли</a></div>
-          </div>
-          <div id="tab-02" class="tabs__blok">
-            <div class="g1"><a href="#textgitbeg" class="tabs__hover">Для начинающих </a></div>
-            <div class="g2"><a href="#textgitdif" class="tabs__hover">Более сложные произведения</a></div>
-            <div class="g3"> <a href="#textgitwords" class="tabs__hover"> С аккордами и словами</a></div>
-            <div class="g4"><a href="#textgitduets" class="tabs__hover"> Дуэты</a></div>
-          </div>
+          <ul id="tab-01" class="tabs__blok">
+            <li class="tabs-link"><a href="#balalaika-begin-text" class="tabs__submenu-hover"> Для начинающих</a></li>
+            <li class="tabs-link"> <a href="#balalaika-difficult-text" class="tabs__submenu-hover">Более сложные
+                произведения</a>
+            </li>
+            <li class="tabs-link"><a href="#balalaika-etudes-text" class="tabs__submenu-hover">Этюды</a></li>
+            <li class="tabs-link"><a href="#balalaika-ensambles-text" class="tabs__submenu-hover"> Ансамбли</a></li>
+          </ul>
+          <ul id="tab-02" class="tabs__blok">
+            <li class="tabs-link"><a href="#guitar-begin-text" class="tabs__submenu-hover">Для начинающих </a></li>
+            <li class="tabs-link"><a href="#guitar-difficult-text" class="tabs__submenu-hover">Более сложные
+                произведения</a>
+            </li>
+            <li class="tabs-link"> <a href="#guitar-words-text" class="tabs__submenu-hover"> С аккордами и словами</a>
+            </li>
+            <li class="tabs-link"><a href="#guitar-duets-text" class="tabs__submenu-hover"> Дуэты</a></li>
+          </ul>
         </div>
-      </div>
-
+      </nav>
     </div>
-
-    <div class="footer1">
-      <div class="footer-youtude"><a href="https://www.youtube.com/channel/UCzBTsBT_ydYvJ7CfqqU36-A"><svg
-            class=" youtube-svg" fill="#000000" width="47px" height="47px" viewBox="0 0 32 32"
+    <!-- footer__bottom -->
+    <div class="footer__bottom">
+      <div class="footer__bottom-youtube"><a href="https://www.youtube.com/channel/UCzBTsBT_ydYvJ7CfqqU36-A"><svg
+            class="footer-youtube-svg" fill="#000000" width="47px" height="47px" viewBox="0 0 32 32"
             xmlns="http://www.w3.org/2000/svg">
             <path
               d="M24.325 8.309s-2.655-.334-8.357-.334c-5.517 0-8.294.334-8.294.334A2.675 2.675 0 0 0 5 10.984v10.034a2.675 2.675 0 0 0 2.674 2.676s2.582.332 8.294.332c5.709 0 8.357-.332 8.357-.332A2.673 2.673 0 0 0 27 21.018V10.982a2.673 2.673 0 0 0-2.675-2.673zM13.061 19.975V12.03L20.195 16l-7.134 3.975z" />
           </svg></a></div>
-      <div class="rute">&#169; Все права защищены</div>
-
-      <div class="footer-ebvelope"><a href="mailto:samarinand22@gmail.com"> <svg class=" maill-svg" fill="#000000"
-            width="30px" height="30px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+      <div class="footer-copyright">&#169;&nbsp; Все права защищены</div>
+      <div class="footer__bottom-envelope"><a href="mailto:samarinand22@gmail.com"> <svg class="footer-maill-svg"
+            fill="#000000" width="30px" height="30px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M0 1694.235h1920V226H0v1468.235ZM112.941 376.664V338.94H1807.06v37.723L960 1111.233l-847.059-734.57ZM1807.06 526.198v950.513l-351.134-438.89-88.32 70.475 378.353 472.998H174.042l378.353-472.998-88.32-70.475-351.134 438.89V526.198L960 1260.768l847.059-734.57Z"
               fill-rule="evenodd" />
           </svg> </a></div>
-
     </div>
-  </div>
-
-  <div id="popup1" class="popup1">
-    <a href="#header" class="popup1__area"></a>
-    <div class="popup1__body">
-      <div class="popup1__content">
-
-        <a href="#header" class="popup1__close"></a>
+  </footer>
+  <!-- popup-form -->
+  <div id="popup-form" class="popup-form">
+    <a href="#header" class="popup-form__area"></a>
+    <div class="popup-form__body">
+      <div class="popup-form__content">
+        <a href="#header" class="popup-form__close"></a>
         <div class="textinrorm1">
           <div class="textinform">
-
             <form method="post" action="mail.php">
-
-              <div class="popup1__title"> Ваше сообщение</div>
+              <div class="popup-form__title"> Ваше сообщение</div>
               <label for="name"><span class="required"></span>Имя*: </label>
               <input class="textinput  error" type="text" id="name" name="user_name" value="" placeholder="Ваше имя"
                 required="required">
-
-
               <label for="email"> <span class="required"></span>E-mail*: </label>
               <input class="textinput  error" type="email" id="email" name="user_email" value=""
                 placeholder="your@email.com" required="required">
-
-
               <label for="name"><span class="required"></span>Сообщение: </label>
-
               <textarea class="textinput   placeholder " id="message" placeholder="Ваше сообщение" required="required">
             </textarea>
-
-
               <button class="textbutton" tabindex="4" type="submit">Отправить</button>
-              <div class="consent">Нажимая на кнопку, вы даёте согласие на обработку персональных данных и
+              <div class="agreement">Нажимая на кнопку, вы даёте согласие на обработку персональных данных и
                 соглашаетесь
                 с политикой конфиденциальности </div>
             </form>
           </div>
         </div>
-
-
       </div>
     </div>
   </div>
