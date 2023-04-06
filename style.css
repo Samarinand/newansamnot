@@ -838,14 +838,16 @@ h2 {
 }
 
 .parallax-slider-text {
-  padding-top: 5em;
+  padding-top: 3em;
   text-align: center;
   padding-left: 2em;
   padding-right: 2em;
-  font-size: 20.8px;
-  font-weight: bold;
-  color: #000000;
+  font-size: 23.8px;
+  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+  color: #3b117e;
   text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
 }
 
 .image-slider1 {
