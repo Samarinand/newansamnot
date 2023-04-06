@@ -838,17 +838,17 @@ h2 {
 }
 
 .parallax-slider-text {
-  padding-top: 74px;
-  padding-left: 40%;
-  padding-right: 45%;
-  padding-bottom: 0%;
+  padding-top: 5em;
+  text-align: center;
+  padding-left: 2em;
+  padding-right: 2em;
   font-size: 20.8px;
   font-weight: bold;
-  color: #7a52b3;
+  color: #000000;
   text-transform: uppercase;
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .parallax-slider-text {
     padding-top: 10%;
     padding-left: 35%;
@@ -856,13 +856,16 @@ h2 {
     padding-bottom: 0%;
   }
 }
+
 @media (max-width: 509px) {
   .parallax-slider-text {
     padding-top: 10%;
     padding-left: 0%;
+
     padding-bottom: 0%;
   }
 }
+
 @media (max-width: 1186px) {
   .parallax-slider-text {
     padding-top: 13%;
@@ -870,7 +873,7 @@ h2 {
     padding-right: 45%;
     padding-bottom: 0%;
   }
-}
+} */
 .image-slider1 {
   padding-top: 10px;
   height: 405px;
