@@ -77,7 +77,17 @@ new Swiper('.image-slider1',{
 loadOnTransitionStart:true,
 loadPrevNext:true
 },
-
+/* breakpoints:{
+  320:{
+    slidesPerView: 1,
+  },
+  480:{
+    slidesPerView: 2,
+  },
+  992:{
+    slidesPerView: 3,
+  },
+} */
 
 });
 new Swiper('.parallax-slider',{

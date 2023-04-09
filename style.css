@@ -810,17 +810,6 @@ h2 {
           justify-content: center;
 }
 
-.slider-notes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 30px;
-}
-
-/*slider*/
 .parallax-slider {
   height: 410px;
   width: 98%;
@@ -839,15 +828,38 @@ h2 {
 
 .parallax-slider-text {
   padding-top: 3em;
+  vertical-align: bottom;
   text-align: center;
   padding-left: 2em;
   padding-right: 2em;
-  font-size: 23.8px;
+  font-size: 22px;
   font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
   color: #3b117e;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: bold;
   letter-spacing: 3px;
+}
+
+.swiper-conteiner {
+  position: absolute;
+}
+
+.parallax-slider .swiper-button-prev::after,
+.parallax-slider .swiper-button-next::after {
+  color: #b280f7;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+/*slider*/
+.slider-notes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
 }
 
 .image-slider1 {
@@ -855,10 +867,6 @@ h2 {
   height: 405px;
   width: 260px;
   border-radius: 10px;
-}
-
-.swiper-conteiner {
-  position: absolute;
 }
 
 .image-slider1-image {
@@ -875,13 +883,6 @@ h2 {
      object-fit: cover;
   border-radius: 10px;
   width: 260px;
-}
-
-.parallax-slider .swiper-button-prev::after,
-.parallax-slider .swiper-button-next::after {
-  color: #b280f7;
-  font-weight: bold;
-  font-size: 40px;
 }
 
 .image-slider1 .swiper-button-prev::after,
