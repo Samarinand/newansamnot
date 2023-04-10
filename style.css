@@ -1088,9 +1088,15 @@ h2 {
      background-color: #bac6d7;
    } */
 }
-.balalaika__begin-left .audio:before,
-.balalaika__begin-center .audio:before,
-.balalaika__begin-right .audio:before {
+.balalaika__begin-left .audio > a,
+.balalaika__begin-center .audio > a,
+.balalaika__begin-right .audio > a {
+  display: inline-block;
+  padding-right: 15px;
+}
+.balalaika__begin-left .audio > a:before,
+.balalaika__begin-center .audio > a:before,
+.balalaika__begin-right .audio > a:before {
   content: "";
   width: 30px;
   height: 30px;
@@ -1206,9 +1212,15 @@ h2 {
       background-color: #bac6d7;
     } */
 }
-.balalaika__difficult-left .audio:before,
-.balalaika__difficult-center .audio:before,
-.balalaika__difficult-right .audio:before {
+.balalaika__difficult-left .audio > a,
+.balalaika__difficult-center .audio > a,
+.balalaika__difficult-right .audio > a {
+  display: inline-block;
+  padding-right: 15px;
+}
+.balalaika__difficult-left .audio > a:before,
+.balalaika__difficult-center .audio > a:before,
+.balalaika__difficult-right .audio > a:before {
   content: "";
   width: 30px;
   height: 30px;
@@ -1288,9 +1300,15 @@ h2 {
     background-color: #bac6d7;
   } */
 }
-.balalalika__etudes-left .audio:before,
-.balalaika__etudes-center .audio:before,
-.balalaika__etudes-right .audio:before {
+.balalalika__etudes-left .audio > a,
+.balalaika__etudes-center .audio > a,
+.balalaika__etudes-right .audio > a {
+  display: inline-block;
+  padding-right: 15px;
+}
+.balalalika__etudes-left .audio > a:before,
+.balalaika__etudes-center .audio > a:before,
+.balalaika__etudes-right .audio > a:before {
   content: "";
   width: 30px;
   height: 30px;
@@ -1371,9 +1389,15 @@ h2 {
       background-color: #bac6d7;
     } */
 }
-.balalaika__ensembles-left .audio:before,
-.balalaika__ensembles-center .audio:before,
-.balalaika__ensembles-right .audio:before {
+.balalaika__ensembles-left .audio > a,
+.balalaika__ensembles-center .audio > a,
+.balalaika__ensembles-right .audio > a {
+  display: inline-block;
+  padding-right: 15px;
+}
+.balalaika__ensembles-left .audio > a:before,
+.balalaika__ensembles-center .audio > a:before,
+.balalaika__ensembles-right .audio > a:before {
   content: "";
   width: 30px;
   height: 30px;
@@ -1478,9 +1502,15 @@ h2 {
       background-color: #bac6d7;
     } */
 }
-.guitar__begin-left .audio:before,
-.guitar__begin-center .audio:before,
-.guitar__begin-right .audio:before {
+.guitar__begin-left .audio > a,
+.guitar__begin-center .audio > a,
+.guitar__begin-right .audio > a {
+  display: inline-block;
+  padding-right: 15px;
+}
+.guitar__begin-left .audio > a:before,
+.guitar__begin-center .audio > a:before,
+.guitar__begin-right .audio > a:before {
   content: "";
   width: 30px;
   height: 30px;
@@ -1573,9 +1603,15 @@ h2 {
       background-color: #bac6d7;
     } */
 }
-.guitar__difficult-left .audio:before,
-.guitar__difficult-center .audio:before,
-.guitar__difficult-right .audio:before {
+.guitar__difficult-left .audio > a,
+.guitar__difficult-center .audio > a,
+.guitar__difficult-right .audio > a {
+  display: inline-block;
+  padding-right: 15px;
+}
+.guitar__difficult-left .audio > a:before,
+.guitar__difficult-center .audio > a:before,
+.guitar__difficult-right .audio > a:before {
   content: "";
   width: 30px;
   height: 30px;
@@ -1667,8 +1703,13 @@ h2 {
       background-color: #bac6d7;
     } */
 }
-.guitar__words-left .audio:before,
-.guitar__words-right .audio:before {
+.guitar__words-left .audio > a,
+.guitar__words-right .audio > a {
+  display: inline-block;
+  padding-right: 15px;
+}
+.guitar__words-left .audio > a:before,
+.guitar__words-right .audio > a:before {
   content: "";
   width: 30px;
   height: 30px;
@@ -1758,8 +1799,13 @@ h2 {
       background-color: #bac6d7;
     } */
 }
-.guitar__duets-left .audio:before,
-.guitar__duets-right .audio:before {
+.guitar__duets-left .audio > a,
+.guitar__duets-right .audio > a {
+  display: inline-block;
+  padding-right: 15px;
+}
+.guitar__duets-left .audio > a:before,
+.guitar__duets-right .audio > a:before {
   content: "";
   width: 30px;
   height: 30px;
@@ -1800,7 +1846,7 @@ h2 {
 .audio {
   border-radius: 10px;
   margin-top: 2px;
-  padding-left: 5px;
+  padding-left: 3px;
   padding-bottom: 1px;
   width: 310px;
 }

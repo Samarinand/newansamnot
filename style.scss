@@ -1110,8 +1110,11 @@ h2 {
  /*  .audio:nth-child(even) {
     background-color: #bac6d7;
   } */
-
-  .audio:before {
+.audio>a{
+  display: inline-block;
+   padding-right: 15px;
+}
+  .audio>a:before {
     content: "";
     width: 30px;
     height: 30px;
@@ -1213,8 +1216,11 @@ h2 {
 /*   .audio:nth-child(even) {
     background-color: #bac6d7;
   } */
-
-  .audio:before {
+  .audio>a{
+    display: inline-block;
+     padding-right: 15px;
+  }
+  .audio>a:before {
     content: "";
     width: 30px;
     height: 30px;
@@ -1283,8 +1289,11 @@ h2 {
   /* .audio:nth-child(even) {
     background-color: #bac6d7;
   } */
-
-  .audio:before {
+  .audio>a{
+    display: inline-block;
+     padding-right: 15px;
+  }
+  .audio>a:before {
     content: "";
     width: 30px;
     height: 30px;
@@ -1354,8 +1363,11 @@ h2 {
 /*   .audio:nth-child(even) {
     background-color: #bac6d7;
   } */
-
-  .audio:before {
+  .audio>a{
+    display: inline-block;
+     padding-right: 15px;
+  }
+  .audio>a:before {
     content: "";
     width: 30px;
     height: 30px;
@@ -1449,8 +1461,11 @@ h2 {
 /*   .audio:nth-child(even) {
     background-color: #bac6d7;
   } */
-
-  .audio:before {
+  .audio>a{
+    display: inline-block;
+     padding-right: 15px;
+  }
+  .audio>a:before {
     content: "";
     width: 30px;
     height: 30px;
@@ -1532,8 +1547,11 @@ h2 {
 /*   .audio:nth-child(even) {
     background-color: #bac6d7;
   } */
-
-  .audio:before {
+  .audio>a{
+    display: inline-block;
+     padding-right: 15px;
+  }
+  .audio>a:before {
     content: "";
     width: 30px;
     height: 30px;
@@ -1614,8 +1632,11 @@ h2 {
 /*   .audio:nth-child(even) {
     background-color: #bac6d7;
   } */
-
-  .audio:before {
+  .audio>a{
+    display: inline-block;
+     padding-right: 15px;
+  }
+  .audio>a:before {
     content: "";
     width: 30px;
     height: 30px;
@@ -1697,8 +1718,11 @@ h2 {
 /*   .audio:nth-child(even) {
     background-color: #bac6d7;
   } */
-
-  .audio:before {
+  .audio>a{
+    display: inline-block;
+     padding-right: 15px;
+  }
+  .audio>a:before {
     content: "";
     width: 30px;
     height: 30px;
@@ -1743,7 +1767,7 @@ h2 {
   // background-color: #bcd3f0;
   border-radius: 10px;
   margin-top: 2px;
-  padding-left: 5px;
+  padding-left: 3px;
   padding-bottom: 1px;
   width: 310px;
 }
