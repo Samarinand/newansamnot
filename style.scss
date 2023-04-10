@@ -751,7 +751,7 @@ body {
 
 // discription
 .discription {
-  margin-top: 20px;
+  // margin-top: 20px;
   text-align: center;
   font-style: oblique;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -763,15 +763,18 @@ body {
 
 .discription__text {
   position: relative;
-  border-radius: 10px;
-  // background-color: #bcd3f0;
+  
+  
   font-size: calc(12px + 4 * (100vw / 1280));
-  box-shadow: 0px 5px 5px black;
-  padding: 10px;
+margin-bottom: 15px;
+ 
 }
 
 .discription__list {
-  margin-top: 15px;
+
+  text-align: left;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 .discription__list>ul>li::before {
@@ -795,10 +798,11 @@ body {
 }
 
 h2 {
-
+  padding-left: 2em;
+  padding-right: 2em;
   font-weight: 600;
-  display: inline;
-  padding-bottom: 15px;
+  display: inline-block;
+  padding-bottom: 10px;
 }
 
 .discriptiont::before {
@@ -928,6 +932,11 @@ h2 {
 }
 
 .accordion {
+ padding-left: 5px;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  border-radius: 10px;
   cursor: pointer;
   transition: max-height 0.8s ease-out;
 }
@@ -936,6 +945,7 @@ h2 {
 .accordion:hover {
   background-color: #eaccf3;
   border-radius: 10px;
+ height: 100%;
 }
 
 .accordion:after {
@@ -1016,13 +1026,13 @@ h2 {
   }
 
   .balalaika__subtitle-begin {
-    padding-left: 110px;
+    padding-left: 100px;
     padding-right: 10px;
   }
 
   .balalaika__subtitle-difficult {
-    padding-left: 145px;
-    padding-right: 10px;
+    padding-left: 120px;
+    padding-right: 20px;
   }
 
   .balalaika-difficult-text::before {
@@ -1030,7 +1040,7 @@ h2 {
   }
 
   .balalaika__subtitle-etudes {
-    padding-left: 135px;
+    padding-left: 100px;
     padding-right: 20px;
   }
 
@@ -1039,7 +1049,7 @@ h2 {
   }
 
   .balalaika__subtitle-ensembles {
-    padding-left: 150px;
+    padding-left: 80px;
     padding-right: 10px;
   }
 
@@ -1056,7 +1066,7 @@ h2 {
   }
 
   .guiter__subtitle-begin {
-    padding-left: 140px;
+    padding-left: 100px;
     padding-right: 10px;
   }
 
@@ -1070,7 +1080,7 @@ h2 {
   }
 
   .guitar__subtitle-words {
-    padding-left: 130px;
+    padding-left: 80px;
     padding-right: 20px;
   }
 
@@ -1080,7 +1090,7 @@ h2 {
   }
 
   .guitar__subtitle-duets {
-    padding-left: 140px;
+    padding-left: 110px;
     padding-right: 10px;
   }
 }
@@ -1094,6 +1104,7 @@ h2 {
 }
 
 .balalaika__begin {
+  margin-bottom: 20px;
   width: 100%;
   min-width: 0px;
   display: flex;
@@ -1107,10 +1118,7 @@ h2 {
   height: 100%;
   // background-color: #f7f1f1;
   border-radius: 10px;
-  padding-left: 5px;
-  padding-top: 10px;
-  padding-right: 5px;
-  padding-bottom: 10px;
+
   width: 320px;
   line-height: 30px;
   font-weight: bold;
@@ -1157,6 +1165,7 @@ h2 {
 }
 
 .balalaika-begin-text {
+  
   font-size: 20px;
   display: flex;
   margin: 0 auto;
@@ -1179,6 +1188,7 @@ h2 {
 }
 
 .balalaika-difficult-text {
+  padding-top: 10px;
   font-size: 20px;
   display: flex;
   margin: 0 auto;
@@ -1201,6 +1211,7 @@ h2 {
 }
 
 .balalaika__difficult {
+  margin-bottom: 20px;
   width: 100%;
   min-width: 0px;
   display: flex;
@@ -1214,10 +1225,7 @@ h2 {
   height: 100%;
   // background-color: #f7f1f1;
   border-radius: 10px;
-  padding-left: 5px;
-  padding-top: 10px;
-  padding-right: 5px;
-  padding-bottom: 10px;
+ 
   width: 320px;
   line-height: 30px;
   font-weight: bold;
@@ -1264,6 +1272,7 @@ h2 {
 }
 
 .balalaika-etudes-text {
+  padding-top: 10px;
   font-size: 20px;
   display: flex;
   margin: 0 auto;
@@ -1274,6 +1283,7 @@ h2 {
 }
 
 .balalaika__etudes {
+  margin-bottom: 20px;
   width: 100%;
   min-width: 0px;
   display: flex;
@@ -1287,10 +1297,7 @@ h2 {
   height: 100%;
   // background-color: #f7f1f1;
   border-radius: 10px;
-  padding-left: 5px;
-  padding-top: 10px;
-  padding-right: 5px;
-  padding-bottom: 10px;
+ 
   width: 320px;
   line-height: 30px;
   font-weight: bold;
@@ -1361,10 +1368,7 @@ h2 {
   height: 100%;
   // background-color: #f7f1f1;
   border-radius: 10px;
-  padding-left: 5px;
-  padding-top: 10px;
-  padding-right: 5px;
-  padding-bottom: 10px;
+
   width: 320px;
   line-height: 30px;
   font-weight: bold;
@@ -1446,6 +1450,7 @@ h2 {
 }
 
 .guitar__begin {
+  margin-bottom: 20px;
   width: 100%;
   min-width: 0px;
   display: flex;
@@ -1459,10 +1464,7 @@ h2 {
   height: 100%;
   // background-color: #f7f1f1;
   border-radius: 10px;
-  padding-left: 5px;
-  padding-top: 10px;
-  padding-right: 5px;
-  padding-bottom: 10px;
+ 
   width: 320px;
   line-height: 30px;
   font-weight: bold;
@@ -1532,6 +1534,7 @@ h2 {
 }
 
 .guitar__difficult {
+  margin-bottom: 20px;
   width: 100%;
   min-width: 0px;
   display: flex;
@@ -1545,10 +1548,7 @@ h2 {
   height: 100%;
   // background-color: #f7f1f1;
   border-radius: 10px;
-  padding-left: 5px;
-  padding-top: 10px;
-  padding-right: 5px;
-  padding-bottom: 10px;
+
   width: 320px;
   line-height: 30px;
   font-weight: bold;
@@ -1607,6 +1607,7 @@ h2 {
 }
 
 .guitar-words-text {
+  margin-bottom: 20px;
   padding-top: 10px;
   font-size: 20px;
   display: flex;
@@ -1618,6 +1619,7 @@ h2 {
 }
 
 .guitar__words {
+  margin-bottom: 20px;
   width: 100%;
   min-width: 0px;
   display: flex;
@@ -1630,10 +1632,7 @@ h2 {
   height: 100%;
   // background-color: #f7f1f1;
   border-radius: 10px;
-  padding-left: 5px;
-  padding-top: 10px;
-  padding-right: 5px;
-  padding-bottom: 10px;
+  
   width: 320px;
   line-height: 30px;
   font-weight: bold;
@@ -1716,10 +1715,7 @@ h2 {
   height: 100%;
   // background-color: #f7f1f1;
   border-radius: 10px;
-  padding-left: 5px;
-  padding-top: 10px;
-  padding-right: 5px;
-  padding-bottom: 10px;
+ 
   width: 320px;
   line-height: 30px;
   font-weight: bold;
