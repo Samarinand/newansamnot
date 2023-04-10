@@ -1017,10 +1017,12 @@ h2 {
 
   .balalaika__subtitle-begin {
     padding-left: 110px;
+    padding-right: 10px;
   }
 
   .balalaika__subtitle-difficult {
     padding-left: 145px;
+    padding-right: 10px;
   }
 
   .balalaika-difficult-text::before {
@@ -1028,7 +1030,8 @@ h2 {
   }
 
   .balalaika__subtitle-etudes {
-    padding-left: 145px;
+    padding-left: 135px;
+    padding-right: 20px;
   }
 
   .balalaika-etudes-text::before {
@@ -1036,7 +1039,8 @@ h2 {
   }
 
   .balalaika__subtitle-ensembles {
-    padding-left: 160px;
+    padding-left: 150px;
+    padding-right: 10px;
   }
 
   .balalaika-ensambles-text::before {
@@ -1053,10 +1057,12 @@ h2 {
 
   .guiter__subtitle-begin {
     padding-left: 140px;
+    padding-right: 10px;
   }
 
   .guitar__subtitle-difficult {
     padding-left: 140px;
+    padding-right: 10px;
   }
 
   .guitar-words-text::before {
@@ -1064,7 +1070,8 @@ h2 {
   }
 
   .guitar__subtitle-words {
-    padding-left: 140px;
+    padding-left: 130px;
+    padding-right: 20px;
   }
 
 
@@ -1074,6 +1081,7 @@ h2 {
 
   .guitar__subtitle-duets {
     padding-left: 140px;
+    padding-right: 10px;
   }
 }
 
