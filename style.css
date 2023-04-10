@@ -101,8 +101,8 @@ body {
   /* Old browsers */
   /* FF3.6-15 */
   /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(rgb(242, 236, 246)), color-stop(19%, rgb(236, 213, 251)), color-stop(43%, rgb(211, 172, 238)), color-stop(44%, rgb(211, 172, 238)), color-stop(46%, rgb(211, 172, 238)), color-stop(48%, rgb(211, 172, 238)), to(rgb(236, 213, 251)));
-  background: linear-gradient(to right, rgb(242, 236, 246) 0%, rgb(236, 213, 251) 19%, rgb(211, 172, 238) 43%, rgb(211, 172, 238) 44%, rgb(211, 172, 238) 46%, rgb(211, 172, 238) 48%, rgb(236, 213, 251) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgb(244, 242, 246)), color-stop(19%, rgb(240, 229, 247)), color-stop(43%, rgb(211, 172, 238)), color-stop(44%, rgb(211, 172, 238)), color-stop(46%, rgb(211, 172, 238)), color-stop(48%, rgb(211, 172, 238)), to(rgb(236, 213, 251)));
+  background: linear-gradient(to right, rgb(244, 242, 246) 0%, rgb(240, 229, 247) 19%, rgb(211, 172, 238) 43%, rgb(211, 172, 238) 44%, rgb(211, 172, 238) 46%, rgb(211, 172, 238) 48%, rgb(236, 213, 251) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f2ecf6", endColorstr="#ecd5fb", GradientType=1);
   /* IE6-9 */
@@ -922,7 +922,7 @@ h2 {
 
 .active,
 .accordion:hover {
-  background-color: #fffdfd;
+  background-color: #eaccf3;
   border-radius: 10px;
 }
 

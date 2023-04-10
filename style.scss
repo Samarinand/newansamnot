@@ -94,26 +94,26 @@ body {
   background: rgb(242, 236, 246);
   /* Old browsers */
   background: -moz-linear-gradient(left,
-      rgba(242, 236, 246, 1) 0%,
-      rgba(236, 213, 251, 1) 19%,
-      rgba(211, 172, 238, 1) 43%,
-      rgba(211, 172, 238, 1) 44%,
-      rgba(211, 172, 238, 1) 46%,
+      rgb(248, 246, 249) 0%,
+      rgb(244, 233, 251) 19%,
+      rgb(228, 208, 243) 43%,
+      rgb(227, 207, 241) 44%,
+      rgb(230, 210, 245) 46%,
       rgba(211, 172, 238, 1) 48%,
-      rgba(236, 213, 251, 1) 100%);
+      rgb(239, 225, 248) 100%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(left,
-      rgba(242, 236, 246, 1) 0%,
-      rgba(236, 213, 251, 1) 19%,
-      rgba(211, 172, 238, 1) 43%,
+      rgb(248, 245, 250) 0%,
+      rgb(241, 230, 248) 19%,
+      rgb(229, 210, 243) 43%,
       rgba(211, 172, 238, 1) 44%,
-      rgba(211, 172, 238, 1) 46%,
-      rgba(211, 172, 238, 1) 48%,
-      rgba(236, 213, 251, 1) 100%);
+      rgb(228, 209, 242) 46%,
+      rgb(231, 211, 246) 48%,
+      rgb(241, 231, 248) 100%);
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right,
-      rgba(242, 236, 246, 1) 0%,
-      rgba(236, 213, 251, 1) 19%,
+      rgb(244, 242, 246) 0%,
+      rgb(240, 229, 247) 19%,
       rgba(211, 172, 238, 1) 43%,
       rgba(211, 172, 238, 1) 44%,
       rgba(211, 172, 238, 1) 46%,
@@ -934,7 +934,7 @@ h2 {
 
 .active,
 .accordion:hover {
-  background-color: #fffdfd;
+  background-color: #eaccf3;
   border-radius: 10px;
 }
 
