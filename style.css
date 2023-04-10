@@ -746,7 +746,6 @@ body {
 .discription__text {
   position: relative;
   border-radius: 10px;
-  background-color: #bcd3f0;
   font-size: calc(12px + 0.3125vw);
   -webkit-box-shadow: 0px 5px 5px black;
           box-shadow: 0px 5px 5px black;
@@ -923,7 +922,7 @@ h2 {
 
 .active,
 .accordion:hover {
-  background-color: #ccc;
+  background-color: #fffdfd;
   border-radius: 10px;
 }
 
@@ -1077,7 +1076,6 @@ h2 {
   -webkit-box-shadow: 0px 5px 5px black;
           box-shadow: 0px 5px 5px black;
   height: 100%;
-  background-color: #e2d7d7;
   border-radius: 10px;
   padding-left: 5px;
   padding-top: 10px;
@@ -1085,11 +1083,10 @@ h2 {
   padding-bottom: 10px;
   width: 320px;
   line-height: 30px;
-}
-.balalaika__begin-left .audio:nth-child(even),
-.balalaika__begin-center .audio:nth-child(even),
-.balalaika__begin-right .audio:nth-child(even) {
-  background-color: #bac6d7;
+  font-weight: bold;
+  /*  .audio:nth-child(even) {
+     background-color: #bac6d7;
+   } */
 }
 .balalaika__begin-left .audio:before,
 .balalaika__begin-center .audio:before,
@@ -1142,6 +1139,7 @@ h2 {
   font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
   position: relative;
   padding-bottom: 20px;
+  font-weight: bold;
 }
 
 .balalaika-begin-text::before {
@@ -1165,6 +1163,7 @@ h2 {
   font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
   position: relative;
   padding-bottom: 20px;
+  font-weight: bold;
 }
 
 .balalaika-difficult-text::before {
@@ -1195,7 +1194,6 @@ h2 {
   -webkit-box-shadow: 0px 5px 5px black;
           box-shadow: 0px 5px 5px black;
   height: 100%;
-  background-color: #e2d7d7;
   border-radius: 10px;
   padding-left: 5px;
   padding-top: 10px;
@@ -1203,11 +1201,10 @@ h2 {
   padding-bottom: 10px;
   width: 320px;
   line-height: 30px;
-}
-.balalaika__difficult-left .audio:nth-child(even),
-.balalaika__difficult-center .audio:nth-child(even),
-.balalaika__difficult-right .audio:nth-child(even) {
-  background-color: #bac6d7;
+  font-weight: bold;
+  /*   .audio:nth-child(even) {
+      background-color: #bac6d7;
+    } */
 }
 .balalaika__difficult-left .audio:before,
 .balalaika__difficult-center .audio:before,
@@ -1260,6 +1257,7 @@ h2 {
   font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
   position: relative;
   padding-bottom: 20px;
+  font-weight: bold;
 }
 
 .balalaika__etudes {
@@ -1278,7 +1276,6 @@ h2 {
   -webkit-box-shadow: 0px 5px 5px black;
           box-shadow: 0px 5px 5px black;
   height: 100%;
-  background-color: #e2d7d7;
   border-radius: 10px;
   padding-left: 5px;
   padding-top: 10px;
@@ -1286,11 +1283,10 @@ h2 {
   padding-bottom: 10px;
   width: 320px;
   line-height: 30px;
-}
-.balalalika__etudes-left .audio:nth-child(even),
-.balalaika__etudes-center .audio:nth-child(even),
-.balalaika__etudes-right .audio:nth-child(even) {
-  background-color: #bac6d7;
+  font-weight: bold;
+  /* .audio:nth-child(even) {
+    background-color: #bac6d7;
+  } */
 }
 .balalalika__etudes-left .audio:before,
 .balalaika__etudes-center .audio:before,
@@ -1344,6 +1340,7 @@ h2 {
   font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
   position: relative;
   padding-bottom: 20px;
+  font-weight: bold;
 }
 
 .balalaika__ensembles {
@@ -1362,7 +1359,6 @@ h2 {
   -webkit-box-shadow: 0px 5px 5px black;
           box-shadow: 0px 5px 5px black;
   height: 100%;
-  background-color: #e2d7d7;
   border-radius: 10px;
   padding-left: 5px;
   padding-top: 10px;
@@ -1370,11 +1366,10 @@ h2 {
   padding-bottom: 10px;
   width: 320px;
   line-height: 30px;
-}
-.balalaika__ensembles-left .audio:nth-child(even),
-.balalaika__ensembles-center .audio:nth-child(even),
-.balalaika__ensembles-right .audio:nth-child(even) {
-  background-color: #bac6d7;
+  font-weight: bold;
+  /*   .audio:nth-child(even) {
+      background-color: #bac6d7;
+    } */
 }
 .balalaika__ensembles-left .audio:before,
 .balalaika__ensembles-center .audio:before,
@@ -1452,6 +1447,7 @@ h2 {
   font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
   position: relative;
   padding-bottom: 20px;
+  font-weight: bold;
 }
 
 .guitar__begin {
@@ -1470,7 +1466,6 @@ h2 {
   -webkit-box-shadow: 0px 5px 5px black;
           box-shadow: 0px 5px 5px black;
   height: 100%;
-  background-color: #e2d7d7;
   border-radius: 10px;
   padding-left: 5px;
   padding-top: 10px;
@@ -1478,11 +1473,10 @@ h2 {
   padding-bottom: 10px;
   width: 320px;
   line-height: 30px;
-}
-.guitar__begin-left .audio:nth-child(even),
-.guitar__begin-center .audio:nth-child(even),
-.guitar__begin-right .audio:nth-child(even) {
-  background-color: #bac6d7;
+  font-weight: bold;
+  /*   .audio:nth-child(even) {
+      background-color: #bac6d7;
+    } */
 }
 .guitar__begin-left .audio:before,
 .guitar__begin-center .audio:before,
@@ -1548,6 +1542,7 @@ h2 {
   font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
   position: relative;
   padding-bottom: 20px;
+  font-weight: bold;
 }
 
 .guitar__difficult {
@@ -1566,7 +1561,6 @@ h2 {
   -webkit-box-shadow: 0px 5px 5px black;
           box-shadow: 0px 5px 5px black;
   height: 100%;
-  background-color: #e2d7d7;
   border-radius: 10px;
   padding-left: 5px;
   padding-top: 10px;
@@ -1574,11 +1568,10 @@ h2 {
   padding-bottom: 10px;
   width: 320px;
   line-height: 30px;
-}
-.guitar__difficult-left .audio:nth-child(even),
-.guitar__difficult-center .audio:nth-child(even),
-.guitar__difficult-right .audio:nth-child(even) {
-  background-color: #bac6d7;
+  font-weight: bold;
+  /*   .audio:nth-child(even) {
+      background-color: #bac6d7;
+    } */
 }
 .guitar__difficult-left .audio:before,
 .guitar__difficult-center .audio:before,
@@ -1644,6 +1637,7 @@ h2 {
   font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
   position: relative;
   padding-bottom: 20px;
+  font-weight: bold;
 }
 
 .guitar__words {
@@ -1661,7 +1655,6 @@ h2 {
   -webkit-box-shadow: 0px 5px 5px black;
           box-shadow: 0px 5px 5px black;
   height: 100%;
-  background-color: #e2d7d7;
   border-radius: 10px;
   padding-left: 5px;
   padding-top: 10px;
@@ -1669,10 +1662,10 @@ h2 {
   padding-bottom: 10px;
   width: 320px;
   line-height: 30px;
-}
-.guitar__words-left .audio:nth-child(even),
-.guitar__words-right .audio:nth-child(even) {
-  background-color: #bac6d7;
+  font-weight: bold;
+  /*   .audio:nth-child(even) {
+      background-color: #bac6d7;
+    } */
 }
 .guitar__words-left .audio:before,
 .guitar__words-right .audio:before {
@@ -1734,6 +1727,7 @@ h2 {
   font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
   position: relative;
   padding-bottom: 20px;
+  font-weight: bold;
 }
 
 .guitar__duets {
@@ -1752,7 +1746,6 @@ h2 {
   -webkit-box-shadow: 0px 5px 5px black;
           box-shadow: 0px 5px 5px black;
   height: 100%;
-  background-color: #e2d7d7;
   border-radius: 10px;
   padding-left: 5px;
   padding-top: 10px;
@@ -1760,10 +1753,10 @@ h2 {
   padding-bottom: 10px;
   width: 320px;
   line-height: 30px;
-}
-.guitar__duets-left .audio:nth-child(even),
-.guitar__duets-right .audio:nth-child(even) {
-  background-color: #bac6d7;
+  font-weight: bold;
+  /*   .audio:nth-child(even) {
+      background-color: #bac6d7;
+    } */
 }
 .guitar__duets-left .audio:before,
 .guitar__duets-right .audio:before {
@@ -1805,7 +1798,6 @@ h2 {
 }
 
 .audio {
-  background-color: #bcd3f0;
   border-radius: 10px;
   margin-top: 2px;
   padding-left: 5px;
@@ -1826,7 +1818,7 @@ h2 {
   margin-top: 0px;
   width: 220px;
   height: 23px;
-  background-color: #7b00ff;
+  background-color: #7a52b3;
   border-radius: 15px;
   font-size: 15px;
   font-weight: bold;
@@ -1872,12 +1864,12 @@ h2 {
 }
 
 .audio__download-link:hover {
-  color: #7b00ff;
+  color: #7a52b3;
 }
 .audio__download-link:hover svg {
   -webkit-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
-  fill: #7b00ff;
+  fill: #7a52b3;
 }
 
 .audio__download:active {
@@ -1904,7 +1896,7 @@ h2 {
   /* по умолчанию скрываем кнопку */
   font-size: 18px;
   color: rgba(0, 51, 153, 0.5);
-  border: 1px solid rgba(0, 51, 153, 0.5);
+  border: 1px solid #7a52b3;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -1928,7 +1920,7 @@ h2 {
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 20px solid rgba(0, 51, 153, 0.5);
+  border-bottom: 20px solid #7a52b3;
   position: fixed;
   /* фиксированное позиционирование */
   left: 35px;
