@@ -763,11 +763,11 @@ body {
 
 .discription__text {
   position: relative;
-  
-  
+
+
   font-size: calc(12px + 4 * (100vw / 1280));
-margin-bottom: 15px;
- 
+  margin-bottom: 15px;
+
 }
 
 .discription__list {
@@ -827,6 +827,7 @@ h2 {
   display: flex;
   justify-content: center;
 }
+
 .parallax-slider {
   height: 410px;
   width: 98%;
@@ -843,8 +844,8 @@ h2 {
 
 .parallax-slider-text {
   padding-top: 3em;
-  vertical-align:bottom;
-  text-align:center;
+  vertical-align: bottom;
+  text-align: center;
   padding-left: 2em;
   padding-right: 2em;
   font-size: 22px;
@@ -855,12 +856,13 @@ h2 {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 3px;
- 
+
 }
 
 .swiper-conteiner {
   position: absolute;
 }
+
 .parallax-slider .swiper-button-prev::after,
 .parallax-slider .swiper-button-next::after {
   color: #b280f7;
@@ -932,7 +934,7 @@ h2 {
 }
 
 .accordion {
- padding-left: 5px;
+  padding-left: 10px;
   padding-top: 10px;
   padding-right: 5px;
   padding-bottom: 10px;
@@ -945,7 +947,8 @@ h2 {
 .accordion:hover {
   background-color: #eaccf3;
   border-radius: 10px;
- height: 100%;
+  height: 100%;
+
 }
 
 .accordion:after {
@@ -1114,23 +1117,18 @@ h2 {
 .balalaika__begin-left,
 .balalaika__begin-center,
 .balalaika__begin-right {
-  padding-left: 5px;
   box-shadow: 0px 5px 5px black;
   height: 100%;
-  // background-color: #f7f1f1;
   border-radius: 10px;
-
   width: 320px;
   line-height: 30px;
   font-weight: bold;
 
- /*  .audio:nth-child(even) {
-    background-color: #bac6d7;
-  } */
-.audio>a{
-  display: inline-block;
-   padding-right: 15px;
-}
+  .audio>a {
+    display: inline-block;
+    padding-right: 15px;
+  }
+
   .audio>a:before {
     content: "";
     width: 30px;
@@ -1166,7 +1164,7 @@ h2 {
 }
 
 .balalaika-begin-text {
-  
+
   font-size: 20px;
   display: flex;
   margin: 0 auto;
@@ -1222,22 +1220,18 @@ h2 {
 .balalaika__difficult-left,
 .balalaika__difficult-center,
 .balalaika__difficult-right {
-  padding-left: 5px;
   box-shadow: 0px 5px 5px black;
   height: 100%;
-  // background-color: #f7f1f1;
   border-radius: 10px;
- 
   width: 320px;
   line-height: 30px;
   font-weight: bold;
-/*   .audio:nth-child(even) {
-    background-color: #bac6d7;
-  } */
-  .audio>a{
+
+  .audio>a {
     display: inline-block;
-     padding-right: 15px;
+    padding-right: 15px;
   }
+
   .audio>a:before {
     content: "";
     width: 30px;
@@ -1297,21 +1291,16 @@ h2 {
 .balalaika__etudes-right {
   box-shadow: 0px 5px 5px black;
   height: 100%;
-  // background-color: #f7f1f1;
   border-radius: 10px;
-   padding-left: 5px;
-
-
   width: 320px;
   line-height: 30px;
   font-weight: bold;
-  /* .audio:nth-child(even) {
-    background-color: #bac6d7;
-  } */
-  .audio>a{
+
+  .audio>a {
     display: inline-block;
-     padding-right: 15px;
+    padding-right: 15px;
   }
+
   .audio>a:before {
     content: "";
     width: 30px;
@@ -1368,22 +1357,19 @@ h2 {
 .balalaika__ensembles-left,
 .balalaika__ensembles-center,
 .balalaika__ensembles-right {
-  padding-left: 5px;
+
   box-shadow: 0px 5px 5px black;
   height: 100%;
-  // background-color: #f7f1f1;
   border-radius: 10px;
-
   width: 320px;
   line-height: 30px;
   font-weight: bold;
-/*   .audio:nth-child(even) {
-    background-color: #bac6d7;
-  } */
-  .audio>a{
+
+  .audio>a {
     display: inline-block;
-     padding-right: 15px;
+    padding-right: 15px;
   }
+
   .audio>a:before {
     content: "";
     width: 30px;
@@ -1465,27 +1451,22 @@ h2 {
 .guitar__begin-left,
 .guitar__begin-center,
 .guitar__begin-right {
-  padding-left: 5px;
   box-shadow: 0px 5px 5px black;
   height: 100%;
-  // background-color: #f7f1f1;
   border-radius: 10px;
- 
   width: 320px;
   line-height: 30px;
   font-weight: bold;
-/*   .audio:nth-child(even) {
-    background-color: #bac6d7;
-  } */
-  .audio>a{
+
+  .audio>a {
     display: inline-block;
-     padding-right: 15px;
+    padding-right: 15px;
   }
+
   .audio>a:before {
     content: "";
     width: 30px;
     height: 30px;
-
     background-image: url(/img/pdf.png);
     background-size: cover;
     background-position: top center;
@@ -1550,27 +1531,22 @@ h2 {
 .guitar__difficult-left,
 .guitar__difficult-center,
 .guitar__difficult-right {
-  padding-left: 5px;
   box-shadow: 0px 5px 5px black;
   height: 100%;
-  // background-color: #f7f1f1;
   border-radius: 10px;
-
   width: 320px;
   line-height: 30px;
   font-weight: bold;
-/*   .audio:nth-child(even) {
-    background-color: #bac6d7;
-  } */
-  .audio>a{
+
+  .audio>a {
     display: inline-block;
-     padding-right: 15px;
+    padding-right: 15px;
   }
+
   .audio>a:before {
     content: "";
     width: 30px;
     height: 30px;
-
     background-image: url(/img/pdf.png);
     background-size: cover;
     background-position: top center;
@@ -1635,22 +1611,18 @@ h2 {
 
 .guitar__words-left,
 .guitar__words-right {
-  padding-left: 5px;
   box-shadow: 0px 5px 5px black;
   height: 100%;
-  // background-color: #f7f1f1;
   border-radius: 10px;
-  
   width: 320px;
   line-height: 30px;
   font-weight: bold;
-/*   .audio:nth-child(even) {
-    background-color: #bac6d7;
-  } */
-  .audio>a{
+
+  .audio>a {
     display: inline-block;
-     padding-right: 15px;
+    padding-right: 15px;
   }
+
   .audio>a:before {
     content: "";
     width: 30px;
@@ -1719,27 +1691,22 @@ h2 {
 
 .guitar__duets-left,
 .guitar__duets-right {
-  padding-left: 5px;
   box-shadow: 0px 5px 5px black;
   height: 100%;
-  // background-color: #f7f1f1;
   border-radius: 10px;
- 
   width: 320px;
   line-height: 30px;
   font-weight: bold;
-/*   .audio:nth-child(even) {
-    background-color: #bac6d7;
-  } */
-  .audio>a{
+
+  .audio>a {
     display: inline-block;
-     padding-right: 15px;
+    padding-right: 15px;
   }
+
   .audio>a:before {
     content: "";
     width: 30px;
     height: 30px;
-
     background-image: url(/img/pdf.png);
     background-size: cover;
     background-position: top center;
@@ -1777,7 +1744,7 @@ h2 {
 
 // audio
 .audio {
-  
+
   border-radius: 10px;
   margin-top: 2px;
   padding-left: 3px;
@@ -2065,14 +2032,14 @@ h2 {
     height: 80px;
 
     .footer-copyright {
-     
+
       cursor: default;
-      color: #e2d7d7; 
+      color: #e2d7d7;
       display: flex;
       justify-content: space-between;
-      
-      div:not(:first-child){
-        
+
+      div:not(:first-child) {
+
         padding-left: 5px;
       }
     }

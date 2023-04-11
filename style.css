@@ -915,7 +915,7 @@ h2 {
 }
 
 .accordion {
-  padding-left: 5px;
+  padding-left: 10px;
   padding-top: 10px;
   padding-right: 5px;
   padding-bottom: 10px;
@@ -1088,7 +1088,6 @@ h2 {
 .balalaika__begin-left,
 .balalaika__begin-center,
 .balalaika__begin-right {
-  padding-left: 5px;
   -webkit-box-shadow: 0px 5px 5px black;
           box-shadow: 0px 5px 5px black;
   height: 100%;
@@ -1096,9 +1095,6 @@ h2 {
   width: 320px;
   line-height: 30px;
   font-weight: bold;
-  /*  .audio:nth-child(even) {
-     background-color: #bac6d7;
-   } */
 }
 .balalaika__begin-left .audio > a,
 .balalaika__begin-center .audio > a,
@@ -1211,7 +1207,6 @@ h2 {
 .balalaika__difficult-left,
 .balalaika__difficult-center,
 .balalaika__difficult-right {
-  padding-left: 5px;
   -webkit-box-shadow: 0px 5px 5px black;
           box-shadow: 0px 5px 5px black;
   height: 100%;
@@ -1219,9 +1214,6 @@ h2 {
   width: 320px;
   line-height: 30px;
   font-weight: bold;
-  /*   .audio:nth-child(even) {
-      background-color: #bac6d7;
-    } */
 }
 .balalaika__difficult-left .audio > a,
 .balalaika__difficult-center .audio > a,
@@ -1302,13 +1294,9 @@ h2 {
           box-shadow: 0px 5px 5px black;
   height: 100%;
   border-radius: 10px;
-  padding-left: 5px;
   width: 320px;
   line-height: 30px;
   font-weight: bold;
-  /* .audio:nth-child(even) {
-    background-color: #bac6d7;
-  } */
 }
 .balalalika__etudes-left .audio > a,
 .balalaika__etudes-center .audio > a,
@@ -1384,7 +1372,6 @@ h2 {
 .balalaika__ensembles-left,
 .balalaika__ensembles-center,
 .balalaika__ensembles-right {
-  padding-left: 5px;
   -webkit-box-shadow: 0px 5px 5px black;
           box-shadow: 0px 5px 5px black;
   height: 100%;
@@ -1392,9 +1379,6 @@ h2 {
   width: 320px;
   line-height: 30px;
   font-weight: bold;
-  /*   .audio:nth-child(even) {
-      background-color: #bac6d7;
-    } */
 }
 .balalaika__ensembles-left .audio > a,
 .balalaika__ensembles-center .audio > a,
@@ -1495,7 +1479,6 @@ h2 {
 .guitar__begin-left,
 .guitar__begin-center,
 .guitar__begin-right {
-  padding-left: 5px;
   -webkit-box-shadow: 0px 5px 5px black;
           box-shadow: 0px 5px 5px black;
   height: 100%;
@@ -1503,9 +1486,6 @@ h2 {
   width: 320px;
   line-height: 30px;
   font-weight: bold;
-  /*   .audio:nth-child(even) {
-      background-color: #bac6d7;
-    } */
 }
 .guitar__begin-left .audio > a,
 .guitar__begin-center .audio > a,
@@ -1594,7 +1574,6 @@ h2 {
 .guitar__difficult-left,
 .guitar__difficult-center,
 .guitar__difficult-right {
-  padding-left: 5px;
   -webkit-box-shadow: 0px 5px 5px black;
           box-shadow: 0px 5px 5px black;
   height: 100%;
@@ -1602,9 +1581,6 @@ h2 {
   width: 320px;
   line-height: 30px;
   font-weight: bold;
-  /*   .audio:nth-child(even) {
-      background-color: #bac6d7;
-    } */
 }
 .guitar__difficult-left .audio > a,
 .guitar__difficult-center .audio > a,
@@ -1693,7 +1669,6 @@ h2 {
 
 .guitar__words-left,
 .guitar__words-right {
-  padding-left: 5px;
   -webkit-box-shadow: 0px 5px 5px black;
           box-shadow: 0px 5px 5px black;
   height: 100%;
@@ -1701,9 +1676,6 @@ h2 {
   width: 320px;
   line-height: 30px;
   font-weight: bold;
-  /*   .audio:nth-child(even) {
-      background-color: #bac6d7;
-    } */
 }
 .guitar__words-left .audio > a,
 .guitar__words-right .audio > a {
@@ -1786,7 +1758,6 @@ h2 {
 
 .guitar__duets-left,
 .guitar__duets-right {
-  padding-left: 5px;
   -webkit-box-shadow: 0px 5px 5px black;
           box-shadow: 0px 5px 5px black;
   height: 100%;
@@ -1794,9 +1765,6 @@ h2 {
   width: 320px;
   line-height: 30px;
   font-weight: bold;
-  /*   .audio:nth-child(even) {
-      background-color: #bac6d7;
-    } */
 }
 .guitar__duets-left .audio > a,
 .guitar__duets-right .audio > a {
