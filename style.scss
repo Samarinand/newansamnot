@@ -931,6 +931,7 @@ h2 {
 .panel {
   display: none;
   overflow: hidden;
+ 
 }
 
 .accordion {
@@ -1744,10 +1745,11 @@ h2 {
 
 // audio
 .audio {
-
-  border-radius: 10px;
+display: flex;
+flex-direction: column;
+gap: 5px;
   margin-top: 2px;
-  padding-left: 3px;
+  padding-left: 10px;
   padding-bottom: 1px;
   width: 310px;
 }
