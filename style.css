@@ -209,6 +209,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+  padding-left: 0.5em;
 }
 
 .navbar__wrap-right {
@@ -394,8 +395,19 @@ body {
   color: var(--color-white);
 }
 
-.header-youtude,
-.header-ebvelope {
+.header-youtude-svg, .header-ebvelop-svg {
+  height: 47px;
+  width: 47px;
+  fill: red;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.header-youtude-svg:hover, .header-maill-svg:hover {
+  fill: var(--color-white);
+}
+
+.header-youtude {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -403,6 +415,26 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding-right: 5px;
+  padding-top: 5px;
+}
+
+.header-ebvelope {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5px;
+  width: 47px;
+}
+
+.header-maill-svg {
+  height: 30px;
+  width: 30px;
+  fill: blue;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
 }
 
 @media (max-width: 500px) {
@@ -414,11 +446,8 @@ body {
     padding-right: 0px;
     display: none;
   }
-  .navbar__container {
-    padding: 5px;
-  }
 }
-@media (max-width: 992px) {
+@media (max-width: 950px) {
   .navbar__wrap-right {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -755,6 +784,7 @@ body {
   position: relative;
   font-size: calc(12px + 0.3125vw);
   margin-bottom: 15px;
+  color: var(--color-purple-dark);
 }
 
 .discription__list {
@@ -808,7 +838,7 @@ h2 {
   overflow: hidden;
   border-radius: 10px;
   background: url("img/FonSky.webp");
-  background-size: cover;
+  background-size: 200%;
   background-attachment: local;
   display: -webkit-box;
   display: -ms-flexbox;
