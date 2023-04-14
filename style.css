@@ -276,7 +276,6 @@ body {
   -webkit-transform: 0.3s linear;
           transform: 0.3s linear;
   color: var(--color-white);
-  opacity: 0.8;
   text-transform: uppercase;
 }
 
@@ -285,9 +284,14 @@ body {
   border-right: 2px solid black;
 }
 
-.balalaika-guitar-angle-down:hover::after {
+.balalaika-angle-down:hover::after {
   border-top: 2px solid black;
   border-right: 2px solid black;
+}
+
+.balalaika-angle-down, .guitar-angle-down {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .guitar-angle-down::after {
@@ -301,9 +305,11 @@ body {
   border-right: 2px solid var(--color-white);
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
-.balalaika-guitar-angle-down::after {
+.balalaika-angle-down::after {
   content: "";
   position: absolute;
   left: 203px;
@@ -314,6 +320,8 @@ body {
   border-right: 2px solid var(--color-white);
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .submenu {
@@ -448,6 +456,10 @@ body {
   }
 }
 @media (max-width: 950px) {
+  .guitar-angle-down, .balalaika-angle-down {
+    pointer-events: none;
+    cursor: default;
+  }
   .navbar__wrap-right {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -475,8 +487,8 @@ body {
   .popup-form-link:hover {
     opacity: 1;
     color: #000000;
-    -webkit-transition: 0.8s;
-    transition: 0.8s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   .topmenu > li {
     margin-bottom: 140px;
