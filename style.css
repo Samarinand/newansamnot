@@ -120,9 +120,9 @@ body {
   --color-white: #fff;
   --color-gray: #3f3f3f;
   --color-dark: #324b4e;
-  --color-purple-dark:#50258d;
-  --color-white-dark:#e2d7d7;
-  --color-pink:#eaccf3;
+  --color-purple-dark: #50258d;
+  --color-white-dark: #e2d7d7;
+  --color-pink: #eaccf3;
 }
 
 /*navbar*/
@@ -279,22 +279,23 @@ body {
   text-transform: uppercase;
 }
 
-.guitar-angle-down:hover::after {
+.topmenu__guitar-angle-down:hover::after {
   border-top: 2px solid black;
   border-right: 2px solid black;
 }
 
-.balalaika-angle-down:hover::after {
+.topmenu__balalaika-angle-down:hover::after {
   border-top: 2px solid black;
   border-right: 2px solid black;
 }
 
-.balalaika-angle-down, .guitar-angle-down {
+.topmenu__balalaika-angle-down,
+.topmenu__guitar-angle-down {
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
-.guitar-angle-down::after {
+.topmenu__guitar-angle-down::after {
   content: "";
   position: absolute;
   left: 170px;
@@ -309,7 +310,7 @@ body {
   transition: 0.5s ease-in-out;
 }
 
-.balalaika-angle-down::after {
+.topmenu__balalaika-angle-down::after {
   content: "";
   position: absolute;
   left: 203px;
@@ -403,7 +404,8 @@ body {
   color: var(--color-white);
 }
 
-.header-youtude-svg, .header-ebvelop-svg {
+.navbar__youtube-svg,
+.header-ebvelop-svg {
   height: 47px;
   width: 47px;
   fill: red;
@@ -411,11 +413,12 @@ body {
   transition: all 0.8s ease 0s;
 }
 
-.header-youtude-svg:hover, .header-maill-svg:hover {
+.navbar__youtube-svg:hover,
+.navbar__envelope-svg:hover {
   fill: var(--color-white);
 }
 
-.header-youtude {
+.navbar__youtube {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -426,7 +429,7 @@ body {
   padding-top: 5px;
 }
 
-.header-ebvelope {
+.navbar__envelope {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -437,7 +440,7 @@ body {
   width: 47px;
 }
 
-.header-maill-svg {
+.navbar__envelope-svg {
   height: 30px;
   width: 30px;
   fill: blue;
@@ -449,14 +452,15 @@ body {
   .navbar__wrap {
     padding-left: 10px;
   }
-  .header-youtude,
-.header-ebvelope {
+  .navbar__youtube,
+.navbar__envelope {
     padding-right: 0px;
     display: none;
   }
 }
 @media (max-width: 950px) {
-  .guitar-angle-down, .balalaika-angle-down {
+  .topmenu__balalaika-angle-down,
+.topmenu__guitar-angle-down {
     pointer-events: none;
     cursor: default;
   }
@@ -465,8 +469,8 @@ body {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  .balalaika-guitar-angle-down:hover:after,
-.guitar-angle-down:hover:after {
+  .topmenu__guitar-angle-down:hover:after,
+.topmenu__guitar-angle-down:hover:after {
     display: none;
   }
   .textinput {
