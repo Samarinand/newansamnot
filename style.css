@@ -992,10 +992,6 @@ h2 {
   padding: o, 5px, 0;
 }
 
-.balalaika {
-  margin-bottom: 100px;
-}
-
 .guitar {
   margin-bottom: 100px;
 }
@@ -1162,7 +1158,7 @@ h2 {
 }
 
 .balalaika__subtitle-difficult {
-  margin-top: 10px;
+  padding-top: 85px;
   width: 100%;
   min-width: 0px;
   display: -webkit-box;
@@ -1282,7 +1278,7 @@ h2 {
 }
 
 .balalaika-etudes-text {
-  padding-top: 10px;
+  padding-top: 85px;
   font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1344,7 +1340,7 @@ h2 {
 }
 
 .balalaika__subtitle-ensembles {
-  padding-top: 10px;
+  margin-top: 10px;
   width: 100%;
   min-width: 0px;
   display: -webkit-box;
@@ -1355,7 +1351,7 @@ h2 {
 }
 
 .balalaika-ensambles-text {
-  padding-top: 10px;
+  padding-top: 85px;
   font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1440,7 +1436,7 @@ h2 {
 }
 
 .guiter__subtitle-begin {
-  padding-top: 10px;
+  margin-top: 10px;
   width: 100%;
   min-width: 0px;
   display: -webkit-box;
@@ -1451,7 +1447,7 @@ h2 {
 }
 
 .guitar-begin-text {
-  padding-top: 10px;
+  padding-top: 85px;
   font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1525,7 +1521,7 @@ h2 {
 }
 
 .guitar__subtitle-difficult {
-  padding-top: 10px;
+  margin-top: 10px;
   width: 100%;
   min-width: 0px;
   display: -webkit-box;
@@ -1536,7 +1532,7 @@ h2 {
 }
 
 .guitar-difficult-text {
-  padding-top: 10px;
+  padding-top: 85px;
   font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1610,7 +1606,7 @@ h2 {
 }
 
 .guitar__subtitle-words {
-  padding-top: 10px;
+  margin-top: 10px;
   width: 100%;
   min-width: 0px;
   display: -webkit-box;
@@ -1622,7 +1618,7 @@ h2 {
 
 .guitar-words-text {
   margin-bottom: 20px;
-  padding-top: 10px;
+  padding-top: 85px;
   font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1692,7 +1688,7 @@ h2 {
 }
 
 .guitar__subtitle-duets {
-  padding-top: 10px;
+  margin-top: 10px;
   width: 100%;
   min-width: 0px;
   display: -webkit-box;
@@ -1703,7 +1699,7 @@ h2 {
 }
 
 .guitar-duets-text {
-  padding-top: 10px;
+  padding-top: 85px;
   font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
