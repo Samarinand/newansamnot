@@ -449,20 +449,13 @@ body {
 
 
 
-  .topmenu__balalaika-angle-down,
-  .topmenu__guitar-angle-down {
-    pointer-events: none;
-    cursor: default;
-
-  }
-
   .navbar__wrap-right {
 
     justify-content: flex-end;
 
   }
 
-.topmenu__guitar-angle-down:hover:after,
+.topmenu__balalaika-angle-down:hover:after,
 .topmenu__guitar-angle-down:hover:after {
   display: none;
 }
@@ -492,7 +485,7 @@ body {
     margin-bottom: 140px;
   }
 
-  .menu ul li .submenu {
+  .menu>ul >li .submenu {
     display: block;
   }
 

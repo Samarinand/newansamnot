@@ -459,17 +459,12 @@ body {
   }
 }
 @media (max-width: 950px) {
-  .topmenu__balalaika-angle-down,
-.topmenu__guitar-angle-down {
-    pointer-events: none;
-    cursor: default;
-  }
   .navbar__wrap-right {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  .topmenu__guitar-angle-down:hover:after,
+  .topmenu__balalaika-angle-down:hover:after,
 .topmenu__guitar-angle-down:hover:after {
     display: none;
   }
@@ -497,7 +492,7 @@ body {
   .topmenu > li {
     margin-bottom: 140px;
   }
-  .menu ul li .submenu {
+  .menu > ul > li .submenu {
     display: block;
   }
   .fa {
