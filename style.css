@@ -126,6 +126,10 @@ body {
 }
 
 /*navbar*/
+.site-conteiner {
+  overflow: hidden;
+}
+
 .seach-form {
   width: auto;
   float: right;
@@ -571,6 +575,7 @@ body {
   padding: 0px 30px;
 }
 
+/* popup */
 .popup {
   position: fixed;
   top: 75px;
