@@ -1172,18 +1172,20 @@ h2 {
     padding-right: 15px;
   }
 
-  .audio>a:before {
-    content: "";
-    width: 30px;
-    height: 30px;
-    background-image: url(/img/pdf.png);
-    background-size: cover;
-    background-position: top center;
-    display: inline-block;
-    margin: 0px 2px 0px;
+
+.pdf {
+width: 20px;
+height: 20px;
+fill:var(--color-white);
+&hover{
+  fill:var(--color-purple);
+}
+}
+.pdf:hover {
+
+    fill:var(--color-purple);
+    transition: 0.3s;
   }
-
-
 
   .elastic:hover {
     color: var(--color-purple);
@@ -1271,17 +1273,19 @@ h2 {
     padding-right: 15px;
   }
 
-  .audio>a:before {
-    content: "";
-    width: 30px;
-    height: 30px;
-
-    background-image: url(/img/pdf.png);
-    background-size: cover;
-    background-position: top center;
-    display: inline-block;
-    margin: 0px 2px 0px;
-  }
+  .pdf {
+    width: 20px;
+    height: 20px;
+    fill:var(--color-white);
+    &hover{
+      fill:var(--color-purple);
+    }
+    }
+    .pdf:hover {
+    
+        fill:var(--color-purple);
+        transition: 0.3s;
+      }
 
 
 
@@ -1336,17 +1340,19 @@ h2 {
     padding-right: 15px;
   }
 
-  .audio>a:before {
-    content: "";
-    width: 30px;
-    height: 30px;
-
-    background-image: url(/img/pdf.png);
-    background-size: cover;
-    background-position: top center;
-    display: inline-block;
-    margin: 0px 2px 0px;
-  }
+  .pdf {
+    width: 20px;
+    height: 20px;
+    fill:var(--color-white);
+    &hover{
+      fill:var(--color-purple);
+    }
+    }
+    .pdf:hover {
+    
+        fill:var(--color-purple);
+        transition: 0.3s;
+      }
 
 
   .elastic:hover {
@@ -1401,18 +1407,19 @@ h2 {
     padding-right: 15px;
   }
 
-  .audio>a:before {
-    content: "";
-    width: 30px;
-    height: 30px;
-
-    background-image: url(/img/pdf.png);
-    background-size: cover;
-    background-position: top center;
-    display: inline-block;
-    margin: 0px 2px 0px;
-  }
-
+  .pdf {
+    width: 20px;
+    height: 20px;
+    fill:var(--color-white);
+    &hover{
+      fill:var(--color-purple);
+    }
+    }
+    .pdf:hover {
+    
+        fill:var(--color-purple);
+        transition: 0.3s;
+      }
 
 
   .elastic:hover {
@@ -1490,16 +1497,19 @@ h2 {
     padding-right: 15px;
   }
 
-  .audio>a:before {
-    content: "";
-    width: 30px;
-    height: 30px;
-    background-image: url(/img/pdf.png);
-    background-size: cover;
-    background-position: top center;
-    display: inline-block;
-    margin: 0px 2px 0px;
-  }
+  .pdf {
+    width: 20px;
+    height: 20px;
+    fill:var(--color-white);
+    &hover{
+      fill:var(--color-purple);
+    }
+    }
+    .pdf:hover {
+    
+        fill:var(--color-purple);
+        transition: 0.3s;
+      }
 
   .elastic:hover {
     color: var(--color-purple);
@@ -1564,17 +1574,19 @@ h2 {
     padding-right: 15px;
   }
 
-  .audio>a:before {
-    content: "";
-    width: 30px;
-    height: 30px;
-    background-image: url(/img/pdf.png);
-    background-size: cover;
-    background-position: top center;
-    display: inline-block;
-    margin: 0px 2px 0px;
-  }
-
+  .pdf {
+    width: 20px;
+    height: 20px;
+    fill:var(--color-white);
+    &hover{
+      fill:var(--color-purple);
+    }
+    }
+    .pdf:hover {
+    
+        fill:var(--color-purple);
+        transition: 0.3s;
+      }
 
   .elastic:hover {
     color: var(--color-purple);
@@ -1639,17 +1651,19 @@ h2 {
     padding-right: 15px;
   }
 
-  .audio>a:before {
-    content: "";
-    width: 30px;
-    height: 30px;
-
-    background-image: url(/img/pdf.png);
-    background-size: cover;
-    background-position: top center;
-    display: inline-block;
-    margin: 0px 2px 0px;
-  }
+  .pdf {
+    width: 20px;
+    height: 20px;
+    fill:var(--color-white);
+    &hover{
+      fill:var(--color-purple);
+    }
+    }
+    .pdf:hover {
+    
+        fill:var(--color-purple);
+        transition: 0.3s;
+      }
 
 
 
@@ -1715,16 +1729,19 @@ h2 {
     padding-right: 15px;
   }
 
-  .audio>a:before {
-    content: "";
-    width: 30px;
-    height: 30px;
-    background-image: url(/img/pdf.png);
-    background-size: cover;
-    background-position: top center;
-    display: inline-block;
-    margin: 0px 2px 0px;
-  }
+  .pdf {
+    width: 20px;
+    height: 20px;
+    fill:var(--color-white);
+    &hover{
+      fill:var(--color-purple);
+    }
+    }
+    .pdf:hover {
+    
+        fill:var(--color-purple);
+        transition: 0.3s;
+      }
 
 
 

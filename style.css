@@ -1135,17 +1135,24 @@ h2 {
   display: inline-block;
   padding-right: 15px;
 }
-.balalaika__begin-left .audio > a:before,
-.balalaika__begin-center .audio > a:before,
-.balalaika__begin-right .audio > a:before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  background-image: url(/img/pdf.png);
-  background-size: cover;
-  background-position: top center;
-  display: inline-block;
-  margin: 0px 2px 0px;
+.balalaika__begin-left .pdf,
+.balalaika__begin-center .pdf,
+.balalaika__begin-right .pdf {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-white);
+}
+.balalaika__begin-left .pdfhover,
+.balalaika__begin-center .pdfhover,
+.balalaika__begin-right .pdfhover {
+  fill: var(--color-purple);
+}
+.balalaika__begin-left .pdf:hover,
+.balalaika__begin-center .pdf:hover,
+.balalaika__begin-right .pdf:hover {
+  fill: var(--color-purple);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .balalaika__begin-left .elastic:hover,
 .balalaika__begin-center .elastic:hover,
@@ -1244,17 +1251,24 @@ h2 {
   display: inline-block;
   padding-right: 15px;
 }
-.balalaika__difficult-left .audio > a:before,
-.balalaika__difficult-center .audio > a:before,
-.balalaika__difficult-right .audio > a:before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  background-image: url(/img/pdf.png);
-  background-size: cover;
-  background-position: top center;
-  display: inline-block;
-  margin: 0px 2px 0px;
+.balalaika__difficult-left .pdf,
+.balalaika__difficult-center .pdf,
+.balalaika__difficult-right .pdf {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-white);
+}
+.balalaika__difficult-left .pdfhover,
+.balalaika__difficult-center .pdfhover,
+.balalaika__difficult-right .pdfhover {
+  fill: var(--color-purple);
+}
+.balalaika__difficult-left .pdf:hover,
+.balalaika__difficult-center .pdf:hover,
+.balalaika__difficult-right .pdf:hover {
+  fill: var(--color-purple);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .balalaika__difficult-left .elastic:hover,
 .balalaika__difficult-center .elastic:hover,
@@ -1316,17 +1330,24 @@ h2 {
   display: inline-block;
   padding-right: 15px;
 }
-.balalalika__etudes-left .audio > a:before,
-.balalaika__etudes-center .audio > a:before,
-.balalaika__etudes-right .audio > a:before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  background-image: url(/img/pdf.png);
-  background-size: cover;
-  background-position: top center;
-  display: inline-block;
-  margin: 0px 2px 0px;
+.balalalika__etudes-left .pdf,
+.balalaika__etudes-center .pdf,
+.balalaika__etudes-right .pdf {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-white);
+}
+.balalalika__etudes-left .pdfhover,
+.balalaika__etudes-center .pdfhover,
+.balalaika__etudes-right .pdfhover {
+  fill: var(--color-purple);
+}
+.balalalika__etudes-left .pdf:hover,
+.balalaika__etudes-center .pdf:hover,
+.balalaika__etudes-right .pdf:hover {
+  fill: var(--color-purple);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .balalalika__etudes-left .elastic:hover,
 .balalaika__etudes-center .elastic:hover,
@@ -1388,17 +1409,24 @@ h2 {
   display: inline-block;
   padding-right: 15px;
 }
-.balalaika__ensembles-left .audio > a:before,
-.balalaika__ensembles-center .audio > a:before,
-.balalaika__ensembles-right .audio > a:before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  background-image: url(/img/pdf.png);
-  background-size: cover;
-  background-position: top center;
-  display: inline-block;
-  margin: 0px 2px 0px;
+.balalaika__ensembles-left .pdf,
+.balalaika__ensembles-center .pdf,
+.balalaika__ensembles-right .pdf {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-white);
+}
+.balalaika__ensembles-left .pdfhover,
+.balalaika__ensembles-center .pdfhover,
+.balalaika__ensembles-right .pdfhover {
+  fill: var(--color-purple);
+}
+.balalaika__ensembles-left .pdf:hover,
+.balalaika__ensembles-center .pdf:hover,
+.balalaika__ensembles-right .pdf:hover {
+  fill: var(--color-purple);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .balalaika__ensembles-left .elastic:hover,
 .balalaika__ensembles-center .elastic:hover,
@@ -1484,17 +1512,24 @@ h2 {
   display: inline-block;
   padding-right: 15px;
 }
-.guitar__begin-left .audio > a:before,
-.guitar__begin-center .audio > a:before,
-.guitar__begin-right .audio > a:before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  background-image: url(/img/pdf.png);
-  background-size: cover;
-  background-position: top center;
-  display: inline-block;
-  margin: 0px 2px 0px;
+.guitar__begin-left .pdf,
+.guitar__begin-center .pdf,
+.guitar__begin-right .pdf {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-white);
+}
+.guitar__begin-left .pdfhover,
+.guitar__begin-center .pdfhover,
+.guitar__begin-right .pdfhover {
+  fill: var(--color-purple);
+}
+.guitar__begin-left .pdf:hover,
+.guitar__begin-center .pdf:hover,
+.guitar__begin-right .pdf:hover {
+  fill: var(--color-purple);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .guitar__begin-left .elastic:hover,
 .guitar__begin-center .elastic:hover,
@@ -1568,17 +1603,24 @@ h2 {
   display: inline-block;
   padding-right: 15px;
 }
-.guitar__difficult-left .audio > a:before,
-.guitar__difficult-center .audio > a:before,
-.guitar__difficult-right .audio > a:before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  background-image: url(/img/pdf.png);
-  background-size: cover;
-  background-position: top center;
-  display: inline-block;
-  margin: 0px 2px 0px;
+.guitar__difficult-left .pdf,
+.guitar__difficult-center .pdf,
+.guitar__difficult-right .pdf {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-white);
+}
+.guitar__difficult-left .pdfhover,
+.guitar__difficult-center .pdfhover,
+.guitar__difficult-right .pdfhover {
+  fill: var(--color-purple);
+}
+.guitar__difficult-left .pdf:hover,
+.guitar__difficult-center .pdf:hover,
+.guitar__difficult-right .pdf:hover {
+  fill: var(--color-purple);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .guitar__difficult-left .elastic:hover,
 .guitar__difficult-center .elastic:hover,
@@ -1651,16 +1693,21 @@ h2 {
   display: inline-block;
   padding-right: 15px;
 }
-.guitar__words-left .audio > a:before,
-.guitar__words-right .audio > a:before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  background-image: url(/img/pdf.png);
-  background-size: cover;
-  background-position: top center;
-  display: inline-block;
-  margin: 0px 2px 0px;
+.guitar__words-left .pdf,
+.guitar__words-right .pdf {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-white);
+}
+.guitar__words-left .pdfhover,
+.guitar__words-right .pdfhover {
+  fill: var(--color-purple);
+}
+.guitar__words-left .pdf:hover,
+.guitar__words-right .pdf:hover {
+  fill: var(--color-purple);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .guitar__words-left .elastic:hover,
 .guitar__words-right .elastic:hover {
@@ -1731,16 +1778,21 @@ h2 {
   display: inline-block;
   padding-right: 15px;
 }
-.guitar__duets-left .audio > a:before,
-.guitar__duets-right .audio > a:before {
-  content: "";
-  width: 30px;
-  height: 30px;
-  background-image: url(/img/pdf.png);
-  background-size: cover;
-  background-position: top center;
-  display: inline-block;
-  margin: 0px 2px 0px;
+.guitar__duets-left .pdf,
+.guitar__duets-right .pdf {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-white);
+}
+.guitar__duets-left .pdfhover,
+.guitar__duets-right .pdfhover {
+  fill: var(--color-purple);
+}
+.guitar__duets-left .pdf:hover,
+.guitar__duets-right .pdf:hover {
+  fill: var(--color-purple);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .guitar__duets-left .elastic:hover,
 .guitar__duets-right .elastic:hover {
