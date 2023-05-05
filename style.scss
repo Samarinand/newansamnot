@@ -876,11 +876,11 @@ h2 {
   width: 98%;
   min-width: 315px;
   overflow: hidden;
-
   border-radius: 10px;
   background: url("img/FonSky.webp");
-
-  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-attachment: local;
   display: flex;
   box-shadow: 0px 5px 5px black;
@@ -1173,17 +1173,19 @@ h2 {
   }
 
 
-.pdf {
-width: 20px;
-height: 20px;
-fill:var(--color-white);
-&hover{
-  fill:var(--color-purple);
-}
-}
-.pdf:hover {
+  .pdf {
+    width: 20px;
+    height: 20px;
+    fill: var(--color-white);
 
-    fill:var(--color-purple);
+    &hover {
+      fill: var(--color-purple);
+    }
+  }
+
+  .pdf:hover {
+
+    fill: var(--color-purple);
     transition: 0.3s;
   }
 
@@ -1276,16 +1278,18 @@ fill:var(--color-white);
   .pdf {
     width: 20px;
     height: 20px;
-    fill:var(--color-white);
-    &hover{
-      fill:var(--color-purple);
+    fill: var(--color-white);
+
+    &hover {
+      fill: var(--color-purple);
     }
-    }
-    .pdf:hover {
-    
-        fill:var(--color-purple);
-        transition: 0.3s;
-      }
+  }
+
+  .pdf:hover {
+
+    fill: var(--color-purple);
+    transition: 0.3s;
+  }
 
 
 
@@ -1343,16 +1347,18 @@ fill:var(--color-white);
   .pdf {
     width: 20px;
     height: 20px;
-    fill:var(--color-white);
-    &hover{
-      fill:var(--color-purple);
+    fill: var(--color-white);
+
+    &hover {
+      fill: var(--color-purple);
     }
-    }
-    .pdf:hover {
-    
-        fill:var(--color-purple);
-        transition: 0.3s;
-      }
+  }
+
+  .pdf:hover {
+
+    fill: var(--color-purple);
+    transition: 0.3s;
+  }
 
 
   .elastic:hover {
@@ -1410,16 +1416,18 @@ fill:var(--color-white);
   .pdf {
     width: 20px;
     height: 20px;
-    fill:var(--color-white);
-    &hover{
-      fill:var(--color-purple);
+    fill: var(--color-white);
+
+    &hover {
+      fill: var(--color-purple);
     }
-    }
-    .pdf:hover {
-    
-        fill:var(--color-purple);
-        transition: 0.3s;
-      }
+  }
+
+  .pdf:hover {
+
+    fill: var(--color-purple);
+    transition: 0.3s;
+  }
 
 
   .elastic:hover {
@@ -1500,16 +1508,18 @@ fill:var(--color-white);
   .pdf {
     width: 20px;
     height: 20px;
-    fill:var(--color-white);
-    &hover{
-      fill:var(--color-purple);
+    fill: var(--color-white);
+
+    &hover {
+      fill: var(--color-purple);
     }
-    }
-    .pdf:hover {
-    
-        fill:var(--color-purple);
-        transition: 0.3s;
-      }
+  }
+
+  .pdf:hover {
+
+    fill: var(--color-purple);
+    transition: 0.3s;
+  }
 
   .elastic:hover {
     color: var(--color-purple);
@@ -1577,16 +1587,18 @@ fill:var(--color-white);
   .pdf {
     width: 20px;
     height: 20px;
-    fill:var(--color-white);
-    &hover{
-      fill:var(--color-purple);
+    fill: var(--color-white);
+
+    &hover {
+      fill: var(--color-purple);
     }
-    }
-    .pdf:hover {
-    
-        fill:var(--color-purple);
-        transition: 0.3s;
-      }
+  }
+
+  .pdf:hover {
+
+    fill: var(--color-purple);
+    transition: 0.3s;
+  }
 
   .elastic:hover {
     color: var(--color-purple);
@@ -1654,16 +1666,18 @@ fill:var(--color-white);
   .pdf {
     width: 20px;
     height: 20px;
-    fill:var(--color-white);
-    &hover{
-      fill:var(--color-purple);
+    fill: var(--color-white);
+
+    &hover {
+      fill: var(--color-purple);
     }
-    }
-    .pdf:hover {
-    
-        fill:var(--color-purple);
-        transition: 0.3s;
-      }
+  }
+
+  .pdf:hover {
+
+    fill: var(--color-purple);
+    transition: 0.3s;
+  }
 
 
 
@@ -1732,16 +1746,18 @@ fill:var(--color-white);
   .pdf {
     width: 20px;
     height: 20px;
-    fill:var(--color-white);
-    &hover{
-      fill:var(--color-purple);
+    fill: var(--color-white);
+
+    &hover {
+      fill: var(--color-purple);
     }
-    }
-    .pdf:hover {
-    
-        fill:var(--color-purple);
-        transition: 0.3s;
-      }
+  }
+
+  .pdf:hover {
+
+    fill: var(--color-purple);
+    transition: 0.3s;
+  }
 
 
 

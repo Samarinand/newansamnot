@@ -854,7 +854,9 @@ h2 {
   overflow: hidden;
   border-radius: 10px;
   background: url("img/FonSky.webp");
-  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-attachment: local;
   display: -webkit-box;
   display: -ms-flexbox;
