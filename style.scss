@@ -1197,7 +1197,12 @@ h2 {
 
 
 }
-
+.elastic{
+  display: inline-block;
+  svg{
+    margin-right: 3px;
+  }
+}
 .balalaika__subtitle-difficult {
 
   width: 100%;
@@ -1792,6 +1797,7 @@ h2 {
   padding-left: 10px;
   padding-bottom: 1px;
   width: 310px;
+  
 }
 
 .audio__download {

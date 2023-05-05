@@ -1165,6 +1165,13 @@ h2 {
   transition: 0.3s;
 }
 
+.elastic {
+  display: inline-block;
+}
+.elastic svg {
+  margin-right: 3px;
+}
+
 .balalaika__subtitle-difficult {
   width: 100%;
   min-width: 0px;
