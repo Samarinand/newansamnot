@@ -1016,8 +1016,6 @@ h2 {
 
 }
 
-
-
 .guitar {
   margin-bottom: 100px;
 }
@@ -1025,10 +1023,6 @@ h2 {
 @media (max-width: 993px) {
   .navbar__container {
     padding-left: 10px;
-  }
-
-  .balalaika-begin-text::before {
-    left: -130px;
   }
 
   .balalaika__begin-left,
@@ -1080,7 +1074,14 @@ h2 {
     padding-right: 20px;
   }
 
-  .balalaika-difficult-text::before {
+  .balalaika-difficult-text::before,
+  .balalaika-etudes-text::before,
+  .balalaika-ensambles-text::before,
+  .guitar-begin-text::before,
+  .guitar-difficult-text::before,
+  .guitar-words-text::before,
+  .guitar-duets-text::before,
+  .balalaika-begin-text::before {
     left: -120px;
   }
 
@@ -1089,25 +1090,9 @@ h2 {
     padding-right: 20px;
   }
 
-  .balalaika-etudes-text::before {
-    left: -120px;
-  }
-
   .balalaika__subtitle-ensembles {
     padding-left: 80px;
     padding-right: 10px;
-  }
-
-  .balalaika-ensambles-text::before {
-    left: -120px;
-  }
-
-  .guitar-begin-text::before {
-    left: -120px;
-  }
-
-  .guitar-difficult-text::before {
-    left: -120px;
   }
 
   .guiter__subtitle-begin {
@@ -1120,18 +1105,9 @@ h2 {
     padding-right: 10px;
   }
 
-  .guitar-words-text::before {
-    left: -120px;
-  }
-
   .guitar__subtitle-words {
     padding-left: 80px;
     padding-right: 20px;
-  }
-
-
-  .guitar-duets-text::before {
-    left: -120px;
   }
 
   .guitar__subtitle-duets {
@@ -1140,16 +1116,28 @@ h2 {
   }
 }
 
-.balalaika__subtitle-begin {
-
-
+.balalaika__subtitle-begin,
+.balalaika__subtitle-difficult,
+.balalaika__subtitle-etudes,
+.balalaika__subtitle-ensembles,
+.guiter__subtitle-begin,
+.guitar__subtitle-difficult,
+.guitar__subtitle-words,
+.guitar__subtitle-duets {
   width: 100%;
   min-width: 0px;
   display: flex;
   justify-content: space-around;
 }
 
-.balalaika__begin {
+.balalaika__begin,
+.balalaika__difficult,
+.balalaika__etudes,
+.balalaika__ensembles,
+.guitar__begin,
+.guitar__difficult,
+.guitar__duets,
+.guitar__words {
   margin-bottom: 20px;
   width: 100%;
   min-width: 0px;
@@ -1159,581 +1147,24 @@ h2 {
 
 .balalaika__begin-left,
 .balalaika__begin-center,
-.balalaika__begin-right {
-  box-shadow: 0px 5px 5px black;
-  height: 100%;
-  border-radius: 10px;
-  width: 320px;
-  line-height: 30px;
-  font-weight: bold;
-
-  .audio>a {
-    display: inline-block;
-    padding-right: 15px;
-  }
-
-
-  .pdf {
-    width: 20px;
-    height: 20px;
-    fill: var(--color-white);
-
-    &hover {
-      fill: var(--color-purple);
-    }
-  }
-
-  .pdf:hover {
-
-    fill: var(--color-purple);
-    transition: 0.3s;
-  }
-
-  .elastic:hover {
-    color: var(--color-purple);
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-
-}
-.elastic{
-  display: inline-block;
-  svg{
-    margin-right: 3px;
-  }
-}
-.balalaika__subtitle-difficult {
-
-  width: 100%;
-  min-width: 0px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.balalaika-begin-text {
-  padding-top: 85px;
-  font-size: 20px;
-  display: flex;
-  margin: 0 auto;
-  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-  position: relative;
-  padding-bottom: 20px;
-  font-weight: bold;
-}
-
-.balalaika-begin-text::before {
-  position: absolute;
-  content: "";
-  background-image: url(img/balalaika.gif);
-  background-size: cover;
-  display: inline-block;
-  width: 60px;
-  height: 40px;
-  left: -80px;
-  bottom: 25px;
-}
-
-.balalaika-difficult-text {
-  padding-top: 85px;
-  font-size: 20px;
-  display: flex;
-  margin: 0 auto;
-  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-  position: relative;
-  padding-bottom: 20px;
-  font-weight: bold;
-}
-
-.balalaika-difficult-text::before {
-  position: absolute;
-  content: "";
-  background-image: url(img/balalaika.gif);
-  background-size: cover;
-  display: inline-block;
-  width: 60px;
-  height: 40px;
-  left: -80px;
-  bottom: 25px;
-}
-
-.balalaika__difficult {
-  margin-bottom: 20px;
-  width: 100%;
-  min-width: 0px;
-  display: flex;
-  justify-content: space-around;
-}
-
+.balalaika__begin-right,
 .balalaika__difficult-left,
 .balalaika__difficult-center,
-.balalaika__difficult-right {
-  box-shadow: 0px 5px 5px black;
-  height: 100%;
-  border-radius: 10px;
-  width: 320px;
-  line-height: 30px;
-  font-weight: bold;
-
-  .audio>a {
-    display: inline-block;
-    padding-right: 15px;
-  }
-
-  .pdf {
-    width: 20px;
-    height: 20px;
-    fill: var(--color-white);
-
-    &hover {
-      fill: var(--color-purple);
-    }
-  }
-
-  .pdf:hover {
-
-    fill: var(--color-purple);
-    transition: 0.3s;
-  }
-
-
-
-  .elastic:hover {
-    color: var(--color-purple);
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-
-}
-
-.balalaika__subtitle-etudes {
-
-  width: 100%;
-  min-width: 0px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.balalaika-etudes-text {
-  padding-top: 85px;
-  font-size: 20px;
-  display: flex;
-  margin: 0 auto;
-  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-  position: relative;
-  padding-bottom: 20px;
-  font-weight: bold;
-}
-
-.balalaika__etudes {
-  margin-bottom: 20px;
-  width: 100%;
-  min-width: 0px;
-  display: flex;
-  justify-content: space-around;
-}
-
+.balalaika__difficult-right,
 .balalalika__etudes-left,
 .balalaika__etudes-center,
-.balalaika__etudes-right {
-  box-shadow: 0px 5px 5px black;
-  height: 100%;
-  border-radius: 10px;
-  width: 320px;
-  line-height: 30px;
-  font-weight: bold;
-
-  .audio>a {
-    display: inline-block;
-    padding-right: 15px;
-  }
-
-  .pdf {
-    width: 20px;
-    height: 20px;
-    fill: var(--color-white);
-
-    &hover {
-      fill: var(--color-purple);
-    }
-  }
-
-  .pdf:hover {
-
-    fill: var(--color-purple);
-    transition: 0.3s;
-  }
-
-
-  .elastic:hover {
-    color: var(--color-purple);
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-
-}
-
-.balalaika__subtitle-ensembles {
-
-  width: 100%;
-  min-width: 0px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.balalaika-ensambles-text {
-  padding-top: 85px;
-  font-size: 20px;
-  display: flex;
-  margin: 0 auto;
-  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-  position: relative;
-  padding-bottom: 20px;
-  font-weight: bold;
-}
-
-.balalaika__ensembles {
-  width: 100%;
-  min-width: 0px;
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
-}
-
+.balalaika__etudes-right,
 .balalaika__ensembles-left,
 .balalaika__ensembles-center,
-.balalaika__ensembles-right {
-
-  box-shadow: 0px 5px 5px black;
-  height: 100%;
-  border-radius: 10px;
-  width: 320px;
-  line-height: 30px;
-  font-weight: bold;
-
-  .audio>a {
-    display: inline-block;
-    padding-right: 15px;
-  }
-
-  .pdf {
-    width: 20px;
-    height: 20px;
-    fill: var(--color-white);
-
-    &hover {
-      fill: var(--color-purple);
-    }
-  }
-
-  .pdf:hover {
-
-    fill: var(--color-purple);
-    transition: 0.3s;
-  }
-
-
-  .elastic:hover {
-    color: var(--color-purple);
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-
-}
-
-.balalaika-etudes-text::before {
-  position: absolute;
-  content: "";
-  background-image: url(img/balalaika.gif);
-  background-size: cover;
-  display: inline-block;
-  width: 60px;
-  height: 40px;
-  left: -80px;
-  bottom: 25px;
-}
-
-.balalaika-ensambles-text::before {
-  position: absolute;
-  content: "";
-  background-image: url(img/balalaika.gif);
-  background-size: cover;
-  display: inline-block;
-  width: 60px;
-  height: 40px;
-  left: -80px;
-  bottom: 25px;
-}
-
-.guiter__subtitle-begin {
-
-  width: 100%;
-  min-width: 0px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.guitar-begin-text {
-  padding-top: 85px;
-  font-size: 20px;
-  display: flex;
-  margin: 0 auto;
-  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-  position: relative;
-  padding-bottom: 20px;
-  font-weight: bold;
-}
-
-.guitar__begin {
-  margin-bottom: 20px;
-  width: 100%;
-  min-width: 0px;
-  display: flex;
-  justify-content: space-around;
-}
-
+.balalaika__ensembles-right,
 .guitar__begin-left,
 .guitar__begin-center,
-.guitar__begin-right {
-  box-shadow: 0px 5px 5px black;
-  height: 100%;
-  border-radius: 10px;
-  width: 320px;
-  line-height: 30px;
-  font-weight: bold;
-
-  .audio>a {
-    display: inline-block;
-    padding-right: 15px;
-  }
-
-  .pdf {
-    width: 20px;
-    height: 20px;
-    fill: var(--color-white);
-
-    &hover {
-      fill: var(--color-purple);
-    }
-  }
-
-  .pdf:hover {
-
-    fill: var(--color-purple);
-    transition: 0.3s;
-  }
-
-  .elastic:hover {
-    color: var(--color-purple);
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-
-}
-
-.guitar-begin-text::before {
-  position: absolute;
-  content: "";
-  background-image: url(img/guitar.gif);
-  background-size: cover;
-  display: inline-block;
-  width: 60px;
-  height: 40px;
-  left: -80px;
-  bottom: 25px;
-}
-
-.guitar__subtitle-difficult {
-
-  width: 100%;
-  min-width: 0px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.guitar-difficult-text {
-  padding-top: 85px;
-  font-size: 20px;
-  display: flex;
-  margin: 0 auto;
-  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-  position: relative;
-  padding-bottom: 20px;
-  font-weight: bold;
-}
-
-.guitar__difficult {
-  margin-bottom: 20px;
-  width: 100%;
-  min-width: 0px;
-  display: flex;
-  justify-content: space-around;
-}
-
+.guitar__begin-right,
 .guitar__difficult-left,
 .guitar__difficult-center,
-.guitar__difficult-right {
-  box-shadow: 0px 5px 5px black;
-  height: 100%;
-  border-radius: 10px;
-  width: 320px;
-  line-height: 30px;
-  font-weight: bold;
-
-  .audio>a {
-    display: inline-block;
-    padding-right: 15px;
-  }
-
-  .pdf {
-    width: 20px;
-    height: 20px;
-    fill: var(--color-white);
-
-    &hover {
-      fill: var(--color-purple);
-    }
-  }
-
-  .pdf:hover {
-
-    fill: var(--color-purple);
-    transition: 0.3s;
-  }
-
-  .elastic:hover {
-    color: var(--color-purple);
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-
-}
-
-.guitar-difficult-text::before {
-  position: absolute;
-  content: "";
-  background-image: url(img/guitar.gif);
-  background-size: cover;
-  display: inline-block;
-  width: 60px;
-  height: 40px;
-  left: -80px;
-  bottom: 25px;
-}
-
-.guitar__subtitle-words {
-
-  width: 100%;
-  min-width: 0px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.guitar-words-text {
-  margin-bottom: 20px;
-  padding-top: 85px;
-  font-size: 20px;
-  display: flex;
-  margin: 0 auto;
-  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-  position: relative;
-  padding-bottom: 20px;
-  font-weight: bold;
-}
-
-.guitar__words {
-  margin-bottom: 20px;
-  width: 100%;
-  min-width: 0px;
-  display: flex;
-  justify-content: space-around;
-}
-
+.guitar__difficult-right,
 .guitar__words-left,
-.guitar__words-right {
-  box-shadow: 0px 5px 5px black;
-  height: 100%;
-  border-radius: 10px;
-  width: 320px;
-  line-height: 30px;
-  font-weight: bold;
-
-  .audio>a {
-    display: inline-block;
-    padding-right: 15px;
-  }
-
-  .pdf {
-    width: 20px;
-    height: 20px;
-    fill: var(--color-white);
-
-    &hover {
-      fill: var(--color-purple);
-    }
-  }
-
-  .pdf:hover {
-
-    fill: var(--color-purple);
-    transition: 0.3s;
-  }
-
-
-
-  .elastic:hover {
-    color: var(--color-purple);
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-
-}
-
-.guitar-words-text::before {
-  position: absolute;
-  content: "";
-  background-image: url(img/guitar.gif);
-  background-size: cover;
-  display: inline-block;
-  width: 60px;
-  height: 40px;
-  left: -80px;
-  bottom: 25px;
-}
-
-.guitar__subtitle-duets {
-
-  width: 100%;
-  min-width: 0px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.guitar-duets-text {
-  padding-top: 85px;
-  font-size: 20px;
-  display: flex;
-  margin: 0 auto;
-  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-  position: relative;
-  padding-bottom: 20px;
-  font-weight: bold;
-}
-
-.guitar__duets {
-  width: 100%;
-  min-width: 0px;
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 100px;
-}
-
+.guitar__words-right,
 .guitar__duets-left,
 .guitar__duets-right {
   box-shadow: 0px 5px 5px black;
@@ -1748,6 +1179,7 @@ h2 {
     padding-right: 15px;
   }
 
+
   .pdf {
     width: 20px;
     height: 20px;
@@ -1764,18 +1196,53 @@ h2 {
     transition: 0.3s;
   }
 
-
-
   .elastic:hover {
     color: var(--color-purple);
     cursor: pointer;
     transition: 0.3s;
   }
-
-
 }
 
-.guitar-duets-text::before {
+.elastic {
+  display: inline-block;
+
+  svg {
+    margin-right: 3px;
+  }
+}
+
+.balalaika-begin-text,
+.balalaika-difficult-text,
+.balalaika-etudes-text,
+.balalaika-ensambles-text,
+.guitar-begin-text,
+.guitar-difficult-text,
+.guitar-words-text,
+.guitar-duets-text {
+  padding-top: 85px;
+  font-size: 20px;
+  display: flex;
+  margin: 0 auto;
+  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+  position: relative;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.balalaika-begin-text::before,.balalaika-difficult-text::before,.balalaika-etudes-text::before,
+.balalaika-ensambles-text::before  {
+  position: absolute;
+  content: "";
+  background-image: url(img/balalaika.gif);
+  background-size: cover;
+  display: inline-block;
+  width: 60px;
+  height: 40px;
+  left: -80px;
+  bottom: 25px;
+}
+
+.guitar-begin-text::before,.guitar-difficult-text::before,.guitar-words-text::before,.guitar-duets-text::before  {
   position: absolute;
   content: "";
   background-image: url(img/guitar.gif);
@@ -1787,7 +1254,6 @@ h2 {
   bottom: 25px;
 }
 
-
 // audio
 .audio {
   display: flex;
@@ -1797,7 +1263,7 @@ h2 {
   padding-left: 10px;
   padding-bottom: 1px;
   width: 310px;
-  
+
 }
 
 .audio__download {
