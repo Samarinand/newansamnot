@@ -100,31 +100,31 @@ body {
   background: var(--color-pink);
   /* Old browsers */
   /*   background: -moz-linear-gradient(left,
-        rgb(248, 246, 249) 0%,
-        rgb(244, 233, 251) 19%,
-        rgb(228, 208, 243) 43%,
-        rgb(227, 207, 241) 44%,
-        rgb(230, 210, 245) 46%,
-        rgba(211, 172, 238, 1) 48%,
-        rgb(239, 225, 248) 100%); */
+      rgb(248, 246, 249) 0%,
+      rgb(244, 233, 251) 19%,
+      rgb(228, 208, 243) 43%,
+      rgb(227, 207, 241) 44%,
+      rgb(230, 210, 245) 46%,
+      rgba(211, 172, 238, 1) 48%,
+      rgb(239, 225, 248) 100%); */
   /* FF3.6-15 */
   /*   background: -webkit-linear-gradient(left,
-        rgb(248, 245, 250) 0%,
-        rgb(241, 230, 248) 19%,
-        rgb(229, 210, 243) 43%,
-        rgba(211, 172, 238, 1) 44%,
-        rgb(228, 209, 242) 46%,
-        rgb(231, 211, 246) 48%,
-        rgb(241, 231, 248) 100%); */
+      rgb(248, 245, 250) 0%,
+      rgb(241, 230, 248) 19%,
+      rgb(229, 210, 243) 43%,
+      rgba(211, 172, 238, 1) 44%,
+      rgb(228, 209, 242) 46%,
+      rgb(231, 211, 246) 48%,
+      rgb(241, 231, 248) 100%); */
   /* Chrome10-25,Safari5.1-6 */
   /*  background: linear-gradient(to right,
-       rgb(244, 242, 246) 0%,
-       rgb(240, 229, 247) 19%,
-       rgba(211, 172, 238, 1) 43%,
-       rgba(211, 172, 238, 1) 44%,
-       rgba(211, 172, 238, 1) 46%,
-       rgba(211, 172, 238, 1) 48%,
-       rgba(236, 213, 251, 1) 100%); */
+      rgb(244, 242, 246) 0%,
+      rgb(240, 229, 247) 19%,
+      rgba(211, 172, 238, 1) 43%,
+      rgba(211, 172, 238, 1) 44%,
+      rgba(211, 172, 238, 1) 46%,
+      rgba(211, 172, 238, 1) 48%,
+      rgba(236, 213, 251, 1) 100%); */
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f2ecf6", endColorstr="#ecd5fb", GradientType=1);
   /* IE6-9 */
@@ -132,7 +132,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+  font-family: Montserratregular, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
   min-height: 100vh;
   line-height: 1.2;
 }
@@ -150,6 +150,11 @@ body {
 /*navbar*/
 .site-conteiner {
   overflow: hidden;
+}
+
+.bloks-conteiner {
+  margin: 0 auto;
+  max-width: 1046px;
 }
 
 .seach-form {
@@ -298,7 +303,7 @@ body {
   padding: 30px 15px;
   text-decoration: none;
   outline: none;
-  font-size: 15px;
+  font-size: 14px;
   -webkit-transform: 0.3s linear;
           transform: 0.3s linear;
   color: var(--color-white);
@@ -364,13 +369,13 @@ body {
   -webkit-transition: 0.8s ease-in-out;
   transition: 0.8s ease-in-out;
   display: none;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .submenu > li > a {
   opacity: 0.8;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 14px;
   color: var(--color-purple);
 }
 
@@ -812,7 +817,7 @@ body {
 .discription {
   text-align: center;
   font-style: oblique;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Montserratregular, Cochin, Georgia, Times, "Times New Roman", serif;
   padding-bottom: 5px;
   padding-left: 5px;
   padding-right: 5px;
@@ -894,7 +899,7 @@ h2 {
   padding-left: 2em;
   padding-right: 2em;
   font-size: 22px;
-  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+  font-family: Montserrat, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
   color: var(--color-purple-dark);
   text-transform: uppercase;
   font-weight: bold;
@@ -1322,7 +1327,7 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+  font-family: Montserratitalic, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
   position: relative;
   padding-bottom: 20px;
   font-weight: bold;
@@ -1384,6 +1389,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 0px;
+  font-family: Montserratitalic, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
   width: 300px;
   height: 20px;
   background-color: var(--color-purple);
@@ -1510,7 +1516,13 @@ h2 {
 
 .footer {
   background-color: var(--color-dark);
-  height: 19em;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.footer .footer-conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1520,6 +1532,7 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 470px;
 }
 .footer .footer__top {
   font-size: calc(10px + 0.546875vw);
@@ -1540,7 +1553,7 @@ h2 {
 .footer .footer__top .wrapper {
   margin: 0 auto;
   width: 100%;
-  padding: 1.4em 0.2em 0.2em 0.4em;
+  padding-top: 5px;
 }
 .footer .footer__top .tabs-nav {
   display: -webkit-box;
@@ -1556,7 +1569,7 @@ h2 {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 0.7em;
+  padding: 12px 0px 12px 12px;
   text-transform: uppercase;
 }
 .footer .footer__top .tabs-nav__item:hover {
@@ -1616,7 +1629,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 35em;
+  height: 70px;
 }
 .footer .footer__bottom .footer-copyright {
   cursor: default;
@@ -1848,7 +1861,7 @@ h2 {
   border-radius: 24px;
   -webkit-box-shadow: 0px 5px 5px black;
           box-shadow: 0px 5px 5px black;
-  font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+  font-family: Montserratregular, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
   letter-spacing: 1px;
   margin: 25px auto;
   cursor: pointer;
