@@ -4,6 +4,9 @@
 
 <head>
   <meta charset="utf-8">
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:regular800,900,800italic,900italic&display=swap@subset=cyrillic-ext"
+    rel="stylesheet" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon_io/Label32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon_io/Label16.png">
@@ -21,6 +24,7 @@
 
 <body>
   <div class="site-conteiner">
+    <div class="bloks-conteiner"></div>
     <!-- svg -->
     <svg style="display: none;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <symbol id="arrow-down" width="11px" height="11px" viewBox="0 0 512 512"
@@ -53,7 +57,7 @@
     <!-- navbar -->
     <nav class="navbar">
 
-      <div class="navbar__wrap" id="header">
+      <div class="navbar__wrap bloks-conteiner" id="header">
         <div class="navbar__wrap-left">
           <a class="logo" id="logo"><img src=img/Label.png alt="Label"></a>
 
@@ -117,7 +121,7 @@
     <!-- popup -->
     <div class="popup" id="popup"></div>
     <!--header-->
-    <header class="header">
+    <header class="header bloks-conteiner">
       <div class="header__content">
         <h1>Сайт Самарина Андрея</h1>
         <div class="header__welcome">Добро пожаловать! </div>
@@ -125,7 +129,7 @@
       </div>
     </header>
     <!--discription-->
-    <section class="discription">
+    <section class="discription bloks-conteiner">
       <div class="discription__text">
         <h2>На&nbsp;этом сайте&nbsp;Вы найдёте ноты моих произведениий, обработок и&nbsp;переложений</h2>
         <div class="discription__list">
@@ -208,9 +212,9 @@
       </div>
     </div>
     <!-- notes -->
-    <main class="notes">
+    <main class="notes bloks-conteiner">
       <!-- balalaika -->
-      <section class="balalaika">
+      <section class="balalaika ">
         <!-- balalaika__subtitle-begin -->
         <div class="balalaika__subtitle-begin">
           <h4 class="balalaika-begin-text" id="balalaika-begin-text">Ноты для балалайки.<br>Для начинающих</h4>
@@ -2742,66 +2746,69 @@
     <div class="go-top"></div>
     <div class="triangle-up"></div>
     <!--footer-->
-    <footer class="footer">
-      <!-- footer__top -->
-      <div class="footer__top">
-        <nav class="tabs">
-          <div class="wrapper">
-            <div class="tabs__nav tabs-nav">
-              <div class="tabs-nav__item is-active" data-tab-name="tab-1">Ноты для
-                балалайки</div>
-              <div class="tabs-nav__item" data-tab-name="tab-2">Ноты для
-                гитары</div>
-            </div>
-            <div class="tabs__content">
-              <div class="tab is-active tab-1">
-                <ul id="tab-01" class="tabs__blok">
-                  <li class="tabs-link"><a href="#balalaika-begin-text" class="tabs__submenu-hover"> Для начинающих</a>
-                  </li>
-                  <li class="tabs-link"> <a href="#balalaika-difficult-text" class="tabs__submenu-hover">Более сложные
-                      произведения</a>
-                  </li>
-                  <li class="tabs-link"><a href="#balalaika-etudes-text" class="tabs__submenu-hover">Этюды</a></li>
-                  <li class="tabs-link"><a href="#balalaika-ensambles-text" class="tabs__submenu-hover"> Ансамбли</a>
-                  </li>
-                </ul>
+    <footer class="footer ">
+      <div class="footer-conteiner bloks-conteiner">
+        <!-- footer__top -->
+        <div class="footer__top">
+          <nav class="tabs">
+            <div class="wrapper">
+              <div class="tabs__nav tabs-nav">
+                <div class="tabs-nav__item is-active" data-tab-name="tab-1">Ноты для
+                  балалайки</div>
+                <div class="tabs-nav__item" data-tab-name="tab-2">Ноты для
+                  гитары</div>
               </div>
-              <div class="tab tab-2">
-                <ul id="tab-02" class="tabs__blok">
-                  <li class="tabs-link"><a href="#guitar-begin-text" class="tabs__submenu-hover">Для начинающих </a>
-                  </li>
-                  <li class="tabs-link"><a href="#guitar-difficult-text" class="tabs__submenu-hover">Более сложные
-                      произведения</a>
-                  </li>
-                  <li class="tabs-link"> <a href="#guitar-words-text" class="tabs__submenu-hover"> С аккордами и
-                      словами</a>
-                  </li>
-                  <li class="tabs-link"><a href="#guitar-duets-text" class="tabs__submenu-hover"> Дуэты</a></li>
-                </ul>
+              <div class="tabs__content">
+                <div class="tab is-active tab-1">
+                  <ul id="tab-01" class="tabs__blok">
+                    <li class="tabs-link"><a href="#balalaika-begin-text" class="tabs__submenu-hover"> Для
+                        начинающих</a>
+                    </li>
+                    <li class="tabs-link"> <a href="#balalaika-difficult-text" class="tabs__submenu-hover">Более сложные
+                        произведения</a>
+                    </li>
+                    <li class="tabs-link"><a href="#balalaika-etudes-text" class="tabs__submenu-hover">Этюды</a></li>
+                    <li class="tabs-link"><a href="#balalaika-ensambles-text" class="tabs__submenu-hover"> Ансамбли</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab tab-2">
+                  <ul id="tab-02" class="tabs__blok">
+                    <li class="tabs-link"><a href="#guitar-begin-text" class="tabs__submenu-hover">Для начинающих </a>
+                    </li>
+                    <li class="tabs-link"><a href="#guitar-difficult-text" class="tabs__submenu-hover">Более сложные
+                        произведения</a>
+                    </li>
+                    <li class="tabs-link"> <a href="#guitar-words-text" class="tabs__submenu-hover"> С аккордами и
+                        словами</a>
+                    </li>
+                    <li class="tabs-link"><a href="#guitar-duets-text" class="tabs__submenu-hover"> Дуэты</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-        </nav>
-      </div>
-      <!-- footer__bottom -->
-      <div class="footer__bottom">
-        <div class="footer__bottom-youtube"><a href="https://www.youtube.com/channel/UCzBTsBT_ydYvJ7CfqqU36-A"><svg
-              class="footer-youtube-svg" fill="#000000" width="47px" height="47px" viewBox="0 0 32 32"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M24.325 8.309s-2.655-.334-8.357-.334c-5.517 0-8.294.334-8.294.334A2.675 2.675 0 0 0 5 10.984v10.034a2.675 2.675 0 0 0 2.674 2.676s2.582.332 8.294.332c5.709 0 8.357-.332 8.357-.332A2.673 2.673 0 0 0 27 21.018V10.982a2.673 2.673 0 0 0-2.675-2.673zM13.061 19.975V12.03L20.195 16l-7.134 3.975z" />
-            </svg></a></div>
-        <div class="footer-copyright">
-          <div>Все права защищены</div>
-          <div>2023</div>
-          <div>&#169;</div>
+          </nav>
         </div>
-        <div class="footer__bottom-envelope"><a href="mailto:samarinand22@gmail.com"> <svg class="footer-maill-svg"
-              fill="#000000" width="30px" height="30px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M0 1694.235h1920V226H0v1468.235ZM112.941 376.664V338.94H1807.06v37.723L960 1111.233l-847.059-734.57ZM1807.06 526.198v950.513l-351.134-438.89-88.32 70.475 378.353 472.998H174.042l378.353-472.998-88.32-70.475-351.134 438.89V526.198L960 1260.768l847.059-734.57Z"
-                fill-rule="evenodd" />
-            </svg> </a></div>
+        <!-- footer__bottom -->
+        <div class="footer__bottom">
+          <div class="footer__bottom-youtube"><a href="https://www.youtube.com/channel/UCzBTsBT_ydYvJ7CfqqU36-A"><svg
+                class="footer-youtube-svg" fill="#000000" width="47px" height="47px" viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24.325 8.309s-2.655-.334-8.357-.334c-5.517 0-8.294.334-8.294.334A2.675 2.675 0 0 0 5 10.984v10.034a2.675 2.675 0 0 0 2.674 2.676s2.582.332 8.294.332c5.709 0 8.357-.332 8.357-.332A2.673 2.673 0 0 0 27 21.018V10.982a2.673 2.673 0 0 0-2.675-2.673zM13.061 19.975V12.03L20.195 16l-7.134 3.975z" />
+              </svg></a></div>
+          <div class="footer-copyright">
+            <div>Все права защищены</div>
+            <div>2023</div>
+            <div>&#169;</div>
+          </div>
+          <div class="footer__bottom-envelope"><a href="mailto:samarinand22@gmail.com"> <svg class="footer-maill-svg"
+                fill="#000000" width="30px" height="30px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 1694.235h1920V226H0v1468.235ZM112.941 376.664V338.94H1807.06v37.723L960 1111.233l-847.059-734.57ZM1807.06 526.198v950.513l-351.134-438.89-88.32 70.475 378.353 472.998H174.042l378.353-472.998-88.32-70.475-351.134 438.89V526.198L960 1260.768l847.059-734.57Z"
+                  fill-rule="evenodd" />
+              </svg> </a></div>
+        </div>
       </div>
     </footer>
     <!-- popup-form -->
