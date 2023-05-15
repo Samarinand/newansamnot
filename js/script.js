@@ -221,28 +221,9 @@ tab();
 
 
 
-/* document.querySelectorAll('.tabs__item').forEach((item) =>
-item.addEventListener('click',function(e){
-  e.preventDefault();
-  const id = e.target.getAttributes ('href').replace('#','');
-
-  document.querySelectorAll('.tabs__item').forEach(
-    (child) => child.classList.remove('tabs__item--active')
-  );
-  document.querySelectorAll('.tabs__blok').forEach(
-    (child) => child.classList.remove('tabs__blok--active')
-  );
-
-  item.classList.add('tabs__item--active');
-  document.getElementById(id).classList.add('tabs__blok--active');
-})
-);
-document.querySelector('.tabs__item').click(); */
 
 
-/*
-
-"use strict"
+/* "use strict"
 document.addEventListener('DOMContentLoaded', function(){
   const form = document.getElementById('form');
   form.addEventListener('submit', formSend);
