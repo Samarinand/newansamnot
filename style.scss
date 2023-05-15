@@ -1229,8 +1229,10 @@ h2 {
   font-weight: bold;
 }
 
-.balalaika-begin-text::before,.balalaika-difficult-text::before,.balalaika-etudes-text::before,
-.balalaika-ensambles-text::before  {
+.balalaika-begin-text::before,
+.balalaika-difficult-text::before,
+.balalaika-etudes-text::before,
+.balalaika-ensambles-text::before {
   position: absolute;
   content: "";
   background-image: url(img/balalaika.gif);
@@ -1242,7 +1244,10 @@ h2 {
   bottom: 25px;
 }
 
-.guitar-begin-text::before,.guitar-difficult-text::before,.guitar-words-text::before,.guitar-duets-text::before  {
+.guitar-begin-text::before,
+.guitar-difficult-text::before,
+.guitar-words-text::before,
+.guitar-duets-text::before {
   position: absolute;
   content: "";
   background-image: url(img/guitar.gif);
@@ -1408,101 +1413,60 @@ h2 {
     .tabs {
       padding-top: 20px;
 
+      color: var(--color-white);
+      width: 100%;
+
     }
 
-    .tabs__body {
-      padding-top: 15px;
+    .wrapper {
+      margin: 0 auto;
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .tabs-nav {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .tabs-nav__item {
+      border-bottom: 1px solid transparent;
+      cursor: pointer;
+      flex: 1;
+      padding: 5px;
+      text-transform: uppercase;
+
+      &:hover {
+        opacity: 1;
+        transition: 0.8s;
+        color: var(--color-pink);
+
+        &:active {
+
+          background-color: var(--color-gray);
+        }
+      }
+    }
+
+    .tabs-nav__item.is-active {
+      border-color: #55a32a;
+    }
+
+    .tab {
+
+      display: none;
+      padding: 20px;
+    }
+
+    .tab.is-active {
+      display: block;
     }
 
     font-size: calc(10px + 5 * (100vw / 1280));
     display: flex;
     justify-content: space-around;
     align-items: center;
-
-    .tabs__blok:target {
-      display: block;
-    }
-
-    .tabs__blok {
-      display: flex;
-      flex-direction: column;
-      display: none;
-
-      line-height: 24px;
-      position: relative;
-    }
-
-    .tabs__blok:nth-child(1) {
-      background-color: var(--color-purple);
-
-    }
-
-    .tabs__blok:nth-child(2) {
-      background-color: var(--color-purple);
-    }
-
-    .tabs__blok:nth-child(1)::before {
-      background-color: var(--color-purple);
-    }
-
-    .tabs__blok:nth-child(2)::before {
-      background-color: var(--color-purple);
-      left: 50%;
-    }
-
-    .tabs__blok::before {
-      content: "";
-      height: 42px;
-      width: 50%;
-      position: absolute;
-      top: -40px;
-      left: 0;
-
-    }
-
-    .balalaika-tabs>input,
-    .guitar-tabs>input {
-      display: none;
-    }
-
-    .balalaika-tabs {
-      padding-left: 5px;
-    }
-
-    .guitar-tabs {
-      padding-right: 25px;
-      padding-left: 30px;
-
-    }
-
-    .tabs__items {
-      color: var(--color-white);
-      text-transform: uppercase;
-      display: flex;
-      justify-content: space-between;
-
-    }
-
-    .tabs__hover {
-      padding: 5px;
-    }
-
-    .tabs__items span {
-      position: relative;
-      z-index: 2;
-      padding: 10px 5px 14px;
-
-      &:hover {
-        opacity: 1;
-        transition: 0.8s;
-        color: var(--color-pink);
-      }
-
-      &:active {
-
-        background-color: var(--color-gray);
-      }
-    }
 
     .tabs__item {
       height: 20px;
@@ -1511,6 +1475,7 @@ h2 {
 
     .tabs__submenu-hover {
       padding-left: 10px;
+line-height: 1.5;
     }
 
     .tabs-link:last-child {
