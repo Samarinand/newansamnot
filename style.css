@@ -240,7 +240,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
-  padding-left: 0.5em;
+  padding-left: 1.5em;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .navbar__wrap-right {
@@ -480,13 +482,13 @@ body {
 }
 
 @media (max-width: 500px) {
-  .navbar__wrap {
-    padding-left: 10px;
-  }
   .navbar__youtube,
 .navbar__envelope {
     padding-right: 0px;
     display: none;
+  }
+  .navbar__wrap-left {
+    padding-left: 0.5em;
   }
 }
 @media (max-width: 950px) {
@@ -1025,7 +1027,7 @@ h2 {
   margin-bottom: 100px;
 }
 
-@media (max-width: 993px) {
+@media (max-width: 987px) {
   .navbar__container {
     padding-left: 10px;
   }
@@ -1065,9 +1067,9 @@ h2 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     row-gap: 15px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   .balalaika__subtitle-begin {
     padding-left: 100px;

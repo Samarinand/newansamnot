@@ -228,7 +228,8 @@ body {
 .navbar__wrap-left {
   display: flex;
   gap: 10px;
-  padding-left: 0.5em;
+  padding-left: 1.5em;
+  box-sizing: content-box;
 }
 
 .navbar__wrap-right {
@@ -444,16 +445,16 @@ body {
 
 
 @media (max-width: 500px) {
-  .navbar__wrap {
-    padding-left: 10px;
-  }
-
+ 
   .navbar__youtube,
   .navbar__envelope {
     padding-right: 0px;
     display: none;
   }
 
+  .navbar__wrap-left {
+    padding-left: 0.5em;
+  }
 
 }
 
@@ -1028,10 +1029,12 @@ h2 {
   margin-bottom: 100px;
 }
 
-@media (max-width: 993px) {
+@media (max-width: 987px) {
   .navbar__container {
     padding-left: 10px;
   }
+
+  
 
   .balalaika__begin-left,
   .balalaika__begin-center,
@@ -1069,7 +1072,9 @@ h2 {
   .guitar__duets {
     flex-wrap: wrap;
     row-gap: 15px;
-    align-items: center;
+    align-items:baseline;
+  
+
   }
 
   .balalaika__subtitle-begin {
@@ -1420,12 +1425,12 @@ h2 {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-   
+
     width: 470px;
   }
 
   .footer__top {
-  
+
     .tabs {
       padding-top: 20px;
 
@@ -1477,7 +1482,7 @@ h2 {
 
     .tab.is-active {
       display: block;
-      
+
     }
 
     font-size: calc(10px + 7 * (100vw / 1280));
