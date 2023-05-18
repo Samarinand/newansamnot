@@ -73,7 +73,7 @@ h4,
 h5,
 h6 {
   font-size: inherit;
-  font-weight: 400;
+
 }
 
 * {
@@ -81,7 +81,11 @@ h6 {
   padding: 0;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,italic,500italic,600italic,700italic&display=swap@subset=cyrillic-ext);
+
 /*--------------------*/
+
+
 html {
   width: 100%;
 
@@ -124,10 +128,10 @@ body {
   /* IE6-9 */
 
   flex-direction: column;
-  font-family: Montserratregular, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-
   min-height: 100vh;
   line-height: 1.2;
+
+  font-family: Montserrat, Cochin, Georgia, Times, "Times New Roman", serif;
 
 }
 
@@ -176,6 +180,7 @@ body {
   opacity: 0.8;
   font-size: 12px;
   cursor: pointer;
+
 }
 
 .seach-site:focus {
@@ -289,6 +294,7 @@ body {
   text-decoration: none;
   outline: none;
   font-size: 14px;
+
   transform: 0.3s linear;
   color: var(--color-white);
 
@@ -445,7 +451,7 @@ body {
 
 
 @media (max-width: 500px) {
- 
+
   .navbar__youtube,
   .navbar__envelope {
     padding-right: 0px;
@@ -458,7 +464,7 @@ body {
 
 }
 
-@media (max-width: 950px) {
+@media (max-width: 983px) {
 
 
 
@@ -632,7 +638,7 @@ body {
   justify-content: center;
   padding: 20px 0;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 500;
   color: var(--color-gray);
 
 }
@@ -652,7 +658,7 @@ body {
   h1 {
     text-align: center;
     font-size: calc(12px + 12 * (100vw / 1280));
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 3px;
     background-image: linear-gradient(rgba(75, 11, 97, 0.949), rgb(155, 59, 244));
@@ -669,7 +675,7 @@ body {
     background-image: linear-gradient(rgba(75, 11, 97, 0.949), rgb(114, 59, 244));
     background-clip: text;
     color: transparent;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 3px;
   }
@@ -822,8 +828,8 @@ body {
 .discription {
   // margin-top: 20px;
   text-align: center;
-  font-style: oblique;
-  font-family: Montserratregular, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 500;
   padding-bottom: 5px;
   padding-left: 5px;
   padding-right: 5px;
@@ -835,6 +841,7 @@ body {
   margin-bottom: 15px;
   color: var(--color-purple-dark);
 
+
 }
 
 .discription__list {
@@ -845,7 +852,7 @@ body {
 
 .discription__list>ul>li::before {
   content: "\2713";
-  font-weight: 600;
+  font-weight: 700;
   display: inline-block;
   left: 0px;
   top: -2px;
@@ -866,7 +873,8 @@ body {
 h2 {
   padding-left: 2em;
   padding-right: 2em;
-  font-weight: 600;
+  font-style: italic;
+  font-weight: 700;
   display: inline-block;
   padding-bottom: 10px;
 }
@@ -900,13 +908,18 @@ h2 {
   text-align: center;
   padding-left: 2em;
   padding-right: 2em;
-  font-size: 22px;
-  font-family: Montserrat, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+
   color: var(--color-purple-dark);
   text-transform: uppercase;
-  font-weight: bold;
+
   letter-spacing: 3px;
 
+}
+
+h3 {
+  font-size: 22px;
+
+  font-weight: 700;
 
 }
 
@@ -917,7 +930,7 @@ h2 {
 .parallax-slider .swiper-button-prev::after,
 .parallax-slider .swiper-button-next::after {
   color: var(--color-purple);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 40px;
 }
 
@@ -954,7 +967,7 @@ h2 {
 .image-slider1 .swiper-button-prev::after,
 .image-slider1 .swiper-button-next::after {
   color: var(--color-purple);
-  font-weight: bold;
+  font-weight: 700;
   display: none;
 
   font-size: 45px;
@@ -1008,6 +1021,7 @@ h2 {
   /* Unicode character for "plus" sign (+) */
   transform: rotate(270deg);
   font-size: 20px;
+
   color: var(--color-gray);
   float: right;
   margin-left: 5px;
@@ -1034,7 +1048,7 @@ h2 {
     padding-left: 10px;
   }
 
-  
+
 
   .balalaika__begin-left,
   .balalaika__begin-center,
@@ -1072,8 +1086,8 @@ h2 {
   .guitar__duets {
     flex-wrap: wrap;
     row-gap: 15px;
-    align-items:baseline;
-  
+    align-items: baseline;
+
 
   }
 
@@ -1185,7 +1199,7 @@ h2 {
   border-radius: 10px;
   width: 320px;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: 600;
 
   .audio>a {
     display: inline-block;
@@ -1236,10 +1250,16 @@ h2 {
   font-size: 20px;
   display: flex;
   margin: 0 auto;
-  font-family: Montserratitalic, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+
   position: relative;
   padding-bottom: 20px;
-  font-weight: bold;
+
+}
+
+h4 {
+  font-family: Montserrat, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+  font-style: italic;
+  font-weight: 600;
 }
 
 .balalaika-begin-text::before,
@@ -1289,13 +1309,14 @@ h2 {
   justify-content: start;
   align-items: center;
   margin-top: 0px;
-  font-family: Montserratitalic, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+  font-family: Montserrat, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+  font-style: italic;
   width: 300px;
   height: 20px;
   background-color: var(--color-purple);
   border-radius: 15px;
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 600;
   color: var(--color-white);
   margin-bottom: 10px;
 }
@@ -1456,6 +1477,7 @@ h2 {
       flex: 1;
       padding: 12px 0px 12px 12px;
       text-transform: uppercase;
+      font-weight: 700;
 
       &:hover {
         opacity: 1;
@@ -1521,6 +1543,12 @@ h2 {
           background-color: var(--color-gray);
         }
       }
+    }
+  }
+
+  @media (max-width: 341px) {
+    .tabs-nav__item {
+      font-size: 11px;
     }
   }
 
@@ -1737,7 +1765,7 @@ h2 {
   text-transform: uppercase;
   border-radius: 24px;
   box-shadow: 0px 5px 5px black;
-  font-family: Montserratregular, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+
   letter-spacing: 1px;
   margin: 25px auto;
   cursor: pointer;
