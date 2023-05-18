@@ -143,6 +143,7 @@ body {
   --color-purple-dark: #50258d;
   --color-white-dark: #e2d7d7;
   --color-pink: #eaccf3;
+  --color-pink-hover: #e3acf4;
 }
 
 
@@ -997,7 +998,12 @@ h3 {
   overflow: hidden;
 
 }
-
+.panel-flex{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
 .accordion {
   padding-left: 10px;
   padding-top: 10px;
@@ -1010,7 +1016,7 @@ h3 {
 
 .active,
 .accordion:hover {
-  background-color: var(--color-pink);
+  background-color: var(--color-pink-hover);
   border-radius: 10px;
   height: 100%;
 
@@ -1043,13 +1049,36 @@ h3 {
   margin-bottom: 100px;
 }
 
+.balalaika__begin-left,
+  .balalaika__begin-center,
+  .balalaika__begin-right,
+  .balalaika__ensembles-left,
+  .balalaika__ensembles-center,
+  .balalaika__ensembles-right,
+  .balalaika__difficult-left,
+  .balalaika__difficult-center,
+  .balalaika__difficult-right,
+  .balalalika__etudes-left,
+  .balalaika__etudes-center,
+  .balalaika__etudes-right,
+  .guitar__begin-left,
+  .guitar__begin-center,
+  .guitar__begin-right,
+  .guitar__difficult-left,
+  .guitar__difficult-center,
+  .guitar__difficult-right,
+  .guitar__words-left,
+  .guitar__words-right,
+  .guitar__duets-left,
+  .guitar__duets-right {
+ 
+  width: 318px;
+  }
+  
 @media (max-width: 987px) {
   .navbar__container {
     padding-left: 10px;
   }
-
-
-
   .balalaika__begin-left,
   .balalaika__begin-center,
   .balalaika__begin-right,
@@ -1074,6 +1103,8 @@ h3 {
   .guitar__duets-right {
     margin-right: 10px;
     margin-left: 10px;
+    flex: 0 1 100%;
+    min-width: 318px;
   }
 
   .balalaika__begin,
@@ -1155,6 +1186,7 @@ h3 {
   min-width: 0px;
   display: flex;
   justify-content: space-around;
+ 
 }
 
 .balalaika__begin,
@@ -1197,7 +1229,8 @@ h3 {
   box-shadow: 0px 5px 5px black;
   height: 100%;
   border-radius: 10px;
-  width: 320px;
+  min-width: 318px;
+  max-width: 450px;
   line-height: 30px;
   font-weight: 600;
 
@@ -1299,8 +1332,10 @@ h4 {
   gap: 5px;
   margin-top: 2px;
   padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 1px;
-  width: 310px;
+  min-width: 310px;
+  max-width: 100%;
 
 }
 
@@ -1311,7 +1346,7 @@ h4 {
   margin-top: 0px;
   font-family: Montserrat, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
   font-style: italic;
-  width: 300px;
+  width: 100%;
   height: 20px;
   background-color: var(--color-purple);
   border-radius: 15px;
@@ -1330,6 +1365,7 @@ h4 {
 .audio__player {
   height: 20px;
   font-size: 10px;
+  width: 100%;
 }
 
 
@@ -1338,7 +1374,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
+  width: 100%;
   transition: all 0.8s ease 0s;
 
   svg {
