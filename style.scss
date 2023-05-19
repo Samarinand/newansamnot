@@ -1250,6 +1250,7 @@ h3 {
   display: flex;
   justify-content: space-around;
   gap: 10px;
+ 
 }
 
 .balalaika__begin-left,
@@ -1281,7 +1282,7 @@ h3 {
   max-width: 430px;
   line-height: 30px;
   font-weight: 600;
-  
+   flex: 0 1 100%;
   .audio>a {
     display: inline-block;
     padding-right: 15px;

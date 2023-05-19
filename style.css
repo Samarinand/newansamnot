@@ -1256,6 +1256,9 @@ h3 {
   max-width: 430px;
   line-height: 30px;
   font-weight: 600;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
 }
 .balalaika__begin-left .audio > a,
 .balalaika__begin-center .audio > a,
