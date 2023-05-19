@@ -1127,14 +1127,14 @@ h3 {
     padding-right: 20px;
   }
 
-  .balalaika-difficult-text::before,
-  .balalaika-etudes-text::before,
-  .balalaika-ensambles-text::before,
-  .guitar-begin-text::before,
-  .guitar-difficult-text::before,
-  .guitar-words-text::before,
-  .guitar-duets-text::before,
-  .balalaika-begin-text::before {
+  .balalaika-text__difficult::before,
+  .balalaika-text__etudes::before,
+  .balalaika-text__ensembles::before,
+  .guitar-text__begin::before,
+  .guitar-text__difficult::before,
+  .guitar-text__words::before,
+  .guitar-text__duets::before,
+  .balalaika-text__begin::before {
     left: -120px;
   }
 
@@ -1148,7 +1148,7 @@ h3 {
     padding-right: 10px;
   }
 
-  .guiter__subtitle-begin {
+  .guitar__subtitle-begin {
     padding-left: 100px;
     padding-right: 10px;
   }
@@ -1173,7 +1173,7 @@ h3 {
 .balalaika__subtitle-difficult,
 .balalaika__subtitle-etudes,
 .balalaika__subtitle-ensembles,
-.guiter__subtitle-begin,
+.guitar__subtitle-begin,
 .guitar__subtitle-difficult,
 .guitar__subtitle-words,
 .guitar__subtitle-duets {
@@ -1266,14 +1266,14 @@ h3 {
   }
 }
 
-.balalaika-begin-text,
-.balalaika-difficult-text,
-.balalaika-etudes-text,
-.balalaika-ensambles-text,
-.guitar-begin-text,
-.guitar-difficult-text,
-.guitar-words-text,
-.guitar-duets-text {
+.balalaika-text__begin,
+.balalaika-text__difficult,
+.balalaika-text__etudes,
+.balalaika-text__ensembles,
+.guitar-text__begin,
+.guitar-text__difficult,
+.guitar-text__words,
+.guitar-text__duets {
   padding-top: 85px;
   font-size: 20px;
   display: flex;
@@ -1290,10 +1290,10 @@ h4 {
   font-weight: 600;
 }
 
-.balalaika-begin-text::before,
-.balalaika-difficult-text::before,
-.balalaika-etudes-text::before,
-.balalaika-ensambles-text::before {
+.balalaika-text__begin::before,
+.balalaika-text__difficult::before,
+.balalaika-text__etudes::before,
+.balalaika-text__ensembles::before {
   position: absolute;
   content: "";
   background-image: url(img/balalaika.gif);
@@ -1305,10 +1305,10 @@ h4 {
   bottom: 25px;
 }
 
-.guitar-begin-text::before,
-.guitar-difficult-text::before,
-.guitar-words-text::before,
-.guitar-duets-text::before {
+.guitar-text__begin::before,
+.guitar-text__difficult::before,
+.guitar-text__words::before,
+.guitar-text__duets::before {
   position: absolute;
   content: "";
   background-image: url(img/guitar.gif);
