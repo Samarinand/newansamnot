@@ -24,7 +24,7 @@ a :active {
 
 nav,
 footer,
-header,
+title.title,
 aside {
   display: block;
 }
@@ -282,7 +282,7 @@ body {
 .topmenu>li>a:hover {
   opacity: 1;
   transition: 0.8s;
-  color: #000000;
+  color: var(--color-purple-dark);
 }
 
 .topmenu>li:last-child {
@@ -291,7 +291,7 @@ body {
 
 .topmenu>li>a {
   display: block;
-  padding: 30px 15px;
+  padding: 30px 15px 40px 15px;
   text-decoration: none;
   outline: none;
   font-size: 14px;
@@ -304,14 +304,14 @@ body {
 
 
 .topmenu__guitar-angle-down:hover::after {
-  border-top: 2px solid black;
-  border-right: 2px solid black;
+  border-top: 2px solid var(--color-purple-dark);
+  border-right: 2px solid var(--color-purple-dark);
 
 }
 
 .topmenu__balalaika-angle-down:hover::after {
-  border-top: 2px solid black;
-  border-right: 2px solid black;
+  border-top: 2px solid var(--color-purple-dark);
+  border-right: 2px solid var(--color-purple-dark);
 
 }
 
@@ -355,7 +355,7 @@ body {
   top: 100%;
   left: 0;
   width: 100%;
-  height: 200%;
+  height: 215%;
   z-index: 70;
   transition: 0.8s ease-in-out;
   display: none;
@@ -367,11 +367,12 @@ body {
   text-transform: uppercase;
   font-size: 14px;
   color: var(--color-purple);
+  line-height: 2;
 }
 
 .submenu>li>a:hover {
   opacity: 1;
-  color: black;
+  color: var(--color-purple-dark);
   transition: 0.8s;
   position: relative;
 }
@@ -379,17 +380,18 @@ body {
 .menu ul li:hover .submenu {
   display: block;
   opacity: 1;
-  color: black;
+  color: var(--color-purple-dark);
   transition: 0.8s;
 }
 
 .submenu-hover {
-  color: var(--color-purple);
+  color: var(--color-dark);
 }
 
 .submenu-hover:hover {
   opacity: 1;
   transition: 0.8s;
+
 }
 
 
@@ -414,7 +416,7 @@ body {
 }
 
 .navbar__youtube-svg,
-.header-ebvelop-svg {
+.title-ebvelop-svg {
   height: 47px;
   width: 47px;
   fill: red;
@@ -467,7 +469,11 @@ body {
 
 @media (max-width: 983px) {
 
+  .submenu {
 
+    height: 200%;
+
+  }
 
   .navbar__wrap-right {
 
@@ -648,14 +654,14 @@ body {
   background-color: black;
 }
 
-// header
-.header {
+// title
+.title {
   flex: 0 0 auto;
 
   margin-top: 75px;
 }
 
-.header {
+.title {
   h1 {
     text-align: center;
     font-size: calc(12px + 12 * (100vw / 1280));
@@ -669,7 +675,7 @@ body {
     padding-bottom: 10px;
   }
 
-  .header__welcome {
+  .title__welcome {
     margin-top: -10px;
     text-align: center;
     font-size: calc(8px + 12 * (100vw / 1280));
@@ -683,7 +689,7 @@ body {
 
 }
 
-.header__content {
+.title__content {
   margin-bottom: -20px;
   padding: 50px 10px;
   text-align: center;
@@ -1045,6 +1051,34 @@ h3 {
 }
 
 .balalaika__begin-left,
+.balalaika__begin-center,
+.balalaika__begin-right,
+.balalaika__ensembles-left,
+.balalaika__ensembles-center,
+.balalaika__ensembles-right,
+.balalaika__difficult-left,
+.balalaika__difficult-center,
+.balalaika__difficult-right,
+.balalalika__etudes-left,
+.balalaika__etudes-center,
+.balalaika__etudes-right,
+.guitar__begin-left,
+.guitar__begin-center,
+.guitar__begin-right,
+.guitar__difficult-left,
+.guitar__difficult-center,
+.guitar__difficult-right,
+.guitar__words-left,
+.guitar__words-right,
+.guitar__duets-left,
+.guitar__duets-right {
+
+  width: 318px;
+}
+
+@media (max-width: 844px) {
+
+  .balalaika__begin-left,
   .balalaika__begin-center,
   .balalaika__begin-right,
   .balalaika__ensembles-left,
@@ -1066,14 +1100,31 @@ h3 {
   .guitar__words-right,
   .guitar__duets-left,
   .guitar__duets-right {
- 
-  width: 318px;
+
+    flex: 1 1 100%;
+
   }
-  
+
+  .balalaika__begin,
+  .balalaika__difficult,
+  .balalaika__etudes,
+  .balalaika__ensembles,
+  .guitar__begin,
+  .guitar__difficult,
+  .guitar__duets,
+  .guitar__words {
+    min-width: 318px;
+    max-width: 100%;
+
+
+  }
+}
+
 @media (max-width: 987px) {
   .navbar__container {
     padding-left: 10px;
   }
+
   .balalaika__begin-left,
   .balalaika__begin-center,
   .balalaika__begin-right,
@@ -1098,8 +1149,9 @@ h3 {
   .guitar__duets-right {
     margin-right: 10px;
     margin-left: 10px;
-    flex: 0 1 100%;
+    flex: 0 1 50%;
     min-width: 318px;
+    
   }
 
   .balalaika__begin,
@@ -1181,7 +1233,7 @@ h3 {
   min-width: 0px;
   display: flex;
   justify-content: space-around;
- 
+
 }
 
 .balalaika__begin,
@@ -1197,6 +1249,7 @@ h3 {
   min-width: 0px;
   display: flex;
   justify-content: space-around;
+  gap: 10px;
 }
 
 .balalaika__begin-left,
@@ -1225,10 +1278,10 @@ h3 {
   height: 100%;
   border-radius: 10px;
   min-width: 318px;
-  max-width: 450px;
+  max-width: 430px;
   line-height: 30px;
   font-weight: 600;
-
+  
   .audio>a {
     display: inline-block;
     padding-right: 15px;
