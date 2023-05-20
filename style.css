@@ -155,6 +155,7 @@ body {
 
 .bloks-conteiner {
   margin: 0 auto;
+  padding: 0 0.3em;
   max-width: 1046px;
 }
 
@@ -367,7 +368,7 @@ body {
   top: 100%;
   left: 0;
   width: 100%;
-  height: 215%;
+  height: 210%;
   z-index: 70;
   -webkit-transition: 0.8s ease-in-out;
   transition: 0.8s ease-in-out;
@@ -380,7 +381,7 @@ body {
   text-transform: uppercase;
   font-size: 14px;
   color: var(--color-purple);
-  line-height: 2;
+  line-height: 1.9;
 }
 
 .submenu > li > a:hover {
@@ -1035,70 +1036,6 @@ h3 {
   margin-bottom: 100px;
 }
 
-.balalaika__begin-left,
-.balalaika__begin-center,
-.balalaika__begin-right,
-.balalaika__ensembles-left,
-.balalaika__ensembles-center,
-.balalaika__ensembles-right,
-.balalaika__difficult-left,
-.balalaika__difficult-center,
-.balalaika__difficult-right,
-.balalalika__etudes-left,
-.balalaika__etudes-center,
-.balalaika__etudes-right,
-.guitar__begin-left,
-.guitar__begin-center,
-.guitar__begin-right,
-.guitar__difficult-left,
-.guitar__difficult-center,
-.guitar__difficult-right,
-.guitar__words-left,
-.guitar__words-right,
-.guitar__duets-left,
-.guitar__duets-right {
-  width: 318px;
-}
-
-@media (max-width: 844px) {
-  .balalaika__begin-left,
-.balalaika__begin-center,
-.balalaika__begin-right,
-.balalaika__ensembles-left,
-.balalaika__ensembles-center,
-.balalaika__ensembles-right,
-.balalaika__difficult-left,
-.balalaika__difficult-center,
-.balalaika__difficult-right,
-.balalalika__etudes-left,
-.balalaika__etudes-center,
-.balalaika__etudes-right,
-.guitar__begin-left,
-.guitar__begin-center,
-.guitar__begin-right,
-.guitar__difficult-left,
-.guitar__difficult-center,
-.guitar__difficult-right,
-.guitar__words-left,
-.guitar__words-right,
-.guitar__duets-left,
-.guitar__duets-right {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
-  }
-  .balalaika__begin,
-.balalaika__difficult,
-.balalaika__etudes,
-.balalaika__ensembles,
-.guitar__begin,
-.guitar__difficult,
-.guitar__duets,
-.guitar__words {
-    min-width: 318px;
-    max-width: 100%;
-  }
-}
 @media (max-width: 987px) {
   .navbar__container {
     padding-left: 10px;
@@ -1125,12 +1062,9 @@ h3 {
 .guitar__words-right,
 .guitar__duets-left,
 .guitar__duets-right {
-    margin-right: 10px;
-    margin-left: 10px;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
-    min-width: 318px;
   }
   .balalaika__begin,
 .balalaika__ensembles,
@@ -1142,7 +1076,7 @@ h3 {
 .guitar__duets {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    row-gap: 15px;
+    gap: 0.625em;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -1223,7 +1157,9 @@ h3 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  gap: 10px;
+  -webkit-column-gap: 0.625em;
+     -moz-column-gap: 0.625em;
+          column-gap: 0.625em;
 }
 
 .balalaika__begin-left,
@@ -1458,7 +1394,7 @@ h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 5px;
+  row-gap: 0.625em;
   margin-top: 2px;
   padding-left: 10px;
   padding-right: 10px;
@@ -1623,7 +1559,7 @@ h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 470px;
+  width: 476px;
 }
 .footer .footer__top {
   font-size: calc(10px + 0.546875vw);
@@ -1644,7 +1580,7 @@ h4 {
 .footer .footer__top .wrapper {
   margin: 0 auto;
   width: 100%;
-  padding-top: 5px;
+  padding-top: 2px;
 }
 .footer .footer__top .tabs-nav {
   display: -webkit-box;
@@ -1654,15 +1590,19 @@ h4 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.footer .footer__top .tabs-nav__item:last-child {
+  padding: 0.75em 0 0.75em 0.7em;
+}
 .footer .footer__top .tabs-nav__item {
   border-bottom: 1px solid transparent;
   cursor: pointer;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 12px 0px 12px 12px;
+  padding: 0.75em 0 0.75em 0.2em;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: calc(10px + 0.390625vw);
 }
 .footer .footer__top .tabs-nav__item:hover {
   opacity: 1;
