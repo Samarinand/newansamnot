@@ -1027,6 +1027,33 @@ h3 {
   .navbar__container {
     padding-left: 10px;
   }
+  .balalaika__begin-left,
+// .balalaika__begin-center,
+.balalaika__begin-right,
+.balalaika__difficult-left,
+// .balalaika__difficult-center,
+.balalaika__difficult-right,
+.balalalika__etudes-left,
+// .balalaika__etudes-center,
+.balalaika__etudes-right,
+.balalaika__ensembles-left,
+// .balalaika__ensembles-center,
+.balalaika__ensembles-right,
+.guitar__begin-left,
+// .guitar__begin-center,
+.guitar__begin-right,
+.guitar__difficult-left,
+// .guitar__difficult-center,
+.guitar__difficult-right,
+.guitar__words-left,
+.guitar__words-right,
+.guitar__duets-left,
+.guitar__duets-right{
+ margin-right:0.625em ;
+}
+
+
+
 
   .balalaika__begin-left,
   .balalaika__begin-center,
@@ -1052,9 +1079,9 @@ h3 {
   .guitar__duets-right {
  
     flex: 0 1 50%;
-   
   
-    
+ 
+  margin-bottom: 0.625em; 
   }
 
   .balalaika__begin,
@@ -1066,9 +1093,9 @@ h3 {
   .guitar__words,
   .guitar__duets {
     flex-wrap: wrap;
-    gap: 0.625em;
+    // gap: 0.625em;
     align-items: baseline;
-
+ margin-top: -0.625em;
 
   }
 
@@ -1123,7 +1150,33 @@ h3 {
     padding-right: 10px;
   }
 }
-
+@media (max-width: 888px) {
+  .balalaika__begin-left,
+  .balalaika__begin-center,
+  .balalaika__begin-right,
+  .balalaika__difficult-left,
+  .balalaika__difficult-center,
+  .balalaika__difficult-right,
+  .balalalika__etudes-left,
+  .balalaika__etudes-center,
+  .balalaika__etudes-right,
+  .balalaika__ensembles-left,
+  .balalaika__ensembles-center,
+  .balalaika__ensembles-right,
+  .guitar__begin-left,
+  .guitar__begin-center,
+  .guitar__begin-right,
+  .guitar__difficult-left,
+  .guitar__difficult-center,
+  .guitar__difficult-right,
+  .guitar__words-left,
+  .guitar__words-right,
+  .guitar__duets-left,
+  .guitar__duets-right{
+    margin-left:0.625em ;
+  }
+   
+}
 .balalaika__subtitle-begin,
 .balalaika__subtitle-difficult,
 .balalaika__subtitle-etudes,
@@ -1139,6 +1192,7 @@ h3 {
 
 }
 
+
 .balalaika__begin,
 .balalaika__difficult,
 .balalaika__etudes,
@@ -1152,9 +1206,35 @@ h3 {
   min-width: 0px;
   display: flex;
   justify-content: space-around;
-  column-gap: 0.625em;
- 
+  // column-gap: 0.625em;
+  
+
 }
+.balalaika__begin-left,
+.balalaika__begin-center,
+// .balalaika__begin-right,
+.balalaika__difficult-left,
+.balalaika__difficult-center,
+// .balalaika__difficult-right,
+.balalalika__etudes-left,
+.balalaika__etudes-center,
+// .balalaika__etudes-right,
+.balalaika__ensembles-left,
+.balalaika__ensembles-center,
+// .balalaika__ensembles-right,
+.guitar__begin-left,
+.guitar__begin-center,
+// .guitar__begin-right,
+.guitar__difficult-left,
+.guitar__difficult-center,
+// .guitar__difficult-right,
+.guitar__words-left,
+.guitar__words-right,
+.guitar__duets-left,
+.guitar__duets-right{
+ margin-right:0.625em ;
+}
+
 
 .balalaika__begin-left,
 .balalaika__begin-center,
@@ -1186,6 +1266,7 @@ h3 {
   line-height: 30px;
   font-weight: 600;
    flex: 0 1 100%;
+   
   .audio>a {
     display: inline-block;
     padding-right: 15px;
@@ -1281,7 +1362,7 @@ h4 {
 .audio {
   display: flex;
   flex-direction: column;
-  row-gap: 0.625em;
+  // row-gap: 0.625em;
  
   margin-top: 2px;
   padding-left: 10px;
@@ -1322,7 +1403,8 @@ h4 {
   height: 20px;
   font-size: 10px;
   width: 100%;
-
+ 
+margin-bottom: 0.625em;
 }
 
 
