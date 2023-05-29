@@ -132,6 +132,7 @@ body {
   color: #fff;
   font-size: calc(18px + 12 * (100vw/1280));
   font-weight: bold;
+  position: relative;
 }
 
 .main {

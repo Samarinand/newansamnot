@@ -94,7 +94,8 @@ html {
 
 body {
   display: flex;
-  background: var(--color-pink);
+  background:var(--color-background);
+
   flex-direction: column;
   min-height: 100vh;
   line-height: 1.2;
@@ -102,6 +103,7 @@ body {
 }
 
 :root {
+  --color-background:rgb(140, 134, 231);
   --color-purple: #7a52b3;
   --color-white: #fff;
   --color-gray: #3f3f3f;
@@ -109,7 +111,7 @@ body {
   --color-purple-dark: #50258d;
   --color-white-dark: #e2d7d7;
   --color-pink: #eaccf3;
-  --color-pink-hover: #e3acf4;
+  --color-pink-hover: rgb(77, 109, 166);
 }
 
 
@@ -226,6 +228,8 @@ body {
   img {
     height: 60px;
     width: 60px;
+    box-shadow: 0px 5px 5px black;
+    border-radius: 50%;
   }
 }
 
@@ -660,12 +664,10 @@ body {
   margin-bottom: -20px;
   padding: 50px 10px;
   text-align: center;
+text-shadow:  0 0 20px #eaccf3;
 
-  a {
-    font-size: 22px;
-    color: var(--color-purple);
-  }
 }
+
 
 .vibrate-3 {
 
@@ -813,7 +815,7 @@ body {
   position: relative;
   font-size: calc(12px + 4 * (100vw / 1280));
   margin-bottom: 15px;
-  color: var(--color-purple-dark);
+
 
 
 }
@@ -1023,30 +1025,31 @@ h3 {
   .navbar__container {
     padding-left: 10px;
   }
+
   .balalaika__begin-left,
-// .balalaika__begin-center,
-.balalaika__begin-right,
-.balalaika__difficult-left,
-// .balalaika__difficult-center,
-.balalaika__difficult-right,
-.balalalika__etudes-left,
-// .balalaika__etudes-center,
-.balalaika__etudes-right,
-.balalaika__ensembles-left,
-// .balalaika__ensembles-center,
-.balalaika__ensembles-right,
-.guitar__begin-left,
-// .guitar__begin-center,
-.guitar__begin-right,
-.guitar__difficult-left,
-// .guitar__difficult-center,
-.guitar__difficult-right,
-.guitar__words-left,
-.guitar__words-right,
-.guitar__duets-left,
-.guitar__duets-right{
- margin-right:0.625em ;
-}
+  // .balalaika__begin-center,
+  .balalaika__begin-right,
+  .balalaika__difficult-left,
+  // .balalaika__difficult-center,
+  .balalaika__difficult-right,
+  .balalalika__etudes-left,
+  // .balalaika__etudes-center,
+  .balalaika__etudes-right,
+  .balalaika__ensembles-left,
+  // .balalaika__ensembles-center,
+  .balalaika__ensembles-right,
+  .guitar__begin-left,
+  // .guitar__begin-center,
+  .guitar__begin-right,
+  .guitar__difficult-left,
+  // .guitar__difficult-center,
+  .guitar__difficult-right,
+  .guitar__words-left,
+  .guitar__words-right,
+  .guitar__duets-left,
+  .guitar__duets-right {
+    margin-right: 0.625em;
+  }
 
 
 
@@ -1073,11 +1076,11 @@ h3 {
   .guitar__words-right,
   .guitar__duets-left,
   .guitar__duets-right {
- 
+
     flex: 0 1 50%;
-  
- 
-  margin-bottom: 0.625em; 
+
+
+    margin-bottom: 0.625em;
   }
 
   .balalaika__begin,
@@ -1091,7 +1094,7 @@ h3 {
     flex-wrap: wrap;
     // gap: 0.625em;
     align-items: baseline;
- margin-top: -0.625em;
+    margin-top: -0.625em;
 
   }
 
@@ -1146,7 +1149,9 @@ h3 {
     padding-right: 10px;
   }
 }
+
 @media (max-width: 888px) {
+
   .balalaika__begin-left,
   .balalaika__begin-center,
   .balalaika__begin-right,
@@ -1168,11 +1173,12 @@ h3 {
   .guitar__words-left,
   .guitar__words-right,
   .guitar__duets-left,
-  .guitar__duets-right{
-    margin-left:0.625em ;
+  .guitar__duets-right {
+    margin-left: 0.625em;
   }
-   
+
 }
+
 .balalaika__subtitle-begin,
 .balalaika__subtitle-difficult,
 .balalaika__subtitle-etudes,
@@ -1203,9 +1209,10 @@ h3 {
   display: flex;
   justify-content: space-around;
   // column-gap: 0.625em;
-  
+
 
 }
+
 .balalaika__begin-left,
 .balalaika__begin-center,
 // .balalaika__begin-right,
@@ -1227,8 +1234,8 @@ h3 {
 .guitar__words-left,
 .guitar__words-right,
 .guitar__duets-left,
-.guitar__duets-right{
- margin-right:0.625em ;
+.guitar__duets-right {
+  margin-right: 0.625em;
 }
 
 
@@ -1261,8 +1268,8 @@ h3 {
   max-width: 430px;
   line-height: 30px;
   font-weight: 600;
-   flex: 0 1 100%;
-   
+  flex: 0 1 100%;
+
   .audio>a {
     display: inline-block;
     padding-right: 15px;
@@ -1359,7 +1366,7 @@ h4 {
   display: flex;
   flex-direction: column;
   // row-gap: 0.625em;
- 
+
   margin-top: 2px;
   padding-left: 10px;
   padding-right: 10px;
@@ -1369,7 +1376,7 @@ h4 {
 
 }
 
- 
+
 
 .audio__download {
   display: flex;
@@ -1399,8 +1406,8 @@ h4 {
   height: 20px;
   font-size: 10px;
   width: 100%;
- 
-margin-bottom: 0.625em;
+
+  margin-bottom: 0.625em;
 }
 
 
@@ -1541,9 +1548,11 @@ margin-bottom: 0.625em;
       display: flex;
       justify-content: space-between;
     }
-    .tabs-nav__item:last-child{
-      padding: 0.75em 0 0.75em 0.7em; 
+
+    .tabs-nav__item:last-child {
+      padding: 0.75em 0 0.75em 0.7em;
     }
+
     .tabs-nav__item {
       border-bottom: 1px solid transparent;
       cursor: pointer;
@@ -1552,10 +1561,11 @@ margin-bottom: 0.625em;
       text-transform: uppercase;
       font-weight: 700;
       font-size: calc(10px + 5 * (100vw / 1280));
+
       &:hover {
         opacity: 1;
         transition: 0.8s;
-        color: var(--color-pink);
+        color: var(--color-pink-hover);
 
         &:active {
 
@@ -1565,7 +1575,7 @@ margin-bottom: 0.625em;
     }
 
     .tabs-nav__item.is-active {
-      border-color: var(--color-purple);
+      border-color: var(--color-pink-hover);
     }
 
     .tab {
@@ -1593,7 +1603,7 @@ margin-bottom: 0.625em;
     .tabs__submenu-hover {
       padding-left: 10px;
       line-height: 1.7;
-     
+
     }
 
     .tabs-link:last-child {
@@ -1610,7 +1620,7 @@ margin-bottom: 0.625em;
       &:hover {
         opacity: 1;
         transition: 0.8s;
-        color: var(--color-pink);
+        color: var(--color-pink-hover);
 
         &:active {
 
