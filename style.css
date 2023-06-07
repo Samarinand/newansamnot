@@ -1388,13 +1388,13 @@ h4 {
 .balalaika-text__ensembles::before {
   position: absolute;
   content: "";
-  background-image: url(img/balalaika.gif);
+  background-image: url(img/Balalaika.png);
   background-size: cover;
   display: inline-block;
-  width: 60px;
-  height: 40px;
+  width: 4em;
+  height: 4em;
   left: -80px;
-  bottom: 25px;
+  bottom: 15px;
 }
 
 .guitar-text__begin::before,
@@ -1403,13 +1403,13 @@ h4 {
 .guitar-text__duets::before {
   position: absolute;
   content: "";
-  background-image: url(img/guitar.gif);
+  background-image: url(img/Guitar.png);
   background-size: cover;
   display: inline-block;
-  width: 60px;
-  height: 40px;
+  width: 3.4em;
+  height: 3.4em;
   left: -80px;
-  bottom: 25px;
+  bottom: 15px;
 }
 
 .audio {
