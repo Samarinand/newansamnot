@@ -94,7 +94,7 @@ html {
 
 body {
   display: flex;
-  background:var(--color-background);
+  background: var(--color-background);
 
   flex-direction: column;
   min-height: 100vh;
@@ -103,15 +103,16 @@ body {
 }
 
 :root {
-  --color-background:rgb(140, 134, 231);
+  --color-background: rgb(140, 134, 231);
   --color-purple: #7a52b3;
-  --color-white: #fff;
+  --color-white: #ede9e9;
   --color-gray: #3f3f3f;
   --color-dark: #324b4e;
   --color-purple-dark: #50258d;
   --color-white-dark: #e2d7d7;
   --color-pink: #eaccf3;
   --color-pink-hover: rgb(77, 109, 166);
+  --color-hover: rgb(154, 149, 228);
 }
 
 
@@ -639,7 +640,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 3px;
-    background-image: linear-gradient(rgba(75, 11, 97, 0.949), rgb(155, 59, 244));
+    background-image: linear-gradient(rgba(240, 238, 240, 0.949), rgb(188, 130, 241));
     background-clip: text;
     color: transparent;
     display: inline-block;
@@ -650,7 +651,7 @@ body {
     margin-top: -10px;
     text-align: center;
     font-size: calc(8px + 12 * (100vw / 1280));
-    background-image: linear-gradient(rgba(75, 11, 97, 0.949), rgb(114, 59, 244));
+        background-image: linear-gradient(rgba(240, 238, 240, 0.949), rgb(188, 130, 241));
     background-clip: text;
     color: transparent;
     font-weight: 700;
@@ -661,10 +662,10 @@ body {
 }
 
 .title__content {
-  margin-bottom: -20px;
+
   padding: 50px 10px;
   text-align: center;
-text-shadow:  0 0 20px #eaccf3;
+  text-shadow: 0 0 20px #eaccf3;
 
 }
 
@@ -802,7 +803,8 @@ text-shadow:  0 0 20px #eaccf3;
 
 // discription
 .discription {
-  // margin-top: 20px;
+  color: var(--color-white);
+ 
   text-align: center;
   font-style: italic;
   font-weight: 500;
@@ -815,9 +817,11 @@ text-shadow:  0 0 20px #eaccf3;
   position: relative;
   font-size: calc(12px + 4 * (100vw / 1280));
   margin-bottom: 15px;
-
-
-
+  background-color: var(--color-pink-hover);
+  
+  border-radius: 10px;
+  padding-bottom: 2em;
+  padding-top: 2em;
 }
 
 .discription__list {
@@ -839,7 +843,7 @@ text-shadow:  0 0 20px #eaccf3;
   content: "";
   width: 10px;
   height: 10px;
-  border: 1px solid black;
+  border: 1px solid white;
   top: 0px;
   display: inline-block;
   left: -10px;
@@ -982,11 +986,12 @@ h3 {
   border-radius: 10px;
   cursor: pointer;
   transition: max-height 0.8s ease-out;
+  color: var(--color-white);
 }
 
 .active,
 .accordion:hover {
-  background-color: var(--color-pink-hover);
+  background-color: var(--color-hover);
   border-radius: 10px;
   height: 100%;
 
@@ -998,7 +1003,7 @@ h3 {
   transform: rotate(270deg);
   font-size: 20px;
 
-  color: var(--color-gray);
+  color: var(--color-white);
   float: right;
   margin-left: 5px;
 }
@@ -1273,6 +1278,7 @@ h3 {
   .audio>a {
     display: inline-block;
     padding-right: 15px;
+    color: var(--color-white);
   }
 
 
@@ -1329,6 +1335,7 @@ h4 {
   font-family: Montserrat, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
   font-style: italic;
   font-weight: 600;
+  color: var(--color-white);
 }
 
 .balalaika-text__begin::before,
@@ -1340,7 +1347,7 @@ h4 {
   background-image: url(img/Balalaika.svg);
   background-size: cover;
   display: inline-block;
-  width:  2.8em;
+  width: 2.8em;
   height: 2.8em;
   left: -80px;
   bottom: 10px;
@@ -1355,7 +1362,7 @@ h4 {
   background-image: url(img/Guitar.svg);
   background-size: cover;
   display: inline-block;
-  width:  2.8em;
+  width: 2.8em;
   height: 2.8em;
   left: -80px;
   bottom: 10px;

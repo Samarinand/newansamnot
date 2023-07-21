@@ -107,15 +107,16 @@ body {
 }
 
 :root {
-  --color-background:rgb(140, 134, 231);
+  --color-background: rgb(140, 134, 231);
   --color-purple: #7a52b3;
-  --color-white: #fff;
+  --color-white: #ede9e9;
   --color-gray: #3f3f3f;
   --color-dark: #324b4e;
   --color-purple-dark: #50258d;
   --color-white-dark: #e2d7d7;
   --color-pink: #eaccf3;
   --color-pink-hover: rgb(77, 109, 166);
+  --color-hover: rgb(154, 149, 228);
 }
 
 /*navbar*/
@@ -459,7 +460,7 @@ body {
 
 @media (max-width: 500px) {
   .navbar__youtube,
-.navbar__envelope {
+  .navbar__envelope {
     padding-right: 0px;
     display: none;
   }
@@ -477,7 +478,7 @@ body {
             justify-content: flex-end;
   }
   .topmenu__balalaika-angle-down:hover:after,
-.topmenu__guitar-angle-down:hover:after {
+  .topmenu__guitar-angle-down:hover:after {
     display: none;
   }
   .textinput {
@@ -658,8 +659,8 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 3px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(75, 11, 97, 0.949)), to(rgb(155, 59, 244)));
-  background-image: linear-gradient(rgba(75, 11, 97, 0.949), rgb(155, 59, 244));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 238, 240, 0.949)), to(rgb(188, 130, 241)));
+  background-image: linear-gradient(rgba(240, 238, 240, 0.949), rgb(188, 130, 241));
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
@@ -670,8 +671,8 @@ body {
   margin-top: -10px;
   text-align: center;
   font-size: calc(8px + 0.9375vw);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(75, 11, 97, 0.949)), to(rgb(114, 59, 244)));
-  background-image: linear-gradient(rgba(75, 11, 97, 0.949), rgb(114, 59, 244));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 238, 240, 0.949)), to(rgb(188, 130, 241)));
+  background-image: linear-gradient(rgba(240, 238, 240, 0.949), rgb(188, 130, 241));
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
@@ -681,7 +682,6 @@ body {
 }
 
 .title__content {
-  margin-bottom: -20px;
   padding: 50px 10px;
   text-align: center;
   text-shadow: 0 0 20px #eaccf3;
@@ -793,6 +793,7 @@ body {
 }
 
 .discription {
+  color: var(--color-white);
   text-align: center;
   font-style: italic;
   font-weight: 500;
@@ -805,6 +806,10 @@ body {
   position: relative;
   font-size: calc(12px + 0.3125vw);
   margin-bottom: 15px;
+  background-color: var(--color-pink-hover);
+  border-radius: 10px;
+  padding-bottom: 2em;
+  padding-top: 2em;
 }
 
 .discription__list {
@@ -826,7 +831,7 @@ body {
   content: "";
   width: 10px;
   height: 10px;
-  border: 1px solid black;
+  border: 1px solid white;
   top: 0px;
   display: inline-block;
   left: -10px;
@@ -970,11 +975,12 @@ h3 {
   cursor: pointer;
   -webkit-transition: max-height 0.8s ease-out;
   transition: max-height 0.8s ease-out;
+  color: var(--color-white);
 }
 
 .active,
 .accordion:hover {
-  background-color: var(--color-pink-hover);
+  background-color: var(--color-hover);
   border-radius: 10px;
   height: 100%;
 }
@@ -985,7 +991,7 @@ h3 {
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
   font-size: 20px;
-  color: var(--color-gray);
+  color: var(--color-white);
   float: right;
   margin-left: 5px;
 }
@@ -1006,58 +1012,58 @@ h3 {
     padding-left: 10px;
   }
   .balalaika__begin-left,
-.balalaika__begin-right,
-.balalaika__difficult-left,
-.balalaika__difficult-right,
-.balalalika__etudes-left,
-.balalaika__etudes-right,
-.balalaika__ensembles-left,
-.balalaika__ensembles-right,
-.guitar__begin-left,
-.guitar__begin-right,
-.guitar__difficult-left,
-.guitar__difficult-right,
-.guitar__words-left,
-.guitar__words-right,
-.guitar__duets-left,
-.guitar__duets-right {
+  .balalaika__begin-right,
+  .balalaika__difficult-left,
+  .balalaika__difficult-right,
+  .balalalika__etudes-left,
+  .balalaika__etudes-right,
+  .balalaika__ensembles-left,
+  .balalaika__ensembles-right,
+  .guitar__begin-left,
+  .guitar__begin-right,
+  .guitar__difficult-left,
+  .guitar__difficult-right,
+  .guitar__words-left,
+  .guitar__words-right,
+  .guitar__duets-left,
+  .guitar__duets-right {
     margin-right: 0.625em;
   }
   .balalaika__begin-left,
-.balalaika__begin-center,
-.balalaika__begin-right,
-.balalaika__ensembles-left,
-.balalaika__ensembles-center,
-.balalaika__ensembles-right,
-.balalaika__difficult-left,
-.balalaika__difficult-center,
-.balalaika__difficult-right,
-.balalalika__etudes-left,
-.balalaika__etudes-center,
-.balalaika__etudes-right,
-.guitar__begin-left,
-.guitar__begin-center,
-.guitar__begin-right,
-.guitar__difficult-left,
-.guitar__difficult-center,
-.guitar__difficult-right,
-.guitar__words-left,
-.guitar__words-right,
-.guitar__duets-left,
-.guitar__duets-right {
+  .balalaika__begin-center,
+  .balalaika__begin-right,
+  .balalaika__ensembles-left,
+  .balalaika__ensembles-center,
+  .balalaika__ensembles-right,
+  .balalaika__difficult-left,
+  .balalaika__difficult-center,
+  .balalaika__difficult-right,
+  .balalalika__etudes-left,
+  .balalaika__etudes-center,
+  .balalaika__etudes-right,
+  .guitar__begin-left,
+  .guitar__begin-center,
+  .guitar__begin-right,
+  .guitar__difficult-left,
+  .guitar__difficult-center,
+  .guitar__difficult-right,
+  .guitar__words-left,
+  .guitar__words-right,
+  .guitar__duets-left,
+  .guitar__duets-right {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
     margin-bottom: 0.625em;
   }
   .balalaika__begin,
-.balalaika__ensembles,
-.balalaika__difficult,
-.balalaika__etudes,
-.guitar__begin,
-.guitar__difficult,
-.guitar__words,
-.guitar__duets {
+  .balalaika__ensembles,
+  .balalaika__difficult,
+  .balalaika__etudes,
+  .guitar__begin,
+  .guitar__difficult,
+  .guitar__words,
+  .guitar__duets {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-align: baseline;
@@ -1074,13 +1080,13 @@ h3 {
     padding-right: 20px;
   }
   .balalaika-text__difficult::before,
-.balalaika-text__etudes::before,
-.balalaika-text__ensembles::before,
-.guitar-text__begin::before,
-.guitar-text__difficult::before,
-.guitar-text__words::before,
-.guitar-text__duets::before,
-.balalaika-text__begin::before {
+  .balalaika-text__etudes::before,
+  .balalaika-text__ensembles::before,
+  .guitar-text__begin::before,
+  .guitar-text__difficult::before,
+  .guitar-text__words::before,
+  .guitar-text__duets::before,
+  .balalaika-text__begin::before {
     left: -120px;
   }
   .balalaika__subtitle-etudes {
@@ -1110,27 +1116,27 @@ h3 {
 }
 @media (max-width: 888px) {
   .balalaika__begin-left,
-.balalaika__begin-center,
-.balalaika__begin-right,
-.balalaika__difficult-left,
-.balalaika__difficult-center,
-.balalaika__difficult-right,
-.balalalika__etudes-left,
-.balalaika__etudes-center,
-.balalaika__etudes-right,
-.balalaika__ensembles-left,
-.balalaika__ensembles-center,
-.balalaika__ensembles-right,
-.guitar__begin-left,
-.guitar__begin-center,
-.guitar__begin-right,
-.guitar__difficult-left,
-.guitar__difficult-center,
-.guitar__difficult-right,
-.guitar__words-left,
-.guitar__words-right,
-.guitar__duets-left,
-.guitar__duets-right {
+  .balalaika__begin-center,
+  .balalaika__begin-right,
+  .balalaika__difficult-left,
+  .balalaika__difficult-center,
+  .balalaika__difficult-right,
+  .balalalika__etudes-left,
+  .balalaika__etudes-center,
+  .balalaika__etudes-right,
+  .balalaika__ensembles-left,
+  .balalaika__ensembles-center,
+  .balalaika__ensembles-right,
+  .guitar__begin-left,
+  .guitar__begin-center,
+  .guitar__begin-right,
+  .guitar__difficult-left,
+  .guitar__difficult-center,
+  .guitar__difficult-right,
+  .guitar__words-left,
+  .guitar__words-right,
+  .guitar__duets-left,
+  .guitar__duets-right {
     margin-left: 0.625em;
   }
 }
@@ -1246,6 +1252,7 @@ h3 {
 .guitar__duets-right .audio > a {
   display: inline-block;
   padding-right: 15px;
+  color: var(--color-white);
 }
 .balalaika__begin-left .pdf,
 .balalaika__begin-center .pdf,
@@ -1380,6 +1387,7 @@ h4 {
   font-family: Montserrat, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
   font-style: italic;
   font-weight: 600;
+  color: var(--color-white);
 }
 
 .balalaika-text__begin::before,
