@@ -219,7 +219,7 @@ let tab = function () {
 
 tab();
 
-
+AOS.init();
 
 
 
