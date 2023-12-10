@@ -542,17 +542,17 @@ body {
 
   .hamb__field.active .bar:nth-child(2) {
 
-    opacity: 0;
+   visibility: hidden;
   }
 
   .hamb__field.active .bar:nth-child(1) {
-    transform: translateY(8.5px)rotate(45deg);
+    transform: translateY(8.7px)rotate(45deg);
 
     opacity: 1;
   }
 
   .hamb__field.active .bar:nth-child(3) {
-    transform: translateY(-8.5px) rotate(-45deg);
+    transform: translateY(-8.7px) rotate(-45deg);
 
     opacity: 1;
   }

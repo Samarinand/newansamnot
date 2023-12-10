@@ -554,16 +554,16 @@ body {
     transition: 0.2s;
   }
   .hamb__field.active .bar:nth-child(2) {
-    opacity: 0;
+    visibility: hidden;
   }
   .hamb__field.active .bar:nth-child(1) {
-    -webkit-transform: translateY(8.5px) rotate(45deg);
-            transform: translateY(8.5px) rotate(45deg);
+    -webkit-transform: translateY(8.7px) rotate(45deg);
+            transform: translateY(8.7px) rotate(45deg);
     opacity: 1;
   }
   .hamb__field.active .bar:nth-child(3) {
-    -webkit-transform: translateY(-8.5px) rotate(-45deg);
-            transform: translateY(-8.5px) rotate(-45deg);
+    -webkit-transform: translateY(-8.7px) rotate(-45deg);
+            transform: translateY(-8.7px) rotate(-45deg);
     opacity: 1;
   }
   body.noscroll {
