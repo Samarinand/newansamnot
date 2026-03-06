@@ -687,13 +687,13 @@ body {
   text-shadow: 0 0 20px #eaccf3;
 }
 
-.vibrate-3 {
-  -webkit-animation: vibrate-3 0.5s linear infinite both;
-  animation: vibrate-3 0.5s linear infinite both;
-}
 .vibrate-3 a {
   display: block;
   padding: 30px 10px;
+}
+.vibrate-3 {
+  -webkit-animation: vibrate-3 0.5s linear infinite both;
+  animation: vibrate-3 0.5s linear infinite both;
 }
 
 @-webkit-keyframes vibrate-3 {
@@ -795,7 +795,6 @@ body {
 .discription {
   color: var(--color-white);
   text-align: center;
-  font-style: italic;
   font-weight: 500;
   padding-bottom: 5px;
   padding-left: 5px;
@@ -841,7 +840,6 @@ body {
 h2 {
   padding-left: 2em;
   padding-right: 2em;
-  font-style: italic;
   font-weight: 700;
   display: inline-block;
   padding-bottom: 10px;
@@ -1385,7 +1383,6 @@ h3 {
 
 h4 {
   font-family: Montserrat, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-  font-style: italic;
   font-weight: 600;
   color: var(--color-white);
 }
@@ -1448,7 +1445,6 @@ h4 {
           align-items: center;
   margin-top: 0px;
   font-family: Montserrat, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-  font-style: italic;
   width: 100%;
   height: 20px;
   background-color: var(--color-purple);
@@ -1595,17 +1591,6 @@ h4 {
           flex-direction: column;
   width: 476px;
 }
-.footer .footer__top {
-  font-size: calc(10px + 0.546875vw);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 .footer .footer__top .tabs {
   padding-top: 20px;
   color: var(--color-white);
@@ -1657,6 +1642,17 @@ h4 {
 }
 .footer .footer__top .tab.is-active {
   display: block;
+}
+.footer .footer__top {
+  font-size: calc(10px + 0.546875vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .footer .footer__top .tabs__item {
   height: 20px;
