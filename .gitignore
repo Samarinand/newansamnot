@@ -1,0 +1,4 @@
+git rm --cached balalaika\*.mp3
+git rm --cached gutar\*.mp3
+balalaika\*.mp3
+gutar\*.mp3
